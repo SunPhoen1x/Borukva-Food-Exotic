@@ -1,0 +1,42 @@
+{
+  "item.borukva-food-exotic.apricot": "Apricot",
+  "item.borukva-food-exotic.pear": "Pear",
+  "item.borukva-food-exotic.orange": "Orange",
+  "item-group.borukva-food-exotic.items": "Borukva Food Exotic: Fruits",
+  "item-group.borukva-food-exotic.blocks": "Borukva Food Exotic: Blocks",
+
+  "block.borukva-food-exotic.apricot_crate": "Apricot Crate",
+  "block.borukva-food-exotic.pear_crate": "Pear Crate",
+  "block.borukva-food-exotic.orange_crate": "Orange Crate",
+
+  "block.borukva-food-exotic.apricot_log": "Apricot Log",
+  "block.borukva-food-exotic.apricot_wood": "Apricot Wood",
+  "block.borukva-food-exotic.stripped_apricot_log": "Stripped Apricot Log",
+  "block.borukva-food-exotic.stripped_apricot_wood": "Stripped Apricot Wood",
+  "block.borukva-food-exotic.apricot_leaves": "Apricot Leaves",
+  "block.borukva-food-exotic.apricot_planks": "Apricot Planks",
+
+  "block.borukva-food-exotic.pear_log": "Pear Log",
+  "block.borukva-food-exotic.pear_wood": "Pear Wood",
+  "block.borukva-food-exotic.stripped_pear_log": "Stripped Pear Log",
+  "block.borukva-food-exotic.stripped_pear_wood": "Stripped Pear Wood",
+  "block.borukva-food-exotic.pear_leaves": "Pear Leaves",
+  "block.borukva-food-exotic.pear_planks": "Pear Planks",
+
+  "block.borukva-food-exotic.orange_log": "Orange Log",
+  "block.borukva-food-exotic.orange_wood": "Orange Wood",
+  "block.borukva-food-exotic.stripped_orange_log": "Stripped Orange Log",
+  "block.borukva-food-exotic.stripped_orange_wood": "Stripped Orange Wood",
+  "block.borukva-food-exotic.orange_leaves": "Orange Leaves",
+  "block.borukva-food-exotic.orange_planks": "Orange Planks",
+
+  "block.borukva-food-exotic.apricot_sapling": "Apricot Sapling",
+  "block.borukva-food-exotic.pear_sapling": "Pear Sapling",
+  "block.borukva-food-exotic.orange_sapling": "Orange Sapling",
+
+  "block.borukva-food-exotic.apricot_fruit_leaves": "Apricot Fruit Leaves",
+  "block.borukva-food-exotic.pear_fruit_leaves": "Pear Fruit Leaves",
+  "block.borukva-food-exotic.orange_fruit_leaves": "Orange Fruit Leaves",
+
+  "item.borukva-food-exotic.apricot_jam": "Apricot Jam"
+}

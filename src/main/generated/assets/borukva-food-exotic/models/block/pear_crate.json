@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "borukva-food-exotic:block/crate_bottom",
+    "east": "borukva-food-exotic:block/pear_crate_side",
+    "north": "borukva-food-exotic:block/pear_crate_side",
+    "particle": "borukva-food-exotic:block/pear_crate_side",
+    "south": "borukva-food-exotic:block/pear_crate_side",
+    "up": "borukva-food-exotic:block/pear_crate_top",
+    "west": "borukva-food-exotic:block/pear_crate_side"
+  }
+}

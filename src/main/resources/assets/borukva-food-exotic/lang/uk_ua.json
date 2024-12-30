@@ -1,0 +1,42 @@
+{
+  "item.borukva-food-exotic.apricot": "Абрикос",
+  "item.borukva-food-exotic.pear": "Груша",
+  "item.borukva-food-exotic.orange": "Апельсин",
+  "item-group.borukva-food-exotic.items": "Borukva Food Exotic: Фрукти",
+  "item-group.borukva-food-exotic.blocks": "Borukva Food Exotic: Блоки",
+
+  "block.borukva-food-exotic.apricot_crate": "Ящик абрикосів",
+  "block.borukva-food-exotic.pear_crate": "Ящик груш",
+  "block.borukva-food-exotic.orange_crate": "Ящик апельсинів",
+
+  "block.borukva-food-exotic.apricot_log": "Абрикосова колода",
+  "block.borukva-food-exotic.apricot_wood": "Абрикосова деревина",
+  "block.borukva-food-exotic.stripped_apricot_log": "Обтесана абрикосова колода",
+  "block.borukva-food-exotic.stripped_apricot_wood": "Обтесана абрикосова деревина",
+  "block.borukva-food-exotic.apricot_leaves": "Абрикосове листя",
+  "block.borukva-food-exotic.apricot_planks": "Абрикосові дошки",
+
+  "block.borukva-food-exotic.pear_log": "Грушева колода",
+  "block.borukva-food-exotic.pear_wood": "Грушева деревина",
+  "block.borukva-food-exotic.stripped_pear_log": "Обтесана грушева колода",
+  "block.borukva-food-exotic.stripped_pear_wood": "Обтесана грушева деревина",
+  "block.borukva-food-exotic.pear_leaves": "Грушеве листя",
+  "block.borukva-food-exotic.pear_planks": "Грушеві дошки",
+
+  "block.borukva-food-exotic.orange_log": "Апельсинова колода",
+  "block.borukva-food-exotic.orange_wood": "Апельсинова деревина",
+  "block.borukva-food-exotic.stripped_orange_log": "Обтесана апельсинова колода",
+  "block.borukva-food-exotic.stripped_orange_wood": "Обтесана апельсинова деревина",
+  "block.borukva-food-exotic.orange_leaves": "Апельсинове листя",
+  "block.borukva-food-exotic.orange_planks": "Апельсинові дошки",
+
+  "block.borukva-food-exotic.apricot_sapling": "Паросток абрикосу",
+  "block.borukva-food-exotic.pear_sapling": "Паросток груші",
+  "block.borukva-food-exotic.orange_sapling": "Паросток апельсину",
+
+  "block.borukva-food-exotic.apricot_fruit_leaves": "Абрикосове плодородне листя",
+  "block.borukva-food-exotic.pear_fruit_leaves": "Грушеве плодородне листя",
+  "block.borukva-food-exotic.orange_fruit_leaves": "Апельсинове плодородне листя",
+
+  "item.borukva-food-exotic.apricot_jam": "Абрикосовий джем"
+}
