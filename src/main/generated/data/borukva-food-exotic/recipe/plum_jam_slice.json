@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "borukva-food-exotic:plum_jam"
+    },
+    {
+      "item": "borukva-food:bread_slice"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:plum_jam_slice"
+  }
+}

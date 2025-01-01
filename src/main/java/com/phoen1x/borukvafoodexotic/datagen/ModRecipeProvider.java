@@ -31,6 +31,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         compressBlockRecipe(ModBlocks.ORANGE_CRATE_ITEM, ModItems.ORANGE, exporter);
         compressBlockRecipe(ModBlocks.KIWI_CRATE_ITEM, ModItems.KIWI, exporter);
         compressBlockRecipe(ModBlocks.PLUM_CRATE_ITEM, ModItems.PLUM, exporter);
+        compressBlockRecipe(ModBlocks.EGGPLANT_CRATE_ITEM, ModItems.EGGPLANT, exporter);
 
         planksRecipe(ModTags.Items.APRICOT_LOGS, ModBlocks.APRICOT_PLANKS_ITEM, exporter);
         planksRecipe(ModTags.Items.PEAR_LOGS, ModBlocks.PEAR_PLANKS_ITEM, exporter);
@@ -53,9 +54,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         woodRecipe(ModBlocks.PLUM_LOG_ITEM, ModBlocks.PLUM_WOOD_ITEM, exporter);
         woodRecipe(ModBlocks.STRIPPED_PLUM_LOG_ITEM, ModBlocks.STRIPPED_PLUM_WOOD_ITEM, exporter);
 
+        slabRecipe(ModBlocks.APRICOT_PLANKS_ITEM, ModBlocks.APRICOT_SLAB_ITEM, exporter);
+        slabRecipe(ModBlocks.PEAR_PLANKS_ITEM, ModBlocks.PEAR_SLAB_ITEM, exporter);
+        slabRecipe(ModBlocks.ORANGE_PLANKS_ITEM, ModBlocks.ORANGE_SLAB_ITEM, exporter);
+        slabRecipe(ModBlocks.PLUM_PLANKS_ITEM, ModBlocks.PLUM_SLAB_ITEM, exporter);
+        slabRecipe(ModBlocks.KIWI_PLANKS_ITEM, ModBlocks.KIWI_SLAB_ITEM, exporter);
+
         pieRecipe(ModItems.PEAR_PIE, ModItems.PEAR, exporter);
         pieRecipe(ModItems.APRICOT_PIE, ModItems.APRICOT, exporter);
         pieRecipe(ModItems.PLUM_PIE, ModItems.PLUM, exporter);
+
+        slicejamRecipe(ModItems.APRICOT_JAM_SLICE, ModItems.APRICOT_JAM, exporter);
+        slicejamRecipe(ModItems.PEAR_JAM_SLICE, ModItems.PEAR_JAM, exporter);
+        slicejamRecipe(ModItems.PLUM_JAM_SLICE, ModItems.PLUM_JAM, exporter);
+
+        seedsRecipe(ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, exporter);
+        seedsRecipe(ModItems.EGGPLANT, ModItems.EGGPLANT_SEEDS, exporter);
     }
 
     private void compressBlockRecipe(Item blockItem, Item item, RecipeExporter exporter){
@@ -95,5 +109,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(Items.EGG)
                 .criterion(hasItem(ingredient), conditionsFromItem(ingredient))
                 .offerTo(exporter, Identifier.of(BorukvaFoodExotic.MOD_ID, getRecipeName(item)));
+    }
+
+    private void slicejamRecipe(Item item, Item ingredient, RecipeExporter exporter){
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, item, 1)
+                .input(ingredient)
+                .input(com.opryshok.item.ModItems.BREAD_SLICE)
+                .criterion(hasItem(ingredient), conditionsFromItem(ingredient))
+                .offerTo(exporter, Identifier.of(BorukvaFoodExotic.MOD_ID, getRecipeName(item)));
+    }
+
+    private void slabRecipe(Item log, Item wood, RecipeExporter exporter){
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, wood, 6)
+                .pattern("SSS")
+                .input('S', log)
+                .criterion(hasItem(log), conditionsFromItem(log))
+                .offerTo(exporter, Identifier.of(BorukvaFoodExotic.MOD_ID, getRecipeName(wood)));
+    }
+
+    private void seedsRecipe(Item item, Item seeds, RecipeExporter exporter){
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, seeds, 3)
+                .input(item)
+                .criterion(hasItem(item), conditionsFromItem(item))
+                .offerTo(exporter, Identifier.of(BorukvaFoodExotic.MOD_ID, getRecipeName(item) + "_to_" + getRecipeName(seeds)));
     }
 }

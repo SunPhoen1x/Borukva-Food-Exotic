@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "borukva-food-exotic:eggplant"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "borukva-food-exotic:eggplant_seeds"
+  }
+}

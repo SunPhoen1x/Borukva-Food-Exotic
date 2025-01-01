@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "borukva-food-exotic:orange_planks"
+    }
+  },
+  "pattern": [
+    "SSS"
+  ],
+  "result": {
+    "count": 6,
+    "id": "borukva-food-exotic:orange_slab"
+  }
+}

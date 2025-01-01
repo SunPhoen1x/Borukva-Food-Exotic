@@ -20,6 +20,7 @@
   "block.borukva-food-exotic.stripped_apricot_wood": "Stripped Apricot Wood",
   "block.borukva-food-exotic.apricot_leaves": "Apricot Leaves",
   "block.borukva-food-exotic.apricot_planks": "Apricot Planks",
+  "block.borukva-food-exotic.apricot_slab": "Apricot Slab",
 
   "block.borukva-food-exotic.pear_log": "Pear Log",
   "block.borukva-food-exotic.pear_wood": "Pear Wood",
@@ -27,6 +28,7 @@
   "block.borukva-food-exotic.stripped_pear_wood": "Stripped Pear Wood",
   "block.borukva-food-exotic.pear_leaves": "Pear Leaves",
   "block.borukva-food-exotic.pear_planks": "Pear Planks",
+  "block.borukva-food-exotic.pear_slab": "Pear Slab",
 
   "block.borukva-food-exotic.orange_log": "Orange Log",
   "block.borukva-food-exotic.orange_wood": "Orange Wood",
@@ -34,6 +36,7 @@
   "block.borukva-food-exotic.stripped_orange_wood": "Stripped Orange Wood",
   "block.borukva-food-exotic.orange_leaves": "Orange Leaves",
   "block.borukva-food-exotic.orange_planks": "Orange Planks",
+  "block.borukva-food-exotic.orange_slab": "Orange Slab",
 
   "block.borukva-food-exotic.kiwi_log": "Kiwi Log",
   "block.borukva-food-exotic.kiwi_wood": "Kiwi Wood",
@@ -41,6 +44,7 @@
   "block.borukva-food-exotic.stripped_kiwi_wood": "Stripped Kiwi Wood",
   "block.borukva-food-exotic.kiwi_leaves": "Kiwi Leaves",
   "block.borukva-food-exotic.kiwi_planks": "Kiwi Planks",
+  "block.borukva-food-exotic.kiwi_slab": "Kiwi Slab",
 
   "block.borukva-food-exotic.plum_log": "Plum Log",
   "block.borukva-food-exotic.plum_wood": "Plum Wood",
@@ -48,6 +52,7 @@
   "block.borukva-food-exotic.stripped_plum_wood": "Stripped Plum Wood",
   "block.borukva-food-exotic.plum_leaves": "Plum Leaves",
   "block.borukva-food-exotic.plum_planks": "Plum Planks",
+  "block.borukva-food-exotic.plum_slab": "Plum Slab",
 
   "block.borukva-food-exotic.apricot_sapling": "Apricot Sapling",
   "block.borukva-food-exotic.pear_sapling": "Pear Sapling",
@@ -65,7 +70,20 @@
   "item.borukva-food-exotic.pear_jam": "Pear Jam",
   "item.borukva-food-exotic.plum_jam": "Plum Jam",
 
+  "item.borukva-food-exotic.apricot_jam_slice": "Apricot Jam Slice",
+  "item.borukva-food-exotic.pear_jam_slice": "Pear Jam Slice",
+  "item.borukva-food-exotic.plum_jam_slice": "Plum Jam Slice",
+
   "item.borukva-food-exotic.apricot_pie": "Apricot Pie",
   "item.borukva-food-exotic.pear_pie": "Pear Pie",
-  "item.borukva-food-exotic.plum_pie": "Plum Pie"
+  "item.borukva-food-exotic.plum_pie": "Plum Pie",
+
+  "item.borukva-food-exotic.apricot_pie_slice": "Apricot Pie Slice",
+
+  "item.borukva-food-exotic.strawberry": "Strawberry",
+  "item.borukva-food-exotic.strawberry_seeds": "Strawberry Seeds",
+
+  "item.borukva-food-exotic.eggplant": "Eggplant",
+  "item.borukva-food-exotic.eggplant_seeds": "Eggplant Seeds",
+  "item.borukva-food-exotic.eggplant_crate": "Eggplant Crate"
 }

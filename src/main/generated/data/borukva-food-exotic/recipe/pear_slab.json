@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "borukva-food-exotic:pear_planks"
+    }
+  },
+  "pattern": [
+    "SSS"
+  ],
+  "result": {
+    "count": 6,
+    "id": "borukva-food-exotic:pear_slab"
+  }
+}

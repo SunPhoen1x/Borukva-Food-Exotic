@@ -24,7 +24,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PEAR)
                 .add(ModItems.ORANGE)
                 .add(ModItems.KIWI)
-                .add(ModItems.PLUM);
+                .add(ModItems.PLUM)
+                .add(ModItems.STRAWBERRY)
+                .add(ModItems.EGGPLANT);
 
         getOrCreateTagBuilder(ModTags.Items.APRICOT_LOGS)
                 .add(APRICOT_LOG_ITEM)

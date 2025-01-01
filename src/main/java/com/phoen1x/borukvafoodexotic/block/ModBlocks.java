@@ -1,6 +1,8 @@
 package com.phoen1x.borukvafoodexotic.block;
 
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
+import com.phoen1x.borukvafoodexotic.block.crops.EggplantCrop;
+import com.phoen1x.borukvafoodexotic.block.crops.StrawberryCrop;
 import com.phoen1x.borukvafoodexotic.block.leaves.*;
 import com.phoen1x.borukvafoodexotic.world.tree.ModSaplingGenerator;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
@@ -23,12 +25,14 @@ public class ModBlocks {
     public static final Block ORANGE_CRATE = registerBlock("orange_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "orange_crate"));
     public static final Block KIWI_CRATE = registerBlock("kiwi_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "kiwi_crate"));
     public static final Block PLUM_CRATE = registerBlock("plum_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "plum_crate"));
+    public static final Block EGGPLANT_CRATE = registerBlock("eggplant_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "eggplant_crate"));
 
     public static final BlockItem APRICOT_CRATE_ITEM = registerBlockItem("apricot_crate", new TexturedPolyBlockItem(APRICOT_CRATE, new Item.Settings(), "block/apricot_crate"));
     public static final BlockItem PEAR_CRATE_ITEM = registerBlockItem("pear_crate", new TexturedPolyBlockItem(PEAR_CRATE, new Item.Settings(), "block/pear_crate"));
     public static final BlockItem ORANGE_CRATE_ITEM = registerBlockItem("orange_crate", new TexturedPolyBlockItem(ORANGE_CRATE, new Item.Settings(), "block/orange_crate"));
     public static final BlockItem KIWI_CRATE_ITEM = registerBlockItem("kiwi_crate", new TexturedPolyBlockItem(KIWI_CRATE, new Item.Settings(), "block/kiwi_crate"));
     public static final BlockItem PLUM_CRATE_ITEM = registerBlockItem("plum_crate", new TexturedPolyBlockItem(PLUM_CRATE, new Item.Settings(), "block/plum_crate"));
+    public static final BlockItem EGGPLANT_CRATE_ITEM = registerBlockItem("eggplant_crate", new TexturedPolyBlockItem(EGGPLANT_CRATE, new Item.Settings(), "block/eggplant_crate"));
 
     public static final Block APRICOT_LOG = registerBlock("apricot_log", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_LOG)));
     public static final Block APRICOT_WOOD = registerBlock("apricot_wood", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_WOOD)));
@@ -123,10 +127,24 @@ public class ModBlocks {
     public static final BlockItem KIWI_SAPLING_ITEM = registerBlockItem("kiwi_sapling", new TexturedPolyBlockItem(KIWI_SAPLING, new Item.Settings(), "item/kiwi_sapling"));
     public static final BlockItem PLUM_SAPLING_ITEM = registerBlockItem("plum_sapling", new TexturedPolyBlockItem(PLUM_SAPLING, new Item.Settings(), "item/plum_sapling"));
 
+    public static final Block APRICOT_SLAB = registerBlock("apricot_slab", new PolySlabBlock(Block.Settings.copy(Blocks.OAK_SLAB), "apricot_slab", APRICOT_PLANKS.getDefaultState()));
+    public static final Block PEAR_SLAB = registerBlock("pear_slab", new PolySlabBlock(Block.Settings.copy(Blocks.OAK_SLAB), "pear_slab", PEAR_PLANKS.getDefaultState()));
+    public static final Block ORANGE_SLAB = registerBlock("orange_slab", new PolySlabBlock(Block.Settings.copy(Blocks.OAK_SLAB), "orange_slab", ORANGE_PLANKS.getDefaultState()));
+    public static final Block PLUM_SLAB = registerBlock("plum_slab", new PolySlabBlock(Block.Settings.copy(Blocks.OAK_SLAB), "plum_slab", PLUM_PLANKS.getDefaultState()));
+    public static final Block KIWI_SLAB = registerBlock("kiwi_slab", new PolySlabBlock(Block.Settings.copy(Blocks.OAK_SLAB), "kiwi_slab", KIWI_PLANKS.getDefaultState()));
+
+    public static final BlockItem APRICOT_SLAB_ITEM = registerBlockItem("apricot_slab", new TexturedPolyBlockItem(APRICOT_SLAB, new Item.Settings(), "block/apricot_slab"));
+    public static final BlockItem PEAR_SLAB_ITEM = registerBlockItem("pear_slab", new TexturedPolyBlockItem(PEAR_SLAB, new Item.Settings(), "block/pear_slab"));
+    public static final BlockItem ORANGE_SLAB_ITEM = registerBlockItem("orange_slab", new TexturedPolyBlockItem(ORANGE_SLAB, new Item.Settings(), "block/orange_slab"));
+    public static final BlockItem PLUM_SLAB_ITEM = registerBlockItem("plum_slab", new TexturedPolyBlockItem(PLUM_SLAB, new Item.Settings(), "block/plum_slab"));
+    public static final BlockItem KIWI_SLAB_ITEM = registerBlockItem("kiwi_slab", new TexturedPolyBlockItem(KIWI_SLAB, new Item.Settings(), "block/kiwi_slab"));
+
+    public static final Block STRAWBERRY = registerBlock("strawberry_crop", new StrawberryCrop(Block.Settings.copy(Blocks.WHEAT)));
+    public static final Block EGGPLANT = registerBlock("eggplant_crop", new EggplantCrop(Block.Settings.copy(Blocks.WHEAT)));
 
     public static void registerBlocks() {
         ItemGroup.Builder builder = PolymerItemGroupUtils.builder();
-        builder.icon(() -> new ItemStack(ModBlocks.APRICOT_CRATE_ITEM, 1));
+        builder.icon(() -> new ItemStack(ModBlocks.ORANGE_CRATE_ITEM, 1));
         builder.displayName(Text.translatable("item-group.borukva-food-exotic.blocks"));
 
         builder.entries((displayContext, entries) -> {
@@ -135,6 +153,7 @@ public class ModBlocks {
             entries.add(ORANGE_CRATE);
             entries.add(KIWI_CRATE);
             entries.add(PLUM_CRATE);
+            entries.add(EGGPLANT_CRATE);
 
             entries.add(APRICOT_LOG);
             entries.add(APRICOT_WOOD);
@@ -182,6 +201,13 @@ public class ModBlocks {
             entries.add(ORANGE_SAPLING_ITEM);
             entries.add(KIWI_SAPLING_ITEM);
             entries.add(PLUM_SAPLING_ITEM);
+
+            entries.add(APRICOT_SLAB_ITEM);
+            entries.add(PEAR_SLAB_ITEM);
+            entries.add(ORANGE_SLAB_ITEM);
+            entries.add(PLUM_SLAB_ITEM);
+            entries.add(KIWI_SLAB_ITEM);
+
         });
         ItemGroup polymerGroup = builder.build();
         PolymerItemGroupUtils.registerPolymerItemGroup(Identifier.of(MOD_ID, "blocks"), polymerGroup);
