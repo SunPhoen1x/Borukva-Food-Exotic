@@ -12,6 +12,8 @@ base {
 
 repositories {
 	maven { url 'https://maven.nucleoid.xyz' }
+	//maven { url 'https://api.modrinth.com/maven/'}
+	//maven { url 'https://jitpack.io' }
 }
 
 fabricApi {
@@ -24,16 +26,21 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
+	include(modImplementation("me.lucko:fabric-permissions-api:${fabric_permissions_api}"))
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	//modImplementation ("maven.modrinth:borukva-food:[${borukva_food_version}]")
 
 	modImplementation ("eu.pb4:polymer-core:[${polymer_version}]")
 	modImplementation ("eu.pb4:polymer-blocks:[${polymer_version}]")
 	modImplementation ("eu.pb4:polymer-resource-pack:[${polymer_version}]")
 	modImplementation ("eu.pb4:polymer-virtual-entity:[${polymer_version}]")
 	modImplementation ("eu.pb4:polymer-autohost:${polymer_version}")
-
+	modImplementation include ("eu.pb4:sgui:[${sgui_version}]")
 	modImplementation include ("eu.pb4:factorytools:[${factorytools_version}]")
+
+	//implementation 'com.github.MykhailoOpryshok:Borukva-Food:commit/5f32abb196b950ef688cab793ea0126fdc741a73'
+
 }
 
 processResources {

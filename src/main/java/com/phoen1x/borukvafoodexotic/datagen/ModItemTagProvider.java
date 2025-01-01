@@ -22,7 +22,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.PLANT_FOOD)
                 .add(ModItems.APRICOT)
                 .add(ModItems.PEAR)
-                .add(ModItems.ORANGE);
+                .add(ModItems.ORANGE)
+                .add(ModItems.KIWI)
+                .add(ModItems.PLUM);
 
         getOrCreateTagBuilder(ModTags.Items.APRICOT_LOGS)
                 .add(APRICOT_LOG_ITEM)
@@ -42,15 +44,31 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(STRIPPED_PEAR_LOG_ITEM)
                 .add(STRIPPED_PEAR_WOOD_ITEM);
 
+        getOrCreateTagBuilder(ModTags.Items.KIWI_LOGS)
+                .add(KIWI_LOG_ITEM)
+                .add(KIWI_WOOD_ITEM)
+                .add(STRIPPED_KIWI_LOG_ITEM)
+                .add(STRIPPED_KIWI_WOOD_ITEM);
+
+        getOrCreateTagBuilder(ModTags.Items.PLUM_LOGS)
+                .add(PLUM_LOG_ITEM)
+                .add(PLUM_WOOD_ITEM)
+                .add(STRIPPED_PLUM_LOG_ITEM)
+                .add(STRIPPED_PLUM_WOOD_ITEM);
+
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
                 .forceAddTag(ModTags.Items.APRICOT_LOGS)
                 .forceAddTag(ModTags.Items.ORANGE_LOGS)
-                .forceAddTag(ModTags.Items.PEAR_LOGS);
+                .forceAddTag(ModTags.Items.PEAR_LOGS)
+                .forceAddTag(ModTags.Items.KIWI_LOGS)
+                .forceAddTag(ModTags.Items.PLUM_LOGS);
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(APRICOT_PLANKS_ITEM)
                 .add(ORANGE_PLANKS_ITEM)
-                .add(PEAR_PLANKS_ITEM);
+                .add(PEAR_PLANKS_ITEM)
+                .add(KIWI_PLANKS_ITEM)
+                .add(PLUM_PLANKS_ITEM);
 
         getOrCreateTagBuilder(ItemTags.LEAVES)
                 .add(APRICOT_LEAVES_ITEM)
@@ -60,12 +78,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ORANGE_FRUIT_LEAVE_ITEM)
 
                 .add(PEAR_LEAVES_ITEM)
-                .add(PEAR_FRUIT_LEAVE_ITEM);
+                .add(PEAR_FRUIT_LEAVE_ITEM)
+
+                .add(KIWI_LEAVES_ITEM)
+                .add(KIWI_FRUIT_LEAVE_ITEM)
+
+                .add(PLUM_LEAVES_ITEM)
+                .add(PLUM_FRUIT_LEAVE_ITEM);
 
         getOrCreateTagBuilder(ItemTags.SAPLINGS)
                 .add(APRICOT_SAPLING_ITEM)
                 .add(PEAR_SAPLING_ITEM)
-                .add(ORANGE_SAPLING_ITEM);
-
+                .add(ORANGE_SAPLING_ITEM)
+                .add(KIWI_SAPLING_ITEM)
+                .add(PLUM_SAPLING_ITEM);
     }
 }

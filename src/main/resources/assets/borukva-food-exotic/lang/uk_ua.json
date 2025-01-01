@@ -2,12 +2,16 @@
   "item.borukva-food-exotic.apricot": "Абрикос",
   "item.borukva-food-exotic.pear": "Груша",
   "item.borukva-food-exotic.orange": "Апельсин",
-  "item-group.borukva-food-exotic.items": "Borukva Food Exotic: Фрукти",
+  "item.borukva-food-exotic.plum": "Слива",
+  "item.borukva-food-exotic.kiwi": "Ківі",
+  "item.borukva-food-exotic.banana": "Банан",
+  "item-group.borukva-food-exotic.items": "Borukva Food Exotic: Фрукти та їжа",
   "item-group.borukva-food-exotic.blocks": "Borukva Food Exotic: Блоки",
 
   "block.borukva-food-exotic.apricot_crate": "Ящик абрикосів",
   "block.borukva-food-exotic.pear_crate": "Ящик груш",
   "block.borukva-food-exotic.orange_crate": "Ящик апельсинів",
+  "block.borukva-food-exotic.kiwi_crate": "Ящик слив",
 
   "block.borukva-food-exotic.apricot_log": "Абрикосова колода",
   "block.borukva-food-exotic.apricot_wood": "Абрикосова деревина",
@@ -30,13 +34,26 @@
   "block.borukva-food-exotic.orange_leaves": "Апельсинове листя",
   "block.borukva-food-exotic.orange_planks": "Апельсинові дошки",
 
+  "block.borukva-food-exotic.kiwi_log": "Колода ківі",
+  "block.borukva-food-exotic.kiwi_wood": "Деревина ківі",
+  "block.borukva-food-exotic.stripped_kiwi_log": "Обтесана колода ківі",
+  "block.borukva-food-exotic.stripped_kiwi_wood": "Обтесана деревина ківі",
+  "block.borukva-food-exotic.kiwi_leaves": "Листя ківі",
+  "block.borukva-food-exotic.kiwi_planks": "Дошки ківі",
+
   "block.borukva-food-exotic.apricot_sapling": "Паросток абрикосу",
   "block.borukva-food-exotic.pear_sapling": "Паросток груші",
   "block.borukva-food-exotic.orange_sapling": "Паросток апельсину",
+  "block.borukva-food-exotic.kiwi_sapling": "Паросток Ківі",
 
   "block.borukva-food-exotic.apricot_fruit_leaves": "Абрикосове плодородне листя",
   "block.borukva-food-exotic.pear_fruit_leaves": "Грушеве плодородне листя",
   "block.borukva-food-exotic.orange_fruit_leaves": "Апельсинове плодородне листя",
+  "block.borukva-food-exotic.kiwi_fruit_leaves": "Плодородне листя ківі",
 
-  "item.borukva-food-exotic.apricot_jam": "Абрикосовий джем"
+  "item.borukva-food-exotic.apricot_jam": "Абрикосове варення",
+  "item.borukva-food-exotic.pear_jam": "Грушеве варення",
+
+  "item.borukva-food-exotic.apricot_pie": "Абрикосовий пиріг",
+  "item.borukva-food-exotic.pear_pie": "Грушевий пиріг"
 }

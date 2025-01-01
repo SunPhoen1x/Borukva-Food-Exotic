@@ -45,6 +45,12 @@ public class BorukvaFoodExoticUtil {
         addStripped(ModBlocks.PEAR_LOG, ModBlocks.STRIPPED_PEAR_LOG);
         addStripped(ModBlocks.PEAR_WOOD, ModBlocks.STRIPPED_PEAR_WOOD);
 
+        addStripped(ModBlocks.KIWI_LOG, ModBlocks.STRIPPED_KIWI_LOG);
+        addStripped(ModBlocks.KIWI_WOOD, ModBlocks.STRIPPED_KIWI_WOOD);
+
+        addStripped(ModBlocks.PLUM_LOG, ModBlocks.STRIPPED_PLUM_LOG);
+        addStripped(ModBlocks.PLUM_WOOD, ModBlocks.STRIPPED_PLUM_WOOD);
+
         addFlammable(ModBlocks.APRICOT_LOG, 5, 5);
         addFlammable(ModBlocks.APRICOT_WOOD, 5, 5);
         addFlammable(ModBlocks.STRIPPED_APRICOT_LOG, 5, 5);
@@ -65,6 +71,20 @@ public class BorukvaFoodExoticUtil {
         addFlammable(ModBlocks.STRIPPED_ORANGE_WOOD, 5, 5);
         addFlammable(ModBlocks.ORANGE_PLANKS, 5, 20);
         addFlammable(ModBlocks.ORANGE_LEAVES, 30, 60);
+
+        addFlammable(ModBlocks.KIWI_LOG, 5, 5);
+        addFlammable(ModBlocks.KIWI_WOOD, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_KIWI_LOG, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_KIWI_WOOD, 5, 5);
+        addFlammable(ModBlocks.KIWI_PLANKS, 5, 20);
+        addFlammable(ModBlocks.KIWI_LEAVES, 30, 60);
+
+        addFlammable(ModBlocks.PLUM_LOG, 5, 5);
+        addFlammable(ModBlocks.PLUM_WOOD, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_PLUM_LOG, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_PLUM_WOOD, 5, 5);
+        addFlammable(ModBlocks.PLUM_PLANKS, 5, 20);
+        addFlammable(ModBlocks.PLUM_LEAVES, 30, 60);
     }
     private static void addFlammable(Block block, int burn, int spread){
         FlammableBlockRegistry.getDefaultInstance().add(block, burn, spread);

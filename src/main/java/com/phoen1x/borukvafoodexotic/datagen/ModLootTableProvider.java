@@ -25,6 +25,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(APRICOT_SAPLING);
         addDrop(PEAR_SAPLING);
         addDrop(ORANGE_SAPLING);
+        addDrop(KIWI_SAPLING);
 
         addDrop(APRICOT_LOG);
         addDrop(APRICOT_WOOD);
@@ -49,6 +50,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(PEAR_PLANKS);
         addDrop(PEAR_LEAVES, leavesDrops(PEAR_LEAVES, PEAR_SAPLING, 0.05f, 0.0625f, 0.083333336f, 0.1f));
         addDrop(PEAR_FRUIT_LEAVES, fruitLeavesDrop(PEAR_FRUIT_LEAVES, PEAR_SAPLING, ModItems.PEAR, 0.05f, 0.0625f, 0.083333336f, 0.1f));
+
+        addDrop(KIWI_LOG);
+        addDrop(KIWI_WOOD);
+        addDrop(STRIPPED_KIWI_LOG);
+        addDrop(STRIPPED_KIWI_WOOD);
+        addDrop(KIWI_PLANKS);
+        addDrop(KIWI_LEAVES, leavesDrops(KIWI_LEAVES, KIWI_SAPLING, 0.05f, 0.0625f, 0.083333336f, 0.1f));
+        addDrop(KIWI_FRUIT_LEAVES, fruitLeavesDrop(KIWI_FRUIT_LEAVES, KIWI_SAPLING, ModItems.KIWI, 0.05f, 0.0625f, 0.083333336f, 0.1f));
 
     }
 

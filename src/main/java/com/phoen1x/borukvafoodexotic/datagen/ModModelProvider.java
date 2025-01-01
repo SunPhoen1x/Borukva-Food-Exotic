@@ -19,6 +19,8 @@ public class ModModelProvider extends FabricModelProvider{
         generateCrate(blockStateModelGenerator, ModBlocks.APRICOT_CRATE, "apricot_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.PEAR_CRATE, "pear_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.ORANGE_CRATE, "orange_crate");
+        generateCrate(blockStateModelGenerator, ModBlocks.KIWI_CRATE, "kiwi_crate");
+        generateCrate(blockStateModelGenerator, ModBlocks.PLUM_CRATE, "plum_crate");
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.APRICOT_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.APRICOT_LOG).log(ModBlocks.APRICOT_LOG).wood(ModBlocks.APRICOT_WOOD);
@@ -38,9 +40,23 @@ public class ModModelProvider extends FabricModelProvider{
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PEAR_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PEAR_FRUIT_LEAVES);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KIWI_LEAVES);
+        blockStateModelGenerator.registerLog(ModBlocks.KIWI_LOG).log(ModBlocks.KIWI_LOG).wood(ModBlocks.KIWI_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_KIWI_LOG).log(ModBlocks.STRIPPED_KIWI_LOG).wood(ModBlocks.STRIPPED_KIWI_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KIWI_PLANKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KIWI_FRUIT_LEAVES);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLUM_LEAVES);
+        blockStateModelGenerator.registerLog(ModBlocks.PLUM_LOG).log(ModBlocks.PLUM_LOG).wood(ModBlocks.PLUM_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PLUM_LOG).log(ModBlocks.STRIPPED_PLUM_LOG).wood(ModBlocks.STRIPPED_PLUM_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLUM_PLANKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLUM_FRUIT_LEAVES);
+
         blockStateModelGenerator.registerTintableCross(ModBlocks.APRICOT_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.PEAR_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.ORANGE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.KIWI_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.PLUM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
@@ -48,8 +64,19 @@ public class ModModelProvider extends FabricModelProvider{
         itemModelGenerator.register(ModItems.APRICOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.KIWI, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BANANA, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.APRICOT_JAM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PEAR_JAM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLUM_JAM, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.PEAR_PIE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.APRICOT_PIE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLUM_PIE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.APRICOT_PIE_SLICE, Models.GENERATED);
     }
 
     public void generateCrate(BlockStateModelGenerator generator, Block generatedBlock, String path){
