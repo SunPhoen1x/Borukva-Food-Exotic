@@ -1,4 +1,4 @@
-// 1.21	2025-01-01T20:58:26.4971488	Borukva Food Exotic/Model Definitions
+// 1.21	2025-01-01T21:37:31.9747991	Borukva Food Exotic/Model Definitions
 711e36f107f30fbc893b4ed4f36599ffde9775ea assets\borukva-food-exotic\models\block\orange_log.json
 976b5cbf41f4d8b72a7d1d8ee36b0c8b629ff8d8 assets\borukva-food-exotic\models\block\apricot_slab.json
 030099ab342735f25e10c5ed6f34a90305134bcc assets\borukva-food-exotic\models\block\stripped_kiwi_log_horizontal.json
@@ -21,17 +21,21 @@ e77d3b586c8e2f6a6b75a11473d39b1c4ca07603 assets\borukva-food-exotic\models\block
 c1c5e6ca78a47f59fc3b867e04755e9cf3b7b347 assets\borukva-food-exotic\blockstates\apricot_leaves.json
 1a3393bebfa3e6739dbe0d6f9f9a17c74c9ba1c1 assets\borukva-food-exotic\models\item\apricot_fruit_leaves.json
 54a5a1f52b6cc5d2663155d29ef8bd8ed17ff202 assets\borukva-food-exotic\models\block\plum_leaves.json
+7961e284e5b46b3cfbbec580b00088f943bdb856 assets\borukva-food-exotic\blockstates\tropical_fish_crate.json
 1c03b8cfc692c3250839d15bd2cb5b948cb50dca assets\borukva-food-exotic\models\item\pear_fruit_leaves.json
+56286e3f4dbcc97b06636241542e6179e3ff2639 assets\borukva-food-exotic\models\block\cod_crate.json
 e122a3434e4faf391c807c1840b97cb132fb4a25 assets\borukva-food-exotic\models\block\kiwi_slab.json
 640b11b0b7ded89a8cf68c8ecc9ac8ba7ac36be7 assets\borukva-food-exotic\models\item\stripped_apricot_log.json
 57fefa8a6c14bc8a2ff57755a89b4ae01cafd39d assets\borukva-food-exotic\models\item\kiwi_log.json
 d4e413d5c27b20d48e46faef6645dcf0b85fef45 assets\borukva-food-exotic\models\block\orange_slab.json
+ec7464f86831da1c23b88f204543ab7779d2fd2b assets\borukva-food-exotic\models\block\tropical_fish_crate.json
 2bc2df168d575efd227f8fd8e6c1aaf2ab647f99 assets\borukva-food-exotic\models\item\eggplant.json
 bb1394d2349429866c7379466a661f3ad61f3d0d assets\borukva-food-exotic\models\item\kiwi.json
 fd6b5e0efe7011d4c931a9d60e65b2173d4fffe6 assets\borukva-food-exotic\models\item\stripped_plum_log.json
 76581d006c66bbfdf97bfd7d23284f8a8f5599cf assets\borukva-food-exotic\models\block\eggplant_crop_stage2.json
 cf172f773d08cd948dc91df15cb3bf86318892d5 assets\borukva-food-exotic\models\item\stripped_apricot_wood.json
 6ddbdfec4d6936b174a9b2292aaa14f70a1879c2 assets\borukva-food-exotic\models\block\pear_wood.json
+b175e29fb8a289f6847b55e6d9f3cf22b4abaca6 assets\borukva-food-exotic\blockstates\cod_crate.json
 0487f9d5270bae28ddde13f4153d26c22f7872b3 assets\borukva-food-exotic\blockstates\plum_crate.json
 e1a2ffce6398ff214ea2e03585ca0199e5ebf8be assets\borukva-food-exotic\models\item\orange_sapling.json
 4292efeff395fccd1c362e084b7d3ef93c32c45e assets\borukva-food-exotic\blockstates\stripped_orange_wood.json
@@ -51,6 +55,7 @@ c291a11d7dcc19a533c115ae0ec95795c18adde9 assets\borukva-food-exotic\models\item\
 e07e2ec4df36ea2753b4ad69ca77e6702cbab4de assets\borukva-food-exotic\models\item\orange_log.json
 3e2fd71166c3e47e805d96daabc66fe6c6c1364c assets\borukva-food-exotic\models\block\plum_planks.json
 f02e927935529e0389115b2d8aff4d1ef0c695f5 assets\borukva-food-exotic\blockstates\pear_slab.json
+b8eb5b4dcb3304e16cbf901e2ad706621d47cdcd assets\borukva-food-exotic\blockstates\salmon_crate.json
 e690b48c249f42700d74d041e83c7fa2ffa73e78 assets\borukva-food-exotic\models\block\pear_sapling.json
 0ed08e354d9871106e0372a658aab18cbd1fe0e2 assets\borukva-food-exotic\models\item\stripped_pear_log.json
 89b8f83b78ba5b3ef1cf50b103cb4c7abd05fdd5 assets\borukva-food-exotic\blockstates\pear_leaves.json
@@ -74,6 +79,8 @@ c76665fdc96f580e3ff4298ed09081a82f128267 assets\borukva-food-exotic\models\item\
 1bd39d7072bb3b08712b498d4555853dd653697c assets\borukva-food-exotic\models\block\apricot_fruit_leaves.json
 ee83b361dad11614127c7301071afea98bd8c4a7 assets\borukva-food-exotic\models\item\orange_crate.json
 d7e6713a70a52be5e8d1c7c367f79fdf27a67fed assets\borukva-food-exotic\models\item\pear_planks.json
+3a20852948db5cd2cc5f2b50bb4c5b7823355897 assets\borukva-food-exotic\models\block\salmon_crate.json
+fd36c49ffbdd01afd2747e69c84ca1f760727f7a assets\borukva-food-exotic\models\item\cod_crate.json
 57fbdbcfe1f2d448163f8463c36edd8aff3a6641 assets\borukva-food-exotic\models\item\stripped_pear_wood.json
 dbcdf563ea7b1e0a6a8121eacc5331405e763126 assets\borukva-food-exotic\blockstates\stripped_pear_log.json
 8da8a55d133a26c4a34d1eb1cbecd02065ff311c assets\borukva-food-exotic\blockstates\eggplant_crate.json
@@ -146,6 +153,7 @@ b828f039419fbf1f6a1baab8115d95707175997f assets\borukva-food-exotic\models\item\
 b3ae02b0d72c8d86c3992de4c292ba134191da33 assets\borukva-food-exotic\blockstates\apricot_wood.json
 6c41df074db89faacb7dab6b87cd4c49a0a49e2f assets\borukva-food-exotic\models\item\apricot_pie_slice.json
 2699a142fdbd4c999ccba9f8367caff661d0a3a3 assets\borukva-food-exotic\models\item\apricot_slab.json
+a5a92d1b0b31dedf1ca3f83d5c7cca3564f0c411 assets\borukva-food-exotic\models\item\tropical_fish_crate.json
 7243591e7ff59bb6659b08e5c74ecb49a9630701 assets\borukva-food-exotic\models\block\orange_log_horizontal.json
 57ec76397bbc68b3e6366ce49992196ac17d8344 assets\borukva-food-exotic\blockstates\plum_planks.json
 c4c68c624b378093a7d4395cf0702ed335290d04 assets\borukva-food-exotic\models\block\kiwi_crate.json
@@ -157,6 +165,7 @@ f128dc7f27d87123b1e513acaec756a2aaf66543 assets\borukva-food-exotic\models\block
 84cc3a9999fa3b74c495939b06abef52c9f7aff9 assets\borukva-food-exotic\blockstates\apricot_fruit_leaves.json
 73b8b7319aebb3bc88804c0b10ec27461b4c62b4 assets\borukva-food-exotic\models\item\orange_wood.json
 c9663d9cfe857d7d0a4ea2b4bc79b9c3f5eb8461 assets\borukva-food-exotic\blockstates\plum_leaves.json
+8f5f5639fdb5d6e6ab718f812bdef140fb62b445 assets\borukva-food-exotic\models\item\salmon_crate.json
 2e6ea28f49ed8d0d1fcb363d1b1f7bf89661eea9 assets\borukva-food-exotic\blockstates\eggplant_crop.json
 82815d137f1db8334fdc260d19fbcf43560c6fcc assets\borukva-food-exotic\models\block\pear_slab_top.json
 a98e6bde08359afafa86c6eb585958cab3df8d18 assets\borukva-food-exotic\models\item\stripped_kiwi_wood.json
@@ -165,8 +174,8 @@ a98e6bde08359afafa86c6eb585958cab3df8d18 assets\borukva-food-exotic\models\item\
 483b5651cdbfde3c53d34855350a4fac43ab2d2a assets\borukva-food-exotic\blockstates\kiwi_wood.json
 f5e67c90877b268e278bc40b2c14523a1d901841 assets\borukva-food-exotic\blockstates\stripped_orange_log.json
 31811c2d871d139d35060c5525f280334c821b32 assets\borukva-food-exotic\blockstates\orange_crate.json
-18b472a6be2e2247cf84c42aa0a0ec27621a714a assets\borukva-food-exotic\blockstates\pear_sapling.json
 24c6e6df8d44d23bde4f49106a72bb918b631e11 assets\borukva-food-exotic\blockstates\stripped_kiwi_log.json
+18b472a6be2e2247cf84c42aa0a0ec27621a714a assets\borukva-food-exotic\blockstates\pear_sapling.json
 7382015e87f7b37f906f0aacbe034470dcd13926 assets\borukva-food-exotic\models\item\apricot_planks.json
 84e4b5188c7de3cacf9cfaf70041f351057f8196 assets\borukva-food-exotic\blockstates\stripped_kiwi_wood.json
 f514205ea8de17364a4cf1798823880873e5daa5 assets\borukva-food-exotic\models\item\plum_planks.json

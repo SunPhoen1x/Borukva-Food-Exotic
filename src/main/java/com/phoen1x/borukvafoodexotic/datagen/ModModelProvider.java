@@ -28,6 +28,9 @@ public class ModModelProvider extends FabricModelProvider{
         generateCrate(blockStateModelGenerator, ModBlocks.KIWI_CRATE, "kiwi_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.PLUM_CRATE, "plum_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.EGGPLANT_CRATE, "eggplant_crate");
+        generateCrate(blockStateModelGenerator, ModBlocks.COD_CRATE, "cod_crate");
+        generateCrate(blockStateModelGenerator, ModBlocks.SALMON_CRATE, "salmon_crate");
+        generateCrate(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_CRATE, "tropical_fish_crate");
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.APRICOT_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.APRICOT_LOG).log(ModBlocks.APRICOT_LOG).wood(ModBlocks.APRICOT_WOOD);

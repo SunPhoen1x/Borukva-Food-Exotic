@@ -26,6 +26,9 @@ public class ModBlocks {
     public static final Block KIWI_CRATE = registerBlock("kiwi_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "kiwi_crate"));
     public static final Block PLUM_CRATE = registerBlock("plum_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "plum_crate"));
     public static final Block EGGPLANT_CRATE = registerBlock("eggplant_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "eggplant_crate"));
+    public static final Block COD_CRATE = registerBlock("cod_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "cod_crate"));
+    public static final Block SALMON_CRATE = registerBlock("salmon_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "salmon_crate"));
+    public static final Block TROPICAL_FISH_CRATE = registerBlock("tropical_fish_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "tropical_fish_crate"));
 
     public static final BlockItem APRICOT_CRATE_ITEM = registerBlockItem("apricot_crate", new TexturedPolyBlockItem(APRICOT_CRATE, new Item.Settings(), "block/apricot_crate"));
     public static final BlockItem PEAR_CRATE_ITEM = registerBlockItem("pear_crate", new TexturedPolyBlockItem(PEAR_CRATE, new Item.Settings(), "block/pear_crate"));
@@ -33,6 +36,9 @@ public class ModBlocks {
     public static final BlockItem KIWI_CRATE_ITEM = registerBlockItem("kiwi_crate", new TexturedPolyBlockItem(KIWI_CRATE, new Item.Settings(), "block/kiwi_crate"));
     public static final BlockItem PLUM_CRATE_ITEM = registerBlockItem("plum_crate", new TexturedPolyBlockItem(PLUM_CRATE, new Item.Settings(), "block/plum_crate"));
     public static final BlockItem EGGPLANT_CRATE_ITEM = registerBlockItem("eggplant_crate", new TexturedPolyBlockItem(EGGPLANT_CRATE, new Item.Settings(), "block/eggplant_crate"));
+    public static final BlockItem COD_CRATE_ITEM = registerBlockItem("cod_crate", new TexturedPolyBlockItem(COD_CRATE, new Item.Settings(), "block/cod_crate"));
+    public static final BlockItem SALMON_CRATE_ITEM = registerBlockItem("salmon_crate", new TexturedPolyBlockItem(SALMON_CRATE, new Item.Settings(), "block/salmon_crate"));
+    public static final BlockItem TROPICAL_FISH_CRATE_ITEM = registerBlockItem("tropical_fish_crate", new TexturedPolyBlockItem(TROPICAL_FISH_CRATE, new Item.Settings(), "block/tropical_fish_crate"));
 
     public static final Block APRICOT_LOG = registerBlock("apricot_log", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_LOG)));
     public static final Block APRICOT_WOOD = registerBlock("apricot_wood", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_WOOD)));
@@ -154,6 +160,9 @@ public class ModBlocks {
             entries.add(KIWI_CRATE);
             entries.add(PLUM_CRATE);
             entries.add(EGGPLANT_CRATE);
+            entries.add(COD_CRATE);
+            entries.add(SALMON_CRATE);
+            entries.add(TROPICAL_FISH_CRATE);
 
             entries.add(APRICOT_LOG);
             entries.add(APRICOT_WOOD);

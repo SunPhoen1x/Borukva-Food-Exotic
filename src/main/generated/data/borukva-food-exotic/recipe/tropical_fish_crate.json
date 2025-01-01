@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:tropical_fish"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:tropical_fish_crate"
+  }
+}
