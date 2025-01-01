@@ -84,11 +84,14 @@
 
   "item.borukva-food-exotic.apricot_pie_slice": "Шматочок абрикосового пирога",
 
-
   "item.borukva-food-exotic.strawberry": "Полуниця",
   "item.borukva-food-exotic.strawberry_seeds": "Насіння полуниці",
 
   "item.borukva-food-exotic.eggplant": "Баклажан",
   "item.borukva-food-exotic.eggplant_seeds": "Насіння баклажану",
-  "item.borukva-food-exotic.eggplant_crate": "Ящик баклажанів"
+  "item.borukva-food-exotic.eggplant_crate": "Ящик баклажанів",
+
+  "item.borukva-food-exotic.pepper": "Жовтий перець",
+  "item.borukva-food-exotic.pepper_seeds": "Насіння жовтого перцю",
+  "item.borukva-food-exotic.pepper_crate": "Ящик жовтого перцю"
 }

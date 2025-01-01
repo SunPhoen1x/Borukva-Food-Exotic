@@ -32,6 +32,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addCropDrop(STRAWBERRY, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS);
         addCropDrop(EGGPLANT, ModItems.EGGPLANT, ModItems.EGGPLANT_SEEDS);
+        addCropDrop(PEPPER, ModItems.PEPPER, ModItems.PEPPER_SEEDS);
 
         addDrop(APRICOT_SAPLING);
         addDrop(PEAR_SAPLING);
@@ -79,6 +80,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(PLUM_LEAVES, leavesDrops(PLUM_LEAVES, PLUM_SAPLING, 0.05f, 0.0625f, 0.083333336f, 0.1f));
         addDrop(PLUM_FRUIT_LEAVES, fruitLeavesDrop(PLUM_FRUIT_LEAVES, PLUM_SAPLING, ModItems.PLUM, 0.05f, 0.0625f, 0.083333336f, 0.1f));
 
+        addDrop(APRICOT_CRATE);
+        addDrop(PEAR_CRATE);
+        addDrop(ORANGE_CRATE);
+        addDrop(KIWI_CRATE);
+        addDrop(PLUM_CRATE);
+        addDrop(COD_CRATE);
+        addDrop(TROPICAL_FISH_CRATE);
+        addDrop(SALMON_CRATE);
+        addDrop(PEPPER_CRATE);
     }
     private void addCropDrop(Block cropBlock, Item cropItem, Item seedItem) {
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(cropBlock)

@@ -24,7 +24,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ORANGE_CRATE)
                 .add(KIWI_CRATE)
                 .add(PLUM_CRATE)
-                .add(EGGPLANT_CRATE);
+                .add(EGGPLANT_CRATE)
+                .add(COD_CRATE)
+                .add(SALMON_CRATE)
+                .add(TROPICAL_FISH_CRATE)
+                .add(PEPPER_CRATE);
 
         getOrCreateTagBuilder(ModTags.Blocks.APRICOT_LOGS)
                 .add(APRICOT_LOG)

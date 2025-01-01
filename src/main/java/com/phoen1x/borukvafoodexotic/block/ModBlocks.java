@@ -2,6 +2,7 @@ package com.phoen1x.borukvafoodexotic.block;
 
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.block.crops.EggplantCrop;
+import com.phoen1x.borukvafoodexotic.block.crops.PepperCrop;
 import com.phoen1x.borukvafoodexotic.block.crops.StrawberryCrop;
 import com.phoen1x.borukvafoodexotic.block.leaves.*;
 import com.phoen1x.borukvafoodexotic.world.tree.ModSaplingGenerator;
@@ -29,6 +30,7 @@ public class ModBlocks {
     public static final Block COD_CRATE = registerBlock("cod_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "cod_crate"));
     public static final Block SALMON_CRATE = registerBlock("salmon_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "salmon_crate"));
     public static final Block TROPICAL_FISH_CRATE = registerBlock("tropical_fish_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "tropical_fish_crate"));
+    public static final Block PEPPER_CRATE = registerBlock("pepper_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "pepper_crate"));
 
     public static final BlockItem APRICOT_CRATE_ITEM = registerBlockItem("apricot_crate", new TexturedPolyBlockItem(APRICOT_CRATE, new Item.Settings(), "block/apricot_crate"));
     public static final BlockItem PEAR_CRATE_ITEM = registerBlockItem("pear_crate", new TexturedPolyBlockItem(PEAR_CRATE, new Item.Settings(), "block/pear_crate"));
@@ -39,6 +41,7 @@ public class ModBlocks {
     public static final BlockItem COD_CRATE_ITEM = registerBlockItem("cod_crate", new TexturedPolyBlockItem(COD_CRATE, new Item.Settings(), "block/cod_crate"));
     public static final BlockItem SALMON_CRATE_ITEM = registerBlockItem("salmon_crate", new TexturedPolyBlockItem(SALMON_CRATE, new Item.Settings(), "block/salmon_crate"));
     public static final BlockItem TROPICAL_FISH_CRATE_ITEM = registerBlockItem("tropical_fish_crate", new TexturedPolyBlockItem(TROPICAL_FISH_CRATE, new Item.Settings(), "block/tropical_fish_crate"));
+    public static final BlockItem PEPPER_CRATE_ITEM = registerBlockItem("pepper_crate", new TexturedPolyBlockItem(PEPPER_CRATE, new Item.Settings(), "block/pepper_crate"));
 
     public static final Block APRICOT_LOG = registerBlock("apricot_log", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_LOG)));
     public static final Block APRICOT_WOOD = registerBlock("apricot_wood", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_WOOD)));
@@ -147,6 +150,7 @@ public class ModBlocks {
 
     public static final Block STRAWBERRY = registerBlock("strawberry_crop", new StrawberryCrop(Block.Settings.copy(Blocks.WHEAT)));
     public static final Block EGGPLANT = registerBlock("eggplant_crop", new EggplantCrop(Block.Settings.copy(Blocks.WHEAT)));
+    public static final Block PEPPER = registerBlock("pepper_crop", new PepperCrop(Block.Settings.copy(Blocks.WHEAT)));
 
     public static void registerBlocks() {
         ItemGroup.Builder builder = PolymerItemGroupUtils.builder();
@@ -163,6 +167,7 @@ public class ModBlocks {
             entries.add(COD_CRATE);
             entries.add(SALMON_CRATE);
             entries.add(TROPICAL_FISH_CRATE);
+            entries.add(PEPPER_CRATE);
 
             entries.add(APRICOT_LOG);
             entries.add(APRICOT_WOOD);

@@ -4,14 +4,8 @@ import net.minecraft.component.type.FoodComponent;
 
 public class ModFoodComponents {
 
-    public static final FoodComponent APRICOT = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).build();
-    public static final FoodComponent PEAR = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).build();
-    public static final FoodComponent ORANGE = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).build();
-    public static final FoodComponent PLUM = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).build();
-    public static final FoodComponent KIWI = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).build();
-    public static final FoodComponent BANANA = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).build();
-    public static final FoodComponent STRAWBERRY = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).build();
-    public static final FoodComponent EGGPLANT = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).build();
+    public static final FoodComponent FRUIT = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).build();
+    public static final FoodComponent VEGETABLE = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).build();
 
     public static final FoodComponent FRUIT_PIE = new FoodComponent.Builder().nutrition(7).saturationModifier(0.3f).build();
 

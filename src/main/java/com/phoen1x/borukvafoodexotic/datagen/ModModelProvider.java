@@ -3,6 +3,7 @@ package com.phoen1x.borukvafoodexotic.datagen;
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.block.ModBlocks;
 import com.phoen1x.borukvafoodexotic.block.crops.EggplantCrop;
+import com.phoen1x.borukvafoodexotic.block.crops.PepperCrop;
 import com.phoen1x.borukvafoodexotic.block.crops.StrawberryCrop;
 import com.phoen1x.borukvafoodexotic.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -21,6 +22,7 @@ public class ModModelProvider extends FabricModelProvider{
 
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.STRAWBERRY, BlockStateModelGenerator.TintType.NOT_TINTED, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.EGGPLANT, BlockStateModelGenerator.TintType.NOT_TINTED, EggplantCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.PEPPER, BlockStateModelGenerator.TintType.NOT_TINTED, PepperCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
 
         generateCrate(blockStateModelGenerator, ModBlocks.APRICOT_CRATE, "apricot_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.PEAR_CRATE, "pear_crate");
@@ -31,6 +33,7 @@ public class ModModelProvider extends FabricModelProvider{
         generateCrate(blockStateModelGenerator, ModBlocks.COD_CRATE, "cod_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.SALMON_CRATE, "salmon_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_CRATE, "tropical_fish_crate");
+        generateCrate(blockStateModelGenerator, ModBlocks.PEPPER_CRATE, "pepper_crate");
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.APRICOT_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.APRICOT_LOG).log(ModBlocks.APRICOT_LOG).wood(ModBlocks.APRICOT_WOOD);
@@ -90,6 +93,7 @@ public class ModModelProvider extends FabricModelProvider{
 
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.EGGPLANT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PEPPER, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.APRICOT_JAM, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEAR_JAM, Models.GENERATED);

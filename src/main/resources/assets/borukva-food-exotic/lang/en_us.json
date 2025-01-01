@@ -88,5 +88,9 @@
 
   "item.borukva-food-exotic.eggplant": "Eggplant",
   "item.borukva-food-exotic.eggplant_seeds": "Eggplant Seeds",
-  "item.borukva-food-exotic.eggplant_crate": "Eggplant Crate"
+  "item.borukva-food-exotic.eggplant_crate": "Eggplant Crate",
+
+  "item.borukva-food-exotic.pepper": "Yellow Pepper",
+  "item.borukva-food-exotic.pepper_seeds": "Yellow Pepper Seeds",
+  "item.borukva-food-exotic.pepper_crate": "Yellow Pepper Crate"
 }
