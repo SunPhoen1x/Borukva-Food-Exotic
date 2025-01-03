@@ -36,6 +36,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         compressBlockRecipe(ModBlocks.SALMON_CRATE_ITEM, Items.SALMON, exporter);
         compressBlockRecipe(ModBlocks.TROPICAL_FISH_CRATE_ITEM, Items.TROPICAL_FISH, exporter);
         compressBlockRecipe(ModBlocks.PEPPER_CRATE_ITEM, ModItems.PEPPER, exporter);
+        //compressBlockRecipe(ModBlocks.GRAPE_CRATE_ITEM, ModItems.GRAPE, exporter);
 
         planksRecipe(ModTags.Items.APRICOT_LOGS, ModBlocks.APRICOT_PLANKS_ITEM, exporter);
         planksRecipe(ModTags.Items.PEAR_LOGS, ModBlocks.PEAR_PLANKS_ITEM, exporter);
@@ -64,6 +65,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         slabRecipe(ModBlocks.PLUM_PLANKS_ITEM, ModBlocks.PLUM_SLAB_ITEM, exporter);
         slabRecipe(ModBlocks.KIWI_PLANKS_ITEM, ModBlocks.KIWI_SLAB_ITEM, exporter);
 
+        //trapdoorRecipe(ModBlocks.APRICOT_PLANKS_ITEM, ModBlocks.APRICOT_TRAPDOOR_ITEM, exporter);
+
         pieRecipe(ModItems.PEAR_PIE, ModItems.PEAR, exporter);
         pieRecipe(ModItems.APRICOT_PIE, ModItems.APRICOT, exporter);
         pieRecipe(ModItems.PLUM_PIE, ModItems.PLUM, exporter);
@@ -75,6 +78,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         seedsRecipe(ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, exporter);
         seedsRecipe(ModItems.EGGPLANT, ModItems.EGGPLANT_SEEDS, exporter);
         seedsRecipe(ModItems.PEPPER, ModItems.PEPPER_SEEDS, exporter);
+        //seedsRecipe(ModItems.GRAPE, ModItems.GRAPE_SEEDS, exporter);
     }
 
     private void compressBlockRecipe(Item blockItem, Item item, RecipeExporter exporter){
@@ -126,6 +130,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     private void slabRecipe(Item log, Item wood, RecipeExporter exporter){
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, wood, 6)
+                .pattern("SSS")
+                .input('S', log)
+                .criterion(hasItem(log), conditionsFromItem(log))
+                .offerTo(exporter, Identifier.of(BorukvaFoodExotic.MOD_ID, getRecipeName(wood)));
+    }
+
+    private void trapdoorRecipe(Item log, Item wood, RecipeExporter exporter){
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, wood, 2)
+                .pattern("SSS")
                 .pattern("SSS")
                 .input('S', log)
                 .criterion(hasItem(log), conditionsFromItem(log))

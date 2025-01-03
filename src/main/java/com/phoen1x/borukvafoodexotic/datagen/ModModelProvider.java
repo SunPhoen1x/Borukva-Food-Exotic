@@ -23,6 +23,7 @@ public class ModModelProvider extends FabricModelProvider{
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.STRAWBERRY, BlockStateModelGenerator.TintType.NOT_TINTED, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.EGGPLANT, BlockStateModelGenerator.TintType.NOT_TINTED, EggplantCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.PEPPER, BlockStateModelGenerator.TintType.NOT_TINTED, PepperCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        //blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.GRAPE, BlockStateModelGenerator.TintType.NOT_TINTED, GrapeCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
 
         generateCrate(blockStateModelGenerator, ModBlocks.APRICOT_CRATE, "apricot_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.PEAR_CRATE, "pear_crate");
@@ -34,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider{
         generateCrate(blockStateModelGenerator, ModBlocks.SALMON_CRATE, "salmon_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_CRATE, "tropical_fish_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.PEPPER_CRATE, "pepper_crate");
+        //generateCrate(blockStateModelGenerator, ModBlocks.GRAPE_CRATE, "grape_crate");
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.APRICOT_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.APRICOT_LOG).log(ModBlocks.APRICOT_LOG).wood(ModBlocks.APRICOT_WOOD);
@@ -69,6 +71,8 @@ public class ModModelProvider extends FabricModelProvider{
         BlockStateModelGenerator.BlockTexturePool apricotPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.APRICOT_PLANKS);
         apricotPlanksPool.slab(ModBlocks.APRICOT_SLAB);
 
+        //blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.APRICOT_TRAPDOOR);
+
         BlockStateModelGenerator.BlockTexturePool pearPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PEAR_PLANKS);
         pearPlanksPool.slab(ModBlocks.PEAR_SLAB);
 
@@ -89,11 +93,12 @@ public class ModModelProvider extends FabricModelProvider{
         itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.KIWI, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BANANA, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.BANANA, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.EGGPLANT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEPPER, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.GRAPE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.APRICOT_JAM, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEAR_JAM, Models.GENERATED);

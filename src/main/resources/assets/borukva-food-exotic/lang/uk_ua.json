@@ -4,7 +4,6 @@
   "item.borukva-food-exotic.orange": "Апельсин",
   "item.borukva-food-exotic.plum": "Слива",
   "item.borukva-food-exotic.kiwi": "Ківі",
-  "item.borukva-food-exotic.banana": "Банан",
   "item-group.borukva-food-exotic.items": "Borukva Food Exotic: Фрукти та їжа",
   "item-group.borukva-food-exotic.blocks": "Borukva Food Exotic: Блоки",
 
@@ -89,7 +88,7 @@
 
   "item.borukva-food-exotic.eggplant": "Баклажан",
   "item.borukva-food-exotic.eggplant_seeds": "Насіння баклажану",
-  "item.borukva-food-exotic.eggplant_crate": "Ящик баклажанів",
+  "block.borukva-food-exotic.eggplant_crate": "Ящик баклажанів",
 
   "item.borukva-food-exotic.pepper": "Жовтий перець",
   "item.borukva-food-exotic.pepper_seeds": "Насіння жовтого перцю",

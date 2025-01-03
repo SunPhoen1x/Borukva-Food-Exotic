@@ -23,6 +23,26 @@ public class ModCustomTrades {
                 new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModBlocks.ORANGE_SAPLING_ITEM),
                         12, 3, 0.05f)));
 
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 3, factoriy -> factoriy.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModBlocks.PLUM_SAPLING_ITEM),
+                        12, 3, 0.05f)));
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 3, factoriy -> factoriy.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModBlocks.KIWI_SAPLING_ITEM),
+                        12, 3, 0.05f)));
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.PLUM),
+                        12, 3, 0.05f)));
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.APRICOT),
+                        12, 3, 0.05f)));
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.PEAR),
+                        12, 3, 0.05f)));
+
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
                 new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.APRICOT_JAM),
                         12, 3, 0.05f)));

@@ -4,7 +4,6 @@
   "item.borukva-food-exotic.orange": "Orange",
   "item.borukva-food-exotic.plum": "Plum",
   "item.borukva-food-exotic.kiwi": "Kiwi",
-  "item.borukva-food-exotic.banana": "Banana",
   "item-group.borukva-food-exotic.items": "Borukva Food Exotic: Fruits & Food",
   "item-group.borukva-food-exotic.blocks": "Borukva Food Exotic: Blocks",
 
@@ -88,7 +87,7 @@
 
   "item.borukva-food-exotic.eggplant": "Eggplant",
   "item.borukva-food-exotic.eggplant_seeds": "Eggplant Seeds",
-  "item.borukva-food-exotic.eggplant_crate": "Eggplant Crate",
+  "block.borukva-food-exotic.eggplant_crate": "Eggplant Crate",
 
   "item.borukva-food-exotic.pepper": "Yellow Pepper",
   "item.borukva-food-exotic.pepper_seeds": "Yellow Pepper Seeds",

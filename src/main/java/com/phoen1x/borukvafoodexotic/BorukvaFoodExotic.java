@@ -6,7 +6,9 @@ import com.phoen1x.borukvafoodexotic.block.crops.PepperCrop;
 import com.phoen1x.borukvafoodexotic.block.crops.StrawberryCrop;
 import com.phoen1x.borukvafoodexotic.item.ModItems;
 import com.phoen1x.borukvafoodexotic.utils.BorukvaFoodExoticUtil;
+import com.phoen1x.borukvafoodexotic.utils.CompostableItems;
 import com.phoen1x.borukvafoodexotic.utils.ModCustomTrades;
+import com.phoen1x.borukvafoodexotic.utils.ModifyLootTables;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import net.fabricmc.api.ModInitializer;
 
@@ -26,6 +28,8 @@ public class BorukvaFoodExotic implements ModInitializer {
 		ModBlocks.registerBlocks();
 		BorukvaFoodExoticUtil.registerWood();
 		ModCustomTrades.registerCustomTrades();
+		CompostableItems.register();
+		ModifyLootTables.modifyLootTables();
 
 		if (PolymerResourcePackUtils.addModAssets(MOD_ID)) {
 			LOGGER.info("Successfully added mod assets for " + MOD_ID);
@@ -40,6 +44,7 @@ public class BorukvaFoodExotic implements ModInitializer {
 		StrawberryCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		EggplantCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		PepperCrop.Model.MODELS.forEach(ItemStack::isEmpty);
+		//GrapeCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 	}
 
 	public static Identifier id(String path) {

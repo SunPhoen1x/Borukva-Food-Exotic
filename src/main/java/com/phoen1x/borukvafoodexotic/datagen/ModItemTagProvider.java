@@ -75,19 +75,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.LEAVES)
                 .add(APRICOT_LEAVES_ITEM)
-                .add(APRICOT_FRUIT_LEAVE_ITEM)
+                .add(APRICOT_FRUIT_LEAVES_ITEM)
 
                 .add(ORANGE_LEAVES_ITEM)
-                .add(ORANGE_FRUIT_LEAVE_ITEM)
+                .add(ORANGE_FRUIT_LEAVES_ITEM)
 
                 .add(PEAR_LEAVES_ITEM)
-                .add(PEAR_FRUIT_LEAVE_ITEM)
+                .add(PEAR_FRUIT_LEAVES_ITEM)
 
                 .add(KIWI_LEAVES_ITEM)
-                .add(KIWI_FRUIT_LEAVE_ITEM)
+                .add(KIWI_FRUIT_LEAVES_ITEM)
 
                 .add(PLUM_LEAVES_ITEM)
-                .add(PLUM_FRUIT_LEAVE_ITEM);
+                .add(PLUM_FRUIT_LEAVES_ITEM);
 
         getOrCreateTagBuilder(ItemTags.SAPLINGS)
                 .add(APRICOT_SAPLING_ITEM)

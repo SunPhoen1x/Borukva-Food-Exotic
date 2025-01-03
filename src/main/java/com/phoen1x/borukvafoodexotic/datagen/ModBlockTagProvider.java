@@ -29,6 +29,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(SALMON_CRATE)
                 .add(TROPICAL_FISH_CRATE)
                 .add(PEPPER_CRATE);
+                //.add(GRAPE_CRATE);
+                //.add(APRICOT_TRAPDOOR);
 
         getOrCreateTagBuilder(ModTags.Blocks.APRICOT_LOGS)
                 .add(APRICOT_LOG)
