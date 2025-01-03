@@ -9,6 +9,7 @@ import com.phoen1x.borukvafoodexotic.utils.BorukvaFoodExoticUtil;
 import com.phoen1x.borukvafoodexotic.utils.CompostableItems;
 import com.phoen1x.borukvafoodexotic.utils.ModCustomTrades;
 import com.phoen1x.borukvafoodexotic.utils.ModifyLootTables;
+import com.phoen1x.borukvafoodexotic.world.gen.ModWorldGeneration;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import net.fabricmc.api.ModInitializer;
 
@@ -30,6 +31,7 @@ public class BorukvaFoodExotic implements ModInitializer {
 		ModCustomTrades.registerCustomTrades();
 		CompostableItems.register();
 		ModifyLootTables.modifyLootTables();
+		ModWorldGeneration.generateModWorldGen();
 
 		if (PolymerResourcePackUtils.addModAssets(MOD_ID)) {
 			LOGGER.info("Successfully added mod assets for " + MOD_ID);

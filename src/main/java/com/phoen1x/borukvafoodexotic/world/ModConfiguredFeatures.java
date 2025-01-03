@@ -6,14 +6,12 @@ import net.minecraft.block.BlockState;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.TreeFeatureConfig;
+import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
@@ -27,6 +25,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORANGE_KEY = registerKey("orange");
     public static final RegistryKey<ConfiguredFeature<?, ?>> KIWI_KEY = registerKey("kiwi");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PLUM_KEY = registerKey("plum");
+
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context) {
         register(context, APRICOT_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.APRICOT_LOG),
@@ -62,7 +61,6 @@ public class ModConfiguredFeatures {
                 new WeightedBlockStateProvider(DataPool.<BlockState>builder().add(ModBlocks.PLUM_LEAVES.getDefaultState(), 5).add(ModBlocks.PLUM_FRUIT_LEAVES.getDefaultState(), 1)),
                 new RandomSpreadFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), ConstantIntProvider.create(2), 64),
                 new TwoLayersFeatureSize(1, 0, 1)).build());
-
     }
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(BorukvaFoodExotic.MOD_ID, name));
