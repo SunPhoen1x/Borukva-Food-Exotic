@@ -33,8 +33,7 @@ public class PolySaplingBlock extends SaplingBlock implements PolymerTexturedBlo
 
     @Override
     public @Nullable ElementHolder createElementHolder(ServerWorld world, BlockPos pos, BlockState initialBlockState) {
-//        return new SaplingModel(initialBlockState, modelid);
-        return null;
+        return new SaplingModel(initialBlockState, modelid);
     }
 
     @Override

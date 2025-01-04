@@ -20,7 +20,7 @@
       "entries": [
         {
           "data": {
-            "Name": "borukva-food-exotic:plum_leaves",
+            "Name": "borukva-food-exotic:chestnut_leaves",
             "Properties": {
               "distance": "7",
               "persistent": "false",
@@ -31,7 +31,7 @@
         },
         {
           "data": {
-            "Name": "borukva-food-exotic:plum_fruit_leaves",
+            "Name": "borukva-food-exotic:chestnut_fruit_leaves",
             "Properties": {
               "distance": "1",
               "has_fruit": "true",
@@ -52,21 +52,15 @@
       "upper_size": 1
     },
     "trunk_placer": {
-      "type": "minecraft:bending_trunk_placer",
-      "base_height": 4,
-      "bend_length": {
-        "type": "minecraft:uniform",
-        "max_inclusive": 2,
-        "min_inclusive": 1
-      },
-      "height_rand_a": 2,
-      "height_rand_b": 0,
-      "min_height_for_leaves": 3
+      "type": "minecraft:straight_trunk_placer",
+      "base_height": 6,
+      "height_rand_a": 3,
+      "height_rand_b": 0
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "borukva-food-exotic:plum_log",
+        "Name": "borukva-food-exotic:chestnut_log",
         "Properties": {
           "axis": "y"
         }

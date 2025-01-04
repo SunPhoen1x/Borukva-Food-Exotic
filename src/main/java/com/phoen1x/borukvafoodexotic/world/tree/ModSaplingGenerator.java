@@ -12,6 +12,5 @@ public class ModSaplingGenerator {
     public static final SaplingGenerator ORANGE = new SaplingGenerator("orange", Optional.empty(), Optional.of(ORANGE_KEY), Optional.empty());
     public static final SaplingGenerator KIWI = new SaplingGenerator("kiwi", Optional.empty(), Optional.of(KIWI_KEY), Optional.empty());
     public static final SaplingGenerator PLUM = new SaplingGenerator("plum", Optional.empty(), Optional.of(PLUM_KEY), Optional.empty());
-    public static final SaplingGenerator CHESTNUT = new SaplingGenerator("chestnut", Optional.empty(), Optional.of(PLUM_KEY), Optional.empty());
-
+    public static final SaplingGenerator CHESTNUT = new SaplingGenerator("chestnut", Optional.empty(), Optional.of(CHESTNUT_KEY), Optional.empty());
 }

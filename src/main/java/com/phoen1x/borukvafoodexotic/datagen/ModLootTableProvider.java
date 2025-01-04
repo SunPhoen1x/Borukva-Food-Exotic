@@ -81,13 +81,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(PLUM_LEAVES, leavesDrops(PLUM_LEAVES, PLUM_SAPLING, 0.05f, 0.0625f, 0.083333336f, 0.1f));
         addDrop(PLUM_FRUIT_LEAVES, fruitLeavesDrop(PLUM_FRUIT_LEAVES, PLUM_SAPLING, ModItems.PLUM, 0.05f, 0.0625f, 0.083333336f, 0.1f));
 
-//        addDrop(CHESTNUT_LOG);
-//        addDrop(CHESTNUT_WOOD);
-//        addDrop(STRIPPED_CHESTNUT_LOG);
-//        addDrop(STRIPPED_CHESTNUT_WOOD);
-//        addDrop(CHESTNUT_PLANKS);
-//        addDrop(CHESTNUT_LEAVES, leavesDrops(CHESTNUT_LEAVES, CHESTNUT_SAPLING, 0.05f, 0.0625f, 0.083333336f, 0.1f));
-//        addDrop(CHESTNUT_FRUIT_LEAVES, fruitLeavesDrop(CHESTNUT_FRUIT_LEAVES, CHESTNUT_SAPLING, ModItems.PLUM, 0.05f, 0.0625f, 0.083333336f, 0.1f));
+        addDrop(CHESTNUT_LOG);
+        addDrop(CHESTNUT_WOOD);
+        addDrop(STRIPPED_CHESTNUT_LOG);
+        addDrop(STRIPPED_CHESTNUT_WOOD);
+        addDrop(CHESTNUT_PLANKS);
+        addDrop(CHESTNUT_LEAVES, leavesDrops(CHESTNUT_LEAVES, CHESTNUT_SAPLING, 0.05f, 0.0625f, 0.083333336f, 0.1f));
+        addDrop(CHESTNUT_FRUIT_LEAVES, fruitLeavesDrop(CHESTNUT_FRUIT_LEAVES, CHESTNUT_SAPLING, ModItems.PLUM, 0.05f, 0.0625f, 0.083333336f, 0.1f));
 
         addDrop(APRICOT_CRATE);
         addDrop(PEAR_CRATE);

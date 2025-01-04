@@ -118,7 +118,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(PEAR_SAPLING_ITEM)
                 .add(ORANGE_SAPLING_ITEM)
                 .add(KIWI_SAPLING_ITEM)
-                .add(PLUM_SAPLING_ITEM);
-//                .add(CHESTNUT_SAPLING_ITEM);
+                .add(PLUM_SAPLING_ITEM)
+                .add(CHESTNUT_SAPLING_ITEM);
     }
 }

@@ -267,6 +267,7 @@ public class ModBlocks {
             entries.add(ORANGE_SLAB_ITEM);
             entries.add(PLUM_SLAB_ITEM);
             entries.add(KIWI_SLAB_ITEM);
+//            entries.add(CHESTNUT_SLAB_ITEM);
 
         });
         ItemGroup polymerGroup = builder.build();

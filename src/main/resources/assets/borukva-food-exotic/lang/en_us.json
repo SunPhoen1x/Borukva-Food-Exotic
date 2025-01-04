@@ -56,17 +56,27 @@
   "block.borukva-food-exotic.plum_planks": "Plum Planks",
   "block.borukva-food-exotic.plum_slab": "Plum Slab",
 
+  "block.borukva-food-exotic.chestnut_log": "Chestnut Log",
+  "block.borukva-food-exotic.chestnut_wood": "Chestnut Wood",
+  "block.borukva-food-exotic.stripped_chestnut_log": "Stripped Chestnut Log",
+  "block.borukva-food-exotic.stripped_chestnut_wood": "Stripped Chestnut Wood",
+  "block.borukva-food-exotic.chestnut_leaves": "Chestnut Leaves",
+  "block.borukva-food-exotic.chestnut_planks": "Chestnut Planks",
+  "block.borukva-food-exotic.chestnut_slab": "Chestnut Slab",
+
   "block.borukva-food-exotic.apricot_sapling": "Apricot Sapling",
   "block.borukva-food-exotic.pear_sapling": "Pear Sapling",
   "block.borukva-food-exotic.orange_sapling": "Orange Sapling",
   "block.borukva-food-exotic.kiwi_sapling": "Kiwi Sapling",
   "block.borukva-food-exotic.plum_sapling": "Plum Sapling",
+  "block.borukva-food-exotic.chestnut_sapling": "Chestnut Sapling",
 
   "block.borukva-food-exotic.apricot_fruit_leaves": "Apricot Fruit Leaves",
   "block.borukva-food-exotic.pear_fruit_leaves": "Pear Fruit Leaves",
   "block.borukva-food-exotic.orange_fruit_leaves": "Orange Fruit Leaves",
   "block.borukva-food-exotic.kiwi_fruit_leaves": "Kiwi Fruit Leaves",
   "block.borukva-food-exotic.plum_fruit_leaves": "Plum Fruit Leaves",
+  "block.borukva-food-exotic.chestnut_fruit_leaves": "Chestnut Fruit Leaves",
 
   "item.borukva-food-exotic.apricot_jam": "Apricot Jam",
   "item.borukva-food-exotic.pear_jam": "Pear Jam",

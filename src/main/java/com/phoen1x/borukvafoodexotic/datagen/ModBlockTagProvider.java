@@ -30,8 +30,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(TROPICAL_FISH_CRATE)
                 .add(PEPPER_CRATE);
 
-//        getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
-//                .add(APRICOT_DOOR);
+      getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+                .add(APRICOT_DOOR);
 ////                .add(CHESTNUT_DOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
@@ -119,7 +119,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ORANGE_SAPLING)
                 .add(KIWI_SAPLING)
                 .add(CHESTNUT_SAPLING)
-                .add(PLUM_SAPLING);
-//                .add(CHESTNUT_SAPLING);
+                .add(PLUM_SAPLING)
+                .add(CHESTNUT_SAPLING);
     }
 }
