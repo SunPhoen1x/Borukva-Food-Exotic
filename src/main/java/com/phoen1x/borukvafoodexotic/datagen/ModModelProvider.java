@@ -41,9 +41,9 @@ public class ModModelProvider extends FabricModelProvider{
 
         //generateCrate(blockStateModelGenerator, ModBlocks.GRAPE_CRATE, "grape_crate");
 
-//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHESTNUT_LEAVES);
-//        blockStateModelGenerator.registerLog(ModBlocks.CHESTNUT_LOG).log(ModBlocks.CHESTNUT_LOG).wood(ModBlocks.CHESTNUT_WOOD);
-//        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_CHESTNUT_LOG).log(ModBlocks.STRIPPED_CHESTNUT_LOG).wood(ModBlocks.STRIPPED_CHESTNUT_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHESTNUT_LEAVES);
+        blockStateModelGenerator.registerLog(ModBlocks.CHESTNUT_LOG).log(ModBlocks.CHESTNUT_LOG).wood(ModBlocks.CHESTNUT_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_CHESTNUT_LOG).log(ModBlocks.STRIPPED_CHESTNUT_LOG).wood(ModBlocks.STRIPPED_CHESTNUT_WOOD);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.APRICOT_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.APRICOT_LOG).log(ModBlocks.APRICOT_LOG).wood(ModBlocks.APRICOT_WOOD);
@@ -70,6 +70,7 @@ public class ModModelProvider extends FabricModelProvider{
         blockStateModelGenerator.registerTintableCross(ModBlocks.ORANGE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.KIWI_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.PLUM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.CHESTNUT_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         BlockStateModelGenerator.BlockTexturePool apricotPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.APRICOT_PLANKS);
         apricotPlanksPool.slab(ModBlocks.APRICOT_SLAB);
@@ -86,7 +87,7 @@ public class ModModelProvider extends FabricModelProvider{
         BlockStateModelGenerator.BlockTexturePool kiwiPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.KIWI_PLANKS);
         kiwiPlanksPool.slab(ModBlocks.KIWI_SLAB);
 
-//        BlockStateModelGenerator.BlockTexturePool chestnutPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHESTNUT_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool chestnutPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHESTNUT_PLANKS);
 //        chestnutPlanksPool.slab(ModBlocks.CHESTNUT_SLAB);
 
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.APRICOT_FRUIT_LEAVES);
@@ -94,7 +95,7 @@ public class ModModelProvider extends FabricModelProvider{
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.PLUM_FRUIT_LEAVES);
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.ORANGE_FRUIT_LEAVES);
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.KIWI_FRUIT_LEAVES);
-//        generateFruitLeaves(blockStateModelGenerator, ModBlocks.CHESTNUT_FRUIT_LEAVES);
+        generateFruitLeaves(blockStateModelGenerator, ModBlocks.CHESTNUT_FRUIT_LEAVES);
     }
 
     @Override
@@ -107,7 +108,7 @@ public class ModModelProvider extends FabricModelProvider{
         itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.KIWI, Models.GENERATED);
-//        itemModelGenerator.register(ModItems.CHESTNUT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHESTNUT, Models.GENERATED);
         //itemModelGenerator.register(ModItems.BANANA, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);

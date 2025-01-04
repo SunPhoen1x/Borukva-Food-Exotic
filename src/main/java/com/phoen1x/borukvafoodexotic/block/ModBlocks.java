@@ -7,6 +7,7 @@ import com.phoen1x.borukvafoodexotic.block.crops.StrawberryCrop;
 import com.phoen1x.borukvafoodexotic.block.leaves.*;
 import com.phoen1x.borukvafoodexotic.world.tree.ModSaplingGenerator;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
@@ -82,29 +83,28 @@ public class ModBlocks {
     public static final Block PLUM_LEAVES = registerBlock("plum_leaves", new PolyLeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES), "plum_leaves"));
     public static final Block PLUM_PLANKS = registerBlock("plum_planks", new SimplePolyBlock(Block.Settings.copy(Blocks.OAK_PLANKS), "plum_planks"));
 
-//    public static final Block CHESTNUT_LOG = registerBlock("chestnut_log", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_LOG)));
-//    public static final Block CHESTNUT_WOOD = registerBlock("chestnut_wood", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_WOOD)));
-//    public static final Block STRIPPED_CHESTNUT_LOG = registerBlock("stripped_chestnut_log", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_LOG)));
-//    public static final Block STRIPPED_CHESTNUT_WOOD = registerBlock("stripped_chestnut_wood", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_WOOD)));
-//    public static final Block CHESTNUT_LEAVES = registerBlock("chestnut_leaves", new PolyLeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES), "chestnut_leaves"));
-//    public static final Block CHESTNUT_PLANKS = registerBlock("chestnut_planks", new SimplePolyBlock(Block.Settings.copy(Blocks.OAK_PLANKS), "chestnut_planks"));
+    public static final Block CHESTNUT_LOG = registerBlock("chestnut_log", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block CHESTNUT_WOOD = registerBlock("chestnut_wood", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_CHESTNUT_LOG = registerBlock("stripped_chestnut_log", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block STRIPPED_CHESTNUT_WOOD = registerBlock("stripped_chestnut_wood", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_WOOD)));
+    public static final Block CHESTNUT_LEAVES = registerBlock("chestnut_leaves", new PolyLeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES), "chestnut_leaves"));
+    public static final Block CHESTNUT_PLANKS = registerBlock("chestnut_planks", new SimplePolyBlock(Block.Settings.copy(Blocks.OAK_PLANKS), "chestnut_planks"));
 //    public static final Block CHESTNUT_TRAPDOOR = registerBlock("chestnut_trapdoor", new PolyTrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR), "chestnut_trapdoor"));
 //    public static final Block CHESTNUT_DOOR = registerBlock("chestnut_door", new PolyDoorBlock(Block.Settings.copy(Blocks.OAK_DOOR), "chestnut_door"));
-
 
     public static final Block APRICOT_SAPLING = registerBlock("apricot_sapling", new PolySaplingBlock(ModSaplingGenerator.APRICOT, Block.Settings.copy(Blocks.OAK_SAPLING), "apricot_sapling"));
     public static final Block PEAR_SAPLING = registerBlock("pear_sapling", new PolySaplingBlock(ModSaplingGenerator.PEAR, Block.Settings.copy(Blocks.OAK_SAPLING), "pear_sapling"));
     public static final Block ORANGE_SAPLING = registerBlock("orange_sapling", new PolySaplingBlock(ModSaplingGenerator.ORANGE, Block.Settings.copy(Blocks.OAK_SAPLING), "orange_sapling"));
     public static final Block KIWI_SAPLING = registerBlock("kiwi_sapling", new PolySaplingBlock(ModSaplingGenerator.KIWI, Block.Settings.copy(Blocks.OAK_SAPLING), "kiwi_sapling"));
     public static final Block PLUM_SAPLING = registerBlock("plum_sapling", new PolySaplingBlock(ModSaplingGenerator.PLUM, Block.Settings.copy(Blocks.OAK_SAPLING), "plum_sapling"));
-//    public static final Block CHESTNUT_SAPLING = registerBlock("chestnut_sapling", new PolySaplingBlock(ModSaplingGenerator.CHESTNUT, Block.Settings.copy(Blocks.OAK_SAPLING), "chestnut_sapling"));
+    public static final Block CHESTNUT_SAPLING = registerBlock("chestnut_sapling", new PolySaplingBlock(ModSaplingGenerator.CHESTNUT, Block.Settings.copy(Blocks.OAK_SAPLING), "chestnut_sapling"));
 
     public static final Block APRICOT_FRUIT_LEAVES = registerBlock("apricot_fruit_leaves", new ApricotFruitLeaves(Block.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block ORANGE_FRUIT_LEAVES = registerBlock("orange_fruit_leaves", new OrangeFruitLeaves(Block.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block PEAR_FRUIT_LEAVES = registerBlock("pear_fruit_leaves", new PearFruitLeaves(Block.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block KIWI_FRUIT_LEAVES = registerBlock("kiwi_fruit_leaves", new KiwiFruitLeaves(Block.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block PLUM_FRUIT_LEAVES = registerBlock("plum_fruit_leaves", new PlumFruitLeaves(Block.Settings.copy(Blocks.OAK_LEAVES)));
-//    public static final Block CHESTNUT_FRUIT_LEAVES = registerBlock("chestnut_fruit_leaves", new ChestnutFruitLeaves(Block.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block CHESTNUT_FRUIT_LEAVES = registerBlock("chestnut_fruit_leaves", new ChestnutFruitLeaves(Block.Settings.copy(Blocks.OAK_LEAVES)));
 
     public static final BlockItem APRICOT_FRUIT_LEAVES_ITEM =registerBlockItem("apricot_fruit_leaves", new TexturedPolyBlockItem(APRICOT_FRUIT_LEAVES, new Item.Settings(), "block/apricot_fruit_leaves_has_fruit"));
     public static final BlockItem APRICOT_LOG_ITEM = registerBlockItem("apricot_log", new TexturedPolyBlockItem(APRICOT_LOG, new Item.Settings(), "block/apricot_log"));
@@ -148,14 +148,14 @@ public class ModBlocks {
     public static final BlockItem PLUM_LEAVES_ITEM = registerBlockItem("plum_leaves", new TexturedPolyBlockItem(PLUM_LEAVES, new Item.Settings(), "block/plum_leaves"));
     public static final BlockItem PLUM_PLANKS_ITEM = registerBlockItem("plum_planks", new TexturedPolyBlockItem(PLUM_PLANKS, new Item.Settings(), "block/plum_planks"));
 
-//    public static final BlockItem CHESTNUT_FRUIT_LEAVES_ITEM =registerBlockItem("chestnut_fruit_leaves", new TexturedPolyBlockItem(CHESTNUT_FRUIT_LEAVES, new Item.Settings(), "block/chestnut_fruit_leaves_has_fruit"));
-//    public static final BlockItem CHESTNUT_LOG_ITEM = registerBlockItem("chestnut_log", new TexturedPolyBlockItem(CHESTNUT_LOG, new Item.Settings(), "block/chestnut_log"));
-//    public static final BlockItem CHESTNUT_WOOD_ITEM = registerBlockItem("chestnut_wood", new TexturedPolyBlockItem(CHESTNUT_WOOD, new Item.Settings(), "block/chestnut_wood"));
-//    public static final BlockItem STRIPPED_CHESTNUT_LOG_ITEM = registerBlockItem("stripped_chestnut_log", new TexturedPolyBlockItem(STRIPPED_CHESTNUT_LOG, new Item.Settings(), "block/stripped_chestnut_log"));
-//    public static final BlockItem STRIPPED_CHESTNUT_WOOD_ITEM = registerBlockItem("stripped_chestnut_wood", new TexturedPolyBlockItem(STRIPPED_CHESTNUT_WOOD, new Item.Settings(), "block/stripped_chestnut_wood"));
-//    public static final BlockItem CHESTNUT_LEAVES_ITEM = registerBlockItem("chestnut_leaves", new TexturedPolyBlockItem(CHESTNUT_LEAVES, new Item.Settings(), "block/chestnut_leaves"));
-//    public static final BlockItem CHESTNUT_PLANKS_ITEM = registerBlockItem("chestnut_planks", new TexturedPolyBlockItem(CHESTNUT_PLANKS, new Item.Settings(), "block/chestnut_planks"));
-////    public static final BlockItem CHESTNUT_DOOR_ITEM = registerBlockItem("chestnut_door", new TexturedPolyBlockItem(CHESTNUT_DOOR, new Item.Settings(), "item/chestnut_door"));
+    public static final BlockItem CHESTNUT_FRUIT_LEAVES_ITEM =registerBlockItem("chestnut_fruit_leaves", new TexturedPolyBlockItem(CHESTNUT_FRUIT_LEAVES, new Item.Settings(), "block/chestnut_fruit_leaves_has_fruit"));
+    public static final BlockItem CHESTNUT_LOG_ITEM = registerBlockItem("chestnut_log", new TexturedPolyBlockItem(CHESTNUT_LOG, new Item.Settings(), "block/chestnut_log"));
+    public static final BlockItem CHESTNUT_WOOD_ITEM = registerBlockItem("chestnut_wood", new TexturedPolyBlockItem(CHESTNUT_WOOD, new Item.Settings(), "block/chestnut_wood"));
+    public static final BlockItem STRIPPED_CHESTNUT_LOG_ITEM = registerBlockItem("stripped_chestnut_log", new TexturedPolyBlockItem(STRIPPED_CHESTNUT_LOG, new Item.Settings(), "block/stripped_chestnut_log"));
+    public static final BlockItem STRIPPED_CHESTNUT_WOOD_ITEM = registerBlockItem("stripped_chestnut_wood", new TexturedPolyBlockItem(STRIPPED_CHESTNUT_WOOD, new Item.Settings(), "block/stripped_chestnut_wood"));
+    public static final BlockItem CHESTNUT_LEAVES_ITEM = registerBlockItem("chestnut_leaves", new TexturedPolyBlockItem(CHESTNUT_LEAVES, new Item.Settings(), "block/chestnut_leaves"));
+    public static final BlockItem CHESTNUT_PLANKS_ITEM = registerBlockItem("chestnut_planks", new TexturedPolyBlockItem(CHESTNUT_PLANKS, new Item.Settings(), "block/chestnut_planks"));
+//    public static final BlockItem CHESTNUT_DOOR_ITEM = registerBlockItem("chestnut_door", new TexturedPolyBlockItem(CHESTNUT_DOOR, new Item.Settings(), "item/chestnut_door"));
 //    public static final BlockItem CHESTNUT_TRAPDOOR_ITEM = registerBlockItem("chestnut_trapdoor", new TexturedPolyBlockItem(CHESTNUT_TRAPDOOR, new Item.Settings(), "item/chestnut_trapdoor"));
 
     public static final BlockItem APRICOT_SAPLING_ITEM = registerBlockItem("apricot_sapling", new TexturedPolyBlockItem(APRICOT_SAPLING, new Item.Settings(), "item/apricot_sapling"));
@@ -163,7 +163,7 @@ public class ModBlocks {
     public static final BlockItem ORANGE_SAPLING_ITEM = registerBlockItem("orange_sapling", new TexturedPolyBlockItem(ORANGE_SAPLING, new Item.Settings(), "item/orange_sapling"));
     public static final BlockItem KIWI_SAPLING_ITEM = registerBlockItem("kiwi_sapling", new TexturedPolyBlockItem(KIWI_SAPLING, new Item.Settings(), "item/kiwi_sapling"));
     public static final BlockItem PLUM_SAPLING_ITEM = registerBlockItem("plum_sapling", new TexturedPolyBlockItem(PLUM_SAPLING, new Item.Settings(), "item/plum_sapling"));
-//    public static final BlockItem CHESTNUT_SAPLING_ITEM = registerBlockItem("chestnut_sapling", new TexturedPolyBlockItem(CHESTNUT_SAPLING, new Item.Settings(), "item/chestnut_sapling"));
+    public static final BlockItem CHESTNUT_SAPLING_ITEM = registerBlockItem("chestnut_sapling", new TexturedPolyBlockItem(CHESTNUT_SAPLING, new Item.Settings(), "item/chestnut_sapling"));
 
     public static final Block APRICOT_SLAB = registerBlock("apricot_slab", new PolySlabBlock(Block.Settings.copy(Blocks.OAK_SLAB), "apricot_slab", APRICOT_PLANKS.getDefaultState()));
     public static final Block PEAR_SLAB = registerBlock("pear_slab", new PolySlabBlock(Block.Settings.copy(Blocks.OAK_SLAB), "pear_slab", PEAR_PLANKS.getDefaultState()));
@@ -202,13 +202,13 @@ public class ModBlocks {
             entries.add(PEPPER_CRATE);
             //entries.add(GRAPE_CRATE);
 
-//            entries.add(CHESTNUT_LOG);
-//            entries.add(CHESTNUT_WOOD);
-//            entries.add(STRIPPED_CHESTNUT_LOG);
-//            entries.add(STRIPPED_CHESTNUT_WOOD);
-//            entries.add(CHESTNUT_LEAVES);
-//            entries.add(CHESTNUT_PLANKS);
-////            entries.add(CHESTNUT_DOOR_ITEM);
+            entries.add(CHESTNUT_LOG);
+            entries.add(CHESTNUT_WOOD);
+            entries.add(STRIPPED_CHESTNUT_LOG);
+            entries.add(STRIPPED_CHESTNUT_WOOD);
+            entries.add(CHESTNUT_LEAVES);
+            entries.add(CHESTNUT_PLANKS);
+//           entries.add(CHESTNUT_DOOR_ITEM);
 //            entries.add(CHESTNUT_TRAPDOOR_ITEM);
 
             entries.add(APRICOT_LOG);
@@ -253,20 +253,20 @@ public class ModBlocks {
             entries.add(PEAR_FRUIT_LEAVES);
             entries.add(KIWI_FRUIT_LEAVES);
             entries.add(PLUM_FRUIT_LEAVES);
+            entries.add(CHESTNUT_FRUIT_LEAVES);
 
             entries.add(APRICOT_SAPLING_ITEM);
             entries.add(PEAR_SAPLING_ITEM);
             entries.add(ORANGE_SAPLING_ITEM);
             entries.add(KIWI_SAPLING_ITEM);
             entries.add(PLUM_SAPLING_ITEM);
+            entries.add(CHESTNUT_SAPLING_ITEM);
 
             entries.add(APRICOT_SLAB_ITEM);
             entries.add(PEAR_SLAB_ITEM);
             entries.add(ORANGE_SLAB_ITEM);
             entries.add(PLUM_SLAB_ITEM);
             entries.add(KIWI_SLAB_ITEM);
-
-            //entries.add(APRICOT_TRAPDOOR_ITEM);
 
         });
         ItemGroup polymerGroup = builder.build();

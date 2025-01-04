@@ -24,7 +24,7 @@ public class ModItems {
     public static Item STRAWBERRY = registerItem("strawberry", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "strawberry"));
     public static Item EGGPLANT = registerItem("eggplant", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "eggplant"));
     public static Item PEPPER = registerItem("pepper", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "pepper"));
-//    public static Item CHESTNUT = registerItem("chestnut", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "chestnut"));
+    public static Item CHESTNUT = registerItem("chestnut", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "chestnut"));
 
       //public static Item GRAPE = registerItem("grape", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "grape"));
 
@@ -70,7 +70,7 @@ public class ModItems {
             entries.add(STRAWBERRY);
             entries.add(EGGPLANT);
             entries.add(PEPPER);
-//            entries.add(CHESTNUT);
+            entries.add(CHESTNUT);
             //entries.add(GRAPE);
 
             entries.add(STRAWBERRY_SEEDS);

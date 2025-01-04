@@ -51,15 +51,15 @@ public class BorukvaFoodExoticUtil {
         addStripped(ModBlocks.PLUM_LOG, ModBlocks.STRIPPED_PLUM_LOG);
         addStripped(ModBlocks.PLUM_WOOD, ModBlocks.STRIPPED_PLUM_WOOD);
 
-//        addStripped(ModBlocks.CHESTNUT_LOG, ModBlocks.STRIPPED_CHESTNUT_LOG);
-//        addStripped(ModBlocks.CHESTNUT_WOOD, ModBlocks.STRIPPED_CHESTNUT_WOOD);
-//
-//        addFlammable(ModBlocks.CHESTNUT_LOG, 5, 5);
-//        addFlammable(ModBlocks.CHESTNUT_WOOD, 5, 5);
-//        addFlammable(ModBlocks.STRIPPED_CHESTNUT_LOG, 5, 5);
-//        addFlammable(ModBlocks.STRIPPED_CHESTNUT_WOOD, 5, 5);
-//        addFlammable(ModBlocks.CHESTNUT_PLANKS, 5, 20);
-//        addFlammable(ModBlocks.CHESTNUT_LEAVES, 30, 60);
+        addStripped(ModBlocks.CHESTNUT_LOG, ModBlocks.STRIPPED_CHESTNUT_LOG);
+        addStripped(ModBlocks.CHESTNUT_WOOD, ModBlocks.STRIPPED_CHESTNUT_WOOD);
+
+        addFlammable(ModBlocks.CHESTNUT_LOG, 5, 5);
+        addFlammable(ModBlocks.CHESTNUT_WOOD, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_CHESTNUT_LOG, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_CHESTNUT_WOOD, 5, 5);
+        addFlammable(ModBlocks.CHESTNUT_PLANKS, 5, 20);
+        addFlammable(ModBlocks.CHESTNUT_LEAVES, 30, 60);
 
         addFlammable(ModBlocks.APRICOT_LOG, 5, 5);
         addFlammable(ModBlocks.APRICOT_WOOD, 5, 5);

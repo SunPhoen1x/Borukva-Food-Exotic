@@ -70,15 +70,14 @@ public class ModConfiguredFeatures {
 
                 new TwoLayersFeatureSize(1, 0, 1)).build());
 
-//        register(context, CHESTNUT_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-//                BlockStateProvider.of(ModBlocks.CHESTNUT_LOG),
-//                new BendingTrunkPlacer(4, 2, 0, 3, UniformIntProvider.create(1, 2)),
-//
-//                new WeightedBlockStateProvider(DataPool.<BlockState>builder().add(ModBlocks.CHESTNUT_LEAVES.getDefaultState(), 5).add(ModBlocks.CHESTNUT_FRUIT_LEAVES.getDefaultState().with(Properties.PERSISTENT, false), 1)),
-//                new RandomSpreadFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), ConstantIntProvider.create(2), 64),
-//
-//                new TwoLayersFeatureSize(1, 0, 1)).build());
+        register(context, CHESTNUT_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.PLUM_LOG),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformIntProvider.create(1, 2)),
 
+                new WeightedBlockStateProvider(DataPool.<BlockState>builder().add(ModBlocks.PLUM_LEAVES.getDefaultState(), 5).add(ModBlocks.PLUM_FRUIT_LEAVES.getDefaultState().with(Properties.PERSISTENT, false), 1)),
+                new RandomSpreadFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), ConstantIntProvider.create(2), 64),
+
+                new TwoLayersFeatureSize(1, 0, 1)).build());
 
     }
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
