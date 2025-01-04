@@ -33,9 +33,10 @@
           "data": {
             "Name": "borukva-food-exotic:kiwi_fruit_leaves",
             "Properties": {
-              "distance": "7",
+              "distance": "1",
+              "has_fruit": "true",
               "persistent": "false",
-              "waterlogged": "false"
+              "waterlogged": "true"
             }
           },
           "weight": 1

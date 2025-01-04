@@ -1,10 +1,14 @@
-// 1.21	2025-01-03T20:15:04.7027499	Borukva Food Exotic/Tags for minecraft:item
+// 1.21	2025-01-04T19:02:19.3440928	Borukva Food Exotic/Tags for minecraft:item
 f92b919d448429e75dc0375759ab014f7fc1aa7a data\borukva-food-exotic\tags\item\plant_food.json
 28ec99fc3be2096482105a56eec09e8fbcbd923a data\minecraft\tags\item\saplings.json
+c29fede69bcc9807557a1f2b15a4f949b813c9b2 data\minecraft\tags\item\wooden_doors.json
+7e441ec7d8042b00f9ff0a8f483af2a360d8529e data\minecraft\tags\item\wooden_slabs.json
+2edc083d572e3e186db15100515052fd157b2403 data\minecraft\tags\item\wooden_trapdoors.json
+ef044393fa7e2336541eb245ea80c33f0b5aa708 data\borukva-food-exotic\tags\item\plum_logs.json
 bd524f95ad61d2e064e380c50a28d0f4fe93c4a2 data\minecraft\tags\item\planks.json
 094388004dbd8574647f33ada2de819ad4c54218 data\minecraft\tags\item\leaves.json
-ecd55f67f54a1dc461d82178e47a004060ba955e data\borukva-food-exotic\tags\item\kiwi_logs.json
 1b4ba8ffe350a032bf01aa8f33e5b127732950ee data\borukva-food-exotic\tags\item\apricot_logs.json
-ed1609a083f083ad797c1c1d9169791b945c59f9 data\minecraft\tags\item\logs_that_burn.json
+622de10f3042f9fdd044e326bd8936f54c8b9b62 data\borukva-food-exotic\tags\item\kiwi_logs.json
+ce596a5481810a86a70c0cdbca745956ac7964e4 data\minecraft\tags\item\logs_that_burn.json
 7aa221624bc6102f8988d0bfd06d65287aaab63c data\borukva-food-exotic\tags\item\orange_logs.json
 31ec6779701320eb41d31ab1edbace0e788665c8 data\borukva-food-exotic\tags\item\pear_logs.json

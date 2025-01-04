@@ -5,10 +5,7 @@ import com.phoen1x.borukvafoodexotic.block.crops.EggplantCrop;
 import com.phoen1x.borukvafoodexotic.block.crops.PepperCrop;
 import com.phoen1x.borukvafoodexotic.block.crops.StrawberryCrop;
 import com.phoen1x.borukvafoodexotic.item.ModItems;
-import com.phoen1x.borukvafoodexotic.utils.BorukvaFoodExoticUtil;
-import com.phoen1x.borukvafoodexotic.utils.CompostableItems;
-import com.phoen1x.borukvafoodexotic.utils.ModCustomTrades;
-import com.phoen1x.borukvafoodexotic.utils.ModifyLootTables;
+import com.phoen1x.borukvafoodexotic.utils.*;
 import com.phoen1x.borukvafoodexotic.world.gen.ModWorldGeneration;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import net.fabricmc.api.ModInitializer;
@@ -32,6 +29,7 @@ public class BorukvaFoodExotic implements ModInitializer {
 		CompostableItems.register();
 		ModifyLootTables.modifyLootTables();
 		ModWorldGeneration.generateModWorldGen();
+		DoorModels.register();
 
 		if (PolymerResourcePackUtils.addModAssets(MOD_ID)) {
 			LOGGER.info("Successfully added mod assets for " + MOD_ID);

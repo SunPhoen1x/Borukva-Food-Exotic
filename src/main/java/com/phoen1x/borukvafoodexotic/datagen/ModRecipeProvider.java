@@ -43,6 +43,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         planksRecipe(ModTags.Items.ORANGE_LOGS, ModBlocks.ORANGE_PLANKS_ITEM, exporter);
         planksRecipe(ModTags.Items.KIWI_LOGS, ModBlocks.KIWI_PLANKS_ITEM, exporter);
         planksRecipe(ModTags.Items.PLUM_LOGS, ModBlocks.PLUM_PLANKS_ITEM, exporter);
+//        planksRecipe(ModTags.Items.CHESTNUT_LOGS, ModBlocks.CHESTNUT_PLANKS_ITEM, exporter);
+//
+//        woodRecipe(ModBlocks.CHESTNUT_LOG_ITEM, ModBlocks.CHESTNUT_WOOD_ITEM, exporter);
+//        woodRecipe(ModBlocks.STRIPPED_CHESTNUT_LOG_ITEM, ModBlocks.STRIPPED_CHESTNUT_WOOD_ITEM, exporter);
 
         woodRecipe(ModBlocks.APRICOT_LOG_ITEM, ModBlocks.APRICOT_WOOD_ITEM, exporter);
         woodRecipe(ModBlocks.STRIPPED_APRICOT_LOG_ITEM, ModBlocks.STRIPPED_APRICOT_WOOD_ITEM, exporter);
@@ -64,6 +68,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         slabRecipe(ModBlocks.ORANGE_PLANKS_ITEM, ModBlocks.ORANGE_SLAB_ITEM, exporter);
         slabRecipe(ModBlocks.PLUM_PLANKS_ITEM, ModBlocks.PLUM_SLAB_ITEM, exporter);
         slabRecipe(ModBlocks.KIWI_PLANKS_ITEM, ModBlocks.KIWI_SLAB_ITEM, exporter);
+//        slabRecipe(ModBlocks.CHESTNUT_PLANKS_ITEM, ModBlocks.CHESTNUT_SLAB_ITEM, exporter);
 
         //trapdoorRecipe(ModBlocks.APRICOT_PLANKS_ITEM, ModBlocks.APRICOT_TRAPDOOR_ITEM, exporter);
 
@@ -79,6 +84,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         seedsRecipe(ModItems.EGGPLANT, ModItems.EGGPLANT_SEEDS, exporter);
         seedsRecipe(ModItems.PEPPER, ModItems.PEPPER_SEEDS, exporter);
         //seedsRecipe(ModItems.GRAPE, ModItems.GRAPE_SEEDS, exporter);
+
+
+        offerTrapdoorRecipe(exporter, ModBlocks.APRICOT_TRAPDOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+        offerDoorRecipe(exporter, ModBlocks.APRICOT_DOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+
+//        offerTrapdoorRecipe(exporter, ModBlocks.CHESTNUT_TRAPDOOR_ITEM, ModBlocks.CHESTNUT_PLANKS_ITEM);
+//        offerDoorRecipe(exporter, ModBlocks.CHESTNUT_DOOR_ITEM, ModBlocks.CHESTNUT_PLANKS_ITEM);
+    }
+
+    private void offerDoorRecipe(RecipeExporter exporter, Item output, Item input) {
+        createDoorRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter, BorukvaFoodExotic.id(getRecipeName(output)));
+    }
+    private void offerTrapdoorRecipe(RecipeExporter exporter, Item output, Item input){
+        createTrapdoorRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter, BorukvaFoodExotic.id(getRecipeName(output)));
     }
 
     private void compressBlockRecipe(Item blockItem, Item item, RecipeExporter exporter){

@@ -4,6 +4,7 @@ import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.block.ModBlocks;
 import com.phoen1x.borukvafoodexotic.utils.ModFoodComponents;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
+import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -23,7 +24,9 @@ public class ModItems {
     public static Item STRAWBERRY = registerItem("strawberry", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "strawberry"));
     public static Item EGGPLANT = registerItem("eggplant", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "eggplant"));
     public static Item PEPPER = registerItem("pepper", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "pepper"));
-    //public static Item GRAPE = registerItem("grape", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "grape"));
+//    public static Item CHESTNUT = registerItem("chestnut", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "chestnut"));
+
+      //public static Item GRAPE = registerItem("grape", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "grape"));
 
     public static Item APRICOT_JAM = registerItem("apricot_jam", new PolyItem(new Item.Settings(), "apricot_jam"));
     public static Item PEAR_JAM = registerItem("pear_jam", new PolyItem(new Item.Settings(), "pear_jam"));
@@ -67,6 +70,7 @@ public class ModItems {
             entries.add(STRAWBERRY);
             entries.add(EGGPLANT);
             entries.add(PEPPER);
+//            entries.add(CHESTNUT);
             //entries.add(GRAPE);
 
             entries.add(STRAWBERRY_SEEDS);
