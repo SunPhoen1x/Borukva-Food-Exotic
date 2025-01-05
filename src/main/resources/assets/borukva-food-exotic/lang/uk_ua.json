@@ -102,5 +102,14 @@
 
   "item.borukva-food-exotic.pepper": "Жовтий перець",
   "item.borukva-food-exotic.pepper_seeds": "Насіння жовтого перцю",
-  "block.borukva-food-exotic.pepper_crate": "Ящик жовтого перцю"
+  "block.borukva-food-exotic.pepper_crate": "Ящик жовтого перцю",
+
+  "item.borukva-food-exotic.peas": "Горох",
+  "item.borukva-food-exotic.peas_seeds": "Насіння гороху",
+
+  "item.borukva-food-exotic.spinach": "Листя шпинату",
+  "item.borukva-food-exotic.spinach_seeds": "Насіння шпинату",
+
+  "item.borukva-food-exotic.garlic": "Часник",
+  "item.borukva-food-exotic.garlic_seeds": "Насіння часнику"
 }

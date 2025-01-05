@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "borukva-food-exotic:block/chestnut_log",
-    "side": "borukva-food-exotic:block/chestnut_log"
-  }
-}

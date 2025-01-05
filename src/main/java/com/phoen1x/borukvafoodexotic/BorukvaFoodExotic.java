@@ -1,9 +1,7 @@
 package com.phoen1x.borukvafoodexotic;
 
 import com.phoen1x.borukvafoodexotic.block.ModBlocks;
-import com.phoen1x.borukvafoodexotic.block.crops.EggplantCrop;
-import com.phoen1x.borukvafoodexotic.block.crops.PepperCrop;
-import com.phoen1x.borukvafoodexotic.block.crops.StrawberryCrop;
+import com.phoen1x.borukvafoodexotic.block.crops.*;
 import com.phoen1x.borukvafoodexotic.item.ModItems;
 import com.phoen1x.borukvafoodexotic.utils.*;
 import com.phoen1x.borukvafoodexotic.world.gen.ModWorldGeneration;
@@ -29,8 +27,6 @@ public class BorukvaFoodExotic implements ModInitializer {
 		CompostableItems.register();
 		ModifyLootTables.modifyLootTables();
 		ModWorldGeneration.generateModWorldGen();
-		DoorModels.register();
-		SaplingModels.register();
 
 		if (PolymerResourcePackUtils.addModAssets(MOD_ID)) {
 			LOGGER.info("Successfully added mod assets for " + MOD_ID);
@@ -45,7 +41,10 @@ public class BorukvaFoodExotic implements ModInitializer {
 		StrawberryCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		EggplantCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		PepperCrop.Model.MODELS.forEach(ItemStack::isEmpty);
-		//GrapeCrop.Model.MODELS.forEach(ItemStack::isEmpty);
+		GrapeCrop.Model.MODELS.forEach(ItemStack::isEmpty);
+		PeasCrop.Model.MODELS.forEach(ItemStack::isEmpty);
+		SpinachCrop.Model.MODELS.forEach(ItemStack::isEmpty);
+		GarlicCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 	}
 
 	public static Identifier id(String path) {

@@ -26,8 +26,6 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORANGE_KEY = registerKey("orange");
     public static final RegistryKey<ConfiguredFeature<?, ?>> KIWI_KEY = registerKey("kiwi");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PLUM_KEY = registerKey("plum");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> CHESTNUT_KEY = registerKey("chestnut");
-
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context) {
         register(context, APRICOT_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.APRICOT_LOG),
@@ -62,15 +60,6 @@ public class ModConfiguredFeatures {
                 new BendingTrunkPlacer(4, 2, 0, 3, UniformIntProvider.create(1, 2)),  // Slight bend to the trunk
                 new WeightedBlockStateProvider(DataPool.<BlockState>builder().add(ModBlocks.PLUM_LEAVES.getDefaultState(), 5).add(ModBlocks.PLUM_FRUIT_LEAVES.getDefaultState().with(Properties.PERSISTENT, false), 1)),
                 new RandomSpreadFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), ConstantIntProvider.create(2), 64),  // Compact, dense foliage
-                new TwoLayersFeatureSize(1, 0, 1)).build());
-
-        register(context, CHESTNUT_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(ModBlocks.CHESTNUT_LOG),
-                new StraightTrunkPlacer(6, 3, 0),  // Trunk height and variation
-                new WeightedBlockStateProvider(DataPool.<BlockState>builder()
-                        .add(ModBlocks.CHESTNUT_LEAVES.getDefaultState(), 5)  // Main leaf type
-                        .add(ModBlocks.CHESTNUT_FRUIT_LEAVES.getDefaultState().with(Properties.PERSISTENT, false), 1)),  // Fruit leaves with variation
-                new RandomSpreadFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), ConstantIntProvider.create(2), 64),  // Spread for large leaves
                 new TwoLayersFeatureSize(1, 0, 1)).build());
 
     }

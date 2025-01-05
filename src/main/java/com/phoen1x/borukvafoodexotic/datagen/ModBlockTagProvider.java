@@ -28,25 +28,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(COD_CRATE)
                 .add(SALMON_CRATE)
                 .add(TROPICAL_FISH_CRATE)
-                .add(PEPPER_CRATE);
+                .add(GRAPE_CRATE)
+                .add(PEPPER_CRATE)
+                .add(GARLIC_CRATE);
 
       getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(APRICOT_DOOR);
-////                .add(CHESTNUT_DOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(APRICOT_TRAPDOOR);
-//                .add(CHESTNUT_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
                 .add(APRICOT_SLAB);
-//                .add(CHESTNUT_SLAB);
-
-        getOrCreateTagBuilder(ModTags.Blocks.CHESTNUT_LOGS)
-                .add(CHESTNUT_LOG)
-                .add(CHESTNUT_WOOD)
-                .add(STRIPPED_CHESTNUT_LOG)
-                .add(STRIPPED_CHESTNUT_WOOD);
 
         getOrCreateTagBuilder(ModTags.Blocks.APRICOT_LOGS)
                 .add(APRICOT_LOG)
@@ -83,16 +76,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(ModTags.Blocks.ORANGE_LOGS)
                 .forceAddTag(ModTags.Blocks.PEAR_LOGS)
                 .forceAddTag(ModTags.Blocks.KIWI_LOGS)
-                .forceAddTag(ModTags.Blocks.PLUM_LOGS)
-                .forceAddTag(ModTags.Blocks.CHESTNUT_LOGS);
+                .forceAddTag(ModTags.Blocks.PLUM_LOGS);
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(APRICOT_PLANKS)
                 .add(ORANGE_PLANKS)
                 .add(PEAR_PLANKS)
                 .add(KIWI_PLANKS)
-                .add(PLUM_PLANKS)
-                .add(CHESTNUT_PLANKS);
+                .add(PLUM_PLANKS);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(APRICOT_LEAVES)
@@ -108,18 +99,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(KIWI_FRUIT_LEAVES)
 
                 .add(PLUM_LEAVES)
-                .add(PLUM_FRUIT_LEAVES)
-
-                .add(CHESTNUT_LEAVES)
-                .add(CHESTNUT_FRUIT_LEAVES);
+                .add(PLUM_FRUIT_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.SAPLINGS)
                 .add(APRICOT_SAPLING)
                 .add(PEAR_SAPLING)
                 .add(ORANGE_SAPLING)
                 .add(KIWI_SAPLING)
-                .add(CHESTNUT_SAPLING)
-                .add(PLUM_SAPLING)
-                .add(CHESTNUT_SAPLING);
+                .add(PLUM_SAPLING);
     }
 }

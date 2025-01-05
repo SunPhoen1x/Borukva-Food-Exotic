@@ -20,13 +20,13 @@ public class ModItems {
     public static Item ORANGE = registerItem("orange", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "orange"));
     public static Item PLUM = registerItem("plum", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "plum"));
     public static Item KIWI = registerItem("kiwi", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "kiwi"));
-    //public static Item BANANA = registerItem("banana", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "banana"));
     public static Item STRAWBERRY = registerItem("strawberry", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "strawberry"));
     public static Item EGGPLANT = registerItem("eggplant", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "eggplant"));
     public static Item PEPPER = registerItem("pepper", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "pepper"));
-    public static Item CHESTNUT = registerItem("chestnut", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "chestnut"));
-
-      //public static Item GRAPE = registerItem("grape", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "grape"));
+    public static Item GRAPE = registerItem("grape", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "grape"));
+    public static Item PEAS = registerItem("peas", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "peas"));
+    public static Item SPINACH = registerItem("spinach", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "spinach"));
+    public static Item GARLIC = registerItem("garlic", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "garlic"));
 
     public static Item APRICOT_JAM = registerItem("apricot_jam", new PolyItem(new Item.Settings(), "apricot_jam"));
     public static Item PEAR_JAM = registerItem("pear_jam", new PolyItem(new Item.Settings(), "pear_jam"));
@@ -45,7 +45,10 @@ public class ModItems {
     public static Item STRAWBERRY_SEEDS = registerItem("strawberry_seeds", new PolySeedsItem(ModBlocks.STRAWBERRY, new Item.Settings(), "strawberry_seeds"));
     public static Item EGGPLANT_SEEDS = registerItem("eggplant_seeds", new PolySeedsItem(ModBlocks.EGGPLANT, new Item.Settings(), "eggplant_seeds"));
     public static Item PEPPER_SEEDS = registerItem("pepper_seeds", new PolySeedsItem(ModBlocks.PEPPER, new Item.Settings(), "pepper_seeds"));
-    //public static Item GRAPE_SEEDS = registerItem("grape_seeds", new PolySeedsItem(ModBlocks.GRAPE, new Item.Settings(), "grape_seeds"));
+    public static Item GRAPE_SEEDS = registerItem("grape_seeds", new PolySeedsItem(ModBlocks.GRAPE, new Item.Settings(), "grape_seeds"));
+    public static Item PEAS_SEEDS = registerItem("peas_seeds", new PolySeedsItem(ModBlocks.PEAS, new Item.Settings(), "peas_seeds"));
+    public static Item SPINACH_SEEDS = registerItem("spinach_seeds", new PolySeedsItem(ModBlocks.SPINACH, new Item.Settings(), "spinach_seeds"));
+    public static Item GARLIC_SEEDS = registerItem("garlic_seeds", new PolySeedsItem(ModBlocks.GARLIC, new Item.Settings(), "garlic_seeds"));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BorukvaFoodExotic.MOD_ID, name), item);
@@ -66,17 +69,21 @@ public class ModItems {
             entries.add(ORANGE);
             entries.add(PLUM);
             entries.add(KIWI);
-            //entries.add(BANANA);
             entries.add(STRAWBERRY);
             entries.add(EGGPLANT);
             entries.add(PEPPER);
-            entries.add(CHESTNUT);
-            //entries.add(GRAPE);
+            entries.add(GRAPE);
+            entries.add(PEAS);
+            entries.add(SPINACH);
+            entries.add(GARLIC);
 
             entries.add(STRAWBERRY_SEEDS);
             entries.add(EGGPLANT_SEEDS);
             entries.add(PEPPER_SEEDS);
-            //entries.add(GRAPE_SEEDS);
+            entries.add(GRAPE_SEEDS);
+            entries.add(PEAS_SEEDS);
+            entries.add(SPINACH_SEEDS);
+            entries.add(GARLIC_SEEDS);
 
             entries.add(PEAR_PIE);
             entries.add(APRICOT_PIE);

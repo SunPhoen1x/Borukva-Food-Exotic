@@ -33,7 +33,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addCropDrop(STRAWBERRY, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS);
         addCropDrop(EGGPLANT, ModItems.EGGPLANT, ModItems.EGGPLANT_SEEDS);
         addCropDrop(PEPPER, ModItems.PEPPER, ModItems.PEPPER_SEEDS);
-        //addCropDrop(GRAPE, ModItems.GRAPE, ModItems.GRAPE_SEEDS);
+        addCropDrop(GRAPE, ModItems.GRAPE, ModItems.GRAPE_SEEDS);
+        addCropDrop(PEAS, ModItems.PEAS, ModItems.PEAS_SEEDS);
+        addCropDrop(SPINACH, ModItems.SPINACH, ModItems.SPINACH_SEEDS);
+        addCropDrop(GARLIC, ModItems.GARLIC, ModItems.GARLIC_SEEDS);
 
         addDrop(APRICOT_SAPLING);
         addDrop(PEAR_SAPLING);
@@ -81,14 +84,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(PLUM_LEAVES, leavesDrops(PLUM_LEAVES, PLUM_SAPLING, 0.05f, 0.0625f, 0.083333336f, 0.1f));
         addDrop(PLUM_FRUIT_LEAVES, fruitLeavesDrop(PLUM_FRUIT_LEAVES, PLUM_SAPLING, ModItems.PLUM, 0.05f, 0.0625f, 0.083333336f, 0.1f));
 
-        addDrop(CHESTNUT_LOG);
-        addDrop(CHESTNUT_WOOD);
-        addDrop(STRIPPED_CHESTNUT_LOG);
-        addDrop(STRIPPED_CHESTNUT_WOOD);
-        addDrop(CHESTNUT_PLANKS);
-        addDrop(CHESTNUT_LEAVES, leavesDrops(CHESTNUT_LEAVES, CHESTNUT_SAPLING, 0.05f, 0.0625f, 0.083333336f, 0.1f));
-        addDrop(CHESTNUT_FRUIT_LEAVES, fruitLeavesDrop(CHESTNUT_FRUIT_LEAVES, CHESTNUT_SAPLING, ModItems.PLUM, 0.05f, 0.0625f, 0.083333336f, 0.1f));
-
         addDrop(APRICOT_CRATE);
         addDrop(PEAR_CRATE);
         addDrop(ORANGE_CRATE);
@@ -98,14 +93,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(TROPICAL_FISH_CRATE);
         addDrop(SALMON_CRATE);
         addDrop(PEPPER_CRATE);
-        //addDrop(GRAPE_CRATE);
+        addDrop(GRAPE_CRATE);
+        addDrop(GARLIC_CRATE);
+
 
         addDrop(APRICOT_DOOR, doorDrops(APRICOT_DOOR));
-//        addDrop(CHESTNUT_DOOR, doorDrops(CHESTNUT_DOOR));
         addDrop(APRICOT_TRAPDOOR);
-//        addDrop(CHESTNUT_TRAPDOOR);
         addDrop(APRICOT_SLAB, slabDrops(APRICOT_SLAB));
-//        addDrop(CHESTNUT_SLAB, slabDrops(CHESTNUT_SLAB));
     }
     private void addCropDrop(Block cropBlock, Item cropItem, Item seedItem) {
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(cropBlock)

@@ -101,5 +101,14 @@
 
   "item.borukva-food-exotic.pepper": "Yellow Pepper",
   "item.borukva-food-exotic.pepper_seeds": "Yellow Pepper Seeds",
-  "block.borukva-food-exotic.pepper_crate": "Yellow Pepper Crate"
+  "block.borukva-food-exotic.pepper_crate": "Yellow Pepper Crate",
+
+  "item.borukva-food-exotic.peas": "Peas",
+  "item.borukva-food-exotic.peas_seeds": "Peas Seeds",
+
+  "item.borukva-food-exotic.spinach": "Spinach",
+  "item.borukva-food-exotic.spinach_seeds": "Spinach Seeds",
+
+  "item.borukva-food-exotic.garlic": "Garlic",
+  "item.borukva-food-exotic.garlic_seeds": "Garlic Seeds"
 }

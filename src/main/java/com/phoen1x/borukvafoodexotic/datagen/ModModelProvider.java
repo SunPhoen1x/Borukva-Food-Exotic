@@ -1,13 +1,12 @@
 package com.phoen1x.borukvafoodexotic.datagen;
 
-import com.opryshok.block.leaves.LemonFruitLeaves;
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.block.ModBlocks;
 import com.phoen1x.borukvafoodexotic.block.crops.EggplantCrop;
+import com.phoen1x.borukvafoodexotic.block.crops.PeasCrop;
 import com.phoen1x.borukvafoodexotic.block.crops.PepperCrop;
 import com.phoen1x.borukvafoodexotic.block.crops.StrawberryCrop;
 import com.phoen1x.borukvafoodexotic.block.leaves.ApricotFruitLeaves;
-import com.phoen1x.borukvafoodexotic.block.leaves.PearFruitLeaves;
 import com.phoen1x.borukvafoodexotic.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -22,12 +21,13 @@ public class ModModelProvider extends FabricModelProvider{
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.STRAWBERRY, BlockStateModelGenerator.TintType.NOT_TINTED, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.EGGPLANT, BlockStateModelGenerator.TintType.NOT_TINTED, EggplantCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.PEPPER, BlockStateModelGenerator.TintType.NOT_TINTED, PepperCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
-        //blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.GRAPE, BlockStateModelGenerator.TintType.NOT_TINTED, GrapeCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
-
+        blockStateModelGenerator.registerCrop(ModBlocks.GRAPE, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.GARLIC, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.PEAS, BlockStateModelGenerator.TintType.NOT_TINTED, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.SPINACH, BlockStateModelGenerator.TintType.NOT_TINTED, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         generateCrate(blockStateModelGenerator, ModBlocks.APRICOT_CRATE, "apricot_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.PEAR_CRATE, "pear_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.ORANGE_CRATE, "orange_crate");
@@ -38,12 +38,8 @@ public class ModModelProvider extends FabricModelProvider{
         generateCrate(blockStateModelGenerator, ModBlocks.SALMON_CRATE, "salmon_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_CRATE, "tropical_fish_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.PEPPER_CRATE, "pepper_crate");
-
-        //generateCrate(blockStateModelGenerator, ModBlocks.GRAPE_CRATE, "grape_crate");
-
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHESTNUT_LEAVES);
-        blockStateModelGenerator.registerLog(ModBlocks.CHESTNUT_LOG).log(ModBlocks.CHESTNUT_LOG).wood(ModBlocks.CHESTNUT_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_CHESTNUT_LOG).log(ModBlocks.STRIPPED_CHESTNUT_LOG).wood(ModBlocks.STRIPPED_CHESTNUT_WOOD);
+        generateCrate(blockStateModelGenerator, ModBlocks.GRAPE_CRATE, "grape_crate");
+        generateCrate(blockStateModelGenerator, ModBlocks.GARLIC_CRATE, "garlic_crate");
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.APRICOT_LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.APRICOT_LOG).log(ModBlocks.APRICOT_LOG).wood(ModBlocks.APRICOT_WOOD);
@@ -70,8 +66,6 @@ public class ModModelProvider extends FabricModelProvider{
         blockStateModelGenerator.registerTintableCross(ModBlocks.ORANGE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.KIWI_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.PLUM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerTintableCross(ModBlocks.CHESTNUT_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-
         BlockStateModelGenerator.BlockTexturePool apricotPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.APRICOT_PLANKS);
         apricotPlanksPool.slab(ModBlocks.APRICOT_SLAB);
 
@@ -87,34 +81,29 @@ public class ModModelProvider extends FabricModelProvider{
         BlockStateModelGenerator.BlockTexturePool kiwiPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.KIWI_PLANKS);
         kiwiPlanksPool.slab(ModBlocks.KIWI_SLAB);
 
-        BlockStateModelGenerator.BlockTexturePool chestnutPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHESTNUT_PLANKS);
-//        chestnutPlanksPool.slab(ModBlocks.CHESTNUT_SLAB);
-
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.APRICOT_FRUIT_LEAVES);
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.PEAR_FRUIT_LEAVES);
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.PLUM_FRUIT_LEAVES);
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.ORANGE_FRUIT_LEAVES);
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.KIWI_FRUIT_LEAVES);
-        generateFruitLeaves(blockStateModelGenerator, ModBlocks.CHESTNUT_FRUIT_LEAVES);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModBlocks.APRICOT_DOOR_ITEM, Models.GENERATED);
-//        itemModelGenerator.register(ModBlocks.CHESTNUT_DOOR_ITEM, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.APRICOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.KIWI, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CHESTNUT, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.BANANA, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.EGGPLANT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEPPER, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.GRAPE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GRAPE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PEAS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPINACH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GARLIC, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.APRICOT_JAM, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEAR_JAM, Models.GENERATED);
