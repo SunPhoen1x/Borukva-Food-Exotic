@@ -1,10 +1,12 @@
 package com.phoen1x.borukvafoodexotic.datagen;
 
+import com.jcraft.jorbis.Block;
 import com.phoen1x.borukvafoodexotic.utils.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -28,18 +30,26 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(COD_CRATE)
                 .add(SALMON_CRATE)
                 .add(TROPICAL_FISH_CRATE)
-                .add(GRAPE_CRATE)
+//                .add(GRAPE_CRATE)
                 .add(PEPPER_CRATE)
+                .add(GREEN_BEAN_CRATE)
+                .add(PEAR_CRATE)
+                .add(SPINACH_CRATE)
+                .add(BROCCOLI_CRATE)
                 .add(GARLIC_CRATE);
 
-      getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
-                .add(APRICOT_DOOR);
-
-        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
-                .add(APRICOT_TRAPDOOR);
+//      getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+//                .add(APRICOT_DOOR);
+//
+//        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+//                .add(APRICOT_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
-                .add(APRICOT_SLAB);
+                .add(APRICOT_SLAB)
+                .add(PEAR_SLAB)
+                .add(PLUM_SLAB)
+                .add(ORANGE_SLAB)
+                .add(KIWI_SLAB);
 
         getOrCreateTagBuilder(ModTags.Blocks.APRICOT_LOGS)
                 .add(APRICOT_LOG)
@@ -107,5 +117,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ORANGE_SAPLING)
                 .add(KIWI_SAPLING)
                 .add(PLUM_SAPLING);
+
+//        getOrCreateTagBuilder(BlockTags.CROPS)
+//                .add(EGGPLANT)
+//                .add(STRAWBERRY)
+//                .add(BROCCOLI)
+//                .add(SPINACH)
+//                .add(GARLIC)
+//                .add(PEAS)
+//                .add(PEPPER)
+//                .add(GREEN_BEAN);
     }
 }

@@ -105,10 +105,21 @@
 
   "item.borukva-food-exotic.peas": "Peas",
   "item.borukva-food-exotic.peas_seeds": "Peas Seeds",
+  "block.borukva-food-exotic.peas_crate": "Peas Crate",
 
   "item.borukva-food-exotic.spinach": "Spinach",
   "item.borukva-food-exotic.spinach_seeds": "Spinach Seeds",
+  "block.borukva-food-exotic.spinach_crate": "Spinach Crate",
 
   "item.borukva-food-exotic.garlic": "Garlic",
-  "item.borukva-food-exotic.garlic_seeds": "Garlic Seeds"
+  "item.borukva-food-exotic.garlic_seeds": "Garlic Seeds",
+  "block.borukva-food-exotic.garlic_crate": "Garlic Crate",
+
+  "item.borukva-food-exotic.broccoli": "Broccoli",
+  "item.borukva-food-exotic.broccoli_seeds": "Broccoli Seeds",
+  "block.borukva-food-exotic.broccoli_crate": "Broccoli Crate",
+
+  "item.borukva-food-exotic.green_bean": "Green Bean",
+  "item.borukva-food-exotic.green_bean_seeds": "Green Bean Seeds",
+  "block.borukva-food-exotic.green_bean_crate": "Green Bean Crate"
 }

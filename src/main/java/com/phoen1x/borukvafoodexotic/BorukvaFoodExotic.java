@@ -19,7 +19,6 @@ public class BorukvaFoodExotic implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		ModItems.registerModItems();
 		ModBlocks.registerBlocks();
 		BorukvaFoodExoticUtil.registerWood();
@@ -27,24 +26,27 @@ public class BorukvaFoodExotic implements ModInitializer {
 		CompostableItems.register();
 		ModifyLootTables.modifyLootTables();
 		ModWorldGeneration.generateModWorldGen();
+		SaplingModels.register();
 
+		initModels();
 		if (PolymerResourcePackUtils.addModAssets(MOD_ID)) {
 			LOGGER.info("Successfully added mod assets for " + MOD_ID);
 		} else {
 			LOGGER.error("Failed to add mod assets for " + MOD_ID);
 		}
 		PolymerResourcePackUtils.markAsRequired();
-		initModels();
 	}
 
 	public void initModels(){
 		StrawberryCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		EggplantCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		PepperCrop.Model.MODELS.forEach(ItemStack::isEmpty);
-		GrapeCrop.Model.MODELS.forEach(ItemStack::isEmpty);
+//		GrapeCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		PeasCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		SpinachCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		GarlicCrop.Model.MODELS.forEach(ItemStack::isEmpty);
+		GreenBeanCrop.Model.MODELS.forEach(ItemStack::isEmpty);
+		BroccoliCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 	}
 
 	public static Identifier id(String path) {

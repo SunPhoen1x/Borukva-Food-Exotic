@@ -1,5 +1,9 @@
 {
   "values": [
-    "borukva-food-exotic:apricot_slab"
+    "borukva-food-exotic:apricot_slab",
+    "borukva-food-exotic:pear_slab",
+    "borukva-food-exotic:plum_slab",
+    "borukva-food-exotic:orange_slab",
+    "borukva-food-exotic:kiwi_slab"
   ]
 }

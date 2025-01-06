@@ -33,10 +33,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addCropDrop(STRAWBERRY, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS);
         addCropDrop(EGGPLANT, ModItems.EGGPLANT, ModItems.EGGPLANT_SEEDS);
         addCropDrop(PEPPER, ModItems.PEPPER, ModItems.PEPPER_SEEDS);
-        addCropDrop(GRAPE, ModItems.GRAPE, ModItems.GRAPE_SEEDS);
+//        addCropDrop(GRAPE, ModItems.GRAPE, ModItems.GRAPE_SEEDS);
         addCropDrop(PEAS, ModItems.PEAS, ModItems.PEAS_SEEDS);
         addCropDrop(SPINACH, ModItems.SPINACH, ModItems.SPINACH_SEEDS);
         addCropDrop(GARLIC, ModItems.GARLIC, ModItems.GARLIC_SEEDS);
+        addCropDrop(GREEN_BEAN, ModItems.GREEN_BEAN, ModItems.GREEN_BEAN_SEEDS);
+        addCropDrop(BROCCOLI, ModItems.BROCCOLI, ModItems.BROCCOLI_SEEDS);
 
         addDrop(APRICOT_SAPLING);
         addDrop(PEAR_SAPLING);
@@ -93,13 +95,21 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(TROPICAL_FISH_CRATE);
         addDrop(SALMON_CRATE);
         addDrop(PEPPER_CRATE);
-        addDrop(GRAPE_CRATE);
+//        addDrop(GRAPE_CRATE);
         addDrop(GARLIC_CRATE);
+        addDrop(GREEN_BEAN_CRATE);
+        addDrop(PEAS_CRATE);
+        addDrop(SPINACH_CRATE);
+        addDrop(BROCCOLI_CRATE);
 
-
-        addDrop(APRICOT_DOOR, doorDrops(APRICOT_DOOR));
-        addDrop(APRICOT_TRAPDOOR);
+//        addDrop(APRICOT_DOOR, doorDrops(APRICOT_DOOR));
+//        addDrop(APRICOT_TRAPDOOR);
         addDrop(APRICOT_SLAB, slabDrops(APRICOT_SLAB));
+        addDrop(ORANGE_SLAB, slabDrops(ORANGE_SLAB));
+        addDrop(PLUM_SLAB, slabDrops(PLUM_SLAB));
+        addDrop(KIWI_SLAB, slabDrops(KIWI_SLAB));
+        addDrop(PEAR_SLAB, slabDrops(PEAR_SLAB));
+
     }
     private void addCropDrop(Block cropBlock, Item cropItem, Item seedItem) {
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(cropBlock)

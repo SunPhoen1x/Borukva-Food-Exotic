@@ -26,6 +26,7 @@ public class ModTags {
         public static final TagKey<Item> PEAR_LOGS = createTag("pear_logs");
         public static final TagKey<Item> KIWI_LOGS = createTag("kiwi_logs");
         public static final TagKey<Item> PLUM_LOGS = createTag("plum_logs");
+
         private static TagKey<Item> createTag(String name){
             return  TagKey.of(RegistryKeys.ITEM, Identifier.of(BorukvaFoodExotic.MOD_ID, name));
         }

@@ -46,5 +46,38 @@ public class ModCustomTrades {
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
                 new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.APRICOT_JAM),
                         12, 3, 0.05f)));
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.EGGPLANT),
+                        12, 3, 0.05f)));
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.GARLIC),
+                        12, 3, 0.05f)));
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.STRAWBERRY),
+                        12, 3, 0.05f)));
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.PEPPER),
+                        12, 3, 0.05f)));
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.PEAS),
+                        12, 3, 0.05f)));
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.GREEN_BEAN),
+                        12, 3, 0.05f)));
+
+
+        TradeOfferHelper.registerWanderingTraderOffers(1, factories -> factories.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD), new ItemStack(ModItems.STRAWBERRY),
+                        12, 3, 0.05f)));
+
+        TradeOfferHelper.registerWanderingTraderOffers(1, factories -> factories.add((entity, random) ->
+                new TradeOffer(new TradedItem(Items.EMERALD), new ItemStack(ModItems.STRAWBERRY_SEEDS),
+                        12, 3, 0.05f)));
     }
 }

@@ -12,6 +12,10 @@ public class CompostableItems {
         put(ModItems.STRAWBERRY_SEEDS, seeds);
         put(ModItems.EGGPLANT_SEEDS, seeds);
         put(ModItems.PEPPER_SEEDS, seeds);
+        put(ModItems.PEAS_SEEDS, seeds);
+        put(ModItems.GARLIC_SEEDS, seeds);
+        put(ModItems.SPINACH_SEEDS, seeds);
+
 
         put(ModItems.APRICOT, plant);
         put(ModItems.PEAR, plant);
@@ -21,6 +25,9 @@ public class CompostableItems {
         put(ModItems.STRAWBERRY, plant);
         put(ModItems.EGGPLANT, plant);
         put(ModItems.PEPPER, plant);
+        put(ModItems.PEAS, plant);
+        put(ModItems.GARLIC, plant);
+        put(ModItems.SPINACH, plant);
 
         put(ModBlocks.APRICOT_SAPLING_ITEM, seeds);
         put(ModBlocks.PEAR_SAPLING_ITEM, seeds);

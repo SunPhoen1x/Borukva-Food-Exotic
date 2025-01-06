@@ -106,10 +106,21 @@
 
   "item.borukva-food-exotic.peas": "Горох",
   "item.borukva-food-exotic.peas_seeds": "Насіння гороху",
+  "block.borukva-food-exotic.peas_crate": "Ящик гороху",
 
   "item.borukva-food-exotic.spinach": "Листя шпинату",
   "item.borukva-food-exotic.spinach_seeds": "Насіння шпинату",
+  "block.borukva-food-exotic.spinach_crate": "Ящик шпинату",
+
+  "item.borukva-food-exotic.broccoli": "Броколі",
+  "item.borukva-food-exotic.broccoli_seeds": "Насіння броколі",
+  "block.borukva-food-exotic.broccoli_crate": "Ящик броколі",
 
   "item.borukva-food-exotic.garlic": "Часник",
-  "item.borukva-food-exotic.garlic_seeds": "Насіння часнику"
+  "item.borukva-food-exotic.garlic_seeds": "Насіння часнику",
+  "block.borukva-food-exotic.garlic_crate": "Ящик часнику",
+
+  "item.borukva-food-exotic.green_bean": "Квасоля",
+  "item.borukva-food-exotic.green_bean_seeds": "Насіння квасолі",
+  "block.borukva-food-exotic.green_bean_crate": "Ящик квасолі"
 }

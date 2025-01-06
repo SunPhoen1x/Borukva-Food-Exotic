@@ -36,8 +36,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         compressBlockRecipe(ModBlocks.SALMON_CRATE_ITEM, Items.SALMON, exporter);
         compressBlockRecipe(ModBlocks.TROPICAL_FISH_CRATE_ITEM, Items.TROPICAL_FISH, exporter);
         compressBlockRecipe(ModBlocks.PEPPER_CRATE_ITEM, ModItems.PEPPER, exporter);
-        compressBlockRecipe(ModBlocks.GRAPE_CRATE_ITEM, ModItems.GRAPE, exporter);
+//        compressBlockRecipe(ModBlocks.GRAPE_CRATE_ITEM, ModItems.GRAPE, exporter);
         compressBlockRecipe(ModBlocks.GARLIC_CRATE_ITEM, ModItems.GARLIC, exporter);
+        compressBlockRecipe(ModBlocks.GREEN_BEAN_CRATE_ITEM, ModItems.GREEN_BEAN, exporter);
+        compressBlockRecipe(ModBlocks.PEAS_CRATE_ITEM, ModItems.PEAS, exporter);
+        compressBlockRecipe(ModBlocks.SPINACH_CRATE_ITEM, ModItems.SPINACH, exporter);
+        compressBlockRecipe(ModBlocks.BROCCOLI_CRATE_ITEM, ModItems.BROCCOLI, exporter);
 
         planksRecipe(ModTags.Items.APRICOT_LOGS, ModBlocks.APRICOT_PLANKS_ITEM, exporter);
         planksRecipe(ModTags.Items.PEAR_LOGS, ModBlocks.PEAR_PLANKS_ITEM, exporter);
@@ -73,13 +77,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         seedsRecipe(ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, exporter);
         seedsRecipe(ModItems.EGGPLANT, ModItems.EGGPLANT_SEEDS, exporter);
         seedsRecipe(ModItems.PEPPER, ModItems.PEPPER_SEEDS, exporter);
-        seedsRecipe(ModItems.GRAPE, ModItems.GRAPE_SEEDS, exporter);
+//        seedsRecipe(ModItems.GRAPE, ModItems.GRAPE_SEEDS, exporter);
         seedsRecipe(ModItems.PEAS, ModItems.PEAS_SEEDS, exporter);
         seedsRecipe(ModItems.SPINACH, ModItems.SPINACH_SEEDS, exporter);
         seedsRecipe(ModItems.GARLIC, ModItems.GARLIC_SEEDS, exporter);
+        seedsRecipe(ModItems.GREEN_BEAN, ModItems.GREEN_BEAN_SEEDS, exporter);
+        seedsRecipe(ModItems.BROCCOLI, ModItems.BROCCOLI_SEEDS, exporter);
 
-        offerTrapdoorRecipe(exporter, ModBlocks.APRICOT_TRAPDOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
-        offerDoorRecipe(exporter, ModBlocks.APRICOT_DOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+//        offerTrapdoorRecipe(exporter, ModBlocks.APRICOT_TRAPDOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+//        offerDoorRecipe(exporter, ModBlocks.APRICOT_DOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
     }
 
     private void offerDoorRecipe(RecipeExporter exporter, Item output, Item input) {
