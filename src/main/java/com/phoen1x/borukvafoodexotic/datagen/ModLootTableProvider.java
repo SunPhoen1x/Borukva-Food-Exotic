@@ -101,6 +101,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(PEAS_CRATE);
         addDrop(SPINACH_CRATE);
         addDrop(BROCCOLI_CRATE);
+        addDrop(STRAWBERRY_CRATE);
 
 //        addDrop(APRICOT_DOOR, doorDrops(APRICOT_DOOR));
 //        addDrop(APRICOT_TRAPDOOR);

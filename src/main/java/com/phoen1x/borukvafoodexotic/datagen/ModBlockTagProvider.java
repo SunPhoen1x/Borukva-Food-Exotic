@@ -36,6 +36,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(PEAR_CRATE)
                 .add(SPINACH_CRATE)
                 .add(BROCCOLI_CRATE)
+                .add(STRAWBERRY_CRATE)
                 .add(GARLIC_CRATE);
 
 //      getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)

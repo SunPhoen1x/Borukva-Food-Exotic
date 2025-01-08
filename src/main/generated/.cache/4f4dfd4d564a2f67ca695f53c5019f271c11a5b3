@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-06T21:53:52.7593369	Borukva Food Exotic/Recipes
+// 1.21.1	2025-01-08T10:51:15.8407221	Borukva Food Exotic/Recipes
 04349875b428c4583b500f58e078b8283aa0792a data\borukva-food-exotic\advancement\recipes\building_blocks\pear_wood.json
 c8f1e5583a0588e749bce6b2877403c0e8c1a809 data\borukva-food-exotic\recipe\cod_crate_to_cod.json
 8a125537f752c30628767b775f2409e46b947271 data\borukva-food-exotic\advancement\recipes\building_blocks\stripped_pear_wood.json
@@ -8,8 +8,8 @@ c8f1e5583a0588e749bce6b2877403c0e8c1a809 data\borukva-food-exotic\recipe\cod_cra
 e1c8f8c9d2d3ec6b956c4cd709ab1b4ede3566b5 data\borukva-food-exotic\advancement\recipes\building_blocks\orange_wood.json
 8439ba7ea194653cb8aa515c4cd7b968b92c2d80 data\borukva-food-exotic\advancement\recipes\food\pepper_crate_to_pepper.json
 2a03a59763325e497a24dbd5fc46cd1f2b71f32c data\borukva-food-exotic\recipe\pear_pie.json
-8a9ae154ec1db85975b255240af801dc84fd8d13 data\borukva-food-exotic\advancement\recipes\building_blocks\apricot_slab.json
 a83b6f5d16dd036deb0b8e8246466d6c635912ce data\borukva-food-exotic\advancement\recipes\building_blocks\stripped_apricot_wood.json
+8a9ae154ec1db85975b255240af801dc84fd8d13 data\borukva-food-exotic\advancement\recipes\building_blocks\apricot_slab.json
 0aa38f48887cfb1470246a7ae387397f27ba695e data\borukva-food-exotic\advancement\recipes\food\spinach_crate_to_spinach.json
 d4c6532e34e9e9a4c746914cb8c452dc66c763f9 data\borukva-food-exotic\advancement\recipes\food\pepper_to_pepper_seeds.json
 3b33d304b649d9e07d2508e33e6233641621a869 data\borukva-food-exotic\recipe\apricot_crate_to_apricot.json
@@ -22,9 +22,10 @@ ba428223b65a6314e6ce414670b4c0bba02d7380 data\borukva-food-exotic\recipe\plum_pi
 8bae183d10c8dc3a5505ac9f3ba498a3584197c6 data\borukva-food-exotic\recipe\kiwi_slab.json
 0b161f934094ea1ee3b180bd215be74d0b3399a4 data\borukva-food-exotic\advancement\recipes\food\broccoli_crate_to_broccoli.json
 a6964dfa0436d130dc7e2702b3414fe1cc8ec764 data\borukva-food-exotic\advancement\recipes\decorations\kiwi_crate.json
+402b4ba5797917a42e9ff11692ece4c26965619d data\borukva-food-exotic\recipe\strawberry_crate_to_strawberry.json
 8783e6557c27d19db908826c92ef64d3843b6b06 data\borukva-food-exotic\advancement\recipes\building_blocks\stripped_plum_wood.json
-84f40ed5361a300fd5c897eabcb5743899fa4b71 data\borukva-food-exotic\advancement\recipes\food\pear_crate_to_pear.json
 07f7c803928fc0bb84c4a19060daafde8aed1495 data\borukva-food-exotic\advancement\recipes\decorations\tropical_fish_crate.json
+84f40ed5361a300fd5c897eabcb5743899fa4b71 data\borukva-food-exotic\advancement\recipes\food\pear_crate_to_pear.json
 36f94a50c52fe7687c4ba7d06b629eda10ec268f data\borukva-food-exotic\advancement\recipes\food\plum_pie.json
 9a1a7c4e1f7013f5cd45a8de565578601e0afb19 data\borukva-food-exotic\advancement\recipes\food\green_bean_crate_to_green_bean.json
 cb660bc455de690780106d90e68f2ab991df3dce data\borukva-food-exotic\recipe\garlic_to_garlic_seeds.json
@@ -61,6 +62,7 @@ e7a7defddb010d613dc6ea2840b51e82740fd84e data\borukva-food-exotic\recipe\broccol
 48d86cc8b18c50014c1efe51502351de10647833 data\borukva-food-exotic\recipe\eggplant_crate.json
 bb3136474fbdc7c3cf81529c2ab58d1c956fac16 data\borukva-food-exotic\recipe\kiwi_planks.json
 6ff62582ca36c796a7b5e982f5e79c7ccd495a75 data\borukva-food-exotic\recipe\salmon_crate_to_salmon.json
+fb1bb7a7b634ce480a71038b24bd10649ff7aff7 data\borukva-food-exotic\advancement\recipes\food\strawberry_crate_to_strawberry.json
 99c75776fd8132fde555c7a453b59a0f8268a3ed data\borukva-food-exotic\advancement\recipes\building_blocks\plum_slab.json
 d956ec3d584968b86ab5262890bc5f083ef59995 data\borukva-food-exotic\recipe\pear_planks.json
 99ff3c0ee31b7fa6000fb463c9e9ea3fa89e8ee4 data\borukva-food-exotic\recipe\green_bean_crate.json
@@ -77,6 +79,7 @@ cb90974154aba3c2bbc774ba8e5214ed5c1a2791 data\borukva-food-exotic\recipe\eggplan
 2ab4fac1d9961cc7479c379092ef4c9e7aa52f54 data\borukva-food-exotic\recipe\plum_wood.json
 fe984c9db1e4baa42bd0cc4ff8ea6bb004b53cb8 data\borukva-food-exotic\recipe\kiwi_crate.json
 90de67192ffd8e657092055652522f7dfe75f8c8 data\borukva-food-exotic\recipe\pepper_to_pepper_seeds.json
+25dee45afdb9ec8bdc9fba4cf06ee2c35cc04f3c data\borukva-food-exotic\recipe\strawberry_crate.json
 adf4595cb7be2e7d569438eaf25badfe2c4a00ae data\borukva-food-exotic\recipe\kiwi_crate_to_kiwi.json
 c87eee4a236ba36a63cea62e8efa9e4f94a08bff data\borukva-food-exotic\advancement\recipes\food\cod_crate_to_cod.json
 031e54c9d6b6342945fc03e53118d31b58d90346 data\borukva-food-exotic\recipe\orange_crate.json
@@ -90,13 +93,14 @@ cc5f7088271830b6590c497716d70dfd7c780e24 data\borukva-food-exotic\recipe\plum_sl
 4ef3fd3c203049e070b3a340e0263691d45767f2 data\borukva-food-exotic\recipe\apricot_wood.json
 2b6eaab032844a6b20bcdc4b3fbc8f8b2049142d data\borukva-food-exotic\recipe\peas_crate.json
 3b641a0aa77762e50143e126c09dd9c8fafc3545 data\borukva-food-exotic\recipe\tropical_fish_crate_to_tropical_fish.json
+92a88ff84359b47ce43b42964782fff8b53f8955 data\borukva-food-exotic\advancement\recipes\decorations\strawberry_crate.json
 44f1b8a4ca0b2349835d3dd1377f6db2ac1fbd9a data\borukva-food-exotic\advancement\recipes\building_blocks\apricot_wood.json
 c9d1edd3f77870960fb7d776ac98cfc52a6d814b data\borukva-food-exotic\recipe\garlic_crate_to_garlic.json
 59bdd0fc895c3b7fcebaaad4c373bff758c9ee14 data\borukva-food-exotic\advancement\recipes\decorations\salmon_crate.json
 441abfa433d817c1bae87502e2c7a02fca99539c data\borukva-food-exotic\advancement\recipes\food\salmon_crate_to_salmon.json
 4f30f65ecaa844c20cad02a3fdb0b0ba0d67ea47 data\borukva-food-exotic\recipe\pear_wood.json
-2492a5d4d7329795fcb07103d07e3b4289b54fd9 data\borukva-food-exotic\recipe\pepper_crate_to_pepper.json
 56524e17ec52982a17b0ae031a41952209382b10 data\borukva-food-exotic\advancement\recipes\food\apricot_crate_to_apricot.json
+2492a5d4d7329795fcb07103d07e3b4289b54fd9 data\borukva-food-exotic\recipe\pepper_crate_to_pepper.json
 15782bca9eeefc1382fc1725a2ea53f3545de6d2 data\borukva-food-exotic\recipe\plum_crate_to_plum.json
 e8c53e44bec979e2cf498aa426cdd2b80114ac7b data\borukva-food-exotic\advancement\recipes\food\spinach_to_spinach_seeds.json
 42e6681ea304c5391958cbdc6c1d877f59c029a2 data\borukva-food-exotic\advancement\recipes\building_blocks\stripped_orange_wood.json

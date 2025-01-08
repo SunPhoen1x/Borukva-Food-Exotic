@@ -42,6 +42,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         compressBlockRecipe(ModBlocks.PEAS_CRATE_ITEM, ModItems.PEAS, exporter);
         compressBlockRecipe(ModBlocks.SPINACH_CRATE_ITEM, ModItems.SPINACH, exporter);
         compressBlockRecipe(ModBlocks.BROCCOLI_CRATE_ITEM, ModItems.BROCCOLI, exporter);
+        compressBlockRecipe(ModBlocks.STRAWBERRY_CRATE_ITEM, ModItems.STRAWBERRY, exporter);
 
         planksRecipe(ModTags.Items.APRICOT_LOGS, ModBlocks.APRICOT_PLANKS_ITEM, exporter);
         planksRecipe(ModTags.Items.PEAR_LOGS, ModBlocks.PEAR_PLANKS_ITEM, exporter);

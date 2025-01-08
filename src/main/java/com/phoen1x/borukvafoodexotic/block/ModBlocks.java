@@ -5,7 +5,6 @@ import com.phoen1x.borukvafoodexotic.block.crops.*;
 import com.phoen1x.borukvafoodexotic.block.leaves.*;
 import com.phoen1x.borukvafoodexotic.world.tree.ModSaplingGenerator;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
@@ -36,6 +35,7 @@ public class ModBlocks {
     public static final Block PEAS_CRATE = registerBlock("peas_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "peas_crate"));
     public static final Block SPINACH_CRATE = registerBlock("spinach_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "spinach_crate"));
     public static final Block BROCCOLI_CRATE = registerBlock("broccoli_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "broccoli_crate"));
+    public static final Block STRAWBERRY_CRATE = registerBlock("strawberry_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "strawberry_crate"));
 
     public static final BlockItem APRICOT_CRATE_ITEM = registerBlockItem("apricot_crate", new TexturedPolyBlockItem(APRICOT_CRATE, new Item.Settings(), "block/apricot_crate"));
     public static final BlockItem PEAR_CRATE_ITEM = registerBlockItem("pear_crate", new TexturedPolyBlockItem(PEAR_CRATE, new Item.Settings(), "block/pear_crate"));
@@ -53,6 +53,11 @@ public class ModBlocks {
     public static final BlockItem GARLIC_CRATE_ITEM = registerBlockItem("garlic_crate", new TexturedPolyBlockItem(GARLIC_CRATE, new Item.Settings(), "block/garlic_crate"));
     public static final BlockItem SPINACH_CRATE_ITEM = registerBlockItem("spinach_crate", new TexturedPolyBlockItem(SPINACH_CRATE, new Item.Settings(), "block/spinach_crate"));
     public static final BlockItem BROCCOLI_CRATE_ITEM = registerBlockItem("broccoli_crate", new TexturedPolyBlockItem(BROCCOLI_CRATE, new Item.Settings(), "block/broccoli_crate"));
+    public static final BlockItem STRAWBERRY_CRATE_ITEM = registerBlockItem("strawberry_crate", new TexturedPolyBlockItem(STRAWBERRY_CRATE, new Item.Settings(), "block/strawberry_crate"));
+
+
+//    public static final Block CHIMNEY = registerBlock("chimney", new ChimneyBlock(Block.Settings.copy(Blocks.COMPOSTER), "chimney"));
+//    public static final BlockItem CHIMNEY_ITEM = registerBlockItem("chimney", new TexturedPolyBlockItem(CHIMNEY, new Item.Settings(), "block/chimney"));
 
     public static final Block APRICOT_LOG = registerBlock("apricot_log", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_LOG)));
     public static final Block APRICOT_WOOD = registerBlock("apricot_wood", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_WOOD)));
@@ -174,7 +179,7 @@ public class ModBlocks {
 
     public static void registerBlocks() {
         ItemGroup.Builder builder = PolymerItemGroupUtils.builder();
-        builder.icon(() -> new ItemStack(ModBlocks.ORANGE_CRATE_ITEM, 1));
+        builder.icon(() -> new ItemStack(ModBlocks.APRICOT_CRATE_ITEM, 1));
         builder.displayName(Text.translatable("item-group.borukva-food-exotic.blocks"));
 
         builder.entries((displayContext, entries) -> {
@@ -194,6 +199,7 @@ public class ModBlocks {
             entries.add(PEAS_CRATE);
             entries.add(SPINACH_CRATE);
             entries.add(BROCCOLI_CRATE);
+            entries.add(STRAWBERRY_CRATE);
 
             entries.add(APRICOT_LOG);
             entries.add(APRICOT_WOOD);

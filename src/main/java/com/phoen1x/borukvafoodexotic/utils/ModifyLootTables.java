@@ -34,7 +34,8 @@ public class ModifyLootTables {
                         .with(ItemEntry.builder(ModItems.PEPPER))
                         .with(ItemEntry.builder(ModItems.EGGPLANT))
                         .with(ItemEntry.builder(ModItems.PEAS))
-                        .with(ItemEntry.builder(ModItems.GREEN_BEAN));
+                        .with(ItemEntry.builder(ModItems.GREEN_BEAN))
+                        .with(ItemEntry.builder(ModItems.BROCCOLI));
                 tableBuilder.pool(pool);
             }
             if ((key.getValue() == LootTables.RUINED_PORTAL_CHEST.getValue())){
@@ -161,6 +162,9 @@ public class ModifyLootTables {
                 tableBuilder.modifyPools(builder -> builder.with(ItemEntry.builder(ModItems.SPINACH)
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3), false))
                         .weight(25)));
+                tableBuilder.modifyPools(builder -> builder.with(ItemEntry.builder(ModItems.BROCCOLI)
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3), false))
+                        .weight(25)));
             }
 
             if ((key.getValue() == LootTables.VILLAGE_SAVANNA_HOUSE_CHEST.getValue())){
@@ -207,6 +211,9 @@ public class ModifyLootTables {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3), false))
                         .weight(25)));
                 tableBuilder.modifyPools(builder -> builder.with(ItemEntry.builder(ModItems.SPINACH)
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3), false))
+                        .weight(25)));
+                tableBuilder.modifyPools(builder -> builder.with(ItemEntry.builder(ModItems.BROCCOLI)
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3), false))
                         .weight(25)));
             }
@@ -257,6 +264,9 @@ public class ModifyLootTables {
                 tableBuilder.modifyPools(builder -> builder.with(ItemEntry.builder(ModItems.SPINACH)
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3), false))
                         .weight(25)));
+                tableBuilder.modifyPools(builder -> builder.with(ItemEntry.builder(ModItems.BROCCOLI)
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3), false))
+                        .weight(25)));
             }
 
             if ((key.getValue() == LootTables.ANCIENT_CITY_CHEST.getValue())){
@@ -276,6 +286,7 @@ public class ModifyLootTables {
                         .with(ItemEntry.builder(ModItems.GREEN_BEAN))
                         .with(ItemEntry.builder(ModItems.GREEN_BEAN_SEEDS))
                         .with(ItemEntry.builder(ModItems.SPINACH))
+                        .with(ItemEntry.builder(ModItems.BROCCOLI))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3)));
                 tableBuilder.pool(pool);
             }
