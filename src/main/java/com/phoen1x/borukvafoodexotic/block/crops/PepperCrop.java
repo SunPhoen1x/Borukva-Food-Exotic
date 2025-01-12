@@ -70,7 +70,7 @@ public class PepperCrop extends CropBlock implements FactoryBlock, TransparentPl
 
     @Override
     public @Nullable ElementHolder createElementHolder(ServerWorld world, BlockPos pos, BlockState initialBlockState) {
-        return new PepperCrop.Model(initialBlockState);
+        return new Model(initialBlockState);
     }
     public static class Model extends BlockModel {
         public static final ArrayList<ItemStack> MODELS = new ArrayList<>();

@@ -1,17 +1,21 @@
 package com.phoen1x.borukvafoodexotic.datagen;
 
+import com.opryshok.recipe.cuttingBoard.CuttingBoardRecipe;
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.block.ModBlocks;
 import com.phoen1x.borukvafoodexotic.item.ModItems;
 import com.phoen1x.borukvafoodexotic.utils.ModTags;
+import eu.pb4.factorytools.api.recipe.CountedIngredient;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.TagKey;
@@ -36,7 +40,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         compressBlockRecipe(ModBlocks.SALMON_CRATE_ITEM, Items.SALMON, exporter);
         compressBlockRecipe(ModBlocks.TROPICAL_FISH_CRATE_ITEM, Items.TROPICAL_FISH, exporter);
         compressBlockRecipe(ModBlocks.PEPPER_CRATE_ITEM, ModItems.PEPPER, exporter);
-//        compressBlockRecipe(ModBlocks.GRAPE_CRATE_ITEM, ModItems.GRAPE, exporter);
         compressBlockRecipe(ModBlocks.GARLIC_CRATE_ITEM, ModItems.GARLIC, exporter);
         compressBlockRecipe(ModBlocks.GREEN_BEAN_CRATE_ITEM, ModItems.GREEN_BEAN, exporter);
         compressBlockRecipe(ModBlocks.PEAS_CRATE_ITEM, ModItems.PEAS, exporter);
@@ -78,22 +81,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         seedsRecipe(ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, exporter);
         seedsRecipe(ModItems.EGGPLANT, ModItems.EGGPLANT_SEEDS, exporter);
         seedsRecipe(ModItems.PEPPER, ModItems.PEPPER_SEEDS, exporter);
-//        seedsRecipe(ModItems.GRAPE, ModItems.GRAPE_SEEDS, exporter);
         seedsRecipe(ModItems.PEAS, ModItems.PEAS_SEEDS, exporter);
         seedsRecipe(ModItems.SPINACH, ModItems.SPINACH_SEEDS, exporter);
         seedsRecipe(ModItems.GARLIC, ModItems.GARLIC_SEEDS, exporter);
         seedsRecipe(ModItems.GREEN_BEAN, ModItems.GREEN_BEAN_SEEDS, exporter);
         seedsRecipe(ModItems.BROCCOLI, ModItems.BROCCOLI_SEEDS, exporter);
 
-//        offerTrapdoorRecipe(exporter, ModBlocks.APRICOT_TRAPDOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
-//        offerDoorRecipe(exporter, ModBlocks.APRICOT_DOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
-    }
+        of(exporter,
+                CuttingBoardRecipe.of("kiwi_slices", CountedIngredient.ofItems(1, ModItems.KIWI), new ItemStack(ModItems.KIWI_SLICES, 3))
 
-    private void offerDoorRecipe(RecipeExporter exporter, Item output, Item input) {
-        createDoorRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter, BorukvaFoodExotic.id(getRecipeName(output)));
-    }
-    private void offerTrapdoorRecipe(RecipeExporter exporter, Item output, Item input){
-        createTrapdoorRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter, BorukvaFoodExotic.id(getRecipeName(output)));
+                );
     }
 
     private void compressBlockRecipe(Item blockItem, Item item, RecipeExporter exporter){
@@ -158,4 +155,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(item), conditionsFromItem(item))
                 .offerTo(exporter, Identifier.of(BorukvaFoodExotic.MOD_ID, getRecipeName(item) + "_to_" + getRecipeName(seeds)));
     }
+
+    public void of(RecipeExporter exporter, RecipeEntry<?>... recipes) {
+        for (var recipe : recipes) {
+            exporter.accept(recipe.id(), recipe.value(), null);
+        }
+    }
+
 }

@@ -1,0 +1,12 @@
+{
+  "type": "borukva-food:cutting_board",
+  "input": {
+    "base": {
+      "item": "borukva-food-exotic:kiwi"
+    }
+  },
+  "output": {
+    "count": 3,
+    "id": "borukva-food-exotic:kiwi_slices"
+  }
+}

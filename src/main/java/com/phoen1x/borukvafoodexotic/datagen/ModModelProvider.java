@@ -95,17 +95,17 @@ public class ModModelProvider extends FabricModelProvider{
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-//        itemModelGenerator.register(ModBlocks.APRICOT_DOOR_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.APRICOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.KIWI, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.KIWI_SLICES, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.EGGPLANT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEPPER, Models.GENERATED);
-//        itemModelGenerator.register(ModItems.GRAPE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEAS, Models.GENERATED);
         itemModelGenerator.register(ModItems.SPINACH, Models.GENERATED);
         itemModelGenerator.register(ModItems.GARLIC, Models.GENERATED);

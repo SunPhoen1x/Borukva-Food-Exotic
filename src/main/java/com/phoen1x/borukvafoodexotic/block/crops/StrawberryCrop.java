@@ -70,7 +70,7 @@ public class StrawberryCrop extends CropBlock implements FactoryBlock, Transpare
 
     @Override
     public @Nullable ElementHolder createElementHolder(ServerWorld world, BlockPos pos, BlockState initialBlockState) {
-        return new StrawberryCrop.Model(initialBlockState);
+        return new Model(initialBlockState);
     }
     public static class Model extends BlockModel {
         public static final ArrayList<ItemStack> MODELS = new ArrayList<>();

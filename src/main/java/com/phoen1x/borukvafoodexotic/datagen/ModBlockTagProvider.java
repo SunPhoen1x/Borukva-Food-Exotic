@@ -30,7 +30,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(COD_CRATE)
                 .add(SALMON_CRATE)
                 .add(TROPICAL_FISH_CRATE)
-//                .add(GRAPE_CRATE)
                 .add(PEPPER_CRATE)
                 .add(GREEN_BEAN_CRATE)
                 .add(PEAR_CRATE)
@@ -38,12 +37,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(BROCCOLI_CRATE)
                 .add(STRAWBERRY_CRATE)
                 .add(GARLIC_CRATE);
-
-//      getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
-//                .add(APRICOT_DOOR);
-//
-//        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
-//                .add(APRICOT_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
                 .add(APRICOT_SLAB)

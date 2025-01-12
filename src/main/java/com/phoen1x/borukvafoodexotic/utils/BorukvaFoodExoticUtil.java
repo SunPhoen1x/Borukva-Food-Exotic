@@ -94,8 +94,11 @@ public class BorukvaFoodExoticUtil {
 
 //        addFlammable(ModBlocks.APRICOT_DOOR, 5, 20);
 //        addFlammable(ModBlocks.APRICOT_TRAPDOOR, 5, 20);;
-//        addFlammable(ModBlocks.APRICOT_SLAB, 5, 20);
-
+        addFlammable(ModBlocks.APRICOT_SLAB, 5, 20);
+        addFlammable(ModBlocks.PEAR_SLAB, 5, 20);
+        addFlammable(ModBlocks.PLUM_SLAB, 5, 20);
+        addFlammable(ModBlocks.ORANGE_SLAB, 5, 20);
+        addFlammable(ModBlocks.KIWI_SLAB, 5, 20);
     }
     private static void addFlammable(Block block, int burn, int spread){
         FlammableBlockRegistry.getDefaultInstance().add(block, burn, spread);

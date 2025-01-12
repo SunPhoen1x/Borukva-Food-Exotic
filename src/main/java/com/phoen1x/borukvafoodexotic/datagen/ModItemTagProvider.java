@@ -28,7 +28,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PLUM)
                 .add(ModItems.STRAWBERRY)
                 .add(ModItems.EGGPLANT)
-//                .add(ModItems.GRAPE)
                 .add(ModItems.PEPPER)
                 .add(ModItems.PEAS)
                 .add(ModItems.SPINACH)
@@ -86,21 +85,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(PLUM_SLAB_ITEM)
                 .add(ORANGE_SLAB_ITEM)
                 .add(KIWI_SLAB_ITEM);
-
-//        getOrCreateTagBuilder(ItemTags.VILLAGER_PLANTABLE_SEEDS)
-//                .add(EGGPLANT_SEEDS)
-//                .add(STRAWBERRY_SEEDS)
-//                .add(BROCCOLI_SEEDS)
-//                .add(SPINACH_SEEDS)
-//                .add(GARLIC_SEEDS)
-//                .add(PEAS_SEEDS)
-//                .add(PEPPER_SEEDS)
-//                .add(GREEN_BEAN_SEEDS);
-
-//        getOrCreateTagBuilder(ItemTags.WOODEN_DOORS)
-//                .add(APRICOT_DOOR_ITEM);
-//        getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS)
-//                .add(APRICOT_TRAPDOOR_ITEM);
 
         getOrCreateTagBuilder(ItemTags.LEAVES)
                 .add(APRICOT_LEAVES_ITEM)

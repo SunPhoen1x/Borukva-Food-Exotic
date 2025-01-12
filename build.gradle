@@ -12,6 +12,7 @@ base {
 
 repositories {
 	maven { url 'https://maven.nucleoid.xyz' }
+	maven { url 'https://api.modrinth.com/maven/'}
 }
 
 fabricApi {
@@ -34,6 +35,8 @@ dependencies {
 	modImplementation ("eu.pb4:polymer-autohost:${polymer_version}")
 	modImplementation include ("eu.pb4:sgui:[${sgui_version}]")
 	modImplementation include ("eu.pb4:factorytools:[${factorytools_version}]")
+
+	modImplementation "maven.modrinth:borukva-food:C4mhKWrX"
 }
 
 processResources {

@@ -27,6 +27,7 @@ public class BorukvaFoodExotic implements ModInitializer {
 		ModifyLootTables.modifyLootTables();
 		ModWorldGeneration.generateModWorldGen();
 		SaplingModels.register();
+		FruitLeavesModels.register();
 
 		initModels();
 		if (PolymerResourcePackUtils.addModAssets(MOD_ID)) {

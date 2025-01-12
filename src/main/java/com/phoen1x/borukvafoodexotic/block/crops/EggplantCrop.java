@@ -70,7 +70,7 @@ public class EggplantCrop extends CropBlock implements FactoryBlock, Transparent
 
     @Override
     public @Nullable ElementHolder createElementHolder(ServerWorld world, BlockPos pos, BlockState initialBlockState) {
-        return new EggplantCrop.Model(initialBlockState);
+        return new Model(initialBlockState);
     }
     public static class Model extends BlockModel {
         public static final ArrayList<ItemStack> MODELS = new ArrayList<>();

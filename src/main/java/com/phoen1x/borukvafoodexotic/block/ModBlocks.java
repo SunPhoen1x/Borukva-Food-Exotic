@@ -193,7 +193,6 @@ public class ModBlocks {
             entries.add(SALMON_CRATE);
             entries.add(TROPICAL_FISH_CRATE);
             entries.add(PEPPER_CRATE);
-//            entries.add(GRAPE_CRATE);
             entries.add(GARLIC_CRATE);
             entries.add(GREEN_BEAN_CRATE);
             entries.add(PEAS_CRATE);
@@ -207,8 +206,6 @@ public class ModBlocks {
             entries.add(STRIPPED_APRICOT_WOOD);
             entries.add(APRICOT_LEAVES);
             entries.add(APRICOT_PLANKS);
-//            entries.add(APRICOT_DOOR_ITEM);
-//            entries.add(APRICOT_TRAPDOOR_ITEM);
 
             entries.add(ORANGE_LOG);
             entries.add(ORANGE_WOOD);

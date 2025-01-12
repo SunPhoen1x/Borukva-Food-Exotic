@@ -20,6 +20,7 @@ public class ModItems {
     public static Item ORANGE = registerItem("orange", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "orange"));
     public static Item PLUM = registerItem("plum", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "plum"));
     public static Item KIWI = registerItem("kiwi", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "kiwi"));
+
     public static Item STRAWBERRY = registerItem("strawberry", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "strawberry"));
     public static Item EGGPLANT = registerItem("eggplant", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "eggplant"));
     public static Item PEPPER = registerItem("pepper", new PolyItem(new Item.Settings().food(ModFoodComponents.VEGETABLE), "pepper"));
@@ -54,6 +55,9 @@ public class ModItems {
     public static Item GREEN_BEAN_SEEDS = registerItem("green_bean_seeds", new PolySeedsItem(ModBlocks.GREEN_BEAN, new Item.Settings(), "green_bean_seeds"));
     public static Item BROCCOLI_SEEDS = registerItem("broccoli_seeds", new PolySeedsItem(ModBlocks.BROCCOLI, new Item.Settings(), "broccoli_seeds"));
 
+
+    public static Item KIWI_SLICES = registerItem("kiwi_slices", new PolyItem(new Item.Settings().food(ModFoodComponents.SLICES), "kiwi_slices"));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BorukvaFoodExotic.MOD_ID, name), item);
     }
@@ -64,10 +68,6 @@ public class ModItems {
         builder.displayName(Text.translatable("item-group.borukva-food-exotic.items"));
 
         builder.entries((displayContext, entries) -> {
-            entries.add(APRICOT_JAM);
-            entries.add(PEAR_JAM);
-            entries.add(PLUM_JAM);
-
             entries.add(APRICOT);
             entries.add(PEAR);
             entries.add(ORANGE);
@@ -76,7 +76,6 @@ public class ModItems {
             entries.add(STRAWBERRY);
             entries.add(EGGPLANT);
             entries.add(PEPPER);
-//            entries.add(GRAPE);
             entries.add(PEAS);
             entries.add(SPINACH);
             entries.add(GARLIC);
@@ -86,21 +85,21 @@ public class ModItems {
             entries.add(STRAWBERRY_SEEDS);
             entries.add(EGGPLANT_SEEDS);
             entries.add(PEPPER_SEEDS);
-//            entries.add(GRAPE_SEEDS);
             entries.add(PEAS_SEEDS);
             entries.add(SPINACH_SEEDS);
             entries.add(GARLIC_SEEDS);
             entries.add(GREEN_BEAN_SEEDS);
             entries.add(BROCCOLI_SEEDS);
 
+            entries.add(KIWI_SLICES);
+
             entries.add(PEAR_PIE);
             entries.add(APRICOT_PIE);
             entries.add(PLUM_PIE);
 
-//            entries.add(APRICOT_PIE_SLICE);
-//            entries.add(APRICOT_JAM_SLICE);
-//            entries.add(PEAR_JAM_SLICE);
-//            entries.add(PLUM_JAM_SLICE);
+            entries.add(APRICOT_JAM);
+            entries.add(PEAR_JAM);
+            entries.add(PLUM_JAM);
         });
         ItemGroup polymerGroup = builder.build();
         PolymerItemGroupUtils.registerPolymerItemGroup(Identifier.of(BorukvaFoodExotic.MOD_ID, "items"), polymerGroup);
