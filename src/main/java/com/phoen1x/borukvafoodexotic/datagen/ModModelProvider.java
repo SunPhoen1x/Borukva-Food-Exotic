@@ -22,7 +22,6 @@ public class ModModelProvider extends FabricModelProvider{
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.EGGPLANT, BlockStateModelGenerator.TintType.NOT_TINTED, EggplantCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.PEPPER, BlockStateModelGenerator.TintType.NOT_TINTED, PepperCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.GREEN_BEAN, BlockStateModelGenerator.TintType.NOT_TINTED, GreenBeanCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
-        //blockStateModelGenerator.registerCrop(ModBlocks.GRAPE, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerCrop(ModBlocks.GARLIC, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.PEAS, BlockStateModelGenerator.TintType.NOT_TINTED, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BROCCOLI, BlockStateModelGenerator.TintType.NOT_TINTED, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
@@ -38,7 +37,6 @@ public class ModModelProvider extends FabricModelProvider{
         generateCrate(blockStateModelGenerator, ModBlocks.SALMON_CRATE, "salmon_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_CRATE, "tropical_fish_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.PEPPER_CRATE, "pepper_crate");
-//        generateCrate(blockStateModelGenerator, ModBlocks.GRAPE_CRATE, "grape_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.GARLIC_CRATE, "garlic_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.GREEN_BEAN_CRATE, "green_bean_crate");
         generateCrate(blockStateModelGenerator, ModBlocks.PEAS_CRATE, "peas_crate");
@@ -71,6 +69,7 @@ public class ModModelProvider extends FabricModelProvider{
         blockStateModelGenerator.registerTintableCross(ModBlocks.ORANGE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.KIWI_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.PLUM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         BlockStateModelGenerator.BlockTexturePool apricotPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.APRICOT_PLANKS);
         apricotPlanksPool.slab(ModBlocks.APRICOT_SLAB);
 
@@ -95,6 +94,7 @@ public class ModModelProvider extends FabricModelProvider{
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModBlocks.APRICOT_DOOR_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.APRICOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);

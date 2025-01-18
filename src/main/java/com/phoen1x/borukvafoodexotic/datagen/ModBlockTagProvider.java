@@ -112,6 +112,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(KIWI_SAPLING)
                 .add(PLUM_SAPLING);
 
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+                .add(APRICOT_DOOR);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+                .add(APRICOT_TRAPDOOR);
+
 //        getOrCreateTagBuilder(BlockTags.CROPS)
 //                .add(EGGPLANT)
 //                .add(STRAWBERRY)

@@ -4,6 +4,7 @@ import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.block.ModBlocks;
 import com.phoen1x.borukvafoodexotic.utils.ModFoodComponents;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
+import eu.pb4.polymer.core.api.item.SimplePolymerItem;
 import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -55,6 +56,7 @@ public class ModItems {
     public static Item GREEN_BEAN_SEEDS = registerItem("green_bean_seeds", new PolySeedsItem(ModBlocks.GREEN_BEAN, new Item.Settings(), "green_bean_seeds"));
     public static Item BROCCOLI_SEEDS = registerItem("broccoli_seeds", new PolySeedsItem(ModBlocks.BROCCOLI, new Item.Settings(), "broccoli_seeds"));
 
+    public static Item CHERRY_WINE = registerItem("cherry_wine", new PolyItem(new Item.Settings().maxCount(1), "cherry_wine"));
 
     public static Item KIWI_SLICES = registerItem("kiwi_slices", new PolyItem(new Item.Settings().food(ModFoodComponents.SLICES), "kiwi_slices"));
 
@@ -92,6 +94,8 @@ public class ModItems {
             entries.add(BROCCOLI_SEEDS);
 
             entries.add(KIWI_SLICES);
+
+            entries.add(CHERRY_WINE);
 
             entries.add(PEAR_PIE);
             entries.add(APRICOT_PIE);

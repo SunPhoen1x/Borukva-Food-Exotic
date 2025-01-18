@@ -1,22 +1,27 @@
 package com.phoen1x.borukvafoodexotic.block;
 
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
+import com.phoen1x.borukvafoodexotic.block.rack.PineRack;
+import com.phoen1x.borukvafoodexotic.block.rack.Rack;
 import com.phoen1x.borukvafoodexotic.block.crops.*;
 import com.phoen1x.borukvafoodexotic.block.leaves.*;
+import com.phoen1x.borukvafoodexotic.block.rack.RackCross;
 import com.phoen1x.borukvafoodexotic.world.tree.ModSaplingGenerator;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import static com.phoen1x.borukvafoodexotic.BorukvaFoodExotic.MOD_ID;
+
 
 public class ModBlocks {
     public static final Block APRICOT_CRATE = registerBlock("apricot_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "apricot_crate"));
@@ -55,18 +60,14 @@ public class ModBlocks {
     public static final BlockItem BROCCOLI_CRATE_ITEM = registerBlockItem("broccoli_crate", new TexturedPolyBlockItem(BROCCOLI_CRATE, new Item.Settings(), "block/broccoli_crate"));
     public static final BlockItem STRAWBERRY_CRATE_ITEM = registerBlockItem("strawberry_crate", new TexturedPolyBlockItem(STRAWBERRY_CRATE, new Item.Settings(), "block/strawberry_crate"));
 
-
-//    public static final Block CHIMNEY = registerBlock("chimney", new ChimneyBlock(Block.Settings.copy(Blocks.COMPOSTER), "chimney"));
-//    public static final BlockItem CHIMNEY_ITEM = registerBlockItem("chimney", new TexturedPolyBlockItem(CHIMNEY, new Item.Settings(), "block/chimney"));
-
     public static final Block APRICOT_LOG = registerBlock("apricot_log", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_LOG)));
     public static final Block APRICOT_WOOD = registerBlock("apricot_wood", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_WOOD)));
     public static final Block STRIPPED_APRICOT_LOG = registerBlock("stripped_apricot_log", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_LOG)));
     public static final Block STRIPPED_APRICOT_WOOD = registerBlock("stripped_apricot_wood", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_WOOD)));
     public static final Block APRICOT_LEAVES = registerBlock("apricot_leaves", new PolyLeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES), "apricot_leaves"));
     public static final Block APRICOT_PLANKS = registerBlock("apricot_planks", new SimplePolyBlock(Block.Settings.copy(Blocks.OAK_PLANKS), "apricot_planks"));
-//    public static final Block APRICOT_TRAPDOOR = registerBlock("apricot_trapdoor", new PolyTrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR), "apricot_trapdoor"));
-//    public static final Block APRICOT_DOOR = registerBlock("apricot_door", new PolyDoorBlock(Block.Settings.copy(Blocks.OAK_DOOR), "apricot_door"));
+    public static final Block APRICOT_TRAPDOOR = registerBlock("apricot_trapdoor", new PolyTrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR), "apricot_trapdoor"));
+    public static final Block APRICOT_DOOR = registerBlock("apricot_door", new PolyDoorBlock(Block.Settings.copy(Blocks.OAK_DOOR), "apricot_door"));
 
     public static final Block PEAR_LOG = registerBlock("pear_log", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_LOG)));
     public static final Block PEAR_WOOD = registerBlock("pear_wood", new PolyLogBlock(Block.Settings.copy(Blocks.OAK_WOOD)));
@@ -115,8 +116,8 @@ public class ModBlocks {
     public static final BlockItem STRIPPED_APRICOT_WOOD_ITEM = registerBlockItem("stripped_apricot_wood", new TexturedPolyBlockItem(STRIPPED_APRICOT_WOOD, new Item.Settings(), "block/stripped_apricot_wood"));
     public static final BlockItem APRICOT_LEAVES_ITEM = registerBlockItem("apricot_leaves", new TexturedPolyBlockItem(APRICOT_LEAVES, new Item.Settings(), "block/apricot_leaves"));
     public static final BlockItem APRICOT_PLANKS_ITEM = registerBlockItem("apricot_planks", new TexturedPolyBlockItem(APRICOT_PLANKS, new Item.Settings(), "block/apricot_planks"));
-//    public static final BlockItem APRICOT_DOOR_ITEM = registerBlockItem("apricot_door", new TexturedPolyBlockItem(APRICOT_DOOR, new Item.Settings(), "item/apricot_door"));
-//    public static final BlockItem APRICOT_TRAPDOOR_ITEM = registerBlockItem("apricot_trapdoor", new TexturedPolyBlockItem(APRICOT_TRAPDOOR, new Item.Settings(), "item/apricot_trapdoor"));
+    public static final BlockItem APRICOT_DOOR_ITEM = registerBlockItem("apricot_door", new TexturedPolyBlockItem(APRICOT_DOOR, new Item.Settings(), "item/apricot_door"));
+    public static final BlockItem APRICOT_TRAPDOOR_ITEM = registerBlockItem("apricot_trapdoor", new TexturedPolyBlockItem(APRICOT_TRAPDOOR, new Item.Settings(), "item/apricot_trapdoor"));
 
     public static final BlockItem ORANGE_FRUIT_LEAVES_ITEM =registerBlockItem("orange_fruit_leaves", new TexturedPolyBlockItem(ORANGE_FRUIT_LEAVES, new Item.Settings(), "block/orange_fruit_leaves_has_fruit"));
     public static final BlockItem ORANGE_LOG_ITEM = registerBlockItem("orange_log", new TexturedPolyBlockItem(ORANGE_LOG, new Item.Settings(), "block/orange_log"));
@@ -170,12 +171,21 @@ public class ModBlocks {
     public static final Block STRAWBERRY = registerBlock("strawberry_crop", new StrawberryCrop(Block.Settings.copy(Blocks.WHEAT)));
     public static final Block EGGPLANT = registerBlock("eggplant_crop", new EggplantCrop(Block.Settings.copy(Blocks.WHEAT)));
     public static final Block PEPPER = registerBlock("pepper_crop", new PepperCrop(Block.Settings.copy(Blocks.WHEAT)));
-//    public static final Block GRAPE = registerBlock("grape_crop", new GrapeCrop(Block.Settings.copy(Blocks.WHEAT)));
     public static final Block PEAS = registerBlock("peas_crop", new PeasCrop(Block.Settings.copy(Blocks.WHEAT)));
     public static final Block SPINACH = registerBlock("spinach_crop", new SpinachCrop(Block.Settings.copy(Blocks.WHEAT)));
     public static final Block GARLIC = registerBlock("garlic_crop", new GarlicCrop(Block.Settings.copy(Blocks.WHEAT)));
     public static final Block GREEN_BEAN = registerBlock("green_bean_crop", new GreenBeanCrop(Block.Settings.copy(Blocks.WHEAT)));
     public static final Block BROCCOLI = registerBlock("broccoli_crop", new BroccoliCrop(Block.Settings.copy(Blocks.WHEAT)));
+
+    public static final Block RACK = registerBlock("rack", new Rack(Block.Settings.copy(Blocks.IRON_TRAPDOOR)));
+    public static final Block PINE_RACK = registerBlock("pine_rack", new PineRack(Block.Settings.copy(Blocks.IRON_TRAPDOOR)));
+
+    public static final Block RACK_CROSS = registerBlock("rack_cross", new RackCross(Block.Settings.copy(Blocks.IRON_TRAPDOOR)));
+
+    public static final BlockItem RACK_ITEM = registerBlockItem("rack", new TexturedPolyBlockItem(RACK, new Item.Settings(), "block/rack"));
+    public static final BlockItem PINE_RACK_ITEM = registerBlockItem("pine_rack", new TexturedPolyBlockItem(PINE_RACK, new Item.Settings(), "block/pine_rack"));
+
+    public static final BlockItem RACK_CROSS_ITEM = registerBlockItem("rack_cross", new TexturedPolyBlockItem(RACK_CROSS, new Item.Settings(), "block/rack_cross"));
 
     public static void registerBlocks() {
         ItemGroup.Builder builder = PolymerItemGroupUtils.builder();
@@ -199,6 +209,10 @@ public class ModBlocks {
             entries.add(SPINACH_CRATE);
             entries.add(BROCCOLI_CRATE);
             entries.add(STRAWBERRY_CRATE);
+
+            entries.add(RACK_ITEM);
+            entries.add(PINE_RACK_ITEM);
+            entries.add(RACK_CROSS_ITEM);
 
             entries.add(APRICOT_LOG);
             entries.add(APRICOT_WOOD);
@@ -252,6 +266,9 @@ public class ModBlocks {
             entries.add(ORANGE_SLAB_ITEM);
             entries.add(PLUM_SLAB_ITEM);
             entries.add(KIWI_SLAB_ITEM);
+
+            entries.add(APRICOT_DOOR_ITEM);
+            entries.add(APRICOT_TRAPDOOR_ITEM);
 
         });
         ItemGroup polymerGroup = builder.build();

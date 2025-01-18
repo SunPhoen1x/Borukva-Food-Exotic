@@ -8,6 +8,7 @@ import com.phoen1x.borukvafoodexotic.utils.ModTags;
 import eu.pb4.factorytools.api.recipe.CountedIngredient;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Block;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -87,10 +88,43 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         seedsRecipe(ModItems.GREEN_BEAN, ModItems.GREEN_BEAN_SEEDS, exporter);
         seedsRecipe(ModItems.BROCCOLI, ModItems.BROCCOLI_SEEDS, exporter);
 
+        rackRecipe(ModBlocks.RACK_ITEM, Items.OAK_SLAB, exporter);
+        rackCrossRecipe(ModBlocks.RACK_CROSS_ITEM, Items.OAK_SLAB, exporter);
+
         of(exporter,
                 CuttingBoardRecipe.of("kiwi_slices", CountedIngredient.ofItems(1, ModItems.KIWI), new ItemStack(ModItems.KIWI_SLICES, 3))
 
                 );
+
+        offerTrapdoorRecipe(exporter, ModBlocks.APRICOT_TRAPDOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+        offerDoorRecipe(exporter, ModBlocks.APRICOT_DOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+    }
+
+    private void offerDoorRecipe(RecipeExporter exporter, Item output, Item input) {
+        createDoorRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter, BorukvaFoodExotic.id(getRecipeName(output)));
+    }
+    private void offerTrapdoorRecipe(RecipeExporter exporter, Item output, Item input){
+        createTrapdoorRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter, BorukvaFoodExotic.id(getRecipeName(output)));
+    }
+
+    private void rackRecipe(Item blockItem, Item item, RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, blockItem, 1)
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("SSS")
+                .input('S', item)
+                .criterion(hasItem(item), conditionsFromItem(item))
+                .offerTo(exporter, Identifier.of(BorukvaFoodExotic.MOD_ID, getRecipeName(blockItem)));
+    }
+
+    private void rackCrossRecipe(Item blockItem, Item item, RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, blockItem, 1)
+                .pattern(" S ")
+                .pattern("S S")
+                .pattern(" S ")
+                .input('S', item)
+                .criterion(hasItem(item), conditionsFromItem(item))
+                .offerTo(exporter, Identifier.of(BorukvaFoodExotic.MOD_ID, getRecipeName(blockItem)));
     }
 
     private void compressBlockRecipe(Item blockItem, Item item, RecipeExporter exporter){
@@ -140,15 +174,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(BorukvaFoodExotic.MOD_ID, getRecipeName(wood)));
     }
 
-    private void trapdoorRecipe(Item log, Item wood, RecipeExporter exporter){
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, wood, 2)
-                .pattern("SSS")
-                .pattern("SSS")
-                .input('S', log)
-                .criterion(hasItem(log), conditionsFromItem(log))
-                .offerTo(exporter, Identifier.of(BorukvaFoodExotic.MOD_ID, getRecipeName(wood)));
-    }
-
     private void seedsRecipe(Item item, Item seeds, RecipeExporter exporter){
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, seeds, 3)
                 .input(item)
@@ -161,5 +186,4 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             exporter.accept(recipe.id(), recipe.value(), null);
         }
     }
-
 }

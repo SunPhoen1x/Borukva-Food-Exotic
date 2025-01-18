@@ -24,6 +24,10 @@
   "block.borukva-food-exotic.apricot_planks": "Apricot Planks",
   "block.borukva-food-exotic.apricot_slab": "Apricot Slab",
 
+  "block.borukva-food-exotic.rack": "Oak Wine Rack",
+  "block.borukva-food-exotic.pine_rack": "Spruce Wine Rack",
+  "block.borukva-food-exotic.rack_cross": "Wine Rack Cross",
+
   "block.borukva-food-exotic.pear_log": "Pear Log",
   "block.borukva-food-exotic.pear_wood": "Pear Wood",
   "block.borukva-food-exotic.stripped_pear_log": "Stripped Pear Log",
@@ -109,5 +113,8 @@
 
   "item.borukva-food-exotic.green_bean": "Green Bean",
   "item.borukva-food-exotic.green_bean_seeds": "Green Bean Seeds",
-  "block.borukva-food-exotic.green_bean_crate": "Green Bean Crate"
+  "block.borukva-food-exotic.green_bean_crate": "Green Bean Crate",
+
+  "block.borukva-food-exotic.apricot_door": "Apricot Door",
+  "block.borukva-food-exotic.apricot_trapdoor": "Apricot Trapdoor"
 }

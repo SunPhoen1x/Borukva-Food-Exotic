@@ -16,6 +16,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> APRICOT_PLACED_KEY = registerKey("apricot_placed");
     public static final RegistryKey<PlacedFeature> PEAR_PLACED_KEY = registerKey("pear_placed");
     public static final RegistryKey<PlacedFeature> PLUM_PLACED_KEY = registerKey("plum_placed");
+    public static final RegistryKey<PlacedFeature> PLUM_BEES_PLACED_KEY = registerKey("plum_bees_placed");
     public static final RegistryKey<PlacedFeature> KIWI_PLACED_KEY = registerKey("kiwi_placed");
 
     public static void boostrap(Registerable<PlacedFeature> context) {
@@ -29,6 +30,10 @@ public class ModPlacedFeatures {
                         ModBlocks.PEAR_SAPLING));
 
         register(context, PLUM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLUM_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.005f, 1),
+                        ModBlocks.PLUM_SAPLING));
+
+        register(context, PLUM_BEES_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLUM_BEES_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.005f, 1),
                         ModBlocks.PLUM_SAPLING));
 
