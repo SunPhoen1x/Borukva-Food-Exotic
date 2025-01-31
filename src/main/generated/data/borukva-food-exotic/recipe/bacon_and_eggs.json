@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "borukva-food-exotic:bacon_cooked"
+    },
+    {
+      "item": "borukva-food-exotic:fried_egg"
+    },
+    {
+      "item": "borukva-food:salt"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:bacon_and_eggs"
+  }
+}

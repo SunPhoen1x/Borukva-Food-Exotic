@@ -16,7 +16,6 @@ public class CompostableItems {
         put(ModItems.GARLIC_SEEDS, seeds);
         put(ModItems.SPINACH_SEEDS, seeds);
 
-
         put(ModItems.APRICOT, plant);
         put(ModItems.PEAR, plant);
         put(ModItems.ORANGE, plant);

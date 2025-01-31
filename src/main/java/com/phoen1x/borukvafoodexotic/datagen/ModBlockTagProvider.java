@@ -1,12 +1,10 @@
 package com.phoen1x.borukvafoodexotic.datagen;
 
-import com.jcraft.jorbis.Block;
 import com.phoen1x.borukvafoodexotic.utils.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -37,6 +35,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(BROCCOLI_CRATE)
                 .add(STRAWBERRY_CRATE)
                 .add(GARLIC_CRATE);
+
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
                 .add(APRICOT_SLAB)
@@ -114,10 +113,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
-                .add(APRICOT_DOOR);
-
-        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
-                .add(APRICOT_TRAPDOOR);
+                .add(APRICOT_DOOR)
+                .add(KIWI_DOOR)
+                .add(ORANGE_DOOR)
+                .add(PLUM_DOOR)
+                .add(PEAR_DOOR);
 
 //        getOrCreateTagBuilder(BlockTags.CROPS)
 //                .add(EGGPLANT)

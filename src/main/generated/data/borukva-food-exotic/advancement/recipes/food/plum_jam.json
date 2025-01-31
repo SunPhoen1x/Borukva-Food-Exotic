@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_plum": {
+      "conditions": {
+        "items": [
+          {
+            "items": "borukva-food-exotic:plum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "borukva-food:plum_jam"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_plum"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "borukva-food:plum_jam"
+    ]
+  }
+}

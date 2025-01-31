@@ -1,0 +1,13 @@
+{
+  "type": "borukva-food:pan",
+  "input": {
+    "base": {
+      "item": "borukva-food-exotic:eggplant"
+    }
+  },
+  "output": {
+    "count": 1,
+    "id": "borukva-food-exotic:smoked_eggplant"
+  },
+  "time": 120.0
+}

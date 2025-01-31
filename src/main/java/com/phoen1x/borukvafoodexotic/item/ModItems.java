@@ -14,6 +14,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import static com.phoen1x.borukvafoodexotic.block.ModBlocks.*;
+
 
 public class ModItems {
     public static Item APRICOT = registerItem("apricot", new PolyItem(new Item.Settings().food(ModFoodComponents.FRUIT), "apricot"));
@@ -56,9 +58,19 @@ public class ModItems {
     public static Item GREEN_BEAN_SEEDS = registerItem("green_bean_seeds", new PolySeedsItem(ModBlocks.GREEN_BEAN, new Item.Settings(), "green_bean_seeds"));
     public static Item BROCCOLI_SEEDS = registerItem("broccoli_seeds", new PolySeedsItem(ModBlocks.BROCCOLI, new Item.Settings(), "broccoli_seeds"));
 
-    public static Item CHERRY_WINE = registerItem("cherry_wine", new PolyItem(new Item.Settings().maxCount(1), "cherry_wine"));
-
     public static Item KIWI_SLICES = registerItem("kiwi_slices", new PolyItem(new Item.Settings().food(ModFoodComponents.SLICES), "kiwi_slices"));
+
+    public static Item RATATOUILLE = registerItem("ratatouille", new PolyItem(new Item.Settings().food(ModFoodComponents.RATATOUILLE), "ratatouille"));
+    public static Item SMOKED_EGGPLANT = registerItem("smoked_eggplant", new PolyItem(new Item.Settings().food(ModFoodComponents.SMOKED), "smoked_eggplant"));
+    public static Item BACON = registerItem("bacon", new PolyItem(new Item.Settings().food(ModFoodComponents.BACON), "bacon"));
+    public static Item BACON_COOKED = registerItem("bacon_cooked", new PolyItem(new Item.Settings().food(ModFoodComponents.BACON_COOKED), "bacon_cooked"));
+    public static Item FRIED_EGG = registerItem("fried_egg", new PolyItem(new Item.Settings().food(ModFoodComponents.FRIED_EGG), "fried_egg"));
+    public static Item BACON_AND_EGGS = registerItem("bacon_and_eggs", new PolyItem(new Item.Settings().food(ModFoodComponents.BACON_AND_EGGS), "bacon_and_eggs"));
+    public static Item BELL_SOUP = registerItem("bell_soup", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.ROTTEN_SOUP).maxCount(1), "bell_soup"));
+    public static Item PEAS_SOUP = registerItem("peas_soup", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.ROTTEN_SOUP).maxCount(1), "peas_soup"));
+    public static Item COD_NIGIRI = registerItem("cod_nigiri", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.SALMON_NIGIRI), "cod_nigiri"));
+    public static Item SQUID_NIGIRI = registerItem("squid_nigiri", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.SALMON_NIGIRI), "squid_nigiri"));
+    public static Item COD_FILLET = registerItem("cod_fillet", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.SALMON_FILLET), "cod_fillet"));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BorukvaFoodExotic.MOD_ID, name), item);
@@ -94,8 +106,17 @@ public class ModItems {
             entries.add(BROCCOLI_SEEDS);
 
             entries.add(KIWI_SLICES);
-
-            entries.add(CHERRY_WINE);
+            entries.add(RATATOUILLE);
+            entries.add(SMOKED_EGGPLANT);
+            entries.add(BACON);
+            entries.add(BACON_COOKED);
+            entries.add(FRIED_EGG);
+            entries.add(BACON_AND_EGGS);
+            entries.add(PEAS_SOUP);
+            entries.add(BELL_SOUP);
+            entries.add(COD_NIGIRI);
+            entries.add(SQUID_NIGIRI);
+            entries.add(COD_FILLET);
 
             entries.add(PEAR_PIE);
             entries.add(APRICOT_PIE);
@@ -104,6 +125,93 @@ public class ModItems {
             entries.add(APRICOT_JAM);
             entries.add(PEAR_JAM);
             entries.add(PLUM_JAM);
+
+            entries.add(APRICOT_JAM_SLICE);
+            entries.add(PEAR_JAM_SLICE);
+            entries.add(PLUM_JAM_SLICE);
+
+            entries.add(APRICOT_CRATE);
+            entries.add(PEAR_CRATE);
+            entries.add(ORANGE_CRATE);
+            entries.add(KIWI_CRATE);
+            entries.add(PLUM_CRATE);
+            entries.add(EGGPLANT_CRATE);
+            entries.add(COD_CRATE);
+            entries.add(SALMON_CRATE);
+            entries.add(TROPICAL_FISH_CRATE);
+            entries.add(PEPPER_CRATE);
+            entries.add(GARLIC_CRATE);
+            entries.add(GREEN_BEAN_CRATE);
+            entries.add(PEAS_CRATE);
+            entries.add(SPINACH_CRATE);
+            entries.add(BROCCOLI_CRATE);
+            entries.add(STRAWBERRY_CRATE);
+
+            entries.add(APRICOT_LOG);
+            entries.add(APRICOT_WOOD);
+            entries.add(STRIPPED_APRICOT_LOG);
+            entries.add(STRIPPED_APRICOT_WOOD);
+            entries.add(APRICOT_LEAVES);
+            entries.add(APRICOT_PLANKS);
+
+            entries.add(ORANGE_LOG);
+            entries.add(ORANGE_WOOD);
+            entries.add(STRIPPED_ORANGE_LOG);
+            entries.add(STRIPPED_ORANGE_WOOD);
+            entries.add(ORANGE_LEAVES);
+            entries.add(ORANGE_PLANKS);
+
+            entries.add(PEAR_LOG);
+            entries.add(PEAR_WOOD);
+            entries.add(STRIPPED_PEAR_LOG);
+            entries.add(STRIPPED_PEAR_WOOD);
+            entries.add(PEAR_LEAVES);
+            entries.add(PEAR_PLANKS);
+
+            entries.add(KIWI_LOG);
+            entries.add(KIWI_WOOD);
+            entries.add(STRIPPED_KIWI_LOG);
+            entries.add(STRIPPED_KIWI_WOOD);
+            entries.add(KIWI_LEAVES);
+            entries.add(KIWI_PLANKS);
+
+            entries.add(PLUM_LOG);
+            entries.add(PLUM_WOOD);
+            entries.add(STRIPPED_PLUM_LOG);
+            entries.add(STRIPPED_PLUM_WOOD);
+            entries.add(PLUM_LEAVES);
+            entries.add(PLUM_PLANKS);
+
+            entries.add(APRICOT_FRUIT_LEAVES);
+            entries.add(ORANGE_FRUIT_LEAVES);
+            entries.add(PEAR_FRUIT_LEAVES);
+            entries.add(KIWI_FRUIT_LEAVES);
+            entries.add(PLUM_FRUIT_LEAVES);
+
+            entries.add(APRICOT_SAPLING_ITEM);
+            entries.add(PEAR_SAPLING_ITEM);
+            entries.add(ORANGE_SAPLING_ITEM);
+            entries.add(KIWI_SAPLING_ITEM);
+            entries.add(PLUM_SAPLING_ITEM);
+
+            entries.add(APRICOT_SLAB_ITEM);
+            entries.add(PEAR_SLAB_ITEM);
+            entries.add(ORANGE_SLAB_ITEM);
+            entries.add(PLUM_SLAB_ITEM);
+            entries.add(KIWI_SLAB_ITEM);
+
+            entries.add(APRICOT_DOOR_ITEM);
+            entries.add(APRICOT_TRAPDOOR_ITEM);
+
+            entries.add(KIWI_DOOR_ITEM);
+            entries.add(KIWI_TRAPDOOR_ITEM);
+
+            entries.add(ORANGE_DOOR_ITEM);
+            entries.add(ORANGE_TRAPDOOR_ITEM);
+
+            entries.add(PLUM_DOOR_ITEM);
+
+            entries.add(PEAR_DOOR_ITEM);
         });
         ItemGroup polymerGroup = builder.build();
         PolymerItemGroupUtils.registerPolymerItemGroup(Identifier.of(BorukvaFoodExotic.MOD_ID, "items"), polymerGroup);

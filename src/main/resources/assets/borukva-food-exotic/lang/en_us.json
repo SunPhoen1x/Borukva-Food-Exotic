@@ -75,6 +75,7 @@
   "item.borukva-food-exotic.apricot_jam": "Apricot Jam",
   "item.borukva-food-exotic.pear_jam": "Pear Jam",
   "item.borukva-food-exotic.plum_jam": "Plum Jam",
+
   "item.borukva-food-exotic.kiwi_slices": "Kiwi Slices",
 
   "item.borukva-food-exotic.apricot_pie": "Apricot Pie",
@@ -116,5 +117,14 @@
   "block.borukva-food-exotic.green_bean_crate": "Green Bean Crate",
 
   "block.borukva-food-exotic.apricot_door": "Apricot Door",
-  "block.borukva-food-exotic.apricot_trapdoor": "Apricot Trapdoor"
+  "block.borukva-food-exotic.apricot_trapdoor": "Apricot Trapdoor",
+  "block.borukva-food-exotic.orange_door": "Orange Door",
+  "block.borukva-food-exotic.orange_trapdoor": "Orange Trapdoor",
+  "block.borukva-food-exotic.kiwi_door": "Kiwi Door",
+  "block.borukva-food-exotic.kiwi_trapdoor": "Kiwi Trapdoor",
+  "block.borukva-food-exotic.plum_door": "Plum Door",
+  "block.borukva-food-exotic.plum_trapdoor": "Plum Trapdoor",
+  "block.borukva-food-exotic.pear_door": "Pear Door",
+  "block.borukva-food-exotic.pear_trapdoor": "Pear Trapdoor"
+
 }

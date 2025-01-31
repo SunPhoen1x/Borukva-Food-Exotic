@@ -119,5 +119,15 @@
   "block.borukva-food-exotic.green_bean_crate": "Ящик квасолі",
 
   "block.borukva-food-exotic.apricot_door": "Абрикосові двері",
-  "block.borukva-food-exotic.apricot_trapdoor": "Абрикосовий люк"
+  "block.borukva-food-exotic.apricot_trapdoor": "Абрикосовий люк",
+
+  "block.borukva-food-exotic.orange_door": "Апельсинові двері",
+  "block.borukva-food-exotic.orange_trapdoor": "Апельсиновий люк",
+  "block.borukva-food-exotic.kiwi_door": "Двері з ківі",
+  "block.borukva-food-exotic.kiwi_trapdoor": "Люк з ківі",
+  "block.borukva-food-exotic.plum_door": "Сливові двері",
+  "block.borukva-food-exotic.plum_trapdoor": "Сливовий люк",
+  "block.borukva-food-exotic.pear_door": "Грушеві двері",
+  "block.borukva-food-exotic.pear_trapdoor": "Грушевий люк"
+
 }

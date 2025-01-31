@@ -92,8 +92,19 @@ public class BorukvaFoodExoticUtil {
         addFlammable(ModBlocks.KIWI_FRUIT_LEAVES, 30, 60);
         addFlammable(ModBlocks.PLUM_FRUIT_LEAVES, 30, 60);
 
-//        addFlammable(ModBlocks.APRICOT_DOOR, 5, 20);
-//        addFlammable(ModBlocks.APRICOT_TRAPDOOR, 5, 20);;
+        addFlammable(ModBlocks.APRICOT_DOOR, 5, 20);
+        addFlammable(ModBlocks.APRICOT_TRAPDOOR, 5, 20);
+
+        addFlammable(ModBlocks.PLUM_DOOR, 5, 20);
+
+        addFlammable(ModBlocks.PEAR_DOOR, 5, 20);
+
+        addFlammable(ModBlocks.ORANGE_DOOR, 5, 20);
+        addFlammable(ModBlocks.ORANGE_TRAPDOOR, 5, 20);
+
+        addFlammable(ModBlocks.KIWI_DOOR, 5, 20);
+        addFlammable(ModBlocks.KIWI_TRAPDOOR, 5, 20);
+
         addFlammable(ModBlocks.APRICOT_SLAB, 5, 20);
         addFlammable(ModBlocks.PEAR_SLAB, 5, 20);
         addFlammable(ModBlocks.PLUM_SLAB, 5, 20);

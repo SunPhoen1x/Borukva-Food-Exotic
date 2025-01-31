@@ -95,6 +95,11 @@ public class ModModelProvider extends FabricModelProvider{
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModBlocks.APRICOT_DOOR_ITEM, Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.KIWI_DOOR_ITEM, Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.ORANGE_DOOR_ITEM, Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.PLUM_DOOR_ITEM, Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.PEAR_DOOR_ITEM, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.APRICOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);
@@ -102,6 +107,17 @@ public class ModModelProvider extends FabricModelProvider{
         itemModelGenerator.register(ModItems.KIWI, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.KIWI_SLICES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RATATOUILLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SMOKED_EGGPLANT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BACON_COOKED, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BACON, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FRIED_EGG, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BACON_AND_EGGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BELL_SOUP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PEAS_SOUP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COD_NIGIRI, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SQUID_NIGIRI, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COD_FILLET, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.EGGPLANT, Models.GENERATED);

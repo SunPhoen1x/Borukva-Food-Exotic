@@ -15,7 +15,7 @@ public class ModCustomTrades {
                 new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModBlocks.APRICOT_SAPLING_ITEM),
                         12, 3, 0.05f)));
 
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factoriy -> factoriy.add((entity, random) ->
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
                 new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModBlocks.PEAR_SAPLING_ITEM),
                         12, 3, 0.05f)));
 
@@ -35,7 +35,7 @@ public class ModCustomTrades {
                 new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.PLUM),
                         12, 3, 0.05f)));
 
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factoriy -> factoriy.add((entity, random) ->
                 new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.APRICOT),
                         12, 3, 0.05f)));
 
@@ -51,7 +51,7 @@ public class ModCustomTrades {
                 new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.EGGPLANT),
                         12, 3, 0.05f)));
 
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factoriy -> factoriy.add((entity, random) ->
                 new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.GARLIC),
                         12, 3, 0.05f)));
 
@@ -67,7 +67,7 @@ public class ModCustomTrades {
                 new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.PEAS),
                         12, 3, 0.05f)));
 
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factoriy -> factoriy.add((entity, random) ->
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factoriy -> factoriy.add((entity, random) ->
                 new TradeOffer(new TradedItem(Items.EMERALD, 1), new ItemStack(ModItems.GREEN_BEAN),
                         12, 3, 0.05f)));
 

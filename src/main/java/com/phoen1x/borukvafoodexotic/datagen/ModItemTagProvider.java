@@ -110,9 +110,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(PLUM_SAPLING_ITEM);
 
         getOrCreateTagBuilder(ItemTags.WOODEN_DOORS)
-                .add(APRICOT_DOOR_ITEM);
-
-        getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS)
-                .add(APRICOT_TRAPDOOR_ITEM);
+                .add(APRICOT_DOOR_ITEM)
+                .add(KIWI_DOOR_ITEM)
+                .add(ORANGE_DOOR_ITEM)
+                .add(PLUM_DOOR_ITEM)
+                .add(PEAR_DOOR_ITEM);
     }
 }

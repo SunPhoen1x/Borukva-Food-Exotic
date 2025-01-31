@@ -1,0 +1,13 @@
+{
+  "type": "borukva-food:pan",
+  "input": {
+    "base": {
+      "item": "borukva-food-exotic:bacon"
+    }
+  },
+  "output": {
+    "count": 1,
+    "id": "borukva-food-exotic:bacon_cooked"
+  },
+  "time": 100.0
+}

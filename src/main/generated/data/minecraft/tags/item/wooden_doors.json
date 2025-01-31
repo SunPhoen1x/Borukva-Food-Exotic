@@ -1,5 +1,9 @@
 {
   "values": [
-    "borukva-food-exotic:apricot_door"
+    "borukva-food-exotic:apricot_door",
+    "borukva-food-exotic:kiwi_door",
+    "borukva-food-exotic:orange_door",
+    "borukva-food-exotic:plum_door",
+    "borukva-food-exotic:pear_door"
   ]
 }

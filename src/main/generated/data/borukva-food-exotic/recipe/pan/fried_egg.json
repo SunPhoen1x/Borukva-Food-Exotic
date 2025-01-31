@@ -1,0 +1,13 @@
+{
+  "type": "borukva-food:pan",
+  "input": {
+    "base": {
+      "item": "minecraft:egg"
+    }
+  },
+  "output": {
+    "count": 1,
+    "id": "borukva-food-exotic:fried_egg"
+  },
+  "time": 90.0
+}
