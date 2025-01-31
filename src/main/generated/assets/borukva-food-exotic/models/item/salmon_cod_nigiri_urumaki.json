@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "borukva-food-exotic:item/salmon_cod_nigiri_urumaki"
+  }
+}

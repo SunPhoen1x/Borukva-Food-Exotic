@@ -29,7 +29,6 @@ public class ModBlocks {
     public static final Block SALMON_CRATE = registerBlock("salmon_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "salmon_crate"));
     public static final Block TROPICAL_FISH_CRATE = registerBlock("tropical_fish_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "tropical_fish_crate"));
     public static final Block PEPPER_CRATE = registerBlock("pepper_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "pepper_crate"));
-//    public static final Block GRAPE_CRATE = registerBlock("grape_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "grape_crate"));
     public static final Block GARLIC_CRATE = registerBlock("garlic_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "garlic_crate"));
     public static final Block GREEN_BEAN_CRATE = registerBlock("green_bean_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "green_bean_crate"));
     public static final Block PEAS_CRATE = registerBlock("peas_crate", new SimplePolyBlock(Block.Settings.copy(Blocks.COMPOSTER), "peas_crate"));
@@ -169,7 +168,6 @@ public class ModBlocks {
 
     public static final Block APRICOT_DOOR = registerBlock("apricot_door", new PolyDoorBlock(Block.Settings.copy(Blocks.OAK_DOOR), "apricot_door"));
     public static final Block KIWI_DOOR = registerBlock("kiwi_door", new PolyDoorBlock(Block.Settings.copy(Blocks.OAK_DOOR), "kiwi_door"));
-    public static final Block ORANGE_TRAPDOOR = registerBlock("orange_trapdoor", new PolyTrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR), "orange_trapdoor"));
     public static final Block ORANGE_DOOR = registerBlock("orange_door", new PolyDoorBlock(Block.Settings.copy(Blocks.OAK_DOOR), "orange_door"));
     public static final Block PLUM_DOOR = registerBlock("plum_door", new PolyDoorBlock(Block.Settings.copy(Blocks.OAK_DOOR), "plum_door"));
     public static final Block PEAR_DOOR = registerBlock("pear_door", new PolyDoorBlock(Block.Settings.copy(Blocks.OAK_DOOR), "pear_door"));

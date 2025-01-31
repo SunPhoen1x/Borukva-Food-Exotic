@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_kiwi_planks": {
+    "has_salmon_fillet": {
       "conditions": {
         "items": [
           {
-            "items": "borukva-food-exotic:kiwi_planks"
+            "items": "borukva-food:salmon_fillet"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "borukva-food-exotic:kiwi_trapdoor"
+        "recipe": "borukva-food:salmon_sandwich"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_kiwi_planks"
+      "has_salmon_fillet"
     ]
   ],
   "rewards": {
     "recipes": [
-      "borukva-food-exotic:kiwi_trapdoor"
+      "borukva-food:salmon_sandwich"
     ]
   }
 }

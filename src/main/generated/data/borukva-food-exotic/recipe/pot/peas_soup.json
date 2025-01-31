@@ -1,0 +1,32 @@
+{
+  "type": "borukva-food:pot",
+  "bowl": {
+    "base": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "input": [
+    {
+      "base": {
+        "item": "borukva-food-exotic:peas"
+      },
+      "count": 3
+    },
+    {
+      "base": {
+        "item": "borukva-food-exotic:potato_slices"
+      },
+      "count": 2
+    },
+    {
+      "base": {
+        "item": "borukva-food:onion"
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "borukva-food-exotic:peas_soup"
+  },
+  "time": 150.0
+}

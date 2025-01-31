@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "borukva-food-exotic:apricot"
+    },
+    "K": {
+      "item": "borukva-food-exotic:kiwi"
+    },
+    "L": {
+      "item": "borukva-food-exotic:plum"
+    },
+    "O": {
+      "item": "borukva-food-exotic:orange"
+    },
+    "P": {
+      "item": "borukva-food-exotic:pear"
+    },
+    "S": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "pattern": [
+    "APL",
+    "SKO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:fruit_salad"
+  }
+}

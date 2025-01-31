@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "borukva-food-exotic:cod_nigiri"
+    },
+    "O": {
+      "item": "borukva-food:salmon_uramaki"
+    },
+    "S": {
+      "item": "borukva-food:salmon_nigiri"
+    }
+  },
+  "pattern": [
+    "SCO",
+    "  O"
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:salmon_cod_nigiri_urumaki"
+  }
+}

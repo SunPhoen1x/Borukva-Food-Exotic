@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "borukva-food:salmon_fillet"
+    },
+    "S": {
+      "item": "borukva-food:bread_slice"
+    }
+  },
+  "pattern": [
+    " S ",
+    " B ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:salmon_sandwich"
+  }
+}
