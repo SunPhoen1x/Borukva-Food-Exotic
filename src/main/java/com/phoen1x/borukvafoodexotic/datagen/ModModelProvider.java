@@ -129,6 +129,10 @@ public class ModModelProvider extends FabricModelProvider{
         itemModelGenerator.register(ModItems.SALMON_COD_NIGIRI_MAKI, Models.GENERATED);
         itemModelGenerator.register(ModItems.SALMON_COD_NIGIRI_URUMAKI, Models.GENERATED);
         itemModelGenerator.register(ModItems.MIX_SALAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BUN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BUN_SLICE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HAMBURGER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BACON_BURGER, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.EGGPLANT, Models.GENERATED);

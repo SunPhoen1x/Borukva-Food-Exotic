@@ -2,7 +2,13 @@ package com.phoen1x.borukvafoodexotic;
 
 import com.phoen1x.borukvafoodexotic.block.ModBlocks;
 import com.phoen1x.borukvafoodexotic.block.crops.*;
+import com.phoen1x.borukvafoodexotic.block.grill.Grill;
+import com.phoen1x.borukvafoodexotic.entity.ModEntities;
 import com.phoen1x.borukvafoodexotic.item.ModItems;
+import com.phoen1x.borukvafoodexotic.recipe.ModRecipeSerializer;
+import com.phoen1x.borukvafoodexotic.recipe.ModRecipeTypes;
+import com.phoen1x.borukvafoodexotic.ui.GuiTextures;
+import com.phoen1x.borukvafoodexotic.ui.UiResourceCreator;
 import com.phoen1x.borukvafoodexotic.utils.*;
 import com.phoen1x.borukvafoodexotic.world.gen.ModWorldGeneration;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
@@ -28,6 +34,11 @@ public class BorukvaFoodExotic implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 		SaplingModels.register();
 		FruitLeavesModels.register();
+		ModEntities.register();
+		UiResourceCreator.setup();
+		GuiTextures.register();
+		ModRecipeTypes.register();
+		ModRecipeSerializer.register();
 
 		initModels();
 		if (PolymerResourcePackUtils.addModAssets(MOD_ID)) {
@@ -39,6 +50,8 @@ public class BorukvaFoodExotic implements ModInitializer {
 	}
 
 	public void initModels(){
+		Grill.Model.LIT_FALSE.isEmpty();
+		Grill.Model.LIT_TRUE.isEmpty();
 		StrawberryCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		EggplantCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		PepperCrop.Model.MODELS.forEach(ItemStack::isEmpty);

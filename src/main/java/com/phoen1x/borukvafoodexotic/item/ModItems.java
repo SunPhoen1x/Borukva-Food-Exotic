@@ -4,6 +4,7 @@ import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.block.ModBlocks;
 import com.phoen1x.borukvafoodexotic.utils.ModFoodComponents;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
+import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -78,6 +79,10 @@ public class ModItems {
     public static Item SALMON_COD_NIGIRI_ONIGIRI = registerItem("salmon_cod_nigiri_onigiri", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.BEEF_SANDWICH).rarity(Rarity.RARE), "salmon_cod_nigiri_onigiri"));
     public static Item SALMON_COD_NIGIRI_MAKI = registerItem("salmon_cod_nigiri_maki", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.BEEF_SANDWICH).rarity(Rarity.RARE), "salmon_cod_nigiri_maki"));
     public static Item SALMON_COD_NIGIRI_URUMAKI = registerItem("salmon_cod_nigiri_urumaki", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.BEEF_SANDWICH).rarity(Rarity.RARE), "salmon_cod_nigiri_urumaki"));
+    public static Item BUN = registerItem("bun", new PolyItem(new Item.Settings().food(FoodComponents.BREAD), "bun"));
+    public static Item BUN_SLICE = registerItem("bun_slice", new PolyItem(new Item.Settings().food(ModFoodComponents.SLICES), "bun_slice"));
+    public static Item HAMBURGER = registerItem("hamburger", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH), "hamburger"));
+    public static Item BACON_BURGER = registerItem("bacon_burger", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH), "bacon_burger"));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BorukvaFoodExotic.MOD_ID, name), item);
@@ -135,6 +140,10 @@ public class ModItems {
             entries.add(COD_SANDWICH);
             entries.add(HONEY_PANCAKES);
             entries.add(APRICOT_PIE_SLICE);
+            entries.add(BUN);
+            entries.add(BUN_SLICE);
+            entries.add(HAMBURGER);
+            entries.add(BACON_BURGER);
 
             entries.add(PEAR_PIE);
             entries.add(APRICOT_PIE);
@@ -221,6 +230,8 @@ public class ModItems {
             entries.add(ORANGE_DOOR_ITEM);
             entries.add(PLUM_DOOR_ITEM);
             entries.add(PEAR_DOOR_ITEM);
+
+            entries.add(GRILL_ITEM);
         });
         ItemGroup polymerGroup = builder.build();
         PolymerItemGroupUtils.registerPolymerItemGroup(Identifier.of(BorukvaFoodExotic.MOD_ID, "items"), polymerGroup);

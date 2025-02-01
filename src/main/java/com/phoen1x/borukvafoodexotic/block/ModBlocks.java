@@ -2,17 +2,14 @@ package com.phoen1x.borukvafoodexotic.block;
 
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.block.crops.*;
+import com.phoen1x.borukvafoodexotic.block.grill.Grill;
 import com.phoen1x.borukvafoodexotic.block.leaves.*;
 import com.phoen1x.borukvafoodexotic.world.tree.ModSaplingGenerator;
-import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import static com.phoen1x.borukvafoodexotic.BorukvaFoodExotic.MOD_ID;
@@ -177,6 +174,9 @@ public class ModBlocks {
     public static final BlockItem ORANGE_DOOR_ITEM = registerBlockItem("orange_door", new TexturedPolyBlockItem(ORANGE_DOOR, new Item.Settings(), "item/orange_door"));
     public static final BlockItem PLUM_DOOR_ITEM = registerBlockItem("plum_door", new TexturedPolyBlockItem(PLUM_DOOR, new Item.Settings(), "item/plum_door"));
     public static final BlockItem PEAR_DOOR_ITEM = registerBlockItem("pear_door", new TexturedPolyBlockItem(PEAR_DOOR, new Item.Settings(), "item/pear_door"));
+
+    public static final Block GRILL = registerBlock("grill", new Grill(Block.Settings.copy(Blocks.CYAN_TERRACOTTA)));
+    public static final BlockItem GRILL_ITEM = registerBlockItem("grill", new TexturedPolyBlockItem(GRILL, new Item.Settings(), "block/grill"));
 
     public static void registerBlocks() {
 //        ItemGroup.Builder builder = PolymerItemGroupUtils.builder();

@@ -20,7 +20,7 @@ public class BorukvaFoodExoticDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModBlockTagProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModWorldGenerator::new);
-
+		pack.addProvider(CustomAssetsProvider::new);
 	}
 
 	@Override

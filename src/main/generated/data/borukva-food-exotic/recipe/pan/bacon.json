@@ -1,0 +1,13 @@
+{
+  "type": "borukva-food-exotic:grill",
+  "input": {
+    "base": {
+      "item": "borukva-food-exotic:bacon"
+    }
+  },
+  "output": {
+    "count": 1,
+    "id": "borukva-food-exotic:bacon_cooked"
+  },
+  "time": 20.0
+}
