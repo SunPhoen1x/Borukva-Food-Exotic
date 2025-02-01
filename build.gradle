@@ -35,7 +35,7 @@ dependencies {
 	modImplementation ("eu.pb4:polymer-autohost:${polymer_version}")
 	modImplementation include ("eu.pb4:sgui:[${sgui_version}]")
 	modImplementation include ("eu.pb4:factorytools:[${factorytools_version}]")
-
+	modCompileOnly 'maven.modrinth:polydex:1.2.4+1.21.1'
 	modImplementation "maven.modrinth:borukva-food:C4mhKWrX"
 }
 

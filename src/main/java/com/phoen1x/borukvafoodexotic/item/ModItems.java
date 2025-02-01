@@ -73,7 +73,7 @@ public class ModItems {
     public static Item BACON_SANDWICH = registerItem("bacon_sandwich", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH), "bacon_sandwich"));
     public static Item SALMON_SANDWICH = registerItem("salmon_sandwich", new PolyItem(new Item.Settings().food(ModFoodComponents.SALMON_SANDWICH), "salmon_sandwich"));
     public static Item COD_SANDWICH = registerItem("cod_sandwich", new PolyItem(new Item.Settings().food(ModFoodComponents.COD_SANDWICH), "cod_sandwich"));
-    public static Item HONEY_PANCAKES = registerItem("honey_pancakes", new PolyItem(new Item.Settings().food(ModFoodComponents.COD_SANDWICH), "honey_pancakes"));
+    public static Item HONEY_PANCAKES = registerItem("honey_pancakes", new PolyItem(new Item.Settings().food(ModFoodComponents.HONEY_PANCAKES), "honey_pancakes"));
     public static Item FRUIT_SALAD = registerItem("fruit_salad", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.BEEF_SALAD), "fruit_salad"));
     public static Item MIX_SALAD = registerItem("mix_salad", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.VEGETABLE_SALAD), "mix_salad"));
     public static Item SALMON_COD_NIGIRI_ONIGIRI = registerItem("salmon_cod_nigiri_onigiri", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.BEEF_SANDWICH).rarity(Rarity.RARE), "salmon_cod_nigiri_onigiri"));
@@ -83,6 +83,8 @@ public class ModItems {
     public static Item BUN_SLICE = registerItem("bun_slice", new PolyItem(new Item.Settings().food(ModFoodComponents.SLICES), "bun_slice"));
     public static Item HAMBURGER = registerItem("hamburger", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH), "hamburger"));
     public static Item BACON_BURGER = registerItem("bacon_burger", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH), "bacon_burger"));
+    public static Item COOKED_STEAK = registerItem("cooked_steak", new PolyItem(new Item.Settings().food(FoodComponents.COOKED_BEEF), "cooked_steak"));
+    public static Item POTATO_WITH_STEAK = registerItem("potato_with_steak", new PolyItem(new Item.Settings().food(ModFoodComponents.FRIED_EGG), "potato_with_steak"));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BorukvaFoodExotic.MOD_ID, name), item);
@@ -144,6 +146,8 @@ public class ModItems {
             entries.add(BUN_SLICE);
             entries.add(HAMBURGER);
             entries.add(BACON_BURGER);
+            entries.add(COOKED_STEAK);
+            entries.add(POTATO_WITH_STEAK);
 
             entries.add(PEAR_PIE);
             entries.add(APRICOT_PIE);

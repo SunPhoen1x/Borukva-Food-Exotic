@@ -5,6 +5,8 @@ import com.phoen1x.borukvafoodexotic.block.crops.*;
 import com.phoen1x.borukvafoodexotic.block.grill.Grill;
 import com.phoen1x.borukvafoodexotic.entity.ModEntities;
 import com.phoen1x.borukvafoodexotic.item.ModItems;
+import com.phoen1x.borukvafoodexotic.polydex.PolydexCompat;
+import com.phoen1x.borukvafoodexotic.polydex.PolydexTextures;
 import com.phoen1x.borukvafoodexotic.recipe.ModRecipeSerializer;
 import com.phoen1x.borukvafoodexotic.recipe.ModRecipeTypes;
 import com.phoen1x.borukvafoodexotic.ui.GuiTextures;
@@ -39,6 +41,8 @@ public class BorukvaFoodExotic implements ModInitializer {
 		GuiTextures.register();
 		ModRecipeTypes.register();
 		ModRecipeSerializer.register();
+		PolydexCompat.register();
+		PolydexTextures.register();
 
 		initModels();
 		if (PolymerResourcePackUtils.addModAssets(MOD_ID)) {

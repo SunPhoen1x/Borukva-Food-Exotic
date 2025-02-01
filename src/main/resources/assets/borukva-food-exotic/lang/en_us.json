@@ -97,6 +97,7 @@
   "item.borukva-food-exotic.salmon_cod_nigiri_onigiri": "Nigiri & Onigiri",
   "item.borukva-food-exotic.salmon_cod_nigiri_maki": "Nigiri & Maki",
   "item.borukva-food-exotic.salmon_cod_nigiri_urumaki": "Nigiri & Urumaki",
+  "item.borukva-food-exotic.cooked_steak": "Cooked Steak",
 
   "item.borukva-food-exotic.apricot_pie": "Apricot Pie",
   "item.borukva-food-exotic.pear_pie": "Pear Pie",
@@ -136,7 +137,6 @@
   "block.borukva-food-exotic.broccoli_crate": "Broccoli Crate",
 
   "block.borukva-food-exotic.grill": "Grill",
-
 
   "item.borukva-food-exotic.green_bean": "Green Bean",
   "item.borukva-food-exotic.green_bean_seeds": "Green Bean Seeds",

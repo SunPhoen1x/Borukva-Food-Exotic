@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cooked_steak": {
+      "conditions": {
+        "items": [
+          {
+            "items": "borukva-food-exotic:cooked_steak"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "borukva-food:potato_with_steak"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cooked_steak"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "borukva-food:potato_with_steak"
+    ]
+  }
+}

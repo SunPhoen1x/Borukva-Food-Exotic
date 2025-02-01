@@ -6,6 +6,7 @@ import com.opryshok.ui.FuelSlot;
 import com.opryshok.ui.GuiTextures;
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.block.grill.Grill;
+import com.phoen1x.borukvafoodexotic.polydex.PolydexCompat;
 import com.phoen1x.borukvafoodexotic.recipe.ModRecipeTypes;
 import com.phoen1x.borukvafoodexotic.recipe.grill.GrillInput;
 import com.phoen1x.borukvafoodexotic.recipe.grill.GrillRecipe;
@@ -48,21 +49,22 @@ import java.util.HashMap;
 import java.util.Objects;
 
 public class GrillEntity extends LockableBlockEntity implements MinimalSidedInventory, SidedInventory, BlockEntityExtraListener {
-    private static final int[] SLOTS = new int[]{0, 1, 2, 3};
+    private static final int[] SLOTS = new int[]{0, 1, 2, 3, 4};
     public float state = 0;
     public boolean active;
     public int fuelTicks = 0;
     public int fuelInitial = 1;
     private int soundTicks = 20;
-    private final DefaultedList<ItemStack> items = DefaultedList.ofSize(4, ItemStack.EMPTY);
+    private final DefaultedList<ItemStack> items = DefaultedList.ofSize(5, ItemStack.EMPTY);
     private final HashMap<Integer, Integer> slotTick = new HashMap<>();
     {
         slotTick.put(1, 0);
         slotTick.put(2, 0);
         slotTick.put(3, 0);
+        slotTick.put(4, 0);
     }
     @SuppressWarnings("unchecked")
-    protected RecipeEntry<GrillRecipe>[] currentRecipes = (RecipeEntry<GrillRecipe>[]) new RecipeEntry[4];
+    protected RecipeEntry<GrillRecipe>[] currentRecipes = (RecipeEntry<GrillRecipe>[]) new RecipeEntry[5];
     private Grill.Model model;
     public GrillEntity(BlockPos blockPos, BlockState blockState) {
         super(ModEntities.GRILL, blockPos, blockState);
@@ -233,11 +235,13 @@ public class GrillEntity extends LockableBlockEntity implements MinimalSidedInve
 
         public Gui(ServerPlayerEntity player) {
             super(ScreenHandlerType.GENERIC_9X3, player, false);
+            this.setSlot(0, PolydexCompat.getButton(ModRecipeTypes.GRILL));
             this.setTitle(com.phoen1x.borukvafoodexotic.ui.GuiTextures.GRILL.apply(Text.translatable("block.borukva-food-exotic.grill")));
             this.setSlotRedirect(22, new FuelSlot(pos, player, GrillEntity.this, 0, 0, 0));
             this.setSlotRedirect(3, new LedgerSlot(pos, player, GrillEntity.this, 1, 1, 0));
             this.setSlotRedirect(4, new LedgerSlot(pos, player, GrillEntity.this,  2, 2, 0));
             this.setSlotRedirect(5, new LedgerSlot(pos, player, GrillEntity.this, 3, 3, 0));
+            this.setSlotRedirect(26, new LedgerSlot(pos, player, GrillEntity.this, 4, 4, 0));
             this.setSlot(13, com.opryshok.ui.GuiTextures.FLAME.get(progress()));
             this.active = GrillEntity.this.fuelTicks > 0;
             this.open();

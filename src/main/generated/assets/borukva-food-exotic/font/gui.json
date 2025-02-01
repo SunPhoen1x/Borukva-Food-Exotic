@@ -1,1 +1,1 @@
-{"providers":[{"type":"space","advances":{"a":-8,"b":-168}},{"type":"bitmap","file":"borukva-food-exotic:sgui/grill.png","ascent":13,"height":256,"chars":["c"]}]}
+{"providers":[{"type":"space","advances":{"a":-8,"b":-168}},{"type":"bitmap","file":"borukva-food-exotic:sgui/grill.png","ascent":13,"height":256,"chars":["c"]},{"type":"bitmap","file":"borukva-food-exotic:sgui/polydex/1.png","ascent":-4,"height":128,"chars":["d","e"]}]}

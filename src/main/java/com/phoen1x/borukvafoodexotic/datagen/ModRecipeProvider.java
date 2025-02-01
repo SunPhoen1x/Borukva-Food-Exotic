@@ -128,7 +128,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 PanRecipe.of("bacon_cooked", CountedIngredient.ofItems(1, ModItems.BACON), new ItemStack(ModItems.BACON_COOKED), 100),
 
 
-                GrillRecipe.of("bacon", CountedIngredient.ofItems(1, ModItems.BACON), new ItemStack(ModItems.BACON_COOKED), 20)
+                GrillRecipe.of("bacon", CountedIngredient.ofItems(1, ModItems.BACON), new ItemStack(ModItems.BACON_COOKED), 120),
+                GrillRecipe.of("steak", CountedIngredient.ofItems(1, Items.BEEF), new ItemStack(ModItems.COOKED_STEAK), 120)
 
                 );
 
@@ -165,6 +166,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(com.opryshok.item.ModItems.SALT)
                 .criterion(hasItem(ModItems.BACON_COOKED), conditionsFromItem(ModItems.BACON_COOKED))
                 .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.BACON_AND_EGGS)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.POTATO_WITH_STEAK, 1)
+                .input(ModItems.POTATO_SLICES)
+                .input(ModItems.COOKED_STEAK)
+                .input(com.opryshok.item.ModItems.SALT)
+                .criterion(hasItem(ModItems.COOKED_STEAK), conditionsFromItem(ModItems.COOKED_STEAK))
+                .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.POTATO_WITH_STEAK)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.PLUM_JAM, 1)
                 .input(ModItems.PLUM)

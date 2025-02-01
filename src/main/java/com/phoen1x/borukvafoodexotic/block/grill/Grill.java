@@ -16,6 +16,8 @@ import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.SidedInventory;
 import net.minecraft.item.ItemPlacementContext;
@@ -114,6 +116,14 @@ public class Grill extends BlockWithEntity implements FactoryBlock, BlockEntityP
     }
 
     @Override
+    public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
+        if (state.get(LIT) && entity instanceof LivingEntity) {
+            entity.damage(world.getDamageSources().onFire(), 1.0F);
+        }
+        super.onSteppedOn(world, pos, state, entity);
+    }
+
+    @Override
     public boolean tickElementHolder(ServerWorld world, BlockPos pos, BlockState initialBlockState) {
         this.model.tick();
         return true;
@@ -133,7 +143,7 @@ public class Grill extends BlockWithEntity implements FactoryBlock, BlockEntityP
         public static final ItemStack LIT_FALSE = BaseItemProvider.requestModel(Identifier.of(BorukvaFoodExotic.MOD_ID, "block/grill"));
         public static final ItemStack LIT_TRUE = BaseItemProvider.requestModel(Identifier.of(BorukvaFoodExotic.MOD_ID, "block/grill_on"));
 
-        public ItemDisplayElement[] items = new ItemDisplayElement[4];
+        public ItemDisplayElement[] items = new ItemDisplayElement[5];
         public ItemDisplayElement grill;
         public ServerWorld world;
         public BlockPos pos;
@@ -150,7 +160,7 @@ public class Grill extends BlockWithEntity implements FactoryBlock, BlockEntityP
             this.grill.setTranslation(new Vector3f(-0.05f, -0.05f, -0.4f));
             this.updateStatePos(state);
             this.addElement(grill);
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 5; i++) {
                 var item = ItemDisplayElementUtil.createSimple();
                 item.setDisplaySize(1, 1);
                 item.setScale(new Vector3f(0.3f));
@@ -161,6 +171,7 @@ public class Grill extends BlockWithEntity implements FactoryBlock, BlockEntityP
             items[1].setTranslation(new Vector3f(-0.15f, 0.15f, 0.45f));
             items[2].setTranslation(new Vector3f(0.15f, 0.15f, 0.45f));
             items[3].setTranslation(new Vector3f(0f, -0.15f, 0.45f));
+            items[4].setTranslation(new Vector3f(0, 0, -0.2f));
             for (var item : items) {
                 this.addElement(item);
                 this.updateStatePos(state);
@@ -187,7 +198,7 @@ public class Grill extends BlockWithEntity implements FactoryBlock, BlockEntityP
         }
 
         public void updateItems(DefaultedList<ItemStack> stacks) {
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 5; i++) {
                 setItem(i, stacks.get(i));
             }
         }
@@ -205,7 +216,7 @@ public class Grill extends BlockWithEntity implements FactoryBlock, BlockEntityP
         private void spawnParticles(BlockPos pos) {
             if (world.getBlockState(pos).isOf(ModBlocks.GRILL)) {
                 if (world.getBlockState(pos).get(LIT)) {
-                    for (int i = 0; i < 4; i++) {
+                    for (int i = 0; i < 5; i++) {
                         world.spawnParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                                 pos.getX() + 0.5,
                                 pos.getY() + 1.75,
@@ -216,14 +227,15 @@ public class Grill extends BlockWithEntity implements FactoryBlock, BlockEntityP
             }
         }
 
-        private void updateItem(BlockState state) {
-            this.removeElement(this.grill);
-            init(state);
+        private void updateGrillModel(BlockState state) {
+            ItemStack newModel = state.get(LIT) ? LIT_TRUE : LIT_FALSE;
+            this.grill.setItem(newModel);
+            this.grill.tick();
         }
         @Override
         public void notifyUpdate(HolderAttachment.UpdateType updateType) {
-            if (updateType == BlockBoundAttachment.BLOCK_STATE_UPDATE){
-                updateItem(this.blockState());
+            if (updateType == BlockBoundAttachment.BLOCK_STATE_UPDATE) {
+                updateGrillModel(this.blockState());
             }
             super.notifyUpdate(updateType);
         }
