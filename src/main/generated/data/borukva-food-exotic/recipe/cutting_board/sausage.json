@@ -2,11 +2,11 @@
   "type": "borukva-food:cutting_board",
   "input": {
     "base": {
-      "item": "borukva-food-exotic:bun"
+      "item": "minecraft:porkchop"
     }
   },
   "output": {
     "count": 2,
-    "id": "borukva-food-exotic:bun_slice"
+    "id": "borukva-food-exotic:sausage"
   }
 }

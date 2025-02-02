@@ -79,12 +79,15 @@ public class ModItems {
     public static Item SALMON_COD_NIGIRI_ONIGIRI = registerItem("salmon_cod_nigiri_onigiri", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.BEEF_SANDWICH).rarity(Rarity.RARE), "salmon_cod_nigiri_onigiri"));
     public static Item SALMON_COD_NIGIRI_MAKI = registerItem("salmon_cod_nigiri_maki", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.BEEF_SANDWICH).rarity(Rarity.RARE), "salmon_cod_nigiri_maki"));
     public static Item SALMON_COD_NIGIRI_URUMAKI = registerItem("salmon_cod_nigiri_urumaki", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.BEEF_SANDWICH).rarity(Rarity.RARE), "salmon_cod_nigiri_urumaki"));
-    public static Item BUN = registerItem("bun", new PolyItem(new Item.Settings().food(FoodComponents.BREAD), "bun"));
-    public static Item BUN_SLICE = registerItem("bun_slice", new PolyItem(new Item.Settings().food(ModFoodComponents.SLICES), "bun_slice"));
-    public static Item HAMBURGER = registerItem("hamburger", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH), "hamburger"));
-    public static Item BACON_BURGER = registerItem("bacon_burger", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH), "bacon_burger"));
+//    public static Item BUN = registerItem("bun", new PolyItem(new Item.Settings().food(FoodComponents.BREAD), "bun"));
+//    public static Item BUN_SLICE = registerItem("bun_slice", new PolyItem(new Item.Settings().food(ModFoodComponents.SLICES), "bun_slice"));
+//    public static Item HAMBURGER = registerItem("hamburger", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH), "hamburger"));
+//    public static Item BACON_BURGER = registerItem("bacon_burger", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH), "bacon_burger"));
     public static Item COOKED_STEAK = registerItem("cooked_steak", new PolyItem(new Item.Settings().food(FoodComponents.COOKED_BEEF), "cooked_steak"));
     public static Item POTATO_WITH_STEAK = registerItem("potato_with_steak", new PolyItem(new Item.Settings().food(ModFoodComponents.FRIED_EGG), "potato_with_steak"));
+    public static Item SAUSAGE = registerItem("sausage", new PolyItem(new Item.Settings().food(FoodComponents.BEEF), "sausage"));
+    public static Item COOKED_SAUSAGE = registerItem("cooked_sausage", new PolyItem(new Item.Settings().food(ModFoodComponents.BAKED_SLICES), "cooked_sausage"));
+    public static Item SAUSAGE_AND_EGGS = registerItem("sausage_and_eggs", new PolyItem(new Item.Settings().food(ModFoodComponents.BACON_AND_EGGS), "sausage_and_eggs"));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BorukvaFoodExotic.MOD_ID, name), item);
@@ -124,10 +127,15 @@ public class ModItems {
             entries.add(BAKED_POTATO_SLICES);
             entries.add(SMOKED_EGGPLANT);
             entries.add(BACON);
+            entries.add(SAUSAGE);
             entries.add(BACON_COOKED);
+            entries.add(COOKED_SAUSAGE);
             entries.add(FRIED_EGG);
             entries.add(RATATOUILLE);
             entries.add(BACON_AND_EGGS);
+            entries.add(SAUSAGE_AND_EGGS);
+            entries.add(COOKED_STEAK);
+            entries.add(POTATO_WITH_STEAK);
             entries.add(SALMON_COD_NIGIRI_ONIGIRI);
             entries.add(SALMON_COD_NIGIRI_MAKI);
             entries.add(SALMON_COD_NIGIRI_URUMAKI);
@@ -142,12 +150,10 @@ public class ModItems {
             entries.add(COD_SANDWICH);
             entries.add(HONEY_PANCAKES);
             entries.add(APRICOT_PIE_SLICE);
-            entries.add(BUN);
-            entries.add(BUN_SLICE);
-            entries.add(HAMBURGER);
-            entries.add(BACON_BURGER);
-            entries.add(COOKED_STEAK);
-            entries.add(POTATO_WITH_STEAK);
+//            entries.add(BUN);
+//            entries.add(BUN_SLICE);
+//            entries.add(HAMBURGER);
+//            entries.add(BACON_BURGER);
 
             entries.add(PEAR_PIE);
             entries.add(APRICOT_PIE);

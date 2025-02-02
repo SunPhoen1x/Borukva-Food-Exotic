@@ -105,7 +105,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 CuttingBoardRecipe.of("cod_fillet", CountedIngredient.ofItems(1, Items.COD), new ItemStack(ModItems.COD_FILLET, 2)),
                 CuttingBoardRecipe.of("potato_slices", CountedIngredient.ofItems(1, Items.POTATO), new ItemStack(ModItems.POTATO_SLICES, 3)),
                 CuttingBoardRecipe.of("baked_potato_slices", CountedIngredient.ofItems(1, Items.BAKED_POTATO), new ItemStack(ModItems.BAKED_POTATO_SLICES, 3)),
-                CuttingBoardRecipe.of("bun_slice", CountedIngredient.ofItems(1, ModItems.BUN), new ItemStack(ModItems.BUN_SLICE, 2))
+//                CuttingBoardRecipe.of("bun_slice", CountedIngredient.ofItems(1, ModItems.BUN), new ItemStack(ModItems.BUN_SLICE, 2))
+                CuttingBoardRecipe.of("sausage", CountedIngredient.ofItems(1, Items.PORKCHOP), new ItemStack(ModItems.SAUSAGE, 2))
 
                 );
 
@@ -129,7 +130,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                 GrillRecipe.of("bacon", CountedIngredient.ofItems(1, ModItems.BACON), new ItemStack(ModItems.BACON_COOKED), 120),
-                GrillRecipe.of("steak", CountedIngredient.ofItems(1, Items.BEEF), new ItemStack(ModItems.COOKED_STEAK), 120)
+                GrillRecipe.of("steak", CountedIngredient.ofItems(1, Items.BEEF), new ItemStack(ModItems.COOKED_STEAK), 120),
+                GrillRecipe.of("cooked_sausage", CountedIngredient.ofItems(1, ModItems.SAUSAGE), new ItemStack(ModItems.COOKED_SAUSAGE), 120)
 
                 );
 
@@ -146,11 +148,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.COD_FILLET), conditionsFromItem(ModItems.COD_FILLET))
                 .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.COD_NIGIRI)));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BUN, 1)
-                .input(Items.WHEAT)
-                .input(Items.WHEAT)
-                .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
-                .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.BUN)));
+//        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BUN, 1)
+//                .input(Items.WHEAT)
+//                .input(Items.WHEAT)
+//                .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
+//                .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.BUN)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SQUID_NIGIRI, 3)
                 .input(com.opryshok.item.ModItems.SQUID_TENTAClES)
@@ -166,6 +168,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(com.opryshok.item.ModItems.SALT)
                 .criterion(hasItem(ModItems.BACON_COOKED), conditionsFromItem(ModItems.BACON_COOKED))
                 .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.BACON_AND_EGGS)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SAUSAGE_AND_EGGS, 1)
+                .input(ModItems.COOKED_SAUSAGE)
+                .input(ModItems.FRIED_EGG)
+                .input(ModItems.FRIED_EGG)
+                .input(com.opryshok.item.ModItems.SALT)
+                .criterion(hasItem(ModItems.COOKED_SAUSAGE), conditionsFromItem(ModItems.COOKED_SAUSAGE))
+                .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.SAUSAGE_AND_EGGS)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.POTATO_WITH_STEAK, 1)
                 .input(ModItems.POTATO_SLICES)
@@ -282,27 +292,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.APRICOT), conditionsFromItem(ModItems.APRICOT))
                 .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.FRUIT_SALAD)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.HAMBURGER, 1)
-                .pattern(" S ")
-                .pattern("LBK")
-                .pattern(" S ")
-                .input('S', ModItems.BUN_SLICE)
-                .input('L', com.opryshok.item.ModItems.TOMATO_SLICES)
-                .input('K', com.opryshok.item.ModItems.LETTUCE)
-                .input('B', com.opryshok.item.ModItems.COOKED_MUTTON_SLICES)
-                .criterion(hasItem(ModItems.BUN_SLICE), conditionsFromItem(ModItems.BUN_SLICE))
-                .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.HAMBURGER)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BACON_BURGER, 1)
-                .pattern(" S ")
-                .pattern("LBK")
-                .pattern(" S ")
-                .input('S', ModItems.BUN_SLICE)
-                .input('L', com.opryshok.item.ModItems.TOMATO_SLICES)
-                .input('K', com.opryshok.item.ModItems.LETTUCE)
-                .input('B', ModItems.BACON_COOKED)
-                .criterion(hasItem(ModItems.BUN_SLICE), conditionsFromItem(ModItems.BUN_SLICE))
-                .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.BACON_BURGER)));
+//        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.HAMBURGER, 1)
+//                .pattern(" S ")
+//                .pattern("LBK")
+//                .pattern(" S ")
+//                .input('S', ModItems.BUN_SLICE)
+//                .input('L', com.opryshok.item.ModItems.TOMATO_SLICES)
+//                .input('K', com.opryshok.item.ModItems.LETTUCE)
+//                .input('B', com.opryshok.item.ModItems.COOKED_MUTTON_SLICES)
+//                .criterion(hasItem(ModItems.BUN_SLICE), conditionsFromItem(ModItems.BUN_SLICE))
+//                .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.HAMBURGER)));
+//
+//        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BACON_BURGER, 1)
+//                .pattern(" S ")
+//                .pattern("LBK")
+//                .pattern(" S ")
+//                .input('S', ModItems.BUN_SLICE)
+//                .input('L', com.opryshok.item.ModItems.TOMATO_SLICES)
+//                .input('K', com.opryshok.item.ModItems.LETTUCE)
+//                .input('B', ModItems.BACON_COOKED)
+//                .criterion(hasItem(ModItems.BUN_SLICE), conditionsFromItem(ModItems.BUN_SLICE))
+//                .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.BACON_BURGER)));
     }
 
     private void offerDoorRecipe(RecipeExporter exporter, Item output, Item input) {

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bun_slice": {
+    "has_cooked_sausage": {
       "conditions": {
         "items": [
           {
-            "items": "borukva-food-exotic:bun_slice"
+            "items": "borukva-food-exotic:cooked_sausage"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "borukva-food:bacon_burger"
+        "recipe": "borukva-food:sausage_and_eggs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bun_slice"
+      "has_cooked_sausage"
     ]
   ],
   "rewards": {
     "recipes": [
-      "borukva-food:bacon_burger"
+      "borukva-food:sausage_and_eggs"
     ]
   }
 }

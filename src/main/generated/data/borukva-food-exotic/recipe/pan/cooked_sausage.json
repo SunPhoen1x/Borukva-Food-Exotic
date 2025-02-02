@@ -1,0 +1,13 @@
+{
+  "type": "borukva-food-exotic:grill",
+  "input": {
+    "base": {
+      "item": "borukva-food-exotic:sausage"
+    }
+  },
+  "output": {
+    "count": 1,
+    "id": "borukva-food-exotic:cooked_sausage"
+  },
+  "time": 120.0
+}

@@ -33,7 +33,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addCropDrop(STRAWBERRY, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS);
         addCropDrop(EGGPLANT, ModItems.EGGPLANT, ModItems.EGGPLANT_SEEDS);
         addCropDrop(PEPPER, ModItems.PEPPER, ModItems.PEPPER_SEEDS);
-//        addCropDrop(GRAPE, ModItems.GRAPE, ModItems.GRAPE_SEEDS);
         addCropDrop(PEAS, ModItems.PEAS, ModItems.PEAS_SEEDS);
         addCropDrop(SPINACH, ModItems.SPINACH, ModItems.SPINACH_SEEDS);
         addCropDrop(GARLIC, ModItems.GARLIC, ModItems.GARLIC_SEEDS);

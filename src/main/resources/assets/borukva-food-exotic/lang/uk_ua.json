@@ -5,6 +5,8 @@
   "item.borukva-food-exotic.plum": "Слива",
   "item.borukva-food-exotic.kiwi": "Ківі",
   "item-group.borukva-food-exotic.items": "Borukva Food Exotic: Їжа та блоки",
+  "text.borukva-food-exotic.recipes": "Рецепти",
+  "subtitle.borukva-food-exotic.grill_frying": "Grill Frying",
 
   "block.borukva-food-exotic.apricot_crate": "Ящик абрикосів",
   "block.borukva-food-exotic.pear_crate": "Ящик груш",
@@ -81,7 +83,7 @@
   "item.borukva-food-exotic.bacon_cooked": "Смажений бекон",
   "item.borukva-food-exotic.fried_egg": "Смажене яйце",
   "item.borukva-food-exotic.ratatouille": "Рататуй",
-  "item.borukva-food-exotic.bacon_and_eggs": "Бекон з яйцями",
+  "item.borukva-food-exotic.bacon_and_eggs": "Яєшня з беконом",
   "item.borukva-food-exotic.peas_soup": "Гороховий суп",
   "item.borukva-food-exotic.cod_fillet": "Філе тріски",
   "item.borukva-food-exotic.cod_nigiri": "Нігірі з тріски",
@@ -96,6 +98,10 @@
   "item.borukva-food-exotic.salmon_cod_nigiri_maki": "Нігірі та макі",
   "item.borukva-food-exotic.salmon_cod_nigiri_urumaki": "Нігірі та урумакі",
   "item.borukva-food-exotic.cooked_steak": "Смажений стейк",
+  "item.borukva-food-exotic.potato_with_steak": "Запечені картопляні скибочки зі стейком",
+  "item.borukva-food-exotic.sausage": "Сосиска",
+  "item.borukva-food-exotic.cooked_sausage": "Смажена сосиска",
+  "item.borukva-food-exotic.sausage_and_eggs": "Яєшня з сосискою",
 
   "block.borukva-food-exotic.grill": "Гриль",
 

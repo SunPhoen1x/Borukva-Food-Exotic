@@ -175,7 +175,7 @@ public class ModBlocks {
     public static final BlockItem PLUM_DOOR_ITEM = registerBlockItem("plum_door", new TexturedPolyBlockItem(PLUM_DOOR, new Item.Settings(), "item/plum_door"));
     public static final BlockItem PEAR_DOOR_ITEM = registerBlockItem("pear_door", new TexturedPolyBlockItem(PEAR_DOOR, new Item.Settings(), "item/pear_door"));
 
-    public static final Block GRILL = registerBlock("grill", new Grill(Block.Settings.copy(Blocks.CYAN_TERRACOTTA)));
+    public static final Block GRILL = registerBlock("grill", new Grill(Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
     public static final BlockItem GRILL_ITEM = registerBlockItem("grill", new TexturedPolyBlockItem(GRILL, new Item.Settings(), "block/grill"));
 
     public static void registerBlocks() {

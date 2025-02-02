@@ -5,7 +5,7 @@
   "item.borukva-food-exotic.plum": "Plum",
   "item.borukva-food-exotic.kiwi": "Kiwi",
   "item-group.borukva-food-exotic.items": "Borukva Food Exotic: Food & Blocks",
-
+  "text.borukva-food-exotic.recipes": "Recipes",
   "block.borukva-food-exotic.apricot_crate": "Apricot Crate",
   "block.borukva-food-exotic.pear_crate": "Pear Crate",
   "block.borukva-food-exotic.orange_crate": "Orange Crate",
@@ -14,7 +14,7 @@
   "block.borukva-food-exotic.cod_crate": "Cod Crate",
   "block.borukva-food-exotic.salmon_crate": "Salmon Crate",
   "block.borukva-food-exotic.tropical_fish_crate": "Tropical Fish Crate",
-
+  "subtitle.borukva-food-exotic.grill_frying": "Grill Frying",
   "block.borukva-food-exotic.apricot_log": "Apricot Log",
   "block.borukva-food-exotic.apricot_wood": "Apricot Wood",
   "block.borukva-food-exotic.stripped_apricot_log": "Stripped Apricot Log",
@@ -98,6 +98,10 @@
   "item.borukva-food-exotic.salmon_cod_nigiri_maki": "Nigiri & Maki",
   "item.borukva-food-exotic.salmon_cod_nigiri_urumaki": "Nigiri & Urumaki",
   "item.borukva-food-exotic.cooked_steak": "Cooked Steak",
+  "item.borukva-food-exotic.potato_with_steak": "Potato with Steak",
+  "item.borukva-food-exotic.sausage": "Sausage",
+  "item.borukva-food-exotic.cooked_sausage": "Cooked Sausage",
+  "item.borukva-food-exotic.sausage_and_eggs": "Sausage and Eggs",
 
   "item.borukva-food-exotic.apricot_pie": "Apricot Pie",
   "item.borukva-food-exotic.pear_pie": "Pear Pie",

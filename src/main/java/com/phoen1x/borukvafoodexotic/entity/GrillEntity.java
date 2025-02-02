@@ -1,7 +1,6 @@
 package com.phoen1x.borukvafoodexotic.entity;
 
 import com.opryshok.BorukvaFood;
-import com.opryshok.sounds.SoundRegistry;
 import com.opryshok.ui.FuelSlot;
 import com.opryshok.ui.GuiTextures;
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
@@ -10,6 +9,7 @@ import com.phoen1x.borukvafoodexotic.polydex.PolydexCompat;
 import com.phoen1x.borukvafoodexotic.recipe.ModRecipeTypes;
 import com.phoen1x.borukvafoodexotic.recipe.grill.GrillInput;
 import com.phoen1x.borukvafoodexotic.recipe.grill.GrillRecipe;
+import com.phoen1x.borukvafoodexotic.sounds.SoundRegistry;
 import com.phoen1x.borukvafoodexotic.ui.LedgerSimpleGui;
 import com.phoen1x.borukvafoodexotic.ui.LedgerSlot;
 import com.phoen1x.borukvafoodexotic.utils.BorukvaFoodExoticUtil;
@@ -80,8 +80,11 @@ public class GrillEntity extends LockableBlockEntity implements MinimalSidedInve
         if (t instanceof GrillEntity) {
             self.active = state.get(Properties.LIT);
             boolean hasItems = self.items.stream().anyMatch(stack -> !stack.isEmpty() && !stack.isOf(Items.AIR));
+            boolean isCooking = false;
+
             if (self.active && hasItems) {
                 for (int i = 0; i < self.items.size(); i++) {
+                    if (i == 4) continue;
                     ItemStack stack = self.items.get(i);
                     RecipeEntry<GrillRecipe> currentRecipe = self.currentRecipes[i];
 
@@ -91,25 +94,30 @@ public class GrillEntity extends LockableBlockEntity implements MinimalSidedInve
                                 .orElse(null);
                         self.slotTick.put(i, 0);
                     }
-                    if (currentRecipe != null) {
+
+                    if (self.currentRecipes[i] != null) {
                         int tickCount = self.slotTick.getOrDefault(i, 0);
-                        double recipeTime = currentRecipe.value().time();
+                        double recipeTime = self.currentRecipes[i].value().time();
 
                         if (tickCount >= recipeTime * stack.getCount()) {
-                            ItemStack result = currentRecipe.value().craft(new GrillInput(stack, world), world.getRegistryManager()).copyWithCount(stack.getCount());
+                            ItemStack result = self.currentRecipes[i].value()
+                                    .craft(new GrillInput(stack, world), world.getRegistryManager())
+                                    .copyWithCount(stack.getCount());
                             self.items.set(i, result);
                             self.slotTick.put(i, 0);
                             self.currentRecipes[i] = null;
                             self.model.updateItems(self.items);
                         } else {
                             self.slotTick.put(i, tickCount + 1);
+                            isCooking = true;
                         }
                     } else {
                         self.slotTick.put(i, 0);
                     }
                 }
-                if (self.soundTicks >= 20) {
-                    world.playSound(null, pos, SoundRegistry.FRYING, SoundCategory.BLOCKS, 1f, 1f);
+
+                if (isCooking && self.soundTicks >= 20) {
+                    world.playSound(null, pos, SoundRegistry.GRILL_FRYING, SoundCategory.BLOCKS, 1f, 1f);
                     self.soundTicks = 0;
                 } else {
                     self.soundTicks++;
@@ -158,6 +166,7 @@ public class GrillEntity extends LockableBlockEntity implements MinimalSidedInve
             if (state.get(Grill.LIT)) {
                 world.setBlockState(pos, state.with(Grill.LIT, false));
             }
+
         }
     }
 
@@ -258,6 +267,8 @@ public class GrillEntity extends LockableBlockEntity implements MinimalSidedInve
             if (player.getPos().squaredDistanceTo(Vec3d.ofCenter(GrillEntity.this.pos)) > (18 * 18)) {
                 this.close();
             }
+
+
 
             var active = GrillEntity.this.fuelTicks > 0;
             if (!this.active && active) {

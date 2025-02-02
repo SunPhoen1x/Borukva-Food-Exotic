@@ -1,0 +1,10 @@
+{
+  "grill_frying": {
+    "subtitle": "subtitle.borukva-food-exotic.grill_frying",
+    "sounds": [
+      "borukva-food-exotic:grill_frying1",
+      "borukva-food-exotic:grill_frying2",
+      "borukva-food-exotic:grill_frying3"
+    ]
+  }
+}
