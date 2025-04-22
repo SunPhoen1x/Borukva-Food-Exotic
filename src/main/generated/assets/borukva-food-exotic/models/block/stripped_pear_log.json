@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "borukva-food-exotic:block/stripped_pear_log_top",
+    "side": "borukva-food-exotic:block/stripped_pear_log"
+  }
+}

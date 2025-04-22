@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_plum_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "borukva-food-exotic:stripped_plum_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "borukva-food-exotic:stripped_plum_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_plum_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "borukva-food-exotic:stripped_plum_wood"
+    ]
+  }
+}

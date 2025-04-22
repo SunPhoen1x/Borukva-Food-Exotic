@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_spinach_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "borukva-food-exotic:spinach_crate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "borukva-food-exotic:spinach_crate_to_spinach"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_spinach_crate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "borukva-food-exotic:spinach_crate_to_spinach"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "borukva-food-exotic:strawberry"
+  ],
+  "result": {
+    "count": 3,
+    "id": "borukva-food-exotic:strawberry_seeds"
+  }
+}

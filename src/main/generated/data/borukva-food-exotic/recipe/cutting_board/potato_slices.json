@@ -1,0 +1,10 @@
+{
+  "type": "borukva-food:cutting_board",
+  "input": {
+    "base": "minecraft:potato"
+  },
+  "output": {
+    "count": 3,
+    "id": "borukva-food-exotic:potato_slices"
+  }
+}

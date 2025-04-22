@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "borukva-food-exotic:block/orange_planks",
+    "side": "borukva-food-exotic:block/orange_planks",
+    "top": "borukva-food-exotic:block/orange_planks"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "borukva-food-exotic:block/spinach_crop_stage0"
+  }
+}

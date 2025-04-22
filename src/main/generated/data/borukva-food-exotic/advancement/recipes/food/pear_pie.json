@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pear": {
+      "conditions": {
+        "items": [
+          {
+            "items": "borukva-food-exotic:pear"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "borukva-food-exotic:pear_pie"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pear"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "borukva-food-exotic:pear_pie"
+    ]
+  }
+}

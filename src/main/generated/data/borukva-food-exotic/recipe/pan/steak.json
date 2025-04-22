@@ -1,0 +1,11 @@
+{
+  "type": "borukva-food-exotic:grill",
+  "input": {
+    "base": "minecraft:beef"
+  },
+  "output": {
+    "count": 1,
+    "id": "borukva-food-exotic:cooked_steak"
+  },
+  "time": 120.0
+}

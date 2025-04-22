@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "#borukva-food-exotic:plum_logs"
+  ],
+  "result": {
+    "count": 4,
+    "id": "borukva-food-exotic:plum_planks"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cod_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "borukva-food-exotic:cod_crate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "borukva-food-exotic:cod_crate_to_cod"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cod_crate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "borukva-food-exotic:cod_crate_to_cod"
+    ]
+  }
+}

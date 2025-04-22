@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "#borukva-food-exotic:orange_logs"
+  ],
+  "result": {
+    "count": 4,
+    "id": "borukva-food-exotic:orange_planks"
+  }
+}

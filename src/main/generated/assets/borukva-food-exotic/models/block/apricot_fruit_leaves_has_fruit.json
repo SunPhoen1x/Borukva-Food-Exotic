@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "borukva-food-exotic:block/apricot_fruit_leaves_has_fruit"
+  }
+}

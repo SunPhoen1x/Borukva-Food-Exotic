@@ -1,0 +1,28 @@
+{
+  "type": "borukva-food:pot",
+  "bowl": {
+    "base": "minecraft:bowl"
+  },
+  "input": [
+    {
+      "base": "borukva-food-exotic:eggplant"
+    },
+    {
+      "base": "borukva-food-exotic:pepper"
+    },
+    {
+      "base": "borukva-food:tomato"
+    },
+    {
+      "base": "borukva-food-exotic:garlic"
+    },
+    {
+      "base": "borukva-food-exotic:spinach"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "borukva-food-exotic:ratatouille"
+  },
+  "time": 180.0
+}

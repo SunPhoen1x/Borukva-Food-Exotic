@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": "minecraft:egg",
+    "M": "minecraft:honey_bottle",
+    "S": "minecraft:wheat"
+  },
+  "pattern": [
+    "SSS",
+    " ME"
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:honey_pancakes"
+  }
+}

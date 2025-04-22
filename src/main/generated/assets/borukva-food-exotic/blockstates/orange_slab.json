@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "borukva-food-exotic:block/orange_slab"
+    },
+    "type=double": {
+      "model": "borukva-food-exotic:block/orange_planks"
+    },
+    "type=top": {
+      "model": "borukva-food-exotic:block/orange_slab_top"
+    }
+  }
+}

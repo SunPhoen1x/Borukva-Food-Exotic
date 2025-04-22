@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "borukva-food-exotic:tropical_fish_crate_to_tropical_fish"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tropical_fish_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "borukva-food-exotic:tropical_fish_crate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tropical_fish_crate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "borukva-food-exotic:tropical_fish_crate_to_tropical_fish"
+    ]
+  }
+}

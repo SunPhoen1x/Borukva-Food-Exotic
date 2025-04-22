@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "borukva-food-exotic:apricot",
+    "borukva-food:lemon",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:apricot_jam"
+  }
+}

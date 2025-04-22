@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pepper": {
+      "conditions": {
+        "items": [
+          {
+            "items": "borukva-food-exotic:pepper"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "borukva-food-exotic:pepper_to_pepper_seeds"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pepper"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "borukva-food-exotic:pepper_to_pepper_seeds"
+    ]
+  }
+}

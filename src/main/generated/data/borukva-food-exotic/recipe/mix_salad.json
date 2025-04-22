@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "borukva-food-exotic:spinach",
+    "L": "borukva-food:onion",
+    "P": "borukva-food:tomato",
+    "S": "borukva-food-exotic:broccoli"
+  },
+  "pattern": [
+    "APL",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:mix_salad"
+  }
+}

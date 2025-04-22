@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "borukva-food-exotic:cod_fillet",
+    "S": "borukva-food:bread_slice"
+  },
+  "pattern": [
+    " S ",
+    " B ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:cod_sandwich"
+  }
+}
