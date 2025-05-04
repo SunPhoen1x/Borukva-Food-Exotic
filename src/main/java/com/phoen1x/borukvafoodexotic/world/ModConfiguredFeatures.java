@@ -20,7 +20,6 @@ import net.minecraft.world.gen.treedecorator.BeehiveTreeDecorator;
 import net.minecraft.world.gen.trunk.*;
 
 import java.util.List;
-import java.util.OptionalInt;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> APRICOT_KEY = registerKey("apricot");
@@ -31,7 +30,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PLUM_BEES_KEY = registerKey("plum_bees");
 
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context) {
-        BeehiveTreeDecorator beehiveTreeDecorator = new BeehiveTreeDecorator(0.02F);
+        BeehiveTreeDecorator beehiveTreeDecorator = new BeehiveTreeDecorator(1.0F);
 
         register(context, APRICOT_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.APRICOT_LOG),

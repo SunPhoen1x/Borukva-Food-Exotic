@@ -2,6 +2,7 @@ package com.phoen1x.borukvafoodexotic.world;
 
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.block.ModBlocks;
+import net.minecraft.block.Block;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -9,7 +10,9 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
+import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ModPlacedFeatures {
@@ -22,26 +25,27 @@ public class ModPlacedFeatures {
     public static void boostrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
         register(context, APRICOT_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.APRICOT_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.005f, 1),
-                        ModBlocks.APRICOT_SAPLING));
+                createPlacementModifiers(ModBlocks.APRICOT_SAPLING, 10));
 
         register(context, PEAR_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PEAR_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.005f, 1),
-                        ModBlocks.PEAR_SAPLING));
+                createPlacementModifiers(ModBlocks.PEAR_SAPLING, 6));
 
         register(context, PLUM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLUM_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.005f, 1),
-                        ModBlocks.PLUM_SAPLING));
+                createPlacementModifiers(ModBlocks.PLUM_SAPLING, 15));
 
-//        register(context, PLUM_BEES_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLUM_BEES_KEY),
-//                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.005f, 1),
-//                        ModBlocks.PLUM_SAPLING));
+        register(context, PLUM_BEES_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLUM_BEES_KEY),
+                createPlacementModifiers(ModBlocks.PLUM_SAPLING, 40));
 
         register(context, KIWI_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.KIWI_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.005f, 1),
-                        ModBlocks.KIWI_SAPLING));
+                createPlacementModifiers(ModBlocks.KIWI_SAPLING, 3));
 
     }
+    private static List<PlacementModifier> createPlacementModifiers(Block sapling, int rarity) {
+        List<PlacementModifier> modifiers = new ArrayList<>(VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.005f, 1), sapling));
+        modifiers.add(RarityFilterPlacementModifier.of(rarity));
+        return modifiers;
+    }
+
     public static RegistryKey<PlacedFeature> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(BorukvaFoodExotic.MOD_ID, name));
     }
