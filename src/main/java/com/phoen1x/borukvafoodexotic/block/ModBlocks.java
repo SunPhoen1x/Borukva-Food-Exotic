@@ -65,7 +65,7 @@ public class ModBlocks {
     public static final Block PEAR_WOOD = registerBlock("pear_wood",  PolyLogBlock::new,(Block.Settings.copy(Blocks.OAK_WOOD)));
     public static final Block STRIPPED_PEAR_LOG = registerBlock("stripped_pear_log",  PolyLogBlock::new,(Block.Settings.copy(Blocks.OAK_LOG)));
     public static final Block STRIPPED_PEAR_WOOD = registerBlock("stripped_pear_wood",  PolyLogBlock::new,(Block.Settings.copy(Blocks.OAK_WOOD)));
-    public static final Block PEAR_LEAVES = registerBlock("pear_leaves", settings -> new PolyLeavesBlock(settings, "pear_planks"), Block.Settings.copy(Blocks.OAK_LEAVES));
+    public static final Block PEAR_LEAVES = registerBlock("pear_leaves", settings -> new PolyLeavesBlock(settings, "pear_leaves"), Block.Settings.copy(Blocks.OAK_LEAVES));
     public static final Block PEAR_PLANKS = registerBlock("pear_planks", settings -> new SimplePolyBlock(settings, "pear_planks"), Block.Settings.copy(Blocks.OAK_PLANKS));
 
     public static final Block ORANGE_LOG = registerBlock("orange_log",  PolyLogBlock::new,(Block.Settings.copy(Blocks.OAK_LOG)));
@@ -144,8 +144,8 @@ public class ModBlocks {
     public static final BlockItem PLUM_PLANKS_ITEM = registerBlockItem("plum_planks", settings -> new TexturedPolyBlockItem(PLUM_PLANKS, settings), new Item.Settings());
 
     public static final BlockItem APRICOT_SAPLING_ITEM = registerBlockItem("apricot_sapling", settings -> new TexturedPolyBlockItem(APRICOT_SAPLING, settings), new Item.Settings());
-    public static final BlockItem PEAR_SAPLING_ITEM = registerBlockItem("pear_sapling", settings -> new TexturedPolyBlockItem(ORANGE_SAPLING, settings), new Item.Settings());
-    public static final BlockItem ORANGE_SAPLING_ITEM = registerBlockItem("orange_sapling", settings -> new TexturedPolyBlockItem(PEAR_SAPLING, settings), new Item.Settings());
+    public static final BlockItem PEAR_SAPLING_ITEM = registerBlockItem("pear_sapling", settings -> new TexturedPolyBlockItem(PEAR_SAPLING, settings), new Item.Settings());
+    public static final BlockItem ORANGE_SAPLING_ITEM = registerBlockItem("orange_sapling", settings -> new TexturedPolyBlockItem(ORANGE_SAPLING, settings), new Item.Settings());
     public static final BlockItem KIWI_SAPLING_ITEM = registerBlockItem("kiwi_sapling", settings -> new TexturedPolyBlockItem(KIWI_SAPLING, settings), new Item.Settings());
     public static final BlockItem PLUM_SAPLING_ITEM = registerBlockItem("plum_sapling", settings -> new TexturedPolyBlockItem(PLUM_SAPLING, settings), new Item.Settings());
 

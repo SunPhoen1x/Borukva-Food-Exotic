@@ -14,6 +14,7 @@ import eu.pb4.factorytools.api.virtualentity.ItemDisplayElementUtil;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.LeavesBlock;
+import net.minecraft.block.TintedParticleLeavesBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
@@ -31,14 +32,14 @@ import org.joml.Vector3f;
 
 import static com.phoen1x.borukvafoodexotic.BorukvaFoodExotic.id;
 
-public class ApricotFruitLeaves extends LeavesBlock implements BarrierBasedWaterloggable, FactoryBlock {
+public class ApricotFruitLeaves extends TintedParticleLeavesBlock implements BarrierBasedWaterloggable, FactoryBlock {
     public static final BooleanProperty HAS_FRUIT = BooleanProperty.of("has_fruit");
 
     protected ItemStack MODEL_TRUE;
     protected ItemStack MODEL_FALSE;
 
     public ApricotFruitLeaves(Settings settings) {
-        super(settings);
+        super(1.f, settings);
         MODEL_TRUE = ItemDisplayElementUtil.getModel(id("block/apricot_fruit_leaves_has_fruit"));
         MODEL_FALSE = ItemDisplayElementUtil.getModel(id("block/apricot_fruit_leaves"));
         this.setDefaultState(this.stateManager.getDefaultState().with(HAS_FRUIT, true).with(Properties.PERSISTENT, false));

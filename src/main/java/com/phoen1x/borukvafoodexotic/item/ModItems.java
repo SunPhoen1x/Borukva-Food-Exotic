@@ -77,8 +77,6 @@ public class ModItems {
     public static Item PEAS_SOUP = registerItem("peas_soup", SimplePolymerItem::new, new Item.Settings().food(ModFoodComponents.SOUP));
     public static Item COD_NIGIRI = registerItem("cod_nigiri", SimplePolymerItem::new, new Item.Settings().food(com.opryshok.utils.ModFoodComponents.SALMON_NIGIRI));
     public static Item SQUID_NIGIRI = registerItem("squid_nigiri", SimplePolymerItem::new, new Item.Settings().food(com.opryshok.utils.ModFoodComponents.SALMON_NIGIRI));
-    public static Item GHAST_NIGIRI = registerItem("ghast_nigiri", SimplePolymerItem::new, new Item.Settings().food(com.opryshok.utils.ModFoodComponents.SALMON_NIGIRI));
-    public static Item GHAST_TENTACLES = registerItem("ghast_tentacles", GhastTentaclesPolyItem::new, new Item.Settings().food(ModFoodComponents.GHAST_TENTACLES));
 
     public static Item COD_FILLET = registerItem("cod_fillet", SimplePolymerItem::new, new Item.Settings().food(com.opryshok.utils.ModFoodComponents.SALMON_FILLET));
     public static Item BACON_SANDWICH = registerItem("bacon_sandwich", SimplePolymerItem::new, new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH));
@@ -162,9 +160,6 @@ public class ModItems {
             entries.add(COD_FILLET);
             entries.add(COD_NIGIRI);
             entries.add(SQUID_NIGIRI);
-            entries.add(GHAST_NIGIRI);
-            entries.add(GHAST_TENTACLES);
-            entries.add(GHAST_TENCTALES_BAKED);
             entries.add(BACON_SANDWICH);
             entries.add(SALMON_SANDWICH);
             entries.add(COD_SANDWICH);

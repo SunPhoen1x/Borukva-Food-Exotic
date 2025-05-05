@@ -9,6 +9,8 @@ import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradedItem;
 import net.minecraft.village.VillagerProfession;
 
+import static com.phoen1x.borukvafoodexotic.BorukvaFoodExotic.id;
+
 public class ModCustomTrades {
     public static void registerCustomTrades(){
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factoriy -> factoriy.add((entity, random) ->
@@ -72,11 +74,11 @@ public class ModCustomTrades {
                         12, 3, 0.05f)));
 
 
-        TradeOfferHelper.registerWanderingTraderOffers(1, factories -> factories.add((entity, random) ->
+        TradeOfferHelper.registerWanderingTraderOffers(factories -> factories.addOffersToPool(id("strawberry_wandering_trader_offer"), (entity, random) ->
                 new TradeOffer(new TradedItem(Items.EMERALD), new ItemStack(ModItems.STRAWBERRY),
                         12, 3, 0.05f)));
 
-        TradeOfferHelper.registerWanderingTraderOffers(1, factories -> factories.add((entity, random) ->
+        TradeOfferHelper.registerWanderingTraderOffers(factories -> factories.addOffersToPool(id("strawberry_seeds_wandering_trader_offer"), (entity, random) ->
                 new TradeOffer(new TradedItem(Items.EMERALD), new ItemStack(ModItems.STRAWBERRY_SEEDS),
                         12, 3, 0.05f)));
     }

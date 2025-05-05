@@ -9,7 +9,10 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.client.data.*;
+import net.minecraft.client.render.model.json.ModelVariant;
+import net.minecraft.client.render.model.json.WeightedVariant;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.collection.Pool;
 
 public class ModModelProvider extends FabricModelProvider{
     public ModModelProvider(FabricDataOutput output) {
@@ -45,24 +48,24 @@ public class ModModelProvider extends FabricModelProvider{
         generateCrate(blockStateModelGenerator, ModBlocks.STRAWBERRY_CRATE, "strawberry_crate");
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.APRICOT_LEAVES);
-        blockStateModelGenerator.registerLog(ModBlocks.APRICOT_LOG).log(ModBlocks.APRICOT_LOG).wood(ModBlocks.APRICOT_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_APRICOT_LOG).log(ModBlocks.STRIPPED_APRICOT_LOG).wood(ModBlocks.STRIPPED_APRICOT_WOOD);
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.APRICOT_LOG).log(ModBlocks.APRICOT_LOG).wood(ModBlocks.APRICOT_WOOD);
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.STRIPPED_APRICOT_LOG).log(ModBlocks.STRIPPED_APRICOT_LOG).wood(ModBlocks.STRIPPED_APRICOT_WOOD);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORANGE_LEAVES);
-        blockStateModelGenerator.registerLog(ModBlocks.ORANGE_LOG).log(ModBlocks.ORANGE_LOG).wood(ModBlocks.ORANGE_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_ORANGE_LOG).log(ModBlocks.STRIPPED_ORANGE_LOG).wood(ModBlocks.STRIPPED_ORANGE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.ORANGE_LOG).log(ModBlocks.ORANGE_LOG).wood(ModBlocks.ORANGE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.STRIPPED_ORANGE_LOG).log(ModBlocks.STRIPPED_ORANGE_LOG).wood(ModBlocks.STRIPPED_ORANGE_WOOD);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PEAR_LEAVES);
-        blockStateModelGenerator.registerLog(ModBlocks.PEAR_LOG).log(ModBlocks.PEAR_LOG).wood(ModBlocks.PEAR_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PEAR_LOG).log(ModBlocks.STRIPPED_PEAR_LOG).wood(ModBlocks.STRIPPED_PEAR_WOOD);
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.PEAR_LOG).log(ModBlocks.PEAR_LOG).wood(ModBlocks.PEAR_WOOD);
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.STRIPPED_PEAR_LOG).log(ModBlocks.STRIPPED_PEAR_LOG).wood(ModBlocks.STRIPPED_PEAR_WOOD);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KIWI_LEAVES);
-        blockStateModelGenerator.registerLog(ModBlocks.KIWI_LOG).log(ModBlocks.KIWI_LOG).wood(ModBlocks.KIWI_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_KIWI_LOG).log(ModBlocks.STRIPPED_KIWI_LOG).wood(ModBlocks.STRIPPED_KIWI_WOOD);
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.KIWI_LOG).log(ModBlocks.KIWI_LOG).wood(ModBlocks.KIWI_WOOD);
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.STRIPPED_KIWI_LOG).log(ModBlocks.STRIPPED_KIWI_LOG).wood(ModBlocks.STRIPPED_KIWI_WOOD);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLUM_LEAVES);
-        blockStateModelGenerator.registerLog(ModBlocks.PLUM_LOG).log(ModBlocks.PLUM_LOG).wood(ModBlocks.PLUM_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PLUM_LOG).log(ModBlocks.STRIPPED_PLUM_LOG).wood(ModBlocks.STRIPPED_PLUM_WOOD);
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.PLUM_LOG).log(ModBlocks.PLUM_LOG).wood(ModBlocks.PLUM_WOOD);
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.STRIPPED_PLUM_LOG).log(ModBlocks.STRIPPED_PLUM_LOG).wood(ModBlocks.STRIPPED_PLUM_WOOD);
 
         blockStateModelGenerator.registerTintableCross(ModBlocks.APRICOT_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.PEAR_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
@@ -117,9 +120,10 @@ public class ModModelProvider extends FabricModelProvider{
         itemModelGenerator.register(ModItems.PEAS_SOUP, Models.GENERATED);
         itemModelGenerator.register(ModItems.COD_NIGIRI, Models.GENERATED);
         itemModelGenerator.register(ModItems.SQUID_NIGIRI, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GHAST_NIGIRI, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GHAST_TENTACLES, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GHAST_TENCTALES_BAKED, Models.GENERATED);
+//        itemModelGenerator.register(ModItems.GHAST_NIGIRI, Models.GENERATED);
+//        itemModelGenerator.register(ModItems.GHAST_BAKED_NIGIRI, Models.GENERATED);
+//        itemModelGenerator.register(ModItems.GHAST_TENTACLES, Models.GENERATED);
+//        itemModelGenerator.register(ModItems.GHAST_TENCTALES_BAKED, Models.GENERATED);
         itemModelGenerator.register(ModItems.COD_FILLET, Models.GENERATED);
         itemModelGenerator.register(ModItems.BACON_SANDWICH, Models.GENERATED);
         itemModelGenerator.register(ModItems.SALMON_SANDWICH, Models.GENERATED);
@@ -180,8 +184,8 @@ public class ModModelProvider extends FabricModelProvider{
     private void generateFruitLeaves(BlockStateModelGenerator generator, Block leavesBlock){
         Identifier FruitLeavesFalse = TexturedModel.CUBE_ALL.upload(leavesBlock, generator.modelCollector);
         Identifier FruitLeavesTrue = generator.createSubModel(leavesBlock, "_has_fruit", Models.CUBE_ALL, TextureMap::all);
-        generator.blockStateCollector.accept(VariantsBlockStateSupplier.create(leavesBlock)
-                .coordinate(BlockStateModelGenerator.createBooleanModelMap(ApricotFruitLeaves.HAS_FRUIT, FruitLeavesTrue, FruitLeavesFalse)));
+        generator.blockStateCollector.accept(VariantsBlockModelDefinitionCreator.of(leavesBlock)
+                .with(BlockStateModelGenerator.createBooleanModelMap(ApricotFruitLeaves.HAS_FRUIT, new WeightedVariant(Pool.<ModelVariant>builder().add(new ModelVariant(FruitLeavesTrue)).build()), new WeightedVariant(Pool.<ModelVariant>builder().add(new ModelVariant(FruitLeavesFalse)).build()))));
 
     }
 }
