@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.9-SNAPSHOT'
+	id 'fabric-loom' version '1.10-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -36,8 +36,9 @@ dependencies {
 	modImplementation ("eu.pb4:polymer-resource-pack-extras:[${polymer_version}]")
 	modImplementation include ("eu.pb4:sgui:[${sgui_version}]")
 	modImplementation include ("eu.pb4:factorytools:[${factorytools_version}]")
-	modCompileOnly 'maven.modrinth:polydex:1.4.2+1.21.4'
-	modImplementation "maven.modrinth:borukva-food:Jbj0AcjP"
+	modCompileOnly ("maven.modrinth:polydex:[${polydex_version}]")
+	modImplementation ("maven.modrinth:borukva-food:[${borukvafood_version}]")
+	modImplementation ("maven.modrinth:midnightlib:${project.midnightlib_version}") // Required for newer versions of Borukva Food
 }
 
 processResources {

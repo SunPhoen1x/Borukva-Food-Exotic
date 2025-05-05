@@ -45,6 +45,7 @@ import net.minecraft.world.chunk.WorldChunk;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
+import java.util.NoSuchElementException;
 import java.util.Objects;
 
 public class GrillEntity extends LockableBlockEntity implements MinimalSidedInventory, SidedInventory, BlockEntityExtraListener {
@@ -220,13 +221,18 @@ public class GrillEntity extends LockableBlockEntity implements MinimalSidedInve
 
     @Override
     public void readNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup lookup) {
-        Inventories.readNbt(nbt, items, lookup);
-        this.fuelInitial = nbt.getInt("FuelInitial");
-        this.fuelTicks = nbt.getInt("FuelTicks");
-        this.state = nbt.getFloat("State");
-        super.readNbt(nbt, lookup);
-        if (this.model != null) {
-            this.model.updateItems(this.getStacks());
+        try {
+            Inventories.readNbt(nbt, items, lookup);
+            this.fuelInitial = nbt.getInt("FuelInitial").orElseThrow();
+            this.fuelTicks = nbt.getInt("FuelTicks").orElseThrow();
+            this.state = nbt.getFloat("State").orElseThrow();
+            super.readNbt(nbt, lookup);
+            if (this.model != null) {
+                this.model.updateItems(this.getStacks());
+            }
+        }
+        catch (NoSuchElementException e) {
+            e.fillInStackTrace();
         }
     }
 
