@@ -5,19 +5,22 @@ import com.phoen1x.borukvafoodexotic.block.crops.*;
 import com.phoen1x.borukvafoodexotic.block.grill.Grill;
 import com.phoen1x.borukvafoodexotic.block.leaves.*;
 import com.phoen1x.borukvafoodexotic.world.tree.ModSaplingGenerator;
+import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
 
-import static com.phoen1x.borukvafoodexotic.BorukvaFoodExotic.MOD_ID;
-
+import static com.opryshok.BorukvaFood.id;
 
 public class ModBlocks {
     public static final Block APRICOT_CRATE = registerBlock("apricot_crate", settings -> new SimplePolyBlock(settings, "apricot_crate"), Block.Settings.copy(Blocks.COMPOSTER));;
@@ -185,99 +188,22 @@ public class ModBlocks {
     public static final Block GRILL = registerBlock("grill", Grill::new,(Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
     public static final BlockItem GRILL_ITEM = registerBlockItem("grill", settings -> new TexturedPolyBlockItem(GRILL, settings), new Item.Settings());
 
+    public static final Block APRICOT_TRAPDOOR = registerBlock("apricot_trapdoor", PolyTrapdoorBlock::new, Block.Settings.copy(Blocks.OAK_TRAPDOOR));
+    public static final BlockItem APRICOT_TRAPDOOR_ITEM = registerBlockItem("apricot_trapdoor_bottom", settings -> new TexturedPolyBlockItem(APRICOT_TRAPDOOR, settings), new Item.Settings());
+
+    public static final Block ORANGE_TRAPDOOR = registerBlock("orange_trapdoor", PolyTrapdoorBlock::new, Block.Settings.copy(Blocks.OAK_TRAPDOOR));
+    public static final BlockItem ORANGE_TRAPDOOR_ITEM = registerBlockItem("orange_trapdoor_bottom", settings -> new TexturedPolyBlockItem(ORANGE_TRAPDOOR, settings), new Item.Settings());
+
+    public static final Block PEAR_TRAPDOOR = registerBlock("pear_trapdoor", PolyTrapdoorBlock::new, Block.Settings.copy(Blocks.OAK_TRAPDOOR));
+    public static final BlockItem PEAR_TRAPDOOR_ITEM = registerBlockItem("pear_trapdoor_bottom", settings -> new TexturedPolyBlockItem(PEAR_TRAPDOOR, settings), new Item.Settings());
+
+    public static final Block KIWI_TRAPDOOR = registerBlock("kiwi_trapdoor", PolyTrapdoorBlock::new, Block.Settings.copy(Blocks.OAK_TRAPDOOR));
+    public static final BlockItem KIWI_TRAPDOOR_ITEM = registerBlockItem("kiwi_trapdoor_bottom", settings -> new TexturedPolyBlockItem(KIWI_TRAPDOOR, settings), new Item.Settings());
+
+    public static final Block PLUM_TRAPDOOR = registerBlock("plum_trapdoor", PolyTrapdoorBlock::new, Block.Settings.copy(Blocks.OAK_TRAPDOOR));
+    public static final BlockItem PLUM_TRAPDOOR_ITEM = registerBlockItem("plum_trapdoor_bottom", settings -> new TexturedPolyBlockItem(PLUM_TRAPDOOR, settings), new Item.Settings());
+
     public static void registerBlocks() {
-//        ItemGroup.Builder builder = PolymerItemGroupUtils.builder();
-//        builder.icon(() -> new ItemStack(ModBlocks.APRICOT_CRATE_ITEM, 1));
-//        builder.displayName(Text.translatable("item-group.borukva-food-exotic.blocks"));
-
-//        builder.entries((displayContext, entries) -> {
-//            entries.add(APRICOT_CRATE);
-//            entries.add(PEAR_CRATE);
-//            entries.add(ORANGE_CRATE);
-//            entries.add(KIWI_CRATE);
-//            entries.add(PLUM_CRATE);
-//            entries.add(EGGPLANT_CRATE);
-//            entries.add(COD_CRATE);
-//            entries.add(SALMON_CRATE);
-//            entries.add(TROPICAL_FISH_CRATE);
-//            entries.add(PEPPER_CRATE);
-//            entries.add(GARLIC_CRATE);
-//            entries.add(GREEN_BEAN_CRATE);
-//            entries.add(PEAS_CRATE);
-//            entries.add(SPINACH_CRATE);
-//            entries.add(BROCCOLI_CRATE);
-//            entries.add(STRAWBERRY_CRATE);
-//
-//            entries.add(APRICOT_LOG);
-//            entries.add(APRICOT_WOOD);
-//            entries.add(STRIPPED_APRICOT_LOG);
-//            entries.add(STRIPPED_APRICOT_WOOD);
-//            entries.add(APRICOT_LEAVES);
-//            entries.add(APRICOT_PLANKS);
-//
-//            entries.add(ORANGE_LOG);
-//            entries.add(ORANGE_WOOD);
-//            entries.add(STRIPPED_ORANGE_LOG);
-//            entries.add(STRIPPED_ORANGE_WOOD);
-//            entries.add(ORANGE_LEAVES);
-//            entries.add(ORANGE_PLANKS);
-//
-//            entries.add(PEAR_LOG);
-//            entries.add(PEAR_WOOD);
-//            entries.add(STRIPPED_PEAR_LOG);
-//            entries.add(STRIPPED_PEAR_WOOD);
-//            entries.add(PEAR_LEAVES);
-//            entries.add(PEAR_PLANKS);
-//
-//            entries.add(KIWI_LOG);
-//            entries.add(KIWI_WOOD);
-//            entries.add(STRIPPED_KIWI_LOG);
-//            entries.add(STRIPPED_KIWI_WOOD);
-//            entries.add(KIWI_LEAVES);
-//            entries.add(KIWI_PLANKS);
-//
-//            entries.add(PLUM_LOG);
-//            entries.add(PLUM_WOOD);
-//            entries.add(STRIPPED_PLUM_LOG);
-//            entries.add(STRIPPED_PLUM_WOOD);
-//            entries.add(PLUM_LEAVES);
-//            entries.add(PLUM_PLANKS);
-//
-//            entries.add(APRICOT_FRUIT_LEAVES);
-//            entries.add(ORANGE_FRUIT_LEAVES);
-//            entries.add(PEAR_FRUIT_LEAVES);
-//            entries.add(KIWI_FRUIT_LEAVES);
-//            entries.add(PLUM_FRUIT_LEAVES);
-//
-//            entries.add(APRICOT_SAPLING_ITEM);
-//            entries.add(PEAR_SAPLING_ITEM);
-//            entries.add(ORANGE_SAPLING_ITEM);
-//            entries.add(KIWI_SAPLING_ITEM);
-//            entries.add(PLUM_SAPLING_ITEM);
-//
-//            entries.add(APRICOT_SLAB_ITEM);
-//            entries.add(PEAR_SLAB_ITEM);
-//            entries.add(ORANGE_SLAB_ITEM);
-//            entries.add(PLUM_SLAB_ITEM);
-//            entries.add(KIWI_SLAB_ITEM);
-//
-//            entries.add(APRICOT_DOOR_ITEM);
-//            entries.add(APRICOT_TRAPDOOR_ITEM);
-//
-//            entries.add(KIWI_DOOR_ITEM);
-//            entries.add(KIWI_TRAPDOOR_ITEM);
-//
-//            entries.add(ORANGE_DOOR_ITEM);
-//            entries.add(ORANGE_TRAPDOOR_ITEM);
-//
-//            entries.add(PLUM_DOOR_ITEM);
-//
-//            entries.add(PEAR_DOOR_ITEM);
-//        });
-//        ItemGroup polymerGroup = builder.build();
-//        PolymerItemGroupUtils.registerPolymerItemGroup(Identifier.of(MOD_ID, "blocks"), polymerGroup);
-
-        BorukvaFoodExotic.LOGGER.info("Exotic Blocks register");
     }
 
     public static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings){

@@ -75,18 +75,23 @@ public class ModModelProvider extends FabricModelProvider{
 
         BlockStateModelGenerator.BlockTexturePool apricotPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.APRICOT_PLANKS);
         apricotPlanksPool.slab(ModBlocks.APRICOT_SLAB);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.APRICOT_TRAPDOOR);
 
         BlockStateModelGenerator.BlockTexturePool pearPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PEAR_PLANKS);
         pearPlanksPool.slab(ModBlocks.PEAR_SLAB);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.PEAR_TRAPDOOR);
 
         BlockStateModelGenerator.BlockTexturePool orangePlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ORANGE_PLANKS);
         orangePlanksPool.slab(ModBlocks.ORANGE_SLAB);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.ORANGE_TRAPDOOR);
 
         BlockStateModelGenerator.BlockTexturePool plumPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PLUM_PLANKS);
         plumPlanksPool.slab(ModBlocks.PLUM_SLAB);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.PLUM_TRAPDOOR);
 
         BlockStateModelGenerator.BlockTexturePool kiwiPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.KIWI_PLANKS);
         kiwiPlanksPool.slab(ModBlocks.KIWI_SLAB);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.KIWI_TRAPDOOR);
 
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.APRICOT_FRUIT_LEAVES);
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.PEAR_FRUIT_LEAVES);

@@ -83,10 +83,15 @@ fb1bb7a7b634ce480a71038b24bd10649ff7aff7 data/borukva-food-exotic/advancement/re
 8ee8c4815c71b60b786a0738ce400c2cafb49734 data/borukva-food-exotic/advancement/recipes/food/strawberry_to_strawberry_seeds.json
 460f57c430f5cd44be5be9b50971e15ddaf12e0c data/borukva-food-exotic/advancement/recipes/food/tropical_fish_crate_to_tropical_fish.json
 3382afb6d5da0c748f6c2a7195193e72d4f3d5ab data/borukva-food-exotic/advancement/recipes/redstone/apricot_door.json
+e6ddd9a2b4dca02ed2b629344ac4dfcc3e970e17 data/borukva-food-exotic/advancement/recipes/redstone/apricot_trapdoor_bottom.json
 0f60799d8c97e6d8fd8a21f875396f5cd2c5f21e data/borukva-food-exotic/advancement/recipes/redstone/kiwi_door.json
+7454c9cf063837f1de815596de11b4c114ecd440 data/borukva-food-exotic/advancement/recipes/redstone/kiwi_trapdoor_bottom.json
 acaf963856d7ec14164de03d5a581e055363c074 data/borukva-food-exotic/advancement/recipes/redstone/orange_door.json
+082b92850312716889054123bb1924b0e4f74585 data/borukva-food-exotic/advancement/recipes/redstone/orange_trapdoor_bottom.json
 a4c8231c720997b5e0e1708adda6ec25552dd425 data/borukva-food-exotic/advancement/recipes/redstone/pear_door.json
+0f61ff134c63d9f901af8ce0f2e0b5f2b0eff38f data/borukva-food-exotic/advancement/recipes/redstone/pear_trapdoor_bottom.json
 06f44c9cb3a3f552dd18a42469487d5e0bfab6db data/borukva-food-exotic/advancement/recipes/redstone/plum_door.json
+f128078e2643bf2fbd7353bb036f925b7850e039 data/borukva-food-exotic/advancement/recipes/redstone/plum_trapdoor_bottom.json
 ec3981f16859a6ac0d532aa46fdcdfc75dbf0a07 data/borukva-food-exotic/recipe/apricot_crate.json
 d3b14f5168e561c713c1ccbdacbca9175c71cea6 data/borukva-food-exotic/recipe/apricot_crate_to_apricot.json
 02312bfe57abeac4569308a6649f23fd1048f0a7 data/borukva-food-exotic/recipe/apricot_door.json
@@ -95,6 +100,7 @@ d3b14f5168e561c713c1ccbdacbca9175c71cea6 data/borukva-food-exotic/recipe/apricot
 ed16e874e60fecbdf9c690226a520cdfa69ff338 data/borukva-food-exotic/recipe/apricot_pie.json
 9bce4cdc43afa44bddb7cce572dad67209c4fa22 data/borukva-food-exotic/recipe/apricot_planks.json
 a615a7f99283ffd39544037ccc01cc5efd294a08 data/borukva-food-exotic/recipe/apricot_slab.json
+cf6132c8ce4c4af31c5c5c588402b90fc9cd814c data/borukva-food-exotic/recipe/apricot_trapdoor_bottom.json
 d02ec29383496e8774f4037dc3b58a7979b2835d data/borukva-food-exotic/recipe/apricot_wood.json
 6984c836622874bc85debea633c030de8289d46e data/borukva-food-exotic/recipe/bacon_and_eggs.json
 fc75c1c52b1895c4a8dd5146a166084381ee15ee data/borukva-food-exotic/recipe/bacon_sandwich.json
@@ -106,12 +112,12 @@ ef8a01638f281ecde37216153896fe37169a311d data/borukva-food-exotic/recipe/broccol
 1351f9112a3979398a0941dba7fa45db5fc3177b data/borukva-food-exotic/recipe/cod_nigiri.json
 5aae787e754e1c86b3aadec44cbae5efab90b23a data/borukva-food-exotic/recipe/cod_sandwich.json
 b652e92e59aeecf8e3a63f75ca8f536c0269bb22 data/borukva-food-exotic/recipe/cutting_board/apricot_pie_slices.json
-157c63f75dc7f6b90bcd8b01ec6fbc9133295fe0 data/borukva-food-exotic/recipe/cutting_board/bacon.json
+d94e86cb38a06d5d86e02ab5ac671671bf7877af data/borukva-food-exotic/recipe/cutting_board/bacon.json
 0986893d1e8ab79cc6337c66fd7c72d8f9b9b636 data/borukva-food-exotic/recipe/cutting_board/baked_potato_slices.json
 b809bd25dcc830bb4c9395c0c6f0828c31375baa data/borukva-food-exotic/recipe/cutting_board/cod_fillet.json
 71caa2e22418e98823b52a97712c2fdac3106eac data/borukva-food-exotic/recipe/cutting_board/kiwi_slices.json
 6be0f1182373b80107dc3198f3b669761e7086c6 data/borukva-food-exotic/recipe/cutting_board/potato_slices.json
-7ac823969b2c5afd94d0737ad6d4ed7dff8d6ef1 data/borukva-food-exotic/recipe/cutting_board/sausage.json
+c36260afb2df80c98e8b2e14de218182e31f9919 data/borukva-food-exotic/recipe/cutting_board/sausage.json
 5129cecc2016a968e85a8f808bdcc275e7082273 data/borukva-food-exotic/recipe/eggplant_crate.json
 b80398a7c00e5cc1bd8ef954a6da18328610df6d data/borukva-food-exotic/recipe/eggplant_crate_to_eggplant.json
 f16afca03ecfd291d169c8d5cab2dc8d0c6063d9 data/borukva-food-exotic/recipe/eggplant_to_eggplant_seeds.json
@@ -128,6 +134,7 @@ d0a8cff5600eb08dcbe20faa1b6b565a8f6766b7 data/borukva-food-exotic/recipe/garlic_
 44f274eaaa8e43b388ed4e550757cf3cc5b79993 data/borukva-food-exotic/recipe/kiwi_door.json
 7f97ab03c20fb38402939087dacff72a07770cfe data/borukva-food-exotic/recipe/kiwi_planks.json
 0584d8f51fbb313d9fbf5d59523965d0e54dcfd7 data/borukva-food-exotic/recipe/kiwi_slab.json
+f1a44af6d192797437d2236a479c76229664d819 data/borukva-food-exotic/recipe/kiwi_trapdoor_bottom.json
 1444940b79690a18f51885a20e3a73716a296559 data/borukva-food-exotic/recipe/kiwi_wood.json
 524e2ad04814949142b4d0e37a89d546774d566c data/borukva-food-exotic/recipe/mix_salad.json
 e57ba880cb4c4d67d047c4955040a1f55173e76d data/borukva-food-exotic/recipe/orange_crate.json
@@ -135,6 +142,7 @@ e57ba880cb4c4d67d047c4955040a1f55173e76d data/borukva-food-exotic/recipe/orange_
 fd321f07037dd5ef949d97d571169449c1f7a072 data/borukva-food-exotic/recipe/orange_door.json
 5f2227f667a0fe8a8b736960f81e13b595ef8109 data/borukva-food-exotic/recipe/orange_planks.json
 ce1914e3f6271e2fe906be7a2e73cb996b2cd836 data/borukva-food-exotic/recipe/orange_slab.json
+fd6ae29a8b0fef9304406e7e6c4ec114395e7e9b data/borukva-food-exotic/recipe/orange_trapdoor_bottom.json
 48bfe24d4d7e0727ed091bf7ea999cd545a4580a data/borukva-food-exotic/recipe/orange_wood.json
 b403afe2424cfc25bb659d2c47f96749dc8790b8 data/borukva-food-exotic/recipe/pan/bacon.json
 3bb052c9123fcfcee6bce4be6d8f3c9982aef94d data/borukva-food-exotic/recipe/pan/bacon_cooked.json
@@ -150,6 +158,7 @@ c07dfc67b597007cf6f5e2b98af53ca392d2b35e data/borukva-food-exotic/recipe/pear_cr
 801eb453714300a3e34021ece10a5605d2119a1d data/borukva-food-exotic/recipe/pear_pie.json
 0876a621103bcf661ba2d43ddfcf89a06738110a data/borukva-food-exotic/recipe/pear_planks.json
 a08cfa2d9fb95269fb6f7042dd0f9f742082b09d data/borukva-food-exotic/recipe/pear_slab.json
+5e3d1202d4ada24c8f414d6fa2a432fd5183a3ba data/borukva-food-exotic/recipe/pear_trapdoor_bottom.json
 5aa6b1b9b1efebd690668c6d4c149f0839c3e777 data/borukva-food-exotic/recipe/pear_wood.json
 d951a003a13bb7ad8ecad1cb19c504f5404ce79a data/borukva-food-exotic/recipe/peas_crate.json
 e569220fecb7b1c5b4b2fd5b2230f0b875a53a6b data/borukva-food-exotic/recipe/peas_crate_to_peas.json
@@ -165,6 +174,7 @@ f0a0ce5f3434b463d3ba27e94df72bfd8796ef5f data/borukva-food-exotic/recipe/pepper_
 f7fe09051d85a015500806cbb1919b57de8236d2 data/borukva-food-exotic/recipe/plum_pie.json
 cd4756d4707bb7e3aaf65d02904fad3c561e9483 data/borukva-food-exotic/recipe/plum_planks.json
 b63e36e351e1380394a77d58f792a197814caa4b data/borukva-food-exotic/recipe/plum_slab.json
+fb8b84978cdfe1f3f05bebc621ea43dd6feafa98 data/borukva-food-exotic/recipe/plum_trapdoor_bottom.json
 b41772eab3e9026d92d8cf9bdf08701acb0951f3 data/borukva-food-exotic/recipe/plum_wood.json
 6815dd9bda7d91593c0d03616fc91b89c2b360ca data/borukva-food-exotic/recipe/pot/peas_soup.json
 30843223f161b6107be869667327f7544ea2d854 data/borukva-food-exotic/recipe/pot/ratatouille.json

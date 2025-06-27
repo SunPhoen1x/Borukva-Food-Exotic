@@ -1,10 +1,10 @@
 {
   "type": "borukva-food:cutting_board",
   "input": {
-    "base": "minecraft:porkchop"
+    "base": "borukva-food-exotic:bacon"
   },
   "output": {
-    "count": 2,
+    "count": 1,
     "id": "borukva-food-exotic:sausage"
   }
 }

@@ -9,5 +9,7 @@ ef044393fa7e2336541eb245ea80c33f0b5aa708 data/borukva-food-exotic/tags/item/plum
 ce596a5481810a86a70c0cdbca745956ac7964e4 data/minecraft/tags/item/logs_that_burn.json
 bd524f95ad61d2e064e380c50a28d0f4fe93c4a2 data/minecraft/tags/item/planks.json
 28ec99fc3be2096482105a56eec09e8fbcbd923a data/minecraft/tags/item/saplings.json
+7b202c695cef8f609bd7342b47e5944a41319380 data/minecraft/tags/item/trapdoors.json
 dd17ec3d1bb84f176a0c087a9253da5330a719fe data/minecraft/tags/item/wooden_doors.json
 bb96207e0087edbfe53443bd93d9447210b66bf9 data/minecraft/tags/item/wooden_slabs.json
+7b202c695cef8f609bd7342b47e5944a41319380 data/minecraft/tags/item/wooden_trapdoors.json

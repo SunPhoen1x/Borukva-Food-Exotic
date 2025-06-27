@@ -119,14 +119,29 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(PLUM_DOOR)
                 .add(PEAR_DOOR);
 
-//        getOrCreateTagBuilder(BlockTags.CROPS)
-//                .add(EGGPLANT)
-//                .add(STRAWBERRY)
-//                .add(BROCCOLI)
-//                .add(SPINACH)
-//                .add(GARLIC)
-//                .add(PEAS)
-//                .add(PEPPER)
-//                .add(GREEN_BEAN);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+                .add(APRICOT_TRAPDOOR)
+                .add(KIWI_TRAPDOOR)
+                .add(ORANGE_TRAPDOOR)
+                .add(PLUM_TRAPDOOR)
+                .add(PEAR_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.TRAPDOORS)
+                .add(APRICOT_TRAPDOOR)
+                .add(KIWI_TRAPDOOR)
+                .add(ORANGE_TRAPDOOR)
+                .add(PLUM_TRAPDOOR)
+                .add(PEAR_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.CROPS)
+                .add(EGGPLANT)
+                .add(STRAWBERRY)
+                .add(BROCCOLI)
+                .add(SPINACH)
+                .add(GARLIC)
+                .add(PEAS)
+                .add(PEPPER)
+                .add(GREEN_BEAN);
     }
 }
