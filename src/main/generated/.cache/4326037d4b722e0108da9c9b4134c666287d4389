@@ -82,6 +82,7 @@ e83fb83abbeff6d681a9a1d8a046b00797fc8220 data/borukva-food-exotic/advancement/re
 fb1bb7a7b634ce480a71038b24bd10649ff7aff7 data/borukva-food-exotic/advancement/recipes/food/strawberry_crate_to_strawberry.json
 8ee8c4815c71b60b786a0738ce400c2cafb49734 data/borukva-food-exotic/advancement/recipes/food/strawberry_to_strawberry_seeds.json
 460f57c430f5cd44be5be9b50971e15ddaf12e0c data/borukva-food-exotic/advancement/recipes/food/tropical_fish_crate_to_tropical_fish.json
+79f75d57d4420398587be1c4138aac9a0e53fc6d data/borukva-food-exotic/advancement/recipes/misc/grill.json
 3382afb6d5da0c748f6c2a7195193e72d4f3d5ab data/borukva-food-exotic/advancement/recipes/redstone/apricot_door.json
 e6ddd9a2b4dca02ed2b629344ac4dfcc3e970e17 data/borukva-food-exotic/advancement/recipes/redstone/apricot_trapdoor_bottom.json
 0f60799d8c97e6d8fd8a21f875396f5cd2c5f21e data/borukva-food-exotic/advancement/recipes/redstone/kiwi_door.json
@@ -128,6 +129,7 @@ d0a8cff5600eb08dcbe20faa1b6b565a8f6766b7 data/borukva-food-exotic/recipe/garlic_
 55409df5613c8d42de4bbf17084536724b39e8f4 data/borukva-food-exotic/recipe/green_bean_crate.json
 475734085b9fc4555f0f80aa9c64eef01020422c data/borukva-food-exotic/recipe/green_bean_crate_to_green_bean.json
 5d52cad2b5344c32ae2be58491f87bf5b5c0b192 data/borukva-food-exotic/recipe/green_bean_to_green_bean_seeds.json
+982befe447aa497d91f227e7f86e17ef9bd71c9e data/borukva-food-exotic/recipe/grill.json
 693d52f390e653d2f8af79dcf607324cfa925608 data/borukva-food-exotic/recipe/honey_pancakes.json
 58f52475b545cef893852b18420312072d55ffcd data/borukva-food-exotic/recipe/kiwi_crate.json
 02cf78416349b2e48eaa815ea9570552a3383dea data/borukva-food-exotic/recipe/kiwi_crate_to_kiwi.json

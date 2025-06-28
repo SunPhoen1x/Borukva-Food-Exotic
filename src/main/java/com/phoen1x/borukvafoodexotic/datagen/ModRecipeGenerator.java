@@ -285,6 +285,16 @@ public class ModRecipeGenerator extends RecipeGenerator {
                 .input('O', ModItems.ORANGE)
                 .criterion(hasItem(ModItems.APRICOT), conditionsFromItem(ModItems.APRICOT))
                 .offerTo(exporter);
+
+        createShaped(RecipeCategory.MISC, ModBlocks.GRILL_ITEM, 1)
+                .pattern("SSS")
+                .pattern(" S ")
+                .pattern("G G")
+                .input('S', Items.IRON_INGOT)
+                .input('G', Items.COPPER_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter);
     }
 
     private void offerDoorRecipe(RecipeExporter exporter, Item output, Item input) {

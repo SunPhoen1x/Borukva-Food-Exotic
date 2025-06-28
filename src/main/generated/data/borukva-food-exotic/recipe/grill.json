@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "minecraft:copper_ingot",
+    "S": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "SSS",
+    " S ",
+    "G G"
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:grill"
+  }
+}
