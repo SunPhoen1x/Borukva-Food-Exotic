@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "borukva-food-exotic:block/orange_planks"
+  }
+}

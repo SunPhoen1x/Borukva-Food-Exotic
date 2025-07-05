@@ -32,6 +32,8 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.state.property.Properties;
+import net.minecraft.storage.ReadView;
+import net.minecraft.storage.WriteView;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.ItemScatterer;
@@ -211,29 +213,21 @@ public class GrillEntity extends LockableBlockEntity implements MinimalSidedInve
     }
 
     @Override
-    protected void writeNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup lookup) {
-        Inventories.writeNbt(nbt, this.items, lookup);
-        nbt.putInt("FuelTicks", this.fuelTicks);
-        nbt.putInt("FuelInitial", this.fuelInitial);
-        nbt.putFloat("State", this.state);
-        super.writeNbt(nbt, lookup);
+    protected void writeData(WriteView view) {
+        super.writeData(view);
+        Inventories.writeData(view, this.items);
+        view.putInt("FuelTicks", this.fuelTicks);
+        view.putInt("FuelInitial", this.fuelInitial);
+        view.putFloat("State", this.state);
     }
 
     @Override
-    public void readNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup lookup) {
-        try {
-            Inventories.readNbt(nbt, items, lookup);
-            this.fuelInitial = nbt.getInt("FuelInitial").orElseThrow();
-            this.fuelTicks = nbt.getInt("FuelTicks").orElseThrow();
-            this.state = nbt.getFloat("State").orElseThrow();
-            super.readNbt(nbt, lookup);
-            if (this.model != null) {
-                this.model.updateItems(this.getStacks());
-            }
-        }
-        catch (NoSuchElementException e) {
-            e.fillInStackTrace();
-        }
+    public void readData(ReadView view) {
+        super.readData(view);
+        Inventories.readData(view, items);
+        this.fuelInitial = view.getInt("FuelInitial", 0);
+        this.fuelTicks = view.getInt("FuelTicks", 0);
+        this.state = view.getFloat("State", 0f);
     }
 
     @Override

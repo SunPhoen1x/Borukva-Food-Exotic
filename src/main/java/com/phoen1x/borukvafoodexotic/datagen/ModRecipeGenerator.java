@@ -76,6 +76,36 @@ public class ModRecipeGenerator extends RecipeGenerator {
         woodRecipe(ModBlocks.PLUM_LOG_ITEM, ModBlocks.PLUM_WOOD_ITEM, exporter);
         woodRecipe(ModBlocks.STRIPPED_PLUM_LOG_ITEM, ModBlocks.STRIPPED_PLUM_WOOD_ITEM, exporter);
 
+        stairsRecipe(ModBlocks.APRICOT_PLANKS_ITEM, ModBlocks.APRICOT_STAIRS_ITEM, exporter);
+        stairsRecipe(ModBlocks.ORANGE_PLANKS_ITEM, ModBlocks.ORANGE_STAIRS_ITEM, exporter);
+        stairsRecipe(ModBlocks.KIWI_PLANKS_ITEM, ModBlocks.KIWI_STAIRS_ITEM, exporter);
+        stairsRecipe(ModBlocks.PEAR_PLANKS_ITEM, ModBlocks.PEAR_STAIRS_ITEM, exporter);
+        stairsRecipe(ModBlocks.PLUM_PLANKS_ITEM, ModBlocks.PLUM_STAIRS_ITEM, exporter);
+
+        offerPressurePlateRecipe(ModBlocks.APRICOT_PRESSURE_PLATE_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+        offerPressurePlateRecipe(ModBlocks.ORANGE_PRESSURE_PLATE_ITEM, ModBlocks.ORANGE_PLANKS_ITEM);
+        offerPressurePlateRecipe(ModBlocks.KIWI_PRESSURE_PLATE_ITEM, ModBlocks.KIWI_PLANKS_ITEM);
+        offerPressurePlateRecipe(ModBlocks.PEAR_PRESSURE_PLATE_ITEM, ModBlocks.PEAR_PLANKS_ITEM);
+        offerPressurePlateRecipe(ModBlocks.PLUM_PRESSURE_PLATE_ITEM, ModBlocks.PLUM_PLANKS_ITEM);
+
+        offerButtonRecipe(exporter, ModBlocks.APRICOT_BUTTON_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+        offerButtonRecipe(exporter, ModBlocks.ORANGE_BUTTON_ITEM, ModBlocks.ORANGE_PLANKS_ITEM);
+        offerButtonRecipe(exporter, ModBlocks.KIWI_BUTTON_ITEM, ModBlocks.KIWI_PLANKS_ITEM);
+        offerButtonRecipe(exporter, ModBlocks.PEAR_BUTTON_ITEM, ModBlocks.PEAR_PLANKS_ITEM);
+        offerButtonRecipe(exporter, ModBlocks.PLUM_BUTTON_ITEM, ModBlocks.PLUM_PLANKS_ITEM);
+
+        offerFenceRecipe(exporter, ModBlocks.APRICOT_FENCE_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+        offerFenceRecipe(exporter, ModBlocks.ORANGE_FENCE_ITEM, ModBlocks.ORANGE_PLANKS_ITEM);
+        offerFenceRecipe(exporter, ModBlocks.KIWI_FENCE_ITEM, ModBlocks.KIWI_PLANKS_ITEM);
+        offerFenceRecipe(exporter, ModBlocks.PEAR_FENCE_ITEM, ModBlocks.PEAR_PLANKS_ITEM);
+        offerFenceRecipe(exporter, ModBlocks.PLUM_FENCE_ITEM, ModBlocks.PLUM_PLANKS_ITEM);
+
+        offerFenceGateRecipe(exporter, ModBlocks.APRICOT_FENCE_GATE_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+        offerFenceGateRecipe(exporter, ModBlocks.ORANGE_FENCE_GATE_ITEM, ModBlocks.ORANGE_PLANKS_ITEM);
+        offerFenceGateRecipe(exporter, ModBlocks.KIWI_FENCE_GATE_ITEM, ModBlocks.KIWI_PLANKS_ITEM);
+        offerFenceGateRecipe(exporter, ModBlocks.PEAR_FENCE_GATE_ITEM, ModBlocks.PEAR_PLANKS_ITEM);
+        offerFenceGateRecipe(exporter, ModBlocks.PLUM_FENCE_GATE_ITEM, ModBlocks.PLUM_PLANKS_ITEM);
+
         slabRecipe(ModBlocks.APRICOT_PLANKS_ITEM, ModBlocks.APRICOT_SLAB_ITEM, exporter);
         slabRecipe(ModBlocks.PEAR_PLANKS_ITEM, ModBlocks.PEAR_SLAB_ITEM, exporter);
         slabRecipe(ModBlocks.ORANGE_PLANKS_ITEM, ModBlocks.ORANGE_SLAB_ITEM, exporter);
@@ -102,14 +132,11 @@ public class ModRecipeGenerator extends RecipeGenerator {
         of(exporter,
                 CuttingBoardRecipe.of("kiwi_slices", CountedIngredient.ofItems(1, ModItems.KIWI), new ItemStack(ModItems.KIWI_SLICES, 3)),
                 CuttingBoardRecipe.of("apricot_pie_slices", CountedIngredient.ofItems(1, ModItems.APRICOT_PIE), new ItemStack(ModItems.APRICOT_PIE_SLICE, 4)),
-                CuttingBoardRecipe.of("bacon", CountedIngredient.ofItems(1, Items.PORKCHOP), new ItemStack(ModItems.BACON, 2)),
+                CuttingBoardRecipe.of("bacon", CountedIngredient.ofItems(1, Items.BEEF), new ItemStack(ModItems.BACON, 2)),
                 CuttingBoardRecipe.of("cod_fillet", CountedIngredient.ofItems(1, Items.COD), new ItemStack(ModItems.COD_FILLET, 2)),
                 CuttingBoardRecipe.of("potato_slices", CountedIngredient.ofItems(1, Items.POTATO), new ItemStack(ModItems.POTATO_SLICES, 3)),
                 CuttingBoardRecipe.of("baked_potato_slices", CountedIngredient.ofItems(1, Items.BAKED_POTATO), new ItemStack(ModItems.BAKED_POTATO_SLICES, 3)),
-//                CuttingBoardRecipe.of("bun_slice", CountedIngredient.ofItems(1, ModItems.BUN), new ItemStack(ModItems.BUN_SLICE, 2))
-                CuttingBoardRecipe.of("sausage", CountedIngredient.ofItems(1, Items.PORKCHOP), new ItemStack(ModItems.SAUSAGE, 2))
-
-                );
+                CuttingBoardRecipe.of("sausage", CountedIngredient.ofItems(1, ModItems.BACON), new ItemStack(ModItems.SAUSAGE, 1)));
 
         of(exporter,
                 PotRecipe.of("ratatouille", List.of(
@@ -141,6 +168,11 @@ public class ModRecipeGenerator extends RecipeGenerator {
         offerDoorRecipe(exporter, ModBlocks.ORANGE_DOOR_ITEM, ModBlocks.ORANGE_PLANKS_ITEM);
         offerDoorRecipe(exporter, ModBlocks.PLUM_DOOR_ITEM, ModBlocks.PLUM_PLANKS_ITEM);
         offerDoorRecipe(exporter, ModBlocks.PEAR_DOOR_ITEM, ModBlocks.PEAR_PLANKS_ITEM);
+        offerTrapdoorRecipe(exporter, ModBlocks.APRICOT_TRAPDOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+        offerTrapdoorRecipe(exporter, ModBlocks.ORANGE_TRAPDOOR_ITEM, ModBlocks.ORANGE_PLANKS_ITEM);
+        offerTrapdoorRecipe(exporter, ModBlocks.KIWI_TRAPDOOR_ITEM, ModBlocks.KIWI_PLANKS_ITEM);
+        offerTrapdoorRecipe(exporter, ModBlocks.PEAR_TRAPDOOR_ITEM, ModBlocks.PEAR_PLANKS_ITEM);
+        offerTrapdoorRecipe(exporter, ModBlocks.PLUM_TRAPDOOR_ITEM, ModBlocks.PLUM_PLANKS_ITEM);
 
         createShapeless(RecipeCategory.FOOD, ModItems.COD_NIGIRI, 3)
                 .input(ModItems.COD_FILLET)
@@ -148,12 +180,6 @@ public class ModRecipeGenerator extends RecipeGenerator {
                 .input(com.opryshok.item.ModItems.NORI)
                 .criterion(hasItem(ModItems.COD_FILLET), conditionsFromItem(ModItems.COD_FILLET))
                 .offerTo(exporter);
-
-//        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BUN, 1)
-//                .input(Items.WHEAT)
-//                .input(Items.WHEAT)
-//                .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
-//                .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.BUN)));
 
         createShapeless(RecipeCategory.FOOD, ModItems.SQUID_NIGIRI, 3)
                 .input(com.opryshok.item.ModItems.SQUID_TENTAClES)
@@ -292,32 +318,26 @@ public class ModRecipeGenerator extends RecipeGenerator {
                 .input('O', ModItems.ORANGE)
                 .criterion(hasItem(ModItems.APRICOT), conditionsFromItem(ModItems.APRICOT))
                 .offerTo(exporter);
-
-//        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.HAMBURGER, 1)
-//                .pattern(" S ")
-//                .pattern("LBK")
-//                .pattern(" S ")
-//                .input('S', ModItems.BUN_SLICE)
-//                .input('L', com.opryshok.item.ModItems.TOMATO_SLICES)
-//                .input('K', com.opryshok.item.ModItems.LETTUCE)
-//                .input('B', com.opryshok.item.ModItems.COOKED_MUTTON_SLICES)
-//                .criterion(hasItem(ModItems.BUN_SLICE), conditionsFromItem(ModItems.BUN_SLICE))
-//                .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.HAMBURGER)));
-//
-//        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BACON_BURGER, 1)
-//                .pattern(" S ")
-//                .pattern("LBK")
-//                .pattern(" S ")
-//                .input('S', ModItems.BUN_SLICE)
-//                .input('L', com.opryshok.item.ModItems.TOMATO_SLICES)
-//                .input('K', com.opryshok.item.ModItems.LETTUCE)
-//                .input('B', ModItems.BACON_COOKED)
-//                .criterion(hasItem(ModItems.BUN_SLICE), conditionsFromItem(ModItems.BUN_SLICE))
-//                .offerTo(exporter, Identifier.of(BorukvaFood.MOD_ID, getRecipeName(ModItems.BACON_BURGER)));
     }
 
     private void offerDoorRecipe(RecipeExporter exporter, Item output, Item input) {
         createDoorRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
+    }
+
+    private void offerTrapdoorRecipe(RecipeExporter exporter, Item output, Item input){
+        createTrapdoorRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
+    }
+
+    private void offerButtonRecipe(RecipeExporter exporter, Item output, Item input){
+        createButtonRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
+    }
+
+    private void offerFenceRecipe(RecipeExporter exporter, Item output, Item input){
+        createFenceRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
+    }
+
+    private void offerFenceGateRecipe(RecipeExporter exporter, Item output, Item input){
+        createFenceGateRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
     }
 
     private void compressBlockRecipe(Item blockItem, Item item, RecipeExporter exporter){
@@ -338,6 +358,16 @@ public class ModRecipeGenerator extends RecipeGenerator {
         createShapeless(RecipeCategory.BUILDING_BLOCKS, planks, 4)
                 .input(log)
                 .criterion("has_log", conditionsFromTag(log))
+                .offerTo(exporter);
+    }
+
+    private void stairsRecipe(Item planks, Item stairs, RecipeExporter exporter){
+        createShaped(RecipeCategory.BUILDING_BLOCKS, stairs, 4)
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .input('S', planks)
+                .criterion(hasItem(planks), conditionsFromItem(planks))
                 .offerTo(exporter);
     }
 

@@ -1,13 +1,21 @@
-// 1.21.5	-999999999-01-01T00:00:00	Borukva Food Exotic/Tags for minecraft:block
+// 1.21.6	-999999999-01-01T00:00:00	Borukva Food Exotic/Tags for minecraft:block
 1b4ba8ffe350a032bf01aa8f33e5b127732950ee data/borukva-food-exotic/tags/block/apricot_logs.json
 622de10f3042f9fdd044e326bd8936f54c8b9b62 data/borukva-food-exotic/tags/block/kiwi_logs.json
 7aa221624bc6102f8988d0bfd06d65287aaab63c data/borukva-food-exotic/tags/block/orange_logs.json
 31ec6779701320eb41d31ab1edbace0e788665c8 data/borukva-food-exotic/tags/block/pear_logs.json
 ef044393fa7e2336541eb245ea80c33f0b5aa708 data/borukva-food-exotic/tags/block/plum_logs.json
+4a3287aa630899c8e571dbf583a9f18f9e6db413 data/minecraft/tags/block/buttons.json
+ecf89113ae862265ae2b5e3bd504f23589767953 data/minecraft/tags/block/fence_gates.json
+a36fe01f13b4cd99e5e817aab3d9f175c8a6a3ad data/minecraft/tags/block/fences.json
 094388004dbd8574647f33ada2de819ad4c54218 data/minecraft/tags/block/leaves.json
 ce596a5481810a86a70c0cdbca745956ac7964e4 data/minecraft/tags/block/logs_that_burn.json
 06ef4486b8ec1b4ed08d275f70cc180343bc0ea1 data/minecraft/tags/block/mineable/axe.json
 bd524f95ad61d2e064e380c50a28d0f4fe93c4a2 data/minecraft/tags/block/planks.json
+5284b1113384b58816b616a2881ac80ff0281da7 data/minecraft/tags/block/pressure_plates.json
 28ec99fc3be2096482105a56eec09e8fbcbd923a data/minecraft/tags/block/saplings.json
+914d21a4c317558ea06d1246a8f75047eb211041 data/minecraft/tags/block/stairs.json
+0ab58b40bfafa511425d687d6b0584a6dec0c824 data/minecraft/tags/block/trapdoors.json
 dd17ec3d1bb84f176a0c087a9253da5330a719fe data/minecraft/tags/block/wooden_doors.json
+a36fe01f13b4cd99e5e817aab3d9f175c8a6a3ad data/minecraft/tags/block/wooden_fences.json
 bb96207e0087edbfe53443bd93d9447210b66bf9 data/minecraft/tags/block/wooden_slabs.json
+0ab58b40bfafa511425d687d6b0584a6dec0c824 data/minecraft/tags/block/wooden_trapdoors.json

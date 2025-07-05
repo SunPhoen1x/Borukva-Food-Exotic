@@ -18,7 +18,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+        valueLookupBuilder(BlockTags.AXE_MINEABLE)
                 .add(APRICOT_CRATE)
                 .add(PEAR_CRATE)
                 .add(ORANGE_CRATE)
@@ -37,58 +37,58 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(GARLIC_CRATE);
 
 
-        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+        valueLookupBuilder(BlockTags.WOODEN_SLABS)
                 .add(APRICOT_SLAB)
                 .add(PEAR_SLAB)
                 .add(PLUM_SLAB)
                 .add(ORANGE_SLAB)
                 .add(KIWI_SLAB);
 
-        getOrCreateTagBuilder(ModTags.Blocks.APRICOT_LOGS)
+        valueLookupBuilder(ModTags.Blocks.APRICOT_LOGS)
                 .add(APRICOT_LOG)
                 .add(APRICOT_WOOD)
                 .add(STRIPPED_APRICOT_LOG)
                 .add(STRIPPED_APRICOT_WOOD);
 
-        getOrCreateTagBuilder(ModTags.Blocks.ORANGE_LOGS)
+        valueLookupBuilder(ModTags.Blocks.ORANGE_LOGS)
                 .add(ORANGE_LOG)
                 .add(ORANGE_WOOD)
                 .add(STRIPPED_ORANGE_LOG)
                 .add(STRIPPED_ORANGE_WOOD);
 
-        getOrCreateTagBuilder(ModTags.Blocks.PEAR_LOGS)
+        valueLookupBuilder(ModTags.Blocks.PEAR_LOGS)
                 .add(PEAR_LOG)
                 .add(PEAR_WOOD)
                 .add(STRIPPED_PEAR_LOG)
                 .add(STRIPPED_PEAR_WOOD);
 
-        getOrCreateTagBuilder(ModTags.Blocks.KIWI_LOGS)
+        valueLookupBuilder(ModTags.Blocks.KIWI_LOGS)
                 .add(KIWI_LOG)
                 .add(KIWI_WOOD)
                 .add(STRIPPED_KIWI_LOG)
                 .add(STRIPPED_KIWI_WOOD);
 
-        getOrCreateTagBuilder(ModTags.Blocks.PLUM_LOGS)
+        valueLookupBuilder(ModTags.Blocks.PLUM_LOGS)
                 .add(PLUM_LOG)
                 .add(PLUM_WOOD)
                 .add(STRIPPED_PLUM_LOG)
                 .add(STRIPPED_PLUM_WOOD);
 
-        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+        valueLookupBuilder(BlockTags.LOGS_THAT_BURN)
                 .forceAddTag(ModTags.Blocks.APRICOT_LOGS)
                 .forceAddTag(ModTags.Blocks.ORANGE_LOGS)
                 .forceAddTag(ModTags.Blocks.PEAR_LOGS)
                 .forceAddTag(ModTags.Blocks.KIWI_LOGS)
                 .forceAddTag(ModTags.Blocks.PLUM_LOGS);
 
-        getOrCreateTagBuilder(BlockTags.PLANKS)
+        valueLookupBuilder(BlockTags.PLANKS)
                 .add(APRICOT_PLANKS)
                 .add(ORANGE_PLANKS)
                 .add(PEAR_PLANKS)
                 .add(KIWI_PLANKS)
                 .add(PLUM_PLANKS);
 
-        getOrCreateTagBuilder(BlockTags.LEAVES)
+        valueLookupBuilder(BlockTags.LEAVES)
                 .add(APRICOT_LEAVES)
                 .add(APRICOT_FRUIT_LEAVES)
 
@@ -104,29 +104,74 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(PLUM_LEAVES)
                 .add(PLUM_FRUIT_LEAVES);
 
-        getOrCreateTagBuilder(BlockTags.SAPLINGS)
+        valueLookupBuilder(BlockTags.SAPLINGS)
                 .add(APRICOT_SAPLING)
                 .add(PEAR_SAPLING)
                 .add(ORANGE_SAPLING)
                 .add(KIWI_SAPLING)
                 .add(PLUM_SAPLING);
 
-
-        getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+        valueLookupBuilder(BlockTags.WOODEN_DOORS)
                 .add(APRICOT_DOOR)
                 .add(KIWI_DOOR)
                 .add(ORANGE_DOOR)
                 .add(PLUM_DOOR)
                 .add(PEAR_DOOR);
 
-//        getOrCreateTagBuilder(BlockTags.CROPS)
-//                .add(EGGPLANT)
-//                .add(STRAWBERRY)
-//                .add(BROCCOLI)
-//                .add(SPINACH)
-//                .add(GARLIC)
-//                .add(PEAS)
-//                .add(PEPPER)
-//                .add(GREEN_BEAN);
+        valueLookupBuilder(BlockTags.WOODEN_TRAPDOORS)
+                .add(APRICOT_TRAPDOOR)
+                .add(KIWI_TRAPDOOR)
+                .add(ORANGE_TRAPDOOR)
+                .add(PLUM_TRAPDOOR)
+                .add(PEAR_TRAPDOOR);
+
+        valueLookupBuilder(BlockTags.TRAPDOORS)
+                .add(APRICOT_TRAPDOOR)
+                .add(KIWI_TRAPDOOR)
+                .add(ORANGE_TRAPDOOR)
+                .add(PLUM_TRAPDOOR)
+                .add(PEAR_TRAPDOOR);
+
+        valueLookupBuilder(BlockTags.STAIRS)
+                .add(APRICOT_STAIRS)
+                .add(ORANGE_STAIRS)
+                .add(KIWI_STAIRS)
+                .add(PEAR_STAIRS)
+                .add(PLUM_STAIRS);
+
+        valueLookupBuilder(BlockTags.BUTTONS)
+                .add(APRICOT_BUTTON)
+                .add(ORANGE_BUTTON)
+                .add(KIWI_BUTTON)
+                .add(PEAR_BUTTON)
+                .add(PLUM_BUTTON);
+
+        valueLookupBuilder(BlockTags.PRESSURE_PLATES)
+                .add(APRICOT_PRESSURE_PLATE)
+                .add(ORANGE_PRESSURE_PLATE)
+                .add(KIWI_PRESSURE_PLATE)
+                .add(PEAR_PRESSURE_PLATE)
+                .add(PLUM_PRESSURE_PLATE);
+
+        valueLookupBuilder(BlockTags.FENCE_GATES)
+                .add(APRICOT_FENCE_GATE)
+                .add(ORANGE_FENCE_GATE)
+                .add(KIWI_FENCE_GATE)
+                .add(PEAR_FENCE_GATE)
+                .add(PLUM_FENCE_GATE);
+
+        valueLookupBuilder(BlockTags.FENCES)
+                .add(APRICOT_FENCE)
+                .add(ORANGE_FENCE)
+                .add(KIWI_FENCE)
+                .add(PEAR_FENCE)
+                .add(PLUM_FENCE);
+
+        valueLookupBuilder(BlockTags.WOODEN_FENCES)
+                .add(APRICOT_FENCE)
+                .add(ORANGE_FENCE)
+                .add(KIWI_FENCE)
+                .add(PEAR_FENCE)
+                .add(PLUM_FENCE);
     }
 }

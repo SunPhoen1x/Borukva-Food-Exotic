@@ -26,14 +26,14 @@
 		"borukva-food-exotic.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.13",
-		"minecraft": "~1.21.4",
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.6",
 		"java": ">=21",
 		"fabric-api": "*",
-		"polymer-core": ">=0.11.8",
-		"polymer-resource-pack": ">=0.11.8",
-		"polymer-virtual-entity": ">=0.11.8",
-		"borukva-food": "*"
+		"polymer-core": ">=0.13.3",
+		"polymer-resource-pack": ">=0.13.3",
+		"polymer-virtual-entity": ">=0.13.3",
+		"borukva-food": ">=0.1.14"
 	},
 	"suggests": {
 		"another-mod": "*"

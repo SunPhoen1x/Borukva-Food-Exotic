@@ -113,6 +113,36 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(KIWI_SLAB, slabDrops(KIWI_SLAB));
         addDrop(PEAR_SLAB, slabDrops(PEAR_SLAB));
 
+        addDrop(APRICOT_TRAPDOOR);
+        addDrop(KIWI_TRAPDOOR);
+        addDrop(ORANGE_TRAPDOOR);
+        addDrop(PEAR_TRAPDOOR);
+        addDrop(PLUM_TRAPDOOR);
+        addDrop(APRICOT_STAIRS);
+        addDrop(APRICOT_BUTTON);
+        addDrop(APRICOT_PRESSURE_PLATE);
+        addDrop(APRICOT_FENCE);
+        addDrop(APRICOT_FENCE_GATE);
+        addDrop(ORANGE_STAIRS);
+        addDrop(ORANGE_BUTTON);
+        addDrop(ORANGE_PRESSURE_PLATE);
+        addDrop(ORANGE_FENCE);
+        addDrop(ORANGE_FENCE_GATE);
+        addDrop(KIWI_STAIRS);
+        addDrop(KIWI_BUTTON);
+        addDrop(KIWI_PRESSURE_PLATE);
+        addDrop(KIWI_FENCE);
+        addDrop(KIWI_FENCE_GATE);
+        addDrop(PEAR_STAIRS);
+        addDrop(PEAR_BUTTON);
+        addDrop(PEAR_PRESSURE_PLATE);
+        addDrop(PEAR_FENCE);
+        addDrop(PEAR_FENCE_GATE);
+        addDrop(PLUM_STAIRS);
+        addDrop(PLUM_BUTTON);
+        addDrop(PLUM_PRESSURE_PLATE);
+        addDrop(PLUM_FENCE);
+        addDrop(PLUM_FENCE_GATE);
         addDrop(GRILL);
     }
     private void addCropDrop(Block cropBlock, Item cropItem, Item seedItem) {

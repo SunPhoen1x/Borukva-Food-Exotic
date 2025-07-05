@@ -75,18 +75,48 @@ public class ModModelProvider extends FabricModelProvider{
 
         BlockStateModelGenerator.BlockTexturePool apricotPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.APRICOT_PLANKS);
         apricotPlanksPool.slab(ModBlocks.APRICOT_SLAB);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.APRICOT_TRAPDOOR);
+        apricotPlanksPool.stairs(ModBlocks.APRICOT_STAIRS);
+        apricotPlanksPool.fenceGate(ModBlocks.APRICOT_FENCE_GATE);
+        apricotPlanksPool.button(ModBlocks.APRICOT_BUTTON);
+        apricotPlanksPool.pressurePlate(ModBlocks.APRICOT_PRESSURE_PLATE);
+        apricotPlanksPool.fence(ModBlocks.APRICOT_FENCE);
 
         BlockStateModelGenerator.BlockTexturePool pearPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PEAR_PLANKS);
         pearPlanksPool.slab(ModBlocks.PEAR_SLAB);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.PEAR_TRAPDOOR);
+        pearPlanksPool.stairs(ModBlocks.PEAR_STAIRS);
+        pearPlanksPool.fenceGate(ModBlocks.PEAR_FENCE_GATE);
+        pearPlanksPool.button(ModBlocks.PEAR_BUTTON);
+        pearPlanksPool.pressurePlate(ModBlocks.PEAR_PRESSURE_PLATE);
+        pearPlanksPool.fence(ModBlocks.PEAR_FENCE);
 
         BlockStateModelGenerator.BlockTexturePool orangePlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ORANGE_PLANKS);
         orangePlanksPool.slab(ModBlocks.ORANGE_SLAB);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.ORANGE_TRAPDOOR);
+        orangePlanksPool.stairs(ModBlocks.ORANGE_STAIRS);
+        orangePlanksPool.fenceGate(ModBlocks.ORANGE_FENCE_GATE);
+        orangePlanksPool.button(ModBlocks.ORANGE_BUTTON);
+        orangePlanksPool.pressurePlate(ModBlocks.ORANGE_PRESSURE_PLATE);
+        orangePlanksPool.fence(ModBlocks.ORANGE_FENCE);
 
         BlockStateModelGenerator.BlockTexturePool plumPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PLUM_PLANKS);
         plumPlanksPool.slab(ModBlocks.PLUM_SLAB);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.PLUM_TRAPDOOR);
+        plumPlanksPool.stairs(ModBlocks.PLUM_STAIRS);
+        plumPlanksPool.fenceGate(ModBlocks.PLUM_FENCE_GATE);
+        plumPlanksPool.button(ModBlocks.PLUM_BUTTON);
+        plumPlanksPool.pressurePlate(ModBlocks.PLUM_PRESSURE_PLATE);
+        plumPlanksPool.fence(ModBlocks.PLUM_FENCE);
 
         BlockStateModelGenerator.BlockTexturePool kiwiPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.KIWI_PLANKS);
         kiwiPlanksPool.slab(ModBlocks.KIWI_SLAB);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.KIWI_TRAPDOOR);
+        kiwiPlanksPool.stairs(ModBlocks.KIWI_STAIRS);
+        kiwiPlanksPool.fenceGate(ModBlocks.KIWI_FENCE_GATE);
+        kiwiPlanksPool.button(ModBlocks.KIWI_BUTTON);
+        kiwiPlanksPool.pressurePlate(ModBlocks.KIWI_PRESSURE_PLATE);
+        kiwiPlanksPool.fence(ModBlocks.KIWI_FENCE);
 
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.APRICOT_FRUIT_LEAVES);
         generateFruitLeaves(blockStateModelGenerator, ModBlocks.PEAR_FRUIT_LEAVES);

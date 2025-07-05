@@ -15,7 +15,6 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
 import eu.pb4.polymer.core.api.item.SimplePolymerItem;
 
 import java.util.function.Function;
@@ -88,10 +87,6 @@ public class ModItems {
     public static Item SALMON_COD_NIGIRI_ONIGIRI = registerItem("salmon_cod_nigiri_onigiri", SimplePolymerItem::new, new Item.Settings().food(com.opryshok.utils.ModFoodComponents.BEEF_SANDWICH));
     public static Item SALMON_COD_NIGIRI_MAKI = registerItem("salmon_cod_nigiri_maki", SimplePolymerItem::new, new Item.Settings().food(com.opryshok.utils.ModFoodComponents.BEEF_SANDWICH));
     public static Item SALMON_COD_NIGIRI_URUMAKI = registerItem("salmon_cod_nigiri_urumaki", SimplePolymerItem::new, new Item.Settings().food(com.opryshok.utils.ModFoodComponents.BEEF_SANDWICH));
-//    public static Item BUN = registerItem("bun", new PolyItem(new Item.Settings().food(FoodComponents.BREAD), "bun"));
-//    public static Item BUN_SLICE = registerItem("bun_slice", new PolyItem(new Item.Settings().food(ModFoodComponents.SLICES), "bun_slice"));
-//    public static Item HAMBURGER = registerItem("hamburger", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH), "hamburger"));
-//    public static Item BACON_BURGER = registerItem("bacon_burger", new PolyItem(new Item.Settings().food(com.opryshok.utils.ModFoodComponents.TOMATO_SANDWICH), "bacon_burger"));
     public static Item COOKED_STEAK = registerItem("cooked_steak", SimplePolymerItem::new, new Item.Settings().food(com.opryshok.utils.ModFoodComponents.COOKED_BEEF_BARBECUE));
     public static Item POTATO_WITH_STEAK = registerItem("potato_with_steak", SimplePolymerItem::new, new Item.Settings().food(ModFoodComponents.FRIED_EGG));
     public static Item SAUSAGE = registerItem("sausage", SimplePolymerItem::new, new Item.Settings().food(FoodComponents.BEEF));
@@ -106,7 +101,7 @@ public class ModItems {
         var key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BorukvaFoodExotic.MOD_ID, name));
         Item item = factory.apply(settings.registryKey(key));
             return Registry.register(Registries.ITEM, key, item);
-        }
+    }
 
     public static void registerModItems() {
         ItemGroup.Builder builder = PolymerItemGroupUtils.builder();
@@ -127,7 +122,6 @@ public class ModItems {
             entries.add(GARLIC);
             entries.add(GREEN_BEAN);
             entries.add(BROCCOLI);
-
             entries.add(STRAWBERRY_SEEDS);
             entries.add(EGGPLANT_SEEDS);
             entries.add(PEPPER_SEEDS);
@@ -199,6 +193,16 @@ public class ModItems {
             entries.add(STRIPPED_APRICOT_WOOD);
             entries.add(APRICOT_LEAVES);
             entries.add(APRICOT_PLANKS);
+            entries.add(APRICOT_FRUIT_LEAVES);
+            entries.add(APRICOT_SAPLING_ITEM);
+            entries.add(APRICOT_SLAB_ITEM);
+            entries.add(APRICOT_DOOR_ITEM);
+            entries.add(APRICOT_TRAPDOOR_ITEM);
+            entries.add(APRICOT_STAIRS_ITEM);
+            entries.add(APRICOT_FENCE_ITEM);
+            entries.add(APRICOT_FENCE_GATE_ITEM);
+            entries.add(APRICOT_BUTTON_ITEM);
+            entries.add(APRICOT_PRESSURE_PLATE_ITEM);
 
             entries.add(ORANGE_LOG);
             entries.add(ORANGE_WOOD);
@@ -206,6 +210,16 @@ public class ModItems {
             entries.add(STRIPPED_ORANGE_WOOD);
             entries.add(ORANGE_LEAVES);
             entries.add(ORANGE_PLANKS);
+            entries.add(ORANGE_FRUIT_LEAVES);
+            entries.add(ORANGE_SAPLING_ITEM);
+            entries.add(ORANGE_SLAB_ITEM);
+            entries.add(ORANGE_DOOR_ITEM);
+            entries.add(ORANGE_TRAPDOOR_ITEM);
+            entries.add(ORANGE_STAIRS_ITEM);
+            entries.add(ORANGE_FENCE_ITEM);
+            entries.add(ORANGE_FENCE_GATE_ITEM);
+            entries.add(ORANGE_BUTTON_ITEM);
+            entries.add(ORANGE_PRESSURE_PLATE_ITEM);
 
             entries.add(PEAR_LOG);
             entries.add(PEAR_WOOD);
@@ -213,6 +227,16 @@ public class ModItems {
             entries.add(STRIPPED_PEAR_WOOD);
             entries.add(PEAR_LEAVES);
             entries.add(PEAR_PLANKS);
+            entries.add(PEAR_FRUIT_LEAVES);
+            entries.add(PEAR_SAPLING_ITEM);
+            entries.add(PEAR_SLAB_ITEM);
+            entries.add(PEAR_DOOR_ITEM);
+            entries.add(PEAR_TRAPDOOR_ITEM);
+            entries.add(PEAR_STAIRS_ITEM);
+            entries.add(PEAR_FENCE_ITEM);
+            entries.add(PEAR_FENCE_GATE_ITEM);
+            entries.add(PEAR_BUTTON_ITEM);
+            entries.add(PEAR_PRESSURE_PLATE_ITEM);
 
             entries.add(KIWI_LOG);
             entries.add(KIWI_WOOD);
@@ -220,6 +244,16 @@ public class ModItems {
             entries.add(STRIPPED_KIWI_WOOD);
             entries.add(KIWI_LEAVES);
             entries.add(KIWI_PLANKS);
+            entries.add(KIWI_FRUIT_LEAVES);
+            entries.add(KIWI_SAPLING_ITEM);
+            entries.add(KIWI_SLAB_ITEM);
+            entries.add(KIWI_DOOR_ITEM);
+            entries.add(KIWI_TRAPDOOR_ITEM);
+            entries.add(KIWI_STAIRS_ITEM);
+            entries.add(KIWI_FENCE_ITEM);
+            entries.add(KIWI_FENCE_GATE_ITEM);
+            entries.add(KIWI_BUTTON_ITEM);
+            entries.add(KIWI_PRESSURE_PLATE_ITEM);
 
             entries.add(PLUM_LOG);
             entries.add(PLUM_WOOD);
@@ -227,30 +261,16 @@ public class ModItems {
             entries.add(STRIPPED_PLUM_WOOD);
             entries.add(PLUM_LEAVES);
             entries.add(PLUM_PLANKS);
-
-            entries.add(APRICOT_FRUIT_LEAVES);
-            entries.add(ORANGE_FRUIT_LEAVES);
-            entries.add(PEAR_FRUIT_LEAVES);
-            entries.add(KIWI_FRUIT_LEAVES);
             entries.add(PLUM_FRUIT_LEAVES);
-
-            entries.add(APRICOT_SAPLING_ITEM);
-            entries.add(PEAR_SAPLING_ITEM);
-            entries.add(ORANGE_SAPLING_ITEM);
-            entries.add(KIWI_SAPLING_ITEM);
             entries.add(PLUM_SAPLING_ITEM);
-
-            entries.add(APRICOT_SLAB_ITEM);
-            entries.add(PEAR_SLAB_ITEM);
-            entries.add(ORANGE_SLAB_ITEM);
             entries.add(PLUM_SLAB_ITEM);
-            entries.add(KIWI_SLAB_ITEM);
-
-            entries.add(APRICOT_DOOR_ITEM);
-            entries.add(KIWI_DOOR_ITEM);
-            entries.add(ORANGE_DOOR_ITEM);
             entries.add(PLUM_DOOR_ITEM);
-            entries.add(PEAR_DOOR_ITEM);
+            entries.add(PLUM_TRAPDOOR_ITEM);
+            entries.add(PLUM_STAIRS_ITEM);
+            entries.add(PLUM_FENCE_ITEM);
+            entries.add(PLUM_FENCE_GATE_ITEM);
+            entries.add(PLUM_BUTTON_ITEM);
+            entries.add(PLUM_PRESSURE_PLATE_ITEM);
 
             entries.add(GRILL_ITEM);
         });
