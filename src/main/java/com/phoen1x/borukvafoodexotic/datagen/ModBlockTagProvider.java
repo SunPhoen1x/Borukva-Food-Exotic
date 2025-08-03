@@ -118,19 +118,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(PLUM_DOOR)
                 .add(PEAR_DOOR);
 
-        valueLookupBuilder(BlockTags.WOODEN_TRAPDOORS)
-                .add(APRICOT_TRAPDOOR)
-                .add(KIWI_TRAPDOOR)
-                .add(ORANGE_TRAPDOOR)
-                .add(PLUM_TRAPDOOR)
-                .add(PEAR_TRAPDOOR);
-
-        valueLookupBuilder(BlockTags.TRAPDOORS)
-                .add(APRICOT_TRAPDOOR)
-                .add(KIWI_TRAPDOOR)
-                .add(ORANGE_TRAPDOOR)
-                .add(PLUM_TRAPDOOR)
-                .add(PEAR_TRAPDOOR);
+//        valueLookupBuilder(BlockTags.WOODEN_TRAPDOORS)
+//                .add(APRICOT_TRAPDOOR)
+//                .add(KIWI_TRAPDOOR)
+//                .add(ORANGE_TRAPDOOR)
+//                .add(PLUM_TRAPDOOR)
+//                .add(PEAR_TRAPDOOR);
+//
+//        valueLookupBuilder(BlockTags.TRAPDOORS)
+//                .add(APRICOT_TRAPDOOR)
+//                .add(KIWI_TRAPDOOR)
+//                .add(ORANGE_TRAPDOOR)
+//                .add(PLUM_TRAPDOOR)
+//                .add(PEAR_TRAPDOOR);
 
         valueLookupBuilder(BlockTags.STAIRS)
                 .add(APRICOT_STAIRS)

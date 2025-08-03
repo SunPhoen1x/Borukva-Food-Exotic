@@ -47,6 +47,7 @@ public class PolySlabBlock extends SlabBlock implements FactoryBlock, PolymerTex
     public ElementHolder createElementHolder(ServerWorld world, BlockPos pos, BlockState initialBlockState) {
         return new Model(initialBlockState);
     }
+
     public final class Model extends BlockModel {
         public ItemDisplayElement main;
         public Model(BlockState state){

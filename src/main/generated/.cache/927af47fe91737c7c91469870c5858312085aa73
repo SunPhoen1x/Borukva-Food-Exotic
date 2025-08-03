@@ -14,8 +14,6 @@ bd524f95ad61d2e064e380c50a28d0f4fe93c4a2 data/minecraft/tags/block/planks.json
 5284b1113384b58816b616a2881ac80ff0281da7 data/minecraft/tags/block/pressure_plates.json
 28ec99fc3be2096482105a56eec09e8fbcbd923a data/minecraft/tags/block/saplings.json
 914d21a4c317558ea06d1246a8f75047eb211041 data/minecraft/tags/block/stairs.json
-0ab58b40bfafa511425d687d6b0584a6dec0c824 data/minecraft/tags/block/trapdoors.json
 dd17ec3d1bb84f176a0c087a9253da5330a719fe data/minecraft/tags/block/wooden_doors.json
 a36fe01f13b4cd99e5e817aab3d9f175c8a6a3ad data/minecraft/tags/block/wooden_fences.json
 bb96207e0087edbfe53443bd93d9447210b66bf9 data/minecraft/tags/block/wooden_slabs.json
-0ab58b40bfafa511425d687d6b0584a6dec0c824 data/minecraft/tags/block/wooden_trapdoors.json

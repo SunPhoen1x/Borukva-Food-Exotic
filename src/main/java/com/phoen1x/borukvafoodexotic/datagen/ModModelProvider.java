@@ -75,7 +75,7 @@ public class ModModelProvider extends FabricModelProvider{
 
         BlockStateModelGenerator.BlockTexturePool apricotPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.APRICOT_PLANKS);
         apricotPlanksPool.slab(ModBlocks.APRICOT_SLAB);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.APRICOT_TRAPDOOR);
+//        blockStateModelGenerator.registerTrapdoor(ModBlocks.APRICOT_TRAPDOOR);
         apricotPlanksPool.stairs(ModBlocks.APRICOT_STAIRS);
         apricotPlanksPool.fenceGate(ModBlocks.APRICOT_FENCE_GATE);
         apricotPlanksPool.button(ModBlocks.APRICOT_BUTTON);
@@ -84,7 +84,7 @@ public class ModModelProvider extends FabricModelProvider{
 
         BlockStateModelGenerator.BlockTexturePool pearPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PEAR_PLANKS);
         pearPlanksPool.slab(ModBlocks.PEAR_SLAB);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.PEAR_TRAPDOOR);
+//        blockStateModelGenerator.registerTrapdoor(ModBlocks.PEAR_TRAPDOOR);
         pearPlanksPool.stairs(ModBlocks.PEAR_STAIRS);
         pearPlanksPool.fenceGate(ModBlocks.PEAR_FENCE_GATE);
         pearPlanksPool.button(ModBlocks.PEAR_BUTTON);
@@ -93,7 +93,7 @@ public class ModModelProvider extends FabricModelProvider{
 
         BlockStateModelGenerator.BlockTexturePool orangePlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ORANGE_PLANKS);
         orangePlanksPool.slab(ModBlocks.ORANGE_SLAB);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.ORANGE_TRAPDOOR);
+//        blockStateModelGenerator.registerTrapdoor(ModBlocks.ORANGE_TRAPDOOR);
         orangePlanksPool.stairs(ModBlocks.ORANGE_STAIRS);
         orangePlanksPool.fenceGate(ModBlocks.ORANGE_FENCE_GATE);
         orangePlanksPool.button(ModBlocks.ORANGE_BUTTON);
@@ -102,7 +102,7 @@ public class ModModelProvider extends FabricModelProvider{
 
         BlockStateModelGenerator.BlockTexturePool plumPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PLUM_PLANKS);
         plumPlanksPool.slab(ModBlocks.PLUM_SLAB);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.PLUM_TRAPDOOR);
+//        blockStateModelGenerator.registerTrapdoor(ModBlocks.PLUM_TRAPDOOR);
         plumPlanksPool.stairs(ModBlocks.PLUM_STAIRS);
         plumPlanksPool.fenceGate(ModBlocks.PLUM_FENCE_GATE);
         plumPlanksPool.button(ModBlocks.PLUM_BUTTON);
@@ -111,7 +111,7 @@ public class ModModelProvider extends FabricModelProvider{
 
         BlockStateModelGenerator.BlockTexturePool kiwiPlanksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.KIWI_PLANKS);
         kiwiPlanksPool.slab(ModBlocks.KIWI_SLAB);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.KIWI_TRAPDOOR);
+//        blockStateModelGenerator.registerTrapdoor(ModBlocks.KIWI_TRAPDOOR);
         kiwiPlanksPool.stairs(ModBlocks.KIWI_STAIRS);
         kiwiPlanksPool.fenceGate(ModBlocks.KIWI_FENCE_GATE);
         kiwiPlanksPool.button(ModBlocks.KIWI_BUTTON);
@@ -132,7 +132,6 @@ public class ModModelProvider extends FabricModelProvider{
         itemModelGenerator.register(ModBlocks.ORANGE_DOOR_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModBlocks.PLUM_DOOR_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModBlocks.PEAR_DOOR_ITEM, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.APRICOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);
@@ -150,10 +149,6 @@ public class ModModelProvider extends FabricModelProvider{
         itemModelGenerator.register(ModItems.PEAS_SOUP, Models.GENERATED);
         itemModelGenerator.register(ModItems.COD_NIGIRI, Models.GENERATED);
         itemModelGenerator.register(ModItems.SQUID_NIGIRI, Models.GENERATED);
-//        itemModelGenerator.register(ModItems.GHAST_NIGIRI, Models.GENERATED);
-//        itemModelGenerator.register(ModItems.GHAST_BAKED_NIGIRI, Models.GENERATED);
-//        itemModelGenerator.register(ModItems.GHAST_TENTACLES, Models.GENERATED);
-//        itemModelGenerator.register(ModItems.GHAST_TENCTALES_BAKED, Models.GENERATED);
         itemModelGenerator.register(ModItems.COD_FILLET, Models.GENERATED);
         itemModelGenerator.register(ModItems.BACON_SANDWICH, Models.GENERATED);
         itemModelGenerator.register(ModItems.SALMON_SANDWICH, Models.GENERATED);

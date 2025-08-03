@@ -117,19 +117,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(PLUM_DOOR_ITEM)
                 .add(PEAR_DOOR_ITEM);
 
-        valueLookupBuilder(ItemTags.WOODEN_TRAPDOORS)
-                .add(APRICOT_TRAPDOOR_ITEM)
-                .add(KIWI_TRAPDOOR_ITEM)
-                .add(ORANGE_TRAPDOOR_ITEM)
-                .add(PLUM_TRAPDOOR_ITEM)
-                .add(PEAR_TRAPDOOR_ITEM);
-
-        valueLookupBuilder(ItemTags.TRAPDOORS)
-                .add(APRICOT_TRAPDOOR_ITEM)
-                .add(KIWI_TRAPDOOR_ITEM)
-                .add(ORANGE_TRAPDOOR_ITEM)
-                .add(PLUM_TRAPDOOR_ITEM)
-                .add(PEAR_TRAPDOOR_ITEM);
+//        valueLookupBuilder(ItemTags.WOODEN_TRAPDOORS)
+//                .add(APRICOT_TRAPDOOR_ITEM)
+//                .add(KIWI_TRAPDOOR_ITEM)
+//                .add(ORANGE_TRAPDOOR_ITEM)
+//                .add(PLUM_TRAPDOOR_ITEM)
+//                .add(PEAR_TRAPDOOR_ITEM);
+//
+//        valueLookupBuilder(ItemTags.TRAPDOORS)
+//                .add(APRICOT_TRAPDOOR_ITEM)
+//                .add(KIWI_TRAPDOOR_ITEM)
+//                .add(ORANGE_TRAPDOOR_ITEM)
+//                .add(PLUM_TRAPDOOR_ITEM)
+//                .add(PEAR_TRAPDOOR_ITEM);
 
         valueLookupBuilder(ItemTags.STAIRS)
                 .add(APRICOT_STAIRS_ITEM)

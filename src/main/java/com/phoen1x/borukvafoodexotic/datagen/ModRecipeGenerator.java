@@ -7,7 +7,6 @@ import com.phoen1x.borukvafoodexotic.item.ModItems;
 import com.phoen1x.borukvafoodexotic.recipe.grill.GrillRecipe;
 import com.phoen1x.borukvafoodexotic.utils.ModTags;
 import eu.pb4.factorytools.api.recipe.CountedIngredient;
-import net.minecraft.data.recipe.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -21,7 +20,6 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import com.opryshok.recipe.pan.PanRecipe;
 import com.opryshok.recipe.pot.PotRecipe;
-import net.minecraft.data.recipe.*;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 
@@ -168,11 +166,11 @@ public class ModRecipeGenerator extends RecipeGenerator {
         offerDoorRecipe(exporter, ModBlocks.ORANGE_DOOR_ITEM, ModBlocks.ORANGE_PLANKS_ITEM);
         offerDoorRecipe(exporter, ModBlocks.PLUM_DOOR_ITEM, ModBlocks.PLUM_PLANKS_ITEM);
         offerDoorRecipe(exporter, ModBlocks.PEAR_DOOR_ITEM, ModBlocks.PEAR_PLANKS_ITEM);
-        offerTrapdoorRecipe(exporter, ModBlocks.APRICOT_TRAPDOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
-        offerTrapdoorRecipe(exporter, ModBlocks.ORANGE_TRAPDOOR_ITEM, ModBlocks.ORANGE_PLANKS_ITEM);
-        offerTrapdoorRecipe(exporter, ModBlocks.KIWI_TRAPDOOR_ITEM, ModBlocks.KIWI_PLANKS_ITEM);
-        offerTrapdoorRecipe(exporter, ModBlocks.PEAR_TRAPDOOR_ITEM, ModBlocks.PEAR_PLANKS_ITEM);
-        offerTrapdoorRecipe(exporter, ModBlocks.PLUM_TRAPDOOR_ITEM, ModBlocks.PLUM_PLANKS_ITEM);
+//        offerTrapdoorRecipe(exporter, ModBlocks.APRICOT_TRAPDOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
+//        offerTrapdoorRecipe(exporter, ModBlocks.ORANGE_TRAPDOOR_ITEM, ModBlocks.ORANGE_PLANKS_ITEM);
+//        offerTrapdoorRecipe(exporter, ModBlocks.KIWI_TRAPDOOR_ITEM, ModBlocks.KIWI_PLANKS_ITEM);
+//        offerTrapdoorRecipe(exporter, ModBlocks.PEAR_TRAPDOOR_ITEM, ModBlocks.PEAR_PLANKS_ITEM);
+//        offerTrapdoorRecipe(exporter, ModBlocks.PLUM_TRAPDOOR_ITEM, ModBlocks.PLUM_PLANKS_ITEM);
 
         createShapeless(RecipeCategory.FOOD, ModItems.COD_NIGIRI, 3)
                 .input(ModItems.COD_FILLET)
@@ -317,6 +315,16 @@ public class ModRecipeGenerator extends RecipeGenerator {
                 .input('K', ModItems.KIWI)
                 .input('O', ModItems.ORANGE)
                 .criterion(hasItem(ModItems.APRICOT), conditionsFromItem(ModItems.APRICOT))
+                .offerTo(exporter);
+
+        createShaped(RecipeCategory.MISC, ModBlocks.GRILL_ITEM, 1)
+                .pattern("SSS")
+                .pattern(" S ")
+                .pattern("G G")
+                .input('S', Items.IRON_INGOT)
+                .input('G', Items.COPPER_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
                 .offerTo(exporter);
     }
 

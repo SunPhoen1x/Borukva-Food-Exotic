@@ -113,11 +113,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(KIWI_SLAB, slabDrops(KIWI_SLAB));
         addDrop(PEAR_SLAB, slabDrops(PEAR_SLAB));
 
-        addDrop(APRICOT_TRAPDOOR);
-        addDrop(KIWI_TRAPDOOR);
-        addDrop(ORANGE_TRAPDOOR);
-        addDrop(PEAR_TRAPDOOR);
-        addDrop(PLUM_TRAPDOOR);
+//        addDrop(APRICOT_TRAPDOOR);
+//        addDrop(KIWI_TRAPDOOR);
+//        addDrop(ORANGE_TRAPDOOR);
+//        addDrop(PEAR_TRAPDOOR);
+//        addDrop(PLUM_TRAPDOOR);
         addDrop(APRICOT_STAIRS);
         addDrop(APRICOT_BUTTON);
         addDrop(APRICOT_PRESSURE_PLATE);

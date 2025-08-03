@@ -21,7 +21,6 @@ import java.util.function.Function;
 
 import static com.phoen1x.borukvafoodexotic.block.ModBlocks.*;
 
-
 public class ModItems {
     public static Item APRICOT = registerItem("apricot", SimplePolymerItem::new, new Item.Settings().food(ModFoodComponents.FRUIT));
     public static Item PEAR = registerItem("pear", SimplePolymerItem::new, new Item.Settings().food(ModFoodComponents.FRUIT));
@@ -130,7 +129,6 @@ public class ModItems {
             entries.add(GARLIC_SEEDS);
             entries.add(GREEN_BEAN_SEEDS);
             entries.add(BROCCOLI_SEEDS);
-
             entries.add(KIWI_SLICES);
             entries.add(POTATO_SLICES);
             entries.add(BAKED_POTATO_SLICES);
@@ -197,7 +195,7 @@ public class ModItems {
             entries.add(APRICOT_SAPLING_ITEM);
             entries.add(APRICOT_SLAB_ITEM);
             entries.add(APRICOT_DOOR_ITEM);
-            entries.add(APRICOT_TRAPDOOR_ITEM);
+//            entries.add(APRICOT_TRAPDOOR_ITEM);
             entries.add(APRICOT_STAIRS_ITEM);
             entries.add(APRICOT_FENCE_ITEM);
             entries.add(APRICOT_FENCE_GATE_ITEM);
@@ -214,7 +212,7 @@ public class ModItems {
             entries.add(ORANGE_SAPLING_ITEM);
             entries.add(ORANGE_SLAB_ITEM);
             entries.add(ORANGE_DOOR_ITEM);
-            entries.add(ORANGE_TRAPDOOR_ITEM);
+//            entries.add(ORANGE_TRAPDOOR_ITEM);
             entries.add(ORANGE_STAIRS_ITEM);
             entries.add(ORANGE_FENCE_ITEM);
             entries.add(ORANGE_FENCE_GATE_ITEM);
@@ -231,7 +229,7 @@ public class ModItems {
             entries.add(PEAR_SAPLING_ITEM);
             entries.add(PEAR_SLAB_ITEM);
             entries.add(PEAR_DOOR_ITEM);
-            entries.add(PEAR_TRAPDOOR_ITEM);
+//            entries.add(PEAR_TRAPDOOR_ITEM);
             entries.add(PEAR_STAIRS_ITEM);
             entries.add(PEAR_FENCE_ITEM);
             entries.add(PEAR_FENCE_GATE_ITEM);
@@ -248,7 +246,7 @@ public class ModItems {
             entries.add(KIWI_SAPLING_ITEM);
             entries.add(KIWI_SLAB_ITEM);
             entries.add(KIWI_DOOR_ITEM);
-            entries.add(KIWI_TRAPDOOR_ITEM);
+//            entries.add(KIWI_TRAPDOOR_ITEM);
             entries.add(KIWI_STAIRS_ITEM);
             entries.add(KIWI_FENCE_ITEM);
             entries.add(KIWI_FENCE_GATE_ITEM);
@@ -265,7 +263,7 @@ public class ModItems {
             entries.add(PLUM_SAPLING_ITEM);
             entries.add(PLUM_SLAB_ITEM);
             entries.add(PLUM_DOOR_ITEM);
-            entries.add(PLUM_TRAPDOOR_ITEM);
+//            entries.add(PLUM_TRAPDOOR_ITEM);
             entries.add(PLUM_STAIRS_ITEM);
             entries.add(PLUM_FENCE_ITEM);
             entries.add(PLUM_FENCE_GATE_ITEM);

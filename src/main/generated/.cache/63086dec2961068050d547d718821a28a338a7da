@@ -12,7 +12,6 @@ b076fac9ca5193846fc72adb2bc13299b5124c8f data/borukva-food-exotic/loot_table/blo
 1364e0c6527333f32346729aadca98459868300e data/borukva-food-exotic/loot_table/blocks/apricot_sapling.json
 f3b770eb17f196e2954273401fd3ec925238285b data/borukva-food-exotic/loot_table/blocks/apricot_slab.json
 33c008ba1b703ac3382d1d3a3dd5402d2807835c data/borukva-food-exotic/loot_table/blocks/apricot_stairs.json
-eaaa04c8626ce39d799f2c2bb8edca6cb003462e data/borukva-food-exotic/loot_table/blocks/apricot_trapdoor.json
 58a40a2a729dae3110fda3671d7913b4d03527c6 data/borukva-food-exotic/loot_table/blocks/apricot_wood.json
 6051a11e3b3a496ef6713caf1f3a2d1d5452f156 data/borukva-food-exotic/loot_table/blocks/broccoli_crate.json
 428a46d3c6ec38a8ad8f3771caa914957bf29690 data/borukva-food-exotic/loot_table/blocks/broccoli_crop.json
@@ -36,7 +35,6 @@ b965ed793bbadf9469990644e4c5a2854bd39c56 data/borukva-food-exotic/loot_table/blo
 d8ddcc6e3c90f71844e4bd06a785127ebf20c653 data/borukva-food-exotic/loot_table/blocks/kiwi_sapling.json
 bdf3460792c23d5c3b9686e1239d4d2f11094f6b data/borukva-food-exotic/loot_table/blocks/kiwi_slab.json
 f3c39c4b7f77ccf9b70bb8e80a40b250b3285044 data/borukva-food-exotic/loot_table/blocks/kiwi_stairs.json
-1e7dad1e74bc5419d0354bfff84e4bb199ddc3e7 data/borukva-food-exotic/loot_table/blocks/kiwi_trapdoor.json
 76cf83bfa545dcb3a9c32305c316e559b0e45907 data/borukva-food-exotic/loot_table/blocks/kiwi_wood.json
 64430763f9642250ffd2b5703ae621af63e23c78 data/borukva-food-exotic/loot_table/blocks/orange_button.json
 ab4d95b36b504737e5765f0e953f5453825ef3c2 data/borukva-food-exotic/loot_table/blocks/orange_crate.json
@@ -51,7 +49,6 @@ d4334951e1df54e508a3fdb5f9042e5af574117d data/borukva-food-exotic/loot_table/blo
 1e0ac44842ae9b06092f40b9b47240488cdbf270 data/borukva-food-exotic/loot_table/blocks/orange_sapling.json
 0301a846e3be7a8c32114bea9c6164e3e0d7e090 data/borukva-food-exotic/loot_table/blocks/orange_slab.json
 b09505a47df6298b163bf522de9edd8c93653e48 data/borukva-food-exotic/loot_table/blocks/orange_stairs.json
-2c18810ed91da5d410a767dddce4690fd236adc9 data/borukva-food-exotic/loot_table/blocks/orange_trapdoor.json
 273c11f6e7d9c6f33d1e2167b81b20c16417aa24 data/borukva-food-exotic/loot_table/blocks/orange_wood.json
 d95284eab83cb350fdd68e2c2f15245448da7b95 data/borukva-food-exotic/loot_table/blocks/pear_button.json
 9a7112eb99951846810c5b7c2527b82a17593b96 data/borukva-food-exotic/loot_table/blocks/pear_crate.json
@@ -66,7 +63,6 @@ e313bf97b17c276b136ebdcca0a0e2c3967e26c9 data/borukva-food-exotic/loot_table/blo
 893f62cf8cd70c04dedb94ebf433443526b118bb data/borukva-food-exotic/loot_table/blocks/pear_sapling.json
 fee6051325c3a01a5c45fbe7e65763d9c2d6c40e data/borukva-food-exotic/loot_table/blocks/pear_slab.json
 21a2773e3ca238ea888087ea3247bd970591678b data/borukva-food-exotic/loot_table/blocks/pear_stairs.json
-6bdfd277eb438dfac73dc6d36fc68b9cb6c4ade1 data/borukva-food-exotic/loot_table/blocks/pear_trapdoor.json
 d2b62306d828ba2c01e0f8dc7f418f941dfd624c data/borukva-food-exotic/loot_table/blocks/pear_wood.json
 862715d00794ca971103eabfa3a6c12cf7a06f2e data/borukva-food-exotic/loot_table/blocks/peas_crate.json
 366a5833cf53f69c4beefec560ef94ccd044b7c9 data/borukva-food-exotic/loot_table/blocks/peas_crop.json
@@ -85,7 +81,6 @@ fdf8402f371dd892cf747a2419722d086d5976e7 data/borukva-food-exotic/loot_table/blo
 cefdb6a89f198aa9073ab255f3f4d1f78e22f21b data/borukva-food-exotic/loot_table/blocks/plum_sapling.json
 492da775a1853182bf1dbc39d0a1d7e3303b3c55 data/borukva-food-exotic/loot_table/blocks/plum_slab.json
 d67d4e337da51331d93cf12d98fe6227fb352ece data/borukva-food-exotic/loot_table/blocks/plum_stairs.json
-e651224ac3d896f3983e62cd14feb878b6e69d63 data/borukva-food-exotic/loot_table/blocks/plum_trapdoor.json
 7a1e6fc99e7d4ab88a969eb0f1c436b2db726057 data/borukva-food-exotic/loot_table/blocks/plum_wood.json
 9cda394480c4424ef95210cdc0c72d83e10ce0cc data/borukva-food-exotic/loot_table/blocks/salmon_crate.json
 4c00799d99c3d72f1228c9b28907b7deeb0c10f7 data/borukva-food-exotic/loot_table/blocks/spinach_crate.json

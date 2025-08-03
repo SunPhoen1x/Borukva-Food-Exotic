@@ -184,20 +184,20 @@ public class ModBlocks {
     public static final Block GRILL = registerBlock("grill", Grill::new,(Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
     public static final BlockItem GRILL_ITEM = registerBlockItem("grill", settings -> new TexturedPolyBlockItem(GRILL, settings), new Item.Settings());
 
-    public static final Block APRICOT_TRAPDOOR = registerBlock("apricot_trapdoor", PolyTrapdoorBlock::new, Block.Settings.copy(Blocks.OAK_TRAPDOOR));
-    public static final BlockItem APRICOT_TRAPDOOR_ITEM = registerBlockItem("apricot_trapdoor_bottom", settings -> new TexturedPolyBlockItem(APRICOT_TRAPDOOR, settings), new Item.Settings());
-
-    public static final Block ORANGE_TRAPDOOR = registerBlock("orange_trapdoor", PolyTrapdoorBlock::new, Block.Settings.copy(Blocks.OAK_TRAPDOOR));
-    public static final BlockItem ORANGE_TRAPDOOR_ITEM = registerBlockItem("orange_trapdoor_bottom", settings -> new TexturedPolyBlockItem(ORANGE_TRAPDOOR, settings), new Item.Settings());
-
-    public static final Block KIWI_TRAPDOOR = registerBlock("kiwi_trapdoor", PolyTrapdoorBlock::new, Block.Settings.copy(Blocks.OAK_TRAPDOOR));
-    public static final BlockItem KIWI_TRAPDOOR_ITEM = registerBlockItem("kiwi_trapdoor_bottom", settings -> new TexturedPolyBlockItem(KIWI_TRAPDOOR, settings), new Item.Settings());
-
-    public static final Block PLUM_TRAPDOOR = registerBlock("plum_trapdoor", PolyTrapdoorBlock::new, Block.Settings.copy(Blocks.OAK_TRAPDOOR));
-    public static final BlockItem PLUM_TRAPDOOR_ITEM = registerBlockItem("plum_trapdoor_bottom", settings -> new TexturedPolyBlockItem(PLUM_TRAPDOOR, settings), new Item.Settings());
-
-    public static final Block PEAR_TRAPDOOR = registerBlock("pear_trapdoor", PolyTrapdoorBlock::new, Block.Settings.copy(Blocks.OAK_TRAPDOOR));
-    public static final BlockItem PEAR_TRAPDOOR_ITEM = registerBlockItem("pear_trapdoor_bottom", settings -> new TexturedPolyBlockItem(PEAR_TRAPDOOR, settings), new Item.Settings());
+//    public static final Block APRICOT_TRAPDOOR = registerBlock("apricot_trapdoor", settings -> new PolyTrapdoorBlock(settings, "apricot_trapdoor"), Block.Settings.copy(Blocks.OAK_TRAPDOOR));
+//    public static final BlockItem APRICOT_TRAPDOOR_ITEM = registerBlockItem("apricot_trapdoor_bottom", settings -> new TexturedPolyBlockItem(APRICOT_TRAPDOOR, settings), new Item.Settings());
+//
+//    public static final Block ORANGE_TRAPDOOR = registerBlock("orange_trapdoor", settings -> new PolyTrapdoorBlock(settings, "orange_trapdoor"), Block.Settings.copy(Blocks.OAK_TRAPDOOR));
+//    public static final BlockItem ORANGE_TRAPDOOR_ITEM = registerBlockItem("orange_trapdoor_bottom", settings -> new TexturedPolyBlockItem(ORANGE_TRAPDOOR, settings), new Item.Settings());
+//
+//    public static final Block KIWI_TRAPDOOR = registerBlock("kiwi_trapdoor", settings -> new PolyTrapdoorBlock(settings, "kiwi_trapdoor"), Block.Settings.copy(Blocks.OAK_TRAPDOOR));
+//    public static final BlockItem KIWI_TRAPDOOR_ITEM = registerBlockItem("kiwi_trapdoor_bottom", settings -> new TexturedPolyBlockItem(KIWI_TRAPDOOR, settings), new Item.Settings());
+//
+//    public static final Block PLUM_TRAPDOOR = registerBlock("plum_trapdoor", settings -> new PolyTrapdoorBlock(settings, "plum_trapdoor"), Block.Settings.copy(Blocks.OAK_TRAPDOOR));
+//    public static final BlockItem PLUM_TRAPDOOR_ITEM = registerBlockItem("plum_trapdoor_bottom", settings -> new TexturedPolyBlockItem(PLUM_TRAPDOOR, settings), new Item.Settings());
+//
+//    public static final Block PEAR_TRAPDOOR = registerBlock("pear_trapdoor", settings -> new PolyTrapdoorBlock(settings, "pear_trapdoor"), Block.Settings.copy(Blocks.OAK_TRAPDOOR));
+//    public static final BlockItem PEAR_TRAPDOOR_ITEM = registerBlockItem("pear_trapdoor_bottom", settings -> new TexturedPolyBlockItem(PEAR_TRAPDOOR, settings), new Item.Settings());
 
     public static final Block APRICOT_STAIRS = registerBlock("apricot_stairs", settings -> new PolyStairsBlock(APRICOT_PLANKS.getDefaultState(), settings, APRICOT_PLANKS), Block.Settings.copy(Blocks.OAK_STAIRS));
     public static final Block APRICOT_FENCE = registerBlock("apricot_fence", settings -> new PolyFenceBlock(settings, Blocks.OAK_FENCE), Block.Settings.copy(Blocks.OAK_FENCE));
