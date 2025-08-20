@@ -17,6 +17,7 @@ import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import eu.pb4.polymer.resourcepack.extras.api.ResourcePackExtras;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -25,8 +26,9 @@ import org.slf4j.LoggerFactory;
 public class BorukvaFoodExotic implements ModInitializer {
 	public static final String MOD_ID = "borukva-food-exotic";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    public static final String MOD_VERSION = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(() -> new RuntimeException("Mod version not found!")).getMetadata().getVersion().getFriendlyString();
 
-	@Override
+    @Override
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerBlocks();
@@ -44,14 +46,10 @@ public class BorukvaFoodExotic implements ModInitializer {
 		ModRecipeSerializer.register();
 		PolydexCompat.register();
 		PolydexTextures.register();
-
 		initModels();
-		if (PolymerResourcePackUtils.addModAssets(MOD_ID)) {
-			ResourcePackExtras.forDefault().addBridgedModelsFolder(id("block"), id("item"), id("sgui"));
-			LOGGER.info("Successfully added mod assets for " + MOD_ID);
-		} else {
-			LOGGER.error("Failed to add mod assets for " + MOD_ID);
-		}
+		PolymerResourcePackUtils.addModAssets(MOD_ID);
+        ResourcePackExtras.forDefault().addBridgedModelsFolder(id("block"), id("item"), id("sgui"));
+        LOGGER.info("Successfully added mod assets for {} {}", MOD_ID, MOD_VERSION);
 		PolymerResourcePackUtils.markAsRequired();
 	}
 

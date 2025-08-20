@@ -5,13 +5,13 @@
 	"name": "Borukva Food Exotic",
 	"description": "This mod is an addon for the Borukva Food mod and adds several new types of trees.",
 	"authors": [
-		"sun_phoen1x"
+		"Sun_Phoen1x"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC-BY-SA-4.0",
+	"license": "Apache-2.0",
 	"icon": "assets/borukva-food-exotic/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -22,9 +22,6 @@
 			"com.phoen1x.borukvafoodexotic.BorukvaFoodExoticDataGenerator"
 		]
 	},
-	"mixins": [
-		"borukva-food-exotic.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
 		"minecraft": "~1.21.6",
@@ -33,7 +30,7 @@
 		"polymer-core": ">=0.13.3",
 		"polymer-resource-pack": ">=0.13.3",
 		"polymer-virtual-entity": ">=0.13.3",
-		"borukva-food": ">=0.1.14"
+		"borukva-food": "*"
 	},
 	"suggests": {
 		"another-mod": "*"

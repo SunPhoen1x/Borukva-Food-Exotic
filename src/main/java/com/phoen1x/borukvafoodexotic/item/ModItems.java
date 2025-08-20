@@ -5,6 +5,7 @@ import com.phoen1x.borukvafoodexotic.block.ModBlocks;
 import com.phoen1x.borukvafoodexotic.utils.ModFoodComponents;
 import eu.pb4.polymer.core.api.item.PolymerBlockItem;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -108,6 +109,33 @@ public class ModItems {
         builder.displayName(Text.translatable("item-group.borukva-food-exotic.items"));
 
         builder.entries((displayContext, entries) -> {
+            if (!FabricLoader.getInstance().isModLoaded("farmersdelight")) {
+                entries.add(POTATO_SLICES);
+                entries.add(BAKED_POTATO_SLICES);
+                entries.add(BACON_SANDWICH);
+                entries.add(COOKED_STEAK);
+                entries.add(POTATO_WITH_STEAK);
+                entries.add(COD_CRATE);
+                entries.add(SALMON_CRATE);
+                entries.add(BACON_AND_EGGS);
+                entries.add(BACON_COOKED);
+                entries.add(BACON);
+                entries.add(FRIED_EGG);
+                entries.add(RATATOUILLE);
+                entries.add(MIX_SALAD);
+                entries.add(FRUIT_SALAD);
+                entries.add(SALMON_COD_NIGIRI_ONIGIRI);
+                entries.add(SALMON_COD_NIGIRI_MAKI);
+                entries.add(SALMON_COD_NIGIRI_URUMAKI);
+                entries.add(COD_SANDWICH);
+                entries.add(COD_FILLET);
+                entries.add(COD_NIGIRI);
+                entries.add(SQUID_NIGIRI);
+                entries.add(GRILL_ITEM);
+                entries.add(SAUSAGE);
+                entries.add(COOKED_SAUSAGE);
+                entries.add(SAUSAGE_AND_EGGS);
+            }
             entries.add(APRICOT);
             entries.add(PEAR);
             entries.add(ORANGE);
@@ -130,31 +158,9 @@ public class ModItems {
             entries.add(GREEN_BEAN_SEEDS);
             entries.add(BROCCOLI_SEEDS);
             entries.add(KIWI_SLICES);
-            entries.add(POTATO_SLICES);
-            entries.add(BAKED_POTATO_SLICES);
             entries.add(SMOKED_EGGPLANT);
-            entries.add(BACON);
-            entries.add(SAUSAGE);
-            entries.add(BACON_COOKED);
-            entries.add(COOKED_SAUSAGE);
-            entries.add(FRIED_EGG);
-            entries.add(RATATOUILLE);
-            entries.add(BACON_AND_EGGS);
-            entries.add(SAUSAGE_AND_EGGS);
-            entries.add(COOKED_STEAK);
-            entries.add(POTATO_WITH_STEAK);
-            entries.add(SALMON_COD_NIGIRI_ONIGIRI);
-            entries.add(SALMON_COD_NIGIRI_MAKI);
-            entries.add(SALMON_COD_NIGIRI_URUMAKI);
-            entries.add(FRUIT_SALAD);
-            entries.add(MIX_SALAD);
             entries.add(PEAS_SOUP);
-            entries.add(COD_FILLET);
-            entries.add(COD_NIGIRI);
-            entries.add(SQUID_NIGIRI);
-            entries.add(BACON_SANDWICH);
             entries.add(SALMON_SANDWICH);
-            entries.add(COD_SANDWICH);
             entries.add(HONEY_PANCAKES);
             entries.add(APRICOT_PIE_SLICE);
 
@@ -174,8 +180,6 @@ public class ModItems {
             entries.add(KIWI_CRATE);
             entries.add(PLUM_CRATE);
             entries.add(EGGPLANT_CRATE);
-            entries.add(COD_CRATE);
-            entries.add(SALMON_CRATE);
             entries.add(TROPICAL_FISH_CRATE);
             entries.add(PEPPER_CRATE);
             entries.add(GARLIC_CRATE);
@@ -269,8 +273,6 @@ public class ModItems {
             entries.add(PLUM_FENCE_GATE_ITEM);
             entries.add(PLUM_BUTTON_ITEM);
             entries.add(PLUM_PRESSURE_PLATE_ITEM);
-
-            entries.add(GRILL_ITEM);
         });
         ItemGroup polymerGroup = builder.build();
         PolymerItemGroupUtils.registerPolymerItemGroup(Identifier.of(BorukvaFoodExotic.MOD_ID, "items"), polymerGroup);
