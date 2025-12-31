@@ -154,11 +154,9 @@ public class ModRecipeGenerator extends RecipeGenerator {
                 PanRecipe.of("fried_egg", CountedIngredient.ofItems(1, Items.EGG), new ItemStack(ModItems.FRIED_EGG), 90),
                 PanRecipe.of("bacon_cooked", CountedIngredient.ofItems(1, ModItems.BACON), new ItemStack(ModItems.BACON_COOKED), 100),
 
-
                 GrillRecipe.of("bacon", CountedIngredient.ofItems(1, ModItems.BACON), new ItemStack(ModItems.BACON_COOKED), 120),
                 GrillRecipe.of("steak", CountedIngredient.ofItems(1, Items.BEEF), new ItemStack(ModItems.COOKED_STEAK), 120),
                 GrillRecipe.of("cooked_sausage", CountedIngredient.ofItems(1, ModItems.SAUSAGE), new ItemStack(ModItems.COOKED_SAUSAGE), 120)
-
                 );
 
         offerDoorRecipe(exporter, ModBlocks.APRICOT_DOOR_ITEM, ModBlocks.APRICOT_PLANKS_ITEM);
@@ -179,12 +177,12 @@ public class ModRecipeGenerator extends RecipeGenerator {
                 .criterion(hasItem(ModItems.COD_FILLET), conditionsFromItem(ModItems.COD_FILLET))
                 .offerTo(exporter);
 
-        createShapeless(RecipeCategory.FOOD, ModItems.SQUID_NIGIRI, 3)
-                .input(com.opryshok.item.ModItems.SQUID_TENTAClES)
-                .input(com.opryshok.item.ModItems.RICE)
-                .input(com.opryshok.item.ModItems.NORI)
-                .criterion(hasItem(com.opryshok.item.ModItems.SQUID_TENTAClES), conditionsFromItem(com.opryshok.item.ModItems.SQUID_TENTAClES))
-                .offerTo(exporter);
+//        createShapeless(RecipeCategory.FOOD, ModItems.SQUID_NIGIRI, 3)
+//                .input(com.opryshok.item.ModItems.SQUID_TENTAClES)
+//                .input(com.opryshok.item.ModItems.RICE)
+//                .input(com.opryshok.item.ModItems.NORI)
+//                .criterion(hasItem(com.opryshok.item.ModItems.SQUID_TENTAClES), conditionsFromItem(com.opryshok.item.ModItems.SQUID_TENTAClES))
+//                .offerTo(exporter);
 
         createShapeless(RecipeCategory.FOOD, ModItems.BACON_AND_EGGS, 1)
                 .input(ModItems.BACON_COOKED)

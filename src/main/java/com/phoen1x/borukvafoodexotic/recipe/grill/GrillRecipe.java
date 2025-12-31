@@ -31,7 +31,7 @@ public record GrillRecipe(String group, CountedIngredient input, ItemStack outpu
     }
     @Override
     public boolean matches(GrillInput input, World world) {
-        if(world.isClient){
+        if(world.isClient()){
             return false;
         }
         return this.input.test(input.getStackInSlot(0));

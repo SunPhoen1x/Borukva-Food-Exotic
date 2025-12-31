@@ -36,7 +36,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(STRAWBERRY_CRATE)
                 .add(GARLIC_CRATE);
 
-
         valueLookupBuilder(BlockTags.WOODEN_SLABS)
                 .add(APRICOT_SLAB)
                 .add(PEAR_SLAB)

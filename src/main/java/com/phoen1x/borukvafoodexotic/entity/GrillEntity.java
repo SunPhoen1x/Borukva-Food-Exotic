@@ -260,11 +260,9 @@ public class GrillEntity extends LockableBlockEntity implements MinimalSidedInve
 
         @Override
         public void onTick() {
-            if (player.getPos().squaredDistanceTo(Vec3d.ofCenter(GrillEntity.this.pos)) > (18 * 18)) {
+            if (player.getEntityPos().squaredDistanceTo(Vec3d.ofCenter(GrillEntity.this.pos)) > (18 * 18)) {
                 this.close();
             }
-
-
 
             var active = GrillEntity.this.fuelTicks > 0;
             if (!this.active && active) {

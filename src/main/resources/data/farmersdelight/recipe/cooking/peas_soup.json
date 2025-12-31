@@ -1,0 +1,18 @@
+{
+  "type": "farmersdelight:cooking",
+  "category": "meals",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    "borukva-food-exotic:peas",
+    "moredelight:diced_potatoes",
+    "farmersdelight:onion"
+  ],
+  "result": {
+    "count": 1,
+    "id": "borukva-food-exotic:peas_soup"
+  }
+}

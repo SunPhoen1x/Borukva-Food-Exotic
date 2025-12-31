@@ -42,7 +42,7 @@ public class ApricotFruitLeaves extends TintedParticleLeavesBlock implements Bar
         super(1.f, settings);
         MODEL_TRUE = ItemDisplayElementUtil.getModel(id("block/apricot_fruit_leaves_has_fruit"));
         MODEL_FALSE = ItemDisplayElementUtil.getModel(id("block/apricot_fruit_leaves"));
-        this.setDefaultState(this.stateManager.getDefaultState().with(HAS_FRUIT, true).with(Properties.PERSISTENT, false));
+        this.setDefaultState(this.stateManager.getDefaultState().with(HAS_FRUIT, true).with(Properties.PERSISTENT, true));
     }
 
     @Override
@@ -99,7 +99,7 @@ public class ApricotFruitLeaves extends TintedParticleLeavesBlock implements Bar
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
-        if (!world.isClient && player != null && state.get(HAS_FRUIT)) {
+        if (!world.isClient() && player != null && state.get(HAS_FRUIT)) {
             dropStack(world, pos, player.getMovementDirection().getOpposite(), getFruitDropStack(1));
             world.playSound(null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1f, 1f);
             if (!state.get(Properties.PERSISTENT)) {

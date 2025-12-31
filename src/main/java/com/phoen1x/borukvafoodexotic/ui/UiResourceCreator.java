@@ -12,6 +12,7 @@ import it.unimi.dsi.fastutil.chars.Char2IntMap;
 import it.unimi.dsi.fastutil.chars.Char2IntOpenHashMap;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Style;
+import net.minecraft.text.StyleSpriteSource;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Pair;
@@ -27,6 +28,8 @@ import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 
+import static com.phoen1x.borukvafoodexotic.BorukvaFoodExotic.id;
+
 
 public class UiResourceCreator {
     private static final String ITEM_TEMPLATE = """
@@ -37,7 +40,7 @@ public class UiResourceCreator {
               }
             }
             """.replace(" ", "").replace("\n", "");
-    public static final Style STYLE = Style.EMPTY.withColor(0xFFFFFF).withFont(BorukvaFoodExotic.id("gui"));
+    public static final Style STYLE = Style.EMPTY.withColor(0xFFFFFF).withFont(new StyleSpriteSource.Font(id("gui")));
     private static char character = 'a';
     private static final Char2IntMap SPACES = new Char2IntOpenHashMap();
     private static final List<Pair<Identifier, String>> SIMPLE_MODEL = new ArrayList<>();
@@ -53,7 +56,7 @@ public class UiResourceCreator {
         builder.append(c);
         builder.append(CHEST_SPACE1);
 
-        var texture = new UiResourceCreator.FontTexture(BorukvaFoodExotic.id("sgui/" + path), 13, 256, new char[][] { new char[] {c} });
+        var texture = new FontTexture(id("sgui/" + path), 13, 256, new char[][] { new char[] {c} });
 
         FONT_TEXTURES.add(texture);
         return new UiResourceCreator.TextBuilders(Text.literal(builder.toString()).setStyle(STYLE));
@@ -154,7 +157,7 @@ public class UiResourceCreator {
         var c = (character++);
         var d = (character++);
 
-        var texture = new UiResourceCreator.FontTexture(BorukvaFoodExotic.id("sgui/polydex/" + path), -4, 128, new char[][] {new char[] { c }, new char[] { d } });
+        var texture = new FontTexture(id("sgui/polydex/" + path), -4, 128, new char[][] {new char[] { c }, new char[] { d } });
 
         FONT_TEXTURES.add(texture);
 

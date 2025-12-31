@@ -1,4 +1,4 @@
-// 1.21.6	-999999999-01-01T00:00:00	Borukva Food Exotic/
+// 1.21.10	-999999999-01-01T00:00:00	Borukva Food Exotic/
 707c6e3f1dab347a04e3fd984169159acd157995 data/borukva-food-exotic/advancement/recipes/building_blocks/apricot_planks.json
 8a9ae154ec1db85975b255240af801dc84fd8d13 data/borukva-food-exotic/advancement/recipes/building_blocks/apricot_slab.json
 36d07b53d14569ed1ea641352d505f37c760b967 data/borukva-food-exotic/advancement/recipes/building_blocks/apricot_stairs.json
@@ -88,7 +88,6 @@ d7d224d91c9d625d2e02258a70dbd180bb5f2120 data/borukva-food-exotic/advancement/re
 50a44b7f754716d0fafaa6e27c4ca76e0f304d9d data/borukva-food-exotic/advancement/recipes/food/sausage_and_eggs.json
 0aa38f48887cfb1470246a7ae387397f27ba695e data/borukva-food-exotic/advancement/recipes/food/spinach_crate_to_spinach.json
 e8c53e44bec979e2cf498aa426cdd2b80114ac7b data/borukva-food-exotic/advancement/recipes/food/spinach_to_spinach_seeds.json
-e83fb83abbeff6d681a9a1d8a046b00797fc8220 data/borukva-food-exotic/advancement/recipes/food/squid_nigiri.json
 fb1bb7a7b634ce480a71038b24bd10649ff7aff7 data/borukva-food-exotic/advancement/recipes/food/strawberry_crate_to_strawberry.json
 8ee8c4815c71b60b786a0738ce400c2cafb49734 data/borukva-food-exotic/advancement/recipes/food/strawberry_to_strawberry_seeds.json
 460f57c430f5cd44be5be9b50971e15ddaf12e0c data/borukva-food-exotic/advancement/recipes/food/tropical_fish_crate_to_tropical_fish.json
@@ -219,7 +218,6 @@ c26d0011ca3b7bc829a4a3cada7a5afa5d20ea2e data/borukva-food-exotic/recipe/salmon_
 991e62e5e78e96c40a14eb5f2e27943d05cfdaeb data/borukva-food-exotic/recipe/spinach_crate.json
 7eaf97e5714efb7af7e4cd6cd175d23177f92c40 data/borukva-food-exotic/recipe/spinach_crate_to_spinach.json
 cf73f7521ecc95af6e56531d1f629941b4a4eb8d data/borukva-food-exotic/recipe/spinach_to_spinach_seeds.json
-f6c92fcb367b5a40ff5963684bf2b24a6bede8ab data/borukva-food-exotic/recipe/squid_nigiri.json
 7774cda58d1f8b31fe5bbd2017a1a420f7885d47 data/borukva-food-exotic/recipe/strawberry_crate.json
 e7df516e3c3855ccd76cfb7b6f306a14651a1ff9 data/borukva-food-exotic/recipe/strawberry_crate_to_strawberry.json
 159199189d1eeb314fc120a71ab40012d13327fd data/borukva-food-exotic/recipe/strawberry_to_strawberry_seeds.json
