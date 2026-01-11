@@ -9,9 +9,7 @@ import net.minecraft.registry.Registry;
 
 public class ModRecipeTypes {
     public static final RecipeType<GrillRecipe> GRILL = register("grill");
-    public static void register() {
-
-    }
+    public static void register() {}
 
     public static <T extends Recipe<?>> RecipeType<T> register(String path) {
         return Registry.register(Registries.RECIPE_TYPE, BorukvaFoodExotic.id(path), new RecipeType<T>() {

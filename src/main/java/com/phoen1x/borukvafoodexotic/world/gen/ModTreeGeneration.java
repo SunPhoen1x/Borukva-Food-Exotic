@@ -39,4 +39,8 @@ public class ModTreeGeneration {
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.KIWI_PLACED_KEY);
 
     }
+
+    public static void generateModWorldGen() {
+        ModTreeGeneration.generateTrees();
+    }
 }

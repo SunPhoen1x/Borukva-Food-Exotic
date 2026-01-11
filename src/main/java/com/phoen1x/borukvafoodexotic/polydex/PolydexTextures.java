@@ -6,10 +6,7 @@ import static com.phoen1x.borukvafoodexotic.ui.UiResourceCreator.polydexBackgrou
 
 public class PolydexTextures {
     public static final Text GRILL;
-
-    public static void register() {
-
-    }
+    public static void register() {}
 
     static {
         var t1 = polydexBackground("1");

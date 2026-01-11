@@ -2,6 +2,7 @@ package com.phoen1x.borukvafoodexotic.block.crops;
 
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.item.ModItems;
+import com.opryshok.block.crops.TomatoCrop;
 import eu.pb4.factorytools.api.virtualentity.ItemDisplayElementUtil;
 import eu.pb4.polymer.virtualentity.api.ElementHolder;
 import net.minecraft.block.BlockState;
@@ -14,10 +15,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 
-public class BroccoliCrop extends StrawberryCrop{
+public class BroccoliCrop extends TomatoCrop {
     public BroccoliCrop(Settings settings) {
         super(settings);
     }
+
     @Override
     protected ItemConvertible getSeedsItem() {
         return ModItems.BROCCOLI_SEEDS;
@@ -28,17 +30,18 @@ public class BroccoliCrop extends StrawberryCrop{
         return new Model(initialBlockState);
     }
 
-    public static class Model extends StrawberryCrop.Model {
+    public static class Model extends TomatoCrop.Model {
         public static final ArrayList<ItemStack> MODELS = new ArrayList<>();
-        static{
-            for (int i = 0; i <= 3; i++){
-                MODELS.add(ItemDisplayElementUtil.getModel(Identifier.of(BorukvaFoodExotic.MOD_ID, "block/broccoli_crop_stage"+i)));
+        static {
+            for (int i = 0; i <= 3; i++) {
+                MODELS.add(ItemDisplayElementUtil.getModel(Identifier.of(BorukvaFoodExotic.MOD_ID, "block/broccoli_crop_stage" + i)));
             }
         }
 
-        public Model(BlockState state){
+        public Model(BlockState state) {
             super(state);
         }
+
         @Override
         public ArrayList<ItemStack> getModels() {
             return MODELS;

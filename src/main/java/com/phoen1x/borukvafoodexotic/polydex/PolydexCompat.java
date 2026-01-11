@@ -17,7 +17,6 @@ public class PolydexCompat {
         }
     }
 
-
     public static GuiElement getButton(RecipeType<?> type) {
         if (IS_PRESENT) {
             return PolydexCompatImpl.getButton(type);

@@ -1,5 +1,6 @@
 package com.phoen1x.borukvafoodexotic.block.crops;
 
+import com.opryshok.block.crops.TomatoCrop;
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.item.ModItems;
 import eu.pb4.factorytools.api.virtualentity.ItemDisplayElementUtil;
@@ -14,10 +15,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 
-public class SpinachCrop extends StrawberryCrop{
+public class SpinachCrop extends TomatoCrop {
     public SpinachCrop(Settings settings) {
         super(settings);
     }
+
     @Override
     protected ItemConvertible getSeedsItem() {
         return ModItems.SPINACH_SEEDS;
@@ -28,17 +30,18 @@ public class SpinachCrop extends StrawberryCrop{
         return new Model(initialBlockState);
     }
 
-    public static class Model extends StrawberryCrop.Model {
+    public static class Model extends TomatoCrop.Model {
         public static final ArrayList<ItemStack> MODELS = new ArrayList<>();
-        static{
-            for (int i = 0; i <= 3; i++){
-                MODELS.add(ItemDisplayElementUtil.getModel(Identifier.of(BorukvaFoodExotic.MOD_ID, "block/spinach_crop_stage"+i)));
+        static {
+            for (int i = 0; i <= 3; i++) {
+                MODELS.add(ItemDisplayElementUtil.getModel(Identifier.of(BorukvaFoodExotic.MOD_ID, "block/spinach_crop_stage" + i)));
             }
         }
 
-        public Model(BlockState state){
+        public Model(BlockState state) {
             super(state);
         }
+
         @Override
         public ArrayList<ItemStack> getModels() {
             return MODELS;

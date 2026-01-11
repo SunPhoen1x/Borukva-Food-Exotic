@@ -3,6 +3,10 @@ package com.phoen1x.borukvafoodexotic.entity;
 import com.opryshok.BorukvaFood;
 import com.opryshok.ui.FuelSlot;
 import com.opryshok.ui.GuiTextures;
+import com.opryshok.ui.LedgerSimpleGui;
+import com.opryshok.ui.LedgerSlot;
+import com.opryshok.utils.BorukvaFoodUtil;
+import com.opryshok.utils.MinimalSidedInventory;
 import com.phoen1x.borukvafoodexotic.BorukvaFoodExotic;
 import com.phoen1x.borukvafoodexotic.block.grill.Grill;
 import com.phoen1x.borukvafoodexotic.polydex.PolydexCompat;
@@ -10,10 +14,6 @@ import com.phoen1x.borukvafoodexotic.recipe.ModRecipeTypes;
 import com.phoen1x.borukvafoodexotic.recipe.grill.GrillInput;
 import com.phoen1x.borukvafoodexotic.recipe.grill.GrillRecipe;
 import com.phoen1x.borukvafoodexotic.sounds.SoundRegistry;
-import com.phoen1x.borukvafoodexotic.ui.LedgerSimpleGui;
-import com.phoen1x.borukvafoodexotic.ui.LedgerSlot;
-import com.phoen1x.borukvafoodexotic.utils.BorukvaFoodExoticUtil;
-import com.phoen1x.borukvafoodexotic.utils.MinimalSidedInventory;
 import eu.pb4.factorytools.api.advancement.TriggerCriterion;
 import eu.pb4.factorytools.api.block.BlockEntityExtraListener;
 import eu.pb4.factorytools.api.block.entity.LockableBlockEntity;
@@ -24,9 +24,7 @@ import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.nbt.NbtCompound;
 import net.minecraft.recipe.RecipeEntry;
-import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -47,7 +45,6 @@ import net.minecraft.world.chunk.WorldChunk;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
-import java.util.NoSuchElementException;
 import java.util.Objects;
 
 public class GrillEntity extends LockableBlockEntity implements MinimalSidedInventory, SidedInventory, BlockEntityExtraListener {
@@ -149,7 +146,7 @@ public class GrillEntity extends LockableBlockEntity implements MinimalSidedInve
                             self.setStack(i, ItemStack.EMPTY);
                         }
                         if (!remainder.isEmpty()) {
-                            BorukvaFoodExoticUtil.tryInsertingRegular(self, remainder);
+                            BorukvaFoodUtil.tryInsertingRegular(self, remainder);
                             if (!remainder.isEmpty()) {
                                 ItemScatterer.spawn(world, pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5, remainder);
                             }

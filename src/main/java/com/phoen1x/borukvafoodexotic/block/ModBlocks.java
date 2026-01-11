@@ -6,6 +6,8 @@ import com.phoen1x.borukvafoodexotic.block.crops.*;
 import com.phoen1x.borukvafoodexotic.block.grill.Grill;
 import com.phoen1x.borukvafoodexotic.block.leaves.*;
 import com.phoen1x.borukvafoodexotic.world.tree.ModSaplingGenerator;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -199,7 +201,27 @@ public class ModBlocks {
 //    public static final Block PEAR_TRAPDOOR = registerBlock("pear_trapdoor", settings -> new PolyTrapdoorBlock(settings, "pear_trapdoor"), Block.Settings.copy(Blocks.OAK_TRAPDOOR));
 //    public static final BlockItem PEAR_TRAPDOOR_ITEM = registerBlockItem("pear_trapdoor_bottom", settings -> new TexturedPolyBlockItem(PEAR_TRAPDOOR, settings), new Item.Settings());
 
-    public static final Block APRICOT_STAIRS = registerBlock("apricot_stairs", settings -> new PolyStairsBlock(APRICOT_PLANKS.getDefaultState(), settings, APRICOT_PLANKS), Block.Settings.copy(Blocks.OAK_STAIRS));
+
+    public static final Block APRICOT_STAIRS = registerBlock("apricot_stairs",
+            settings -> new PolyStairsBlock(APRICOT_PLANKS.getDefaultState(), settings, "apricot_stairs"),
+            Block.Settings.copy(Blocks.OAK_STAIRS));
+
+    public static final Block ORANGE_STAIRS = registerBlock("orange_stairs",
+            settings -> new PolyStairsBlock(ORANGE_PLANKS.getDefaultState(), settings, "orange_stairs"),
+            Block.Settings.copy(Blocks.OAK_STAIRS));
+
+    public static final Block KIWI_STAIRS = registerBlock("kiwi_stairs",
+            settings -> new PolyStairsBlock(KIWI_PLANKS.getDefaultState(), settings, "kiwi_stairs"),
+            Block.Settings.copy(Blocks.OAK_STAIRS));
+
+    public static final Block PEAR_STAIRS = registerBlock("pear_stairs",
+            settings -> new PolyStairsBlock(PEAR_PLANKS.getDefaultState(), settings, "pear_stairs"),
+            Block.Settings.copy(Blocks.OAK_STAIRS));
+
+    public static final Block PLUM_STAIRS = registerBlock("plum_stairs",
+            settings -> new PolyStairsBlock(PLUM_PLANKS.getDefaultState(), settings, "plum_stairs"),
+            Block.Settings.copy(Blocks.OAK_STAIRS));
+
     public static final Block APRICOT_FENCE = registerBlock("apricot_fence", settings -> new PolyFenceBlock(settings, Blocks.OAK_FENCE), Block.Settings.copy(Blocks.OAK_FENCE));
     public static final Block APRICOT_FENCE_GATE = registerBlock("apricot_fence_gate", settings -> new PolyFenceGateBlock(WoodType.OAK, settings, Blocks.OAK_FENCE_GATE), Block.Settings.copy(Blocks.OAK_FENCE_GATE));
     public static final Block APRICOT_BUTTON = registerBlock("apricot_button", settings -> new PolyButtonBlock(BlockSetType.OAK, 30, settings, Blocks.OAK_BUTTON), Block.Settings.copy(Blocks.OAK_BUTTON));
@@ -211,7 +233,7 @@ public class ModBlocks {
     public static final BlockItem APRICOT_BUTTON_ITEM = registerBlockItem("apricot_button_inventory", settings -> new com.opryshok.block.TexturedPolyBlockItem(APRICOT_BUTTON, settings), new Item.Settings());
     public static final BlockItem APRICOT_PRESSURE_PLATE_ITEM = registerBlockItem("apricot_pressure_plate", settings -> new com.opryshok.block.TexturedPolyBlockItem(APRICOT_PRESSURE_PLATE, settings), new Item.Settings());
 
-    public static final Block ORANGE_STAIRS = registerBlock("orange_stairs", settings -> new PolyStairsBlock(ORANGE_PLANKS.getDefaultState(), settings, ORANGE_PLANKS), Block.Settings.copy(Blocks.OAK_STAIRS));
+//    public static final Block ORANGE_STAIRS = registerBlock("orange_stairs", settings -> new PolyStairsBlock(ORANGE_PLANKS.getDefaultState(), settings, ORANGE_PLANKS), Block.Settings.copy(Blocks.OAK_STAIRS));
     public static final Block ORANGE_FENCE = registerBlock("orange_fence", settings -> new PolyFenceBlock(settings, Blocks.OAK_FENCE), Block.Settings.copy(Blocks.OAK_FENCE));
     public static final Block ORANGE_FENCE_GATE = registerBlock("orange_fence_gate", settings -> new PolyFenceGateBlock(WoodType.OAK, settings, Blocks.OAK_FENCE_GATE), Block.Settings.copy(Blocks.OAK_FENCE_GATE));
     public static final Block ORANGE_BUTTON = registerBlock("orange_button", settings -> new PolyButtonBlock(BlockSetType.OAK, 30, settings, Blocks.OAK_BUTTON), Block.Settings.copy(Blocks.OAK_BUTTON));
@@ -223,7 +245,7 @@ public class ModBlocks {
     public static final BlockItem ORANGE_BUTTON_ITEM = registerBlockItem("orange_button_inventory", settings -> new com.opryshok.block.TexturedPolyBlockItem(ORANGE_BUTTON, settings), new Item.Settings());
     public static final BlockItem ORANGE_PRESSURE_PLATE_ITEM = registerBlockItem("orange_pressure_plate", settings -> new com.opryshok.block.TexturedPolyBlockItem(ORANGE_PRESSURE_PLATE, settings), new Item.Settings());
 
-    public static final Block KIWI_STAIRS = registerBlock("kiwi_stairs", settings -> new PolyStairsBlock(KIWI_PLANKS.getDefaultState(), settings, KIWI_PLANKS), Block.Settings.copy(Blocks.OAK_STAIRS));
+//    public static final Block KIWI_STAIRS = registerBlock("kiwi_stairs", settings -> new PolyStairsBlock(KIWI_PLANKS.getDefaultState(), settings, KIWI_PLANKS), Block.Settings.copy(Blocks.OAK_STAIRS));
     public static final Block KIWI_FENCE = registerBlock("kiwi_fence", settings -> new PolyFenceBlock(settings, Blocks.OAK_FENCE), Block.Settings.copy(Blocks.OAK_FENCE));
     public static final Block KIWI_FENCE_GATE = registerBlock("kiwi_fence_gate", settings -> new PolyFenceGateBlock(WoodType.OAK, settings, Blocks.OAK_FENCE_GATE), Block.Settings.copy(Blocks.OAK_FENCE_GATE));
     public static final Block KIWI_BUTTON = registerBlock("kiwi_button", settings -> new PolyButtonBlock(BlockSetType.OAK, 30, settings, Blocks.OAK_BUTTON), Block.Settings.copy(Blocks.OAK_BUTTON));
@@ -235,7 +257,7 @@ public class ModBlocks {
     public static final BlockItem KIWI_BUTTON_ITEM = registerBlockItem("kiwi_button_inventory", settings -> new com.opryshok.block.TexturedPolyBlockItem(KIWI_BUTTON, settings), new Item.Settings());
     public static final BlockItem KIWI_PRESSURE_PLATE_ITEM = registerBlockItem("kiwi_pressure_plate", settings -> new com.opryshok.block.TexturedPolyBlockItem(KIWI_PRESSURE_PLATE, settings), new Item.Settings());
 
-    public static final Block PEAR_STAIRS = registerBlock("pear_stairs", settings -> new PolyStairsBlock(PEAR_PLANKS.getDefaultState(), settings, PEAR_PLANKS), Block.Settings.copy(Blocks.OAK_STAIRS));
+//    public static final Block PEAR_STAIRS = registerBlock("pear_stairs", settings -> new PolyStairsBlock(PEAR_PLANKS.getDefaultState(), settings, PEAR_PLANKS), Block.Settings.copy(Blocks.OAK_STAIRS));
     public static final Block PEAR_FENCE = registerBlock("pear_fence", settings -> new PolyFenceBlock(settings, Blocks.OAK_FENCE), Block.Settings.copy(Blocks.OAK_FENCE));
     public static final Block PEAR_FENCE_GATE = registerBlock("pear_fence_gate", settings -> new PolyFenceGateBlock(WoodType.OAK, settings, Blocks.OAK_FENCE_GATE), Block.Settings.copy(Blocks.OAK_FENCE_GATE));
     public static final Block PEAR_BUTTON = registerBlock("pear_button", settings -> new PolyButtonBlock(BlockSetType.OAK, 30, settings, Blocks.OAK_BUTTON), Block.Settings.copy(Blocks.OAK_BUTTON));
@@ -247,7 +269,7 @@ public class ModBlocks {
     public static final BlockItem PEAR_BUTTON_ITEM = registerBlockItem("pear_button_inventory", settings -> new com.opryshok.block.TexturedPolyBlockItem(PEAR_BUTTON, settings), new Item.Settings());
     public static final BlockItem PEAR_PRESSURE_PLATE_ITEM = registerBlockItem("pear_pressure_plate", settings -> new com.opryshok.block.TexturedPolyBlockItem(PEAR_PRESSURE_PLATE, settings), new Item.Settings());
 
-    public static final Block PLUM_STAIRS = registerBlock("plum_stairs", settings -> new PolyStairsBlock(PLUM_PLANKS.getDefaultState(), settings, PLUM_PLANKS), Block.Settings.copy(Blocks.OAK_STAIRS));
+//    public static final Block PLUM_STAIRS = registerBlock("plum_stairs", settings -> new PolyStairsBlock(PLUM_PLANKS.getDefaultState(), settings, PLUM_PLANKS), Block.Settings.copy(Blocks.OAK_STAIRS));
     public static final Block PLUM_FENCE = registerBlock("plum_fence", settings -> new PolyFenceBlock(settings, Blocks.OAK_FENCE), Block.Settings.copy(Blocks.OAK_FENCE));
     public static final Block PLUM_FENCE_GATE = registerBlock("plum_fence_gate", settings -> new PolyFenceGateBlock(WoodType.OAK, settings, Blocks.OAK_FENCE_GATE), Block.Settings.copy(Blocks.OAK_FENCE_GATE));
     public static final Block PLUM_BUTTON = registerBlock("plum_button", settings -> new PolyButtonBlock(BlockSetType.OAK, 30, settings, Blocks.OAK_BUTTON), Block.Settings.copy(Blocks.OAK_BUTTON));
@@ -273,5 +295,80 @@ public class ModBlocks {
         BlockItem item = factory.apply(settings.registryKey(key).useBlockPrefixedTranslationKey());
 
         return Registry.register(Registries.ITEM, key, item);
+    }
+
+    public static void registerWood(){
+        addStripped(ModBlocks.APRICOT_LOG, ModBlocks.STRIPPED_APRICOT_LOG);
+        addStripped(ModBlocks.APRICOT_WOOD, ModBlocks.STRIPPED_APRICOT_WOOD);
+
+        addStripped(ModBlocks.ORANGE_LOG, ModBlocks.STRIPPED_ORANGE_LOG);
+        addStripped(ModBlocks.ORANGE_WOOD, ModBlocks.STRIPPED_ORANGE_WOOD);
+
+        addStripped(ModBlocks.PEAR_LOG, ModBlocks.STRIPPED_PEAR_LOG);
+        addStripped(ModBlocks.PEAR_WOOD, ModBlocks.STRIPPED_PEAR_WOOD);
+
+        addStripped(ModBlocks.KIWI_LOG, ModBlocks.STRIPPED_KIWI_LOG);
+        addStripped(ModBlocks.KIWI_WOOD, ModBlocks.STRIPPED_KIWI_WOOD);
+
+        addStripped(ModBlocks.PLUM_LOG, ModBlocks.STRIPPED_PLUM_LOG);
+        addStripped(ModBlocks.PLUM_WOOD, ModBlocks.STRIPPED_PLUM_WOOD);
+
+        addFlammable(ModBlocks.APRICOT_LOG, 5, 5);
+        addFlammable(ModBlocks.APRICOT_WOOD, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_APRICOT_LOG, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_APRICOT_WOOD, 5, 5);
+        addFlammable(ModBlocks.APRICOT_PLANKS, 5, 20);
+        addFlammable(ModBlocks.APRICOT_LEAVES, 30, 60);
+
+        addFlammable(ModBlocks.PEAR_LOG, 5, 5);
+        addFlammable(ModBlocks.PEAR_WOOD, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_PEAR_LOG, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_PEAR_WOOD, 5, 5);
+        addFlammable(ModBlocks.PEAR_PLANKS, 5, 20);
+        addFlammable(ModBlocks.PEAR_LEAVES, 30, 60);
+
+        addFlammable(ModBlocks.ORANGE_LOG, 5, 5);
+        addFlammable(ModBlocks.ORANGE_WOOD, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_ORANGE_LOG, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_ORANGE_WOOD, 5, 5);
+        addFlammable(ModBlocks.ORANGE_PLANKS, 5, 20);
+        addFlammable(ModBlocks.ORANGE_LEAVES, 30, 60);
+
+        addFlammable(ModBlocks.KIWI_LOG, 5, 5);
+        addFlammable(ModBlocks.KIWI_WOOD, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_KIWI_LOG, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_KIWI_WOOD, 5, 5);
+        addFlammable(ModBlocks.KIWI_PLANKS, 5, 20);
+        addFlammable(ModBlocks.KIWI_LEAVES, 30, 60);
+
+        addFlammable(ModBlocks.PLUM_LOG, 5, 5);
+        addFlammable(ModBlocks.PLUM_WOOD, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_PLUM_LOG, 5, 5);
+        addFlammable(ModBlocks.STRIPPED_PLUM_WOOD, 5, 5);
+        addFlammable(ModBlocks.PLUM_PLANKS, 5, 20);
+        addFlammable(ModBlocks.PLUM_LEAVES, 30, 60);
+
+        addFlammable(ModBlocks.APRICOT_FRUIT_LEAVES, 30, 60);
+        addFlammable(ModBlocks.PEAR_FRUIT_LEAVES, 30, 60);
+        addFlammable(ModBlocks.ORANGE_FRUIT_LEAVES, 30, 60);
+        addFlammable(ModBlocks.KIWI_FRUIT_LEAVES, 30, 60);
+        addFlammable(ModBlocks.PLUM_FRUIT_LEAVES, 30, 60);
+
+        addFlammable(ModBlocks.APRICOT_DOOR, 5, 20);
+        addFlammable(ModBlocks.PLUM_DOOR, 5, 20);
+        addFlammable(ModBlocks.PEAR_DOOR, 5, 20);
+        addFlammable(ModBlocks.ORANGE_DOOR, 5, 20);
+        addFlammable(ModBlocks.KIWI_DOOR, 5, 20);
+        addFlammable(ModBlocks.APRICOT_SLAB, 5, 20);
+        addFlammable(ModBlocks.PEAR_SLAB, 5, 20);
+        addFlammable(ModBlocks.PLUM_SLAB, 5, 20);
+        addFlammable(ModBlocks.ORANGE_SLAB, 5, 20);
+        addFlammable(ModBlocks.KIWI_SLAB, 5, 20);
+    }
+    private static void addFlammable(Block block, int burn, int spread){
+        FlammableBlockRegistry.getDefaultInstance().add(block, burn, spread);
+    }
+    private static void addStripped(Block block, Block stripped){
+        StrippableBlockRegistry.register(block, stripped);
     }
 }

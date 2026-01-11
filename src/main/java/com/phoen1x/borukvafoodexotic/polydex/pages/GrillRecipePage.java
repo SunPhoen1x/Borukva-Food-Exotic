@@ -1,5 +1,6 @@
 package com.phoen1x.borukvafoodexotic.polydex.pages;
 
+import com.opryshok.polydex.pages.PrioritizedRecipePage;
 import com.phoen1x.borukvafoodexotic.block.ModBlocks;
 import com.phoen1x.borukvafoodexotic.polydex.PolydexTextures;
 import com.phoen1x.borukvafoodexotic.recipe.grill.GrillRecipe;

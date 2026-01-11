@@ -10,9 +10,8 @@ import com.phoen1x.borukvafoodexotic.polydex.PolydexTextures;
 import com.phoen1x.borukvafoodexotic.recipe.ModRecipeSerializer;
 import com.phoen1x.borukvafoodexotic.recipe.ModRecipeTypes;
 import com.phoen1x.borukvafoodexotic.ui.GuiTextures;
-import com.phoen1x.borukvafoodexotic.ui.UiResourceCreator;
 import com.phoen1x.borukvafoodexotic.utils.*;
-import com.phoen1x.borukvafoodexotic.world.gen.ModWorldGeneration;
+import com.phoen1x.borukvafoodexotic.world.gen.ModTreeGeneration;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import eu.pb4.polymer.resourcepack.extras.api.ResourcePackExtras;
 import net.fabricmc.api.ModInitializer;
@@ -31,26 +30,33 @@ public class BorukvaFoodExotic implements ModInitializer {
     @Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+        ModItems.registerCompostableItems();
+
 		ModBlocks.registerBlocks();
-		BorukvaFoodExoticUtil.registerWood();
+        ModBlocks.registerWood();
+
 		ModCustomTrades.registerCustomTrades();
-		CompostableItems.register();
+
 		ModifyLootTables.modifyLootTables();
-		ModWorldGeneration.generateModWorldGen();
-		SaplingModels.register();
-		FruitLeavesModels.register();
+
+		ModTreeGeneration.generateModWorldGen();
+
 		ModEntities.register();
-		UiResourceCreator.setup();
+
 		GuiTextures.register();
+
 		ModRecipeTypes.register();
 		ModRecipeSerializer.register();
+
 		PolydexCompat.register();
 		PolydexTextures.register();
+
 		initModels();
 		PolymerResourcePackUtils.addModAssets(MOD_ID);
+        PolymerResourcePackUtils.markAsRequired();
         ResourcePackExtras.forDefault().addBridgedModelsFolder(id("block"), id("item"), id("sgui"));
         LOGGER.info("Successfully added mod assets for {} {}", MOD_ID, MOD_VERSION);
-		PolymerResourcePackUtils.markAsRequired();
+
 	}
 
 	public void initModels(){
@@ -64,7 +70,9 @@ public class BorukvaFoodExotic implements ModInitializer {
 		GarlicCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		GreenBeanCrop.Model.MODELS.forEach(ItemStack::isEmpty);
 		BroccoliCrop.Model.MODELS.forEach(ItemStack::isEmpty);
-		DoorModels.register();
+        DoorModels.register();
+        SaplingModels.register();
+        StairsModels.register();
 	}
 
 	public static Identifier id(String path) {

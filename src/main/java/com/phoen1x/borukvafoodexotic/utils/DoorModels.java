@@ -25,7 +25,6 @@ public class DoorModels {
     public static final ItemStack PEAR_MODEL_LEFT = ItemDisplayElementUtil.getModel(Identifier.of(BorukvaFoodExotic.MOD_ID, "block/pear_door_left"));
     public static final ItemStack PEAR_MODEL_RIGHT = ItemDisplayElementUtil.getModel(Identifier.of(BorukvaFoodExotic.MOD_ID, "block/pear_door_right"));
 
-
     @SuppressWarnings("ResultOfMethodCallIgnored")
     public static void register(){
         DOOR_MODELS.put("apricot_door", new Pair<>(APRICOT_MODEL_LEFT, APRICOT_MODEL_RIGHT));

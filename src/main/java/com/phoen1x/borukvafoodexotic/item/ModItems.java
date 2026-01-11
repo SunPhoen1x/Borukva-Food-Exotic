@@ -6,6 +6,7 @@ import com.phoen1x.borukvafoodexotic.utils.ModFoodComponents;
 import eu.pb4.polymer.core.api.item.PolymerBlockItem;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.block.ComposterBlock;
 import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -62,7 +63,6 @@ public class ModItems {
     public static Item BROCCOLI_SEEDS = registerItem("broccoli_seeds",  settings -> new PolymerBlockItem(ModBlocks.BROCCOLI, settings));
 
     public static Item BAKED_POTATO_SLICES = registerItem("baked_potato_slices", SimplePolymerItem::new, new Item.Settings().food(ModFoodComponents.BAKED_SLICES));
-    public static Item GHAST_TENCTALES_BAKED = registerItem("ghast_tentacle_baked", SimplePolymerItem::new, new Item.Settings().food(ModFoodComponents.GHAST_TENTACLE_BAKED));
 
     public static Item POTATO_SLICES = registerItem("potato_slices", SimplePolymerItem::new, new Item.Settings().food(ModFoodComponents.SLICES));
     public static Item KIWI_SLICES = registerItem("kiwi_slices", SimplePolymerItem::new, new Item.Settings().food(ModFoodComponents.SLICES));
@@ -277,5 +277,49 @@ public class ModItems {
         ItemGroup polymerGroup = builder.build();
         PolymerItemGroupUtils.registerPolymerItemGroup(Identifier.of(BorukvaFoodExotic.MOD_ID, "items"), polymerGroup);
         BorukvaFoodExotic.LOGGER.info("Exotic Items Registered");
+    }
+
+    private static final float seeds = 0.3f;
+    private static final float plant = 0.65f;
+    public static void registerCompostableItems(){
+        put(ModItems.STRAWBERRY_SEEDS, seeds);
+        put(ModItems.EGGPLANT_SEEDS, seeds);
+        put(ModItems.PEPPER_SEEDS, seeds);
+        put(ModItems.PEAS_SEEDS, seeds);
+        put(ModItems.GARLIC_SEEDS, seeds);
+        put(ModItems.SPINACH_SEEDS, seeds);
+
+        put(ModItems.APRICOT, plant);
+        put(ModItems.PEAR, plant);
+        put(ModItems.ORANGE, plant);
+        put(ModItems.KIWI, plant);
+        put(ModItems.PLUM, plant);
+        put(ModItems.STRAWBERRY, plant);
+        put(ModItems.EGGPLANT, plant);
+        put(ModItems.PEPPER, plant);
+        put(ModItems.PEAS, plant);
+        put(ModItems.GARLIC, plant);
+        put(ModItems.SPINACH, plant);
+
+        put(ModBlocks.APRICOT_SAPLING_ITEM, seeds);
+        put(ModBlocks.PEAR_SAPLING_ITEM, seeds);
+        put(ModBlocks.ORANGE_SAPLING_ITEM, seeds);
+        put(ModBlocks.KIWI_SAPLING_ITEM, seeds);
+        put(ModBlocks.PLUM_SAPLING_ITEM, seeds);
+
+        put(ModBlocks.APRICOT_LEAVES_ITEM, seeds);
+        put(ModBlocks.PEAR_LEAVES_ITEM, seeds);
+        put(ModBlocks.ORANGE_LEAVES_ITEM, seeds);
+        put(ModBlocks.KIWI_LEAVES_ITEM, seeds);
+        put(ModBlocks.PLUM_LEAVES_ITEM, seeds);
+
+        put(ModBlocks.APRICOT_FRUIT_LEAVES_ITEM, plant);
+        put(ModBlocks.PEAR_FRUIT_LEAVES_ITEM, plant);
+        put(ModBlocks.ORANGE_FRUIT_LEAVES_ITEM, plant);
+        put(ModBlocks.KIWI_FRUIT_LEAVES_ITEM, plant);
+        put(ModBlocks.PLUM_FRUIT_LEAVES_ITEM, plant);
+    }
+    private static void put(Item item, float chance){
+        ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(item, chance);
     }
 }

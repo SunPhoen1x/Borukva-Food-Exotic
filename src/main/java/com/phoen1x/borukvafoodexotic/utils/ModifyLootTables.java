@@ -12,7 +12,6 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 
 public class ModifyLootTables {
-
     public static void modifyLootTables(){
         LootTableEvents.MODIFY.register((key, tableBuilder, source) -> {
             if ((key.getValue() == LootTables.FISHING_JUNK_GAMEPLAY.getValue())) {

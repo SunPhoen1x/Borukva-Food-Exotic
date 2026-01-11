@@ -25,7 +25,4 @@ public class ModFoodComponents {
     public static final FoodComponent SALMON_SANDWICH = (new FoodComponent.Builder()).nutrition(6).saturationModifier(0.4F).build();
     public static final FoodComponent COD_SANDWICH = (new FoodComponent.Builder()).nutrition(6).saturationModifier(0.4F).build();
     public static final FoodComponent HONEY_PANCAKES = (new FoodComponent.Builder()).nutrition(5).saturationModifier(0.5F).build();
-
-    public static final FoodComponent GHAST_TENTACLES = (new FoodComponent.Builder()).nutrition(3).saturationModifier(0.4F).build();
-    public static final FoodComponent GHAST_TENTACLE_BAKED = new FoodComponent.Builder().nutrition(5).saturationModifier(0.5F).build();
 }
